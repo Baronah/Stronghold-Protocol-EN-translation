@@ -1,0 +1,48 @@
+{"id":593,"en":"When not blocking enemies, ATK and DEF +6%"}
+{"id":596,"en":"The next attack pulls the target <@ba.vup>with moderate force</> and deals <@ba.vup>Arts damage</> equal to <@ba.vup>125%</> of ATK"}
+{"id":597,"en":"Enemies take Arts damage proportional to the distance pulled"}
+{"id":598,"en":"Immediately pulls up to <@ba.vup>2</> targets in a large area ahead <@ba.vup>with moderate force</>, dealing <@ba.vup>True</> damage equal to <@ba.vup>170%</> of ATK and <$ba.stun>Stunning</> them for <@ba.vup>1.5</> seconds"}
+{"id":599,"en":"When not blocking enemies, ATK and DEF +12%"}
+{"id":600,"en":"The next attack pulls the target <@ba.vup>with moderate force</> and deals <@ba.vup>Arts damage</> equal to <@ba.vup>135%</> of ATK"}
+{"id":602,"en":"Stops attacking and puts <@ba.vup>3</> enemies within Attack Range to <$ba.sleep>Sleep</> for <@ba.vup>4</> seconds; afterwards ASPD <@ba.vup>+45</> and attacks <@ba.vup>3</> enemies"}
+{"id":604,"en":"ASPD +6; if the target is [Wildlife], Trait <$ba.sluggish>Slow</> duration is slightly extended"}
+{"id":607,"en":"The next attack deals Arts damage equal to <@ba.vup>140%</> of ATK and attacks one additional enemy\n<@ba.rem>Can hold 2 charges</>"}
+{"id":608,"en":"Stops attacking and puts <@ba.vup>3</> enemies within Attack Range to <$ba.sleep>Sleep</> for <@ba.vup>4</> seconds; afterwards ASPD <@ba.vup>+90</> and attacks <@ba.vup>3</> enemies"}
+{"id":609,"en":"ASPD +10; if the target is [Wildlife], Trait <$ba.sluggish>Slow</> duration is extended"}
+{"id":610,"en":"The next attack deals Arts damage equal to <@ba.vup>170%</> of ATK and attacks one additional enemy\n<@ba.rem>Can hold 2 charges</>"}
+{"id":612,"en":"Restores HP of allies and recovers <$ba.dt.element>Elemental Damage</> equal to <@ba.kw>50%</> of ATK (can recover <$ba.dt.element>Elemental Damage</> of uninjured allies)"}
+{"id":614,"en":"ASPD <@ba.vup>+55</>, prioritizes healing targets with the most <$ba.dt.element>Elemental Damage</>. When healing targets whose accumulated Elemental Damage exceeds half, <$ba.dt.element>Elemental Damage</> recovery increased to <@ba.vup>160%</>"}
+{"id":616,"en":"Targets within Attack Range whose accumulated Elemental Damage exceeds half take 12% less <$ba.dt.element>Elemental Damage</>"}
+{"id":618,"en":"Restores HP of allies and recovers <$ba.dt.element>Elemental Damage</> equal to <@ba.kw>60%</> of ATK (can recover <$ba.dt.element>Elemental Damage</> of uninjured allies)"}
+{"id":619,"en":"ASPD <@ba.vup>+80</>, prioritizes healing targets with the most <$ba.dt.element>Elemental Damage</>. When healing targets whose accumulated Elemental Damage exceeds half, <$ba.dt.element>Elemental Damage</> recovery increased to <@ba.vup>200%</>"}
+{"id":620,"en":"Targets within Attack Range whose accumulated Elemental Damage exceeds half take 15% less <$ba.dt.element>Elemental Damage</>"}
+{"id":622,"en":"Restores HP of allies, bouncing between <@ba.kw>3</> allies; healing reduced by 25% per bounce"}
+{"id":624,"en":"The next heal is increased to <@ba.vup>160%</> of ATK, and the Talent's Barrier effect increased to <@ba.vup>150%</>\n<@ba.rem>Can hold 2 charges</>"}
+{"id":626,"en":"Heals grant the target Operator a <$ba.barrier>Barrier</> equal to 10% of own ATK for 8 seconds"}
+{"id":629,"en":"Immediately locks onto the Operator with the highest Max HP within Attack Range (excluding self); during the skill, Papyrus can only use that Operator as the primary heal target, Attack Interval <@ba.vup>reduced</>, ATK <@ba.vup>+20%</>, heal bounces <@ba.vup>+1</> "}
+{"id":630,"en":"Restores HP of allies, bouncing between <@ba.kw>3</> allies; healing reduced by 15% per bounce"}
+{"id":631,"en":"The next heal is increased to <@ba.vup>175%</> of ATK, and the Talent's Barrier effect increased to <@ba.vup>200%</>\n<@ba.rem>Can hold 2 charges</>"}
+{"id":632,"en":"Heals grant the target Operator a <$ba.barrier>Barrier</> equal to 20% of own ATK for 8 seconds"}
+{"id":633,"en":"Immediately locks onto the Operator with the highest Max HP within Attack Range (excluding self); during the skill, Papyrus can only use that Operator as the primary heal target, Attack Interval <@ba.vup>reduced</>, ATK <@ba.vup>+35%</>, heal bounces <@ba.vup>+1</> "}
+{"id":635,"en":"During the skill, the Operator's HP cannot drop below <@ba.vup>1</>, ATK <@ba.vup>+70%</>\n<@ba.rem>The Operator is <$ba.stun>Stunned</> for 10 seconds after the skill ends</>"}
+{"id":639,"en":"Attacks <@ba.kw>all blocked enemies</> simultaneously; ATK increased to <@ba.kw>110%</> against blocked enemies"}
+{"id":640,"en":"During the skill, the Operator's HP cannot drop below <@ba.vup>1</>, ATK <@ba.vup>+100%</>\n<@ba.rem>The Operator is <$ba.stun>Stunned</> for 10 seconds after the skill ends</>"}
+{"id":642,"en":"Max HP +10%, restores 2% of Max HP per second"}
+{"id":644,"en":"Stops attacking; DEF <@ba.vup>+65%</>, more likely to be targeted by enemies; when attacked, deals Physical damage equal to <@ba.vup>40%</> of Bubble's DEF to the attacker"}
+{"id":646,"en":"Enemies that attack Bubble have ATK -5% for 5 seconds"}
+{"id":649,"en":"DEF <@ba.vup>+35%</>"}
+{"id":650,"en":"DEF <@ba.kw>+20%</> while blocking enemies"}
+{"id":651,"en":"Stops attacking; DEF <@ba.vup>+85%</>, more likely to be targeted by enemies; when attacked, deals Physical damage equal to <@ba.vup>40%</> of Bubble's DEF to the attacker"}
+{"id":652,"en":"Enemies that attack Bubble have ATK -8% for 5 seconds"}
+{"id":653,"en":"DEF <@ba.vup>+50%</>"}
+{"id":655,"en":"Cannot be healed by allies; attacks deal <@ba.kw>AoE damage</>, restores <@ba.kw>50</> HP to self for each enemy hit, up to a number equal to Block"}
+{"id":657,"en":"Block <@ba.vup>+1</> during the skill; when HP is above <@ba.vup>50%</>, gains <$ba.strong>Energized</> of <@ba.vup>+25%</> ATK; effect doubled when above <@ba.vup>80%</>"}
+{"id":659,"en":"HP exceeding Max HP is converted into a <$ba.barrier>Barrier</>, up to 60% of own Max HP"}
+{"id":662,"en":"The next attack's ATK is increased to <@ba.vup>190%</>, and additionally restores <@ba.kw>60</> HP to self"}
+{"id":663,"en":"Cannot be healed by allies; attacks deal <@ba.kw>AoE damage</>, restores <@ba.kw>60</> HP to self for each enemy hit, up to a number equal to Block"}
+{"id":664,"en":"Block <@ba.vup>+1</> during the skill; when HP is above <@ba.vup>50%</>, gains <$ba.strong>Energized</> of <@ba.vup>+36%</> ATK; effect doubled when above <@ba.vup>80%</>"}
+{"id":665,"en":"HP exceeding Max HP is converted into a <$ba.barrier>Barrier</>, up to 100% of own Max HP"}
+{"id":666,"en":"The next attack's ATK is increased to <@ba.vup>220%</>, and additionally restores <@ba.kw>80</> HP to self"}
+{"id":668,"en":"Controls <@ba.kw>Floating Units</> that deal <@ba.kw>Arts damage</>\nUnits deal increased damage when attacking the same enemy (up to 110% of the Operator's ATK)"}
+{"id":670,"en":"ASPD <@ba.vup>+45</>, releases Floating Units to lock onto and attack enemies\n<$ba.overdrive>Overdrive</>: Trait Floating Unit damage cap increased to <@ba.vup>1.6</>x, ATK <@ba.vup>+40%</>; after the skill ends, <$ba.stun>Stunned</> for a duration equal to the Overdrive duration\n<@ba.rem>Floating Units stay locked on until the enemy is defeated or the skill ends, then return to the Operator; the skill can be manually deactivated at any time</>"}
+{"id":672,"en":"Every 15 seconds on the field, ATK +2%, stacking up to 3 times"}

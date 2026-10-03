@@ -1,0 +1,51 @@
+{"id":2790,"en":"Spawns <@eb.key>3</> [Novel Scroll] when defeated."}
+{"id":2793,"en":"Spawns <@eb.key>3</> [Poetry Painting Scroll] when defeated."}
+{"id":2797,"en":"Does not attack, cannot be blocked; requires <@eb.key>4</> hits to defeat"}
+{"id":2800,"en":"Vulnerable to friendly attacks; spawns <@eb.key>1</> [Bronze Mirror] when defeated."}
+{"id":2804,"en":"Does not attack, cannot be blocked; requires <@eb.key>30</> hits to defeat"}
+{"id":2807,"en":"Does not attack, cannot be blocked; requires <@eb.key>35</> hits to defeat"}
+{"id":2812,"en":"When defeated, deals AoE Arts damage and reduces friendly ASPD (can be resisted), and spawns <@eb.key>4</> [Celadon Tea Set]"}
+{"id":2813,"en":"Explodes when defeated, dealing AoE Arts damage and greatly reducing friendly ASPD (can be <$ba.buffres>Resisted</>)"}
+{"id":2816,"en":"When defeated, deals AoE Arts damage and reduces friendly ASPD (can be resisted), and spawns <@eb.key>4</> [Painted Porcelain Tea Set]"}
+{"id":2819,"en":"Does not attack, cannot be blocked; requires <@eb.key>4</> hits of <@eb.key>Arts or True</> damage to defeat"}
+{"id":2822,"en":"Does not attack, cannot be blocked; requires <@eb.key>6</> hits of <@eb.key>Arts or True</> damage to defeat"}
+{"id":2825,"en":"Attacks consume [Broken Blade] to increase ATK; unconsumed [Broken Blade] become [Bronze Spearhead] when defeated (at least <@eb.key>1</>)"}
+{"id":2827,"en":"When defeated, unconsumed Broken Blades become <Bronze Spearhead> (at least 1)."}
+{"id":2829,"en":"Attacks consume [Broken Blade] to increase ATK; unconsumed [Broken Blade] become [Iron Spearhead] when defeated (at least <@eb.key>1</>)"}
+{"id":2830,"en":"When defeated, unconsumed Broken Blades become <Iron Spearhead> (at least 1)."}
+{"id":2832,"en":"Does not attack, cannot be blocked; requires <@eb.key>25</> hits to defeat"}
+{"id":2836,"en":"Grants temporary Camouflage to other nearby enemies; spawns <@eb.key>1</> [Bronze Lamp Tray] when defeated"}
+{"id":2837,"en":"Periodically grants temporary <$ba.invisible>Camouflage</> to other nearby enemies"}
+{"id":2840,"en":"Grants temporary Camouflage to other nearby enemies; spawns <@eb.key>1</> [Iron Lamp Tray] when defeated"}
+{"id":2844,"en":"Does not attack, cannot be blocked; requires <@eb.key>45</> hits to defeat"}
+{"id":2847,"en":"Attacks deal <@eb.key>Arts damage</> and <@eb.key>Necrosis Damage</>."}
+{"id":2848,"en":"Attacks deal <$ba.dt.apoptosis>Necrosis Damage</>"}
+{"id":2851,"en":"Continuously deals <@eb.key>Arts damage</> and <@eb.key>Nervous Impairment</> to its surroundings; has <@eb.key>Resistance</> and its movement speed cannot be reduced"}
+{"id":2852,"en":"Continuously deals Arts damage and <$ba.dt.neural>Nervous Impairment</> to its surroundings"}
+{"id":2853,"en":"<$ba.buffres>Resistance</> and immune to <$ba.sluggish>Slow</>"}
+{"id":2859,"en":"When touching an inactive <R-Series Power Armor>, restores some of its SP"}
+{"id":2861,"en":"A product of Dorothy's failed experiment. Even though it fell short of expectations, Dorothy remains full of hope."}
+{"id":2863,"en":"A product of Dorothy's renewed experiments. Dreams must eventually give back to reality; Dorothy hopes to become a warm, sheltering harbor."}
+{"id":2865,"en":"Unmanned power armor that seems to have a will of its own."}
+{"id":2867,"en":"A member of the Scavenger horde. When defeated, releases <@eb.key>Contaminated Filth</>, causing nearby friendly units to continuously lose HP"}
+{"id":2868,"en":"When defeated, releases Contaminated Filth, causing nearby friendly units to continuously lose HP"}
+{"id":2870,"en":"An elite member of the Scavenger horde. When defeated, releases <@eb.key>Contaminated Filth</>, causing nearby friendly units to continuously lose HP"}
+{"id":2872,"en":"<@eb.key>[Aerial Unit]</>; self-destructs when near an Operator, dealing Physical damage to it"}
+{"id":2873,"en":"Self-destructs when near an Operator, dealing Physical damage to it"}
+{"id":2875,"en":"<@eb.key>Moves fast</>; attacks make the target take Arts damage over time, <@eb.key>removed</> when the target is healed"}
+{"id":2876,"en":"Attacks make the target take Arts damage over time; the effect is removed when the target is healed"}
+{"id":2879,"en":"<@eb.key>Only attacks ground units</>; after several attacks, the next attack releases <@eb.key>Contaminated Filth</>; melee attacks deal <@eb.key>higher damage</>"}
+{"id":2885,"en":"Long Attack Range; locks onto the target with the <@eb.key>highest Max HP</> for several bombardments, each dealing <@eb.key>Arts damage</> to the unit in range with the <@eb.key>highest current HP percentage</>"}
+{"id":2887,"en":"Locks onto the target with the highest Max HP for several bombardments, each dealing Arts damage to the unit in range with the highest current HP percentage"}
+{"id":2889,"en":"Attacks also deal <@eb.key>Necrosis Damage</>; locks onto a friendly unit to deal continuous Arts damage, and deals <@eb.key>AoE Necrosis Damage</> upon completion"}
+{"id":2890,"en":"Attacks also deal <$ba.dt.apoptosis>Necrosis Damage</>"}
+{"id":2891,"en":"Locks onto a friendly unit to deal continuous Arts damage, and deals AoE <$ba.dt.apoptosis>Necrosis Damage</> upon completion"}
+{"id":2893,"en":"\n\nCamouflage;\n\nGains extra enhancements during <@eb.key>\"Hour of Reckoning\"</>"}
+{"id":2897,"en":"Attacks also deal <@eb.key>Burn Damage</> when near burning reeds; after falling, becomes Resentful Embers and revives after some time"}
+{"id":2898,"en":"Attacks also deal <$ba.dt.burning>Burn Damage</> when near burning reeds"}
+{"id":2899,"en":"When defeated, temporarily becomes <Resentful Embers> with <$ba.invisible>Camouflage</> that requires 5 hits to defeat, then revives after some time"}
+{"id":2901,"en":"Attacks also deal <@eb.key>Burn Damage</> when near burning reeds; after falling, becomes Furious Embers and revives after some time"}
+{"id":2902,"en":"When defeated, temporarily becomes <Furious Embers> with <$ba.invisible>Camouflage</> that requires 5 hits to defeat, then revives after some time"}
+{"id":2904,"en":"Deals extra <@eb.key>Burn Damage</> and <@eb.key>takes reduced damage</> when near burning reeds; after falling, becomes Greedy Ashes and revives after some time"}
+{"id":2905,"en":"Attacks also deal <$ba.dt.burning>Burn Damage</> and Physical and Arts damage taken is reduced when near burning reeds"}
+{"id":2906,"en":"When defeated, temporarily becomes <Greedy Ashes> with <$ba.invisible>Camouflage</> that requires 10 hits to defeat, then revives after some time"}

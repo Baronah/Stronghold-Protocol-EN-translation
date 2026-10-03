@@ -1,0 +1,50 @@
+{"id":2697,"en":"A common prisoner of Mansfield Prison. <@eb.key>ATK increases</> after being released"}
+{"id":2698,"en":"Starts Restrained; ASPD reduced while Restrained"}
+{"id":2701,"en":"A prisoner well versed in the survival rules of Mansfield Prison. <@eb.key>ATK increases</> after being released"}
+{"id":2703,"en":"A prisoner very confident in their fists. After being released, attacks <@eb.key>ignore a large portion of the target's DEF</>"}
+{"id":2704,"en":"Released after several attacks; once released, ATK increases and attacks ignore a portion of the target's DEF"}
+{"id":2706,"en":"A very strong prisoner who often charges at the front line in brawls. After being released, <@eb.key>RES increases and HP regenerates naturally</>"}
+{"id":2707,"en":"Released after several attacks; once released, ATK and RES increase and HP regenerates naturally"}
+{"id":2709,"en":"A vicious prisoner feared by inmates and guards alike. <@eb.key>Has extra DEF</> while Restrained; on <@eb.key>first release</>, <@eb.key>releases all enemies on the field</>"}
+{"id":2710,"en":"Starts Restrained; while Restrained, ASPD is reduced but DEF is increased"}
+{"id":2713,"en":"Second only to Antony in combat strength. <@eb.key>Has extra DEF</> while Restrained; on <@eb.key>first release</>, <@eb.key>releases all enemies on the field</>"}
+{"id":2715,"en":"A Seaborn that crawled ashore, waving its tough tentacles. Attacks also deal <@eb.key>Nervous Impairment</>"}
+{"id":2716,"en":"Attacks also deal <$ba.dt.neural>Nervous Impairment</>"}
+{"id":2718,"en":"A well-fed Seaborn that crawled ashore. Its tentacles can denature proteins. Attacks also deal <@eb.key>Nervous Impairment</>"}
+{"id":2720,"en":"Immune to <@eb.key>Corrosion</>; gains ATK and <@eb.key>Camouflage</> while in water"}
+{"id":2721,"en":"Immune to Corrosion; gains ATK and <$ba.invisible>Camouflage</> while in water"}
+{"id":2723,"en":"A burly man working at the docks or on Pancho's ship. Can <@eb.key>Stun</> friendly units after several attacks; rapidly loses HP while \"Corroded\""}
+{"id":2724,"en":"Can <$ba.stun>Stun</> friendly units after several attacks"}
+{"id":2727,"en":"Much sturdier than ordinary sailors. Can <@eb.key>Stun</> friendly units after several attacks; rapidly loses HP while \"Corroded\""}
+{"id":2729,"en":"A professionally trained caster skilled in <@eb.key>long-range AoE Arts attacks</>. Attacks also deal <@eb.key>Corrosion Damage</>"}
+{"id":2730,"en":"Attacks damage the target and all friendly units within 4 tiles around it, and also deal <$ba.dt.erosion>Corrosion Damage</>"}
+{"id":2732,"en":"A professionally trained Tidebringer skilled in <@eb.key>long-range AoE Arts attacks</>. Attacks also deal <@eb.key>Corrosion Damage</>"}
+{"id":2734,"en":"A speedboat carrying a Tidecaller. Attacks also deal <@eb.key>Corrosion Damage</>; the caster keeps fighting after the vehicle is destroyed."}
+{"id":2737,"en":"A creature controlled by the Dublinn forces. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2738,"en":"<$ba.refraction>Refraction</>"}
+{"id":2740,"en":"More combat-capable than ordinary Scout Hounds. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2742,"en":"A scout of the Dublinn forces. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2744,"en":"A scout leader of the Dublinn forces. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2746,"en":"A caster of the Dublinn forces. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2748,"en":"A caster leader of the Dublinn forces. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2750,"en":"Nearby Phalanx infantry support each other, <@eb.key>increasing DEF</>. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2751,"en":"DEF increases while other Phalanx Warriors are nearby (stackable)"}
+{"id":2753,"en":"Nearby Phalanx Commanders support each other, <@eb.key>increasing DEF</>. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2754,"en":"DEF increases while other Phalanx Commanders are nearby (stackable)"}
+{"id":2756,"en":"A heavily armored guard of the Dublinn forces. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2758,"en":"A heavily armored guard leader of the Dublinn forces. While <@eb.key>Refraction</> is active, RES +70"}
+{"id":2760,"en":"<@eb.key>Refraction</>; upon first defeat, temporarily becomes a statue with <@eb.key>extremely high DEF</>, then revives as an <@eb.key>aerial unit</>"}
+{"id":2761,"en":"Upon first defeat, temporarily becomes a statue with extremely high DEF, then revives as an aerial unit after some time"}
+{"id":2764,"en":"<@eb.key>Refraction</>; more vulnerable to friendly attacks. When a <@eb.key>Partner Shadowblade</> is nearby, activates a force field that <@eb.key>reduces the ASPD</> of nearby friendly units"}
+{"id":2766,"en":"When a <Dublinn Partner Shadowblade> is nearby, activates a force field that reduces the ASPD of nearby friendly units"}
+{"id":2768,"en":"<@eb.key>Refraction</>; more vulnerable to friendly attacks. When a <@eb.key>Partner Shadowblade Elite</> is nearby, activates a force field that <@eb.key>reduces the ASPD</> of nearby friendly units"}
+{"id":2769,"en":"When a <Dublinn Partner Shadowblade Elite> is nearby, activates a force field that reduces the ASPD of nearby friendly units"}
+{"id":2771,"en":"<@eb.key>Camouflage</>; ASPD greatly increases when a <@eb.key>Partner Guard Elite</> is nearby."}
+{"id":2772,"en":"ASPD greatly increases when a <Dublinn Partner Guard Elite> is nearby"}
+{"id":2774,"en":"Each attack deals some <@eb.key>Corrosion Damage</>; after several attacks, the next attack deals increased damage."}
+{"id":2775,"en":"Each attack deals some <$ba.dt.erosion>Corrosion Damage</>"}
+{"id":2776,"en":"After several attacks, the next attack deals increased damage"}
+{"id":2778,"en":"Spawns <@eb.key>2</> [Wooden Auspicious Seal] when defeated."}
+{"id":2781,"en":"Spawns <@eb.key>2</> [Mahogany Auspicious Seal] when defeated."}
+{"id":2784,"en":"Does not attack, cannot be blocked; requires <@eb.key>2</> hits to defeat"}
+{"id":2787,"en":"Does not attack, cannot be blocked; requires <@eb.key>3</> hits to defeat"}

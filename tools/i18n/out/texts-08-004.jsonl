@@ -1,0 +1,50 @@
+{"id":2400,"en":"ATK <@ba.vup>+60%</>; if the holder is a [Laterano] Alliance Operator, each attack has a 35% chance to fire an extra bullet at an enemy within Attack Range, dealing Physical damage equal to <@ba.vup>150%</> ATK\n<@ba.acrem>If this [Laterano] Alliance Operator also equips \"Laterano Bridge Clip\", bullet damage becomes <@ba.vup>300%</> ATK</>"}
+{"id":2401,"en":"HP <@ba.vup>+70%</>; if the holder is a [Yan] Alliance Operator, for each Operator obtained this Round, ASPD <@ba.vup>+25</> after the battle begins (max 3 stacks)\n<@ba.acrem>If this [Yan] Alliance Operator also equips \"Yan Dagger\", gain <@ba.vup>2</> Funds each time an Operator is obtained (max 3 times per Round)</>"}
+{"id":2402,"en":"Gain <@ba.vup>300</> <$ba.dmgresistance>Damage Reduction</>; if the holder is an [Aegir] Alliance Operator, when taking damage, deals Arts damage equal to <@ba.vup>50%</> of own ATK to the damage source (at most once every 0.5s)\n<@ba.acrem>If this [Aegir] Alliance Operator also equips \"Aegir Greatblade\", deals an additional hit of Arts damage equal to <@ba.vup>50%</> ATK when taking damage (at most once every 0.5s)</>"}
+{"id":2403,"en":"ASPD <@ba.vup>+55</>; if the holder is a [Victoria] Alliance Operator, it gains the special effects of all Victorian Hammers currently on the field\n<@ba.acrem>If this [Victoria] Alliance Operator also equips a \"Victorian Hammer\" series Equipment, that \"Victorian Hammer\" special effect is enhanced (doubled)</>"}
+{"id":2404,"en":"RES <@ba.vup>+50</>; if the holder is a [Kjerag] Alliance Operator, enemies within its Attack Range afflicted by <$ba.cold>Cold</> or <$ba.frozen>Freeze</> take Arts damage equal to <@ba.vup>30%</> of its ATK every second\n<@ba.acrem>If this [Kjerag] Alliance Operator also equips \"Kjerag Unmelting Ice\", the Arts damage per second to <$ba.cold>Cold</> or <$ba.frozen>Frozen</> enemies within its Attack Range increases to <@ba.vup>100%</> ATK</>"}
+{"id":2405,"en":"Initial SP <@ba.vup>+50</>; if the holder is a [Sargon] Alliance Operator, it immediately restores <@ba.vup>30</> SP when its first Skill ends\n<@ba.acrem>If this [Sargon] Alliance Operator also equips \"Sargon Strong Tea\", each Skill activation restores <@ba.vup>3</> SP to all [Sargon] Operators</>"}
+{"id":2406,"en":"Destroyed when equipped; afterward gain <@ba.vup>2</> extra Funds at the start of each Round"}
+{"id":2407,"en":"Destroyed when equipped; gain <@ba.vup>2</> random Operators sharing this Operator's Alliance"}
+{"id":2408,"en":"Destroyed when equipped; randomly take <@ba.vup>2</> Operators from the current Dispatch Center (those Operators are removed from the Dispatch Center)"}
+{"id":2409,"en":"Destroyed when equipped; gain <@ba.vup>4</> extra Funds next Round"}
+{"id":2410,"en":"ATK <@ba.vup>+60%</>; if equipped together with \"Pegasus Helm\", deals an additional <@ba.vup>30%</> True damage when dealing damage"}
+{"id":2411,"en":"HP <@ba.vup>+75%</>; if equipped together with \"Pegasus Lance\", restores <@ba.vup>8%</> Max HP per second."}
+{"id":2412,"en":"Damage dealt within <@ba.vup>15</> seconds after deployment increases to <@ba.vup>160%</>, then gradually decays"}
+{"id":2413,"en":"Redeploy Time <@ba.vup>-60%</>; if the holder is a [Kazimierz] Alliance Operator, for 20s after activating its Skill, enemies within Attack Range have ASPD <@ba.vup>-35%</> and Movement Speed <@ba.vup>-35%</>\n<@ba.acrem>If this [Kazimierz] Alliance Operator also equips \"Kazimierz Tournament Banner\", during its Skill it gains ATK <@ba.vup>+100%</> and does not retreat upon taking lethal damage, leaving the field when the Skill ends</>"}
+{"id":2414,"en":"ASPD <@ba.vup>+25</>; allied Operators on the left and right of the holder's facing direction gain ASPD <@ba.vup>+15</>"}
+{"id":2415,"en":"SP Recovery <@ba.vup>+0.35</>/s; if the holder is a [Siracusa] Alliance Operator, while in Camouflage its ATK gradually increases to <@ba.vup>200%</>, lasting until it first deals damage after Camouflage ends or leaves the field\n<@ba.acrem>If this [Siracusa] Alliance Operator also equips \"Siracusan Formal Suit\", its first damage after losing Camouflage deals additional True damage equal to <@ba.vup>800%</> ATK</>"}
+{"id":2416,"en":"Destroyed when equipped; gain a random <@ba.vup>2~12</> Funds"}
+{"id":2417,"en":"Destroyed when equipped; the holder's Alliance Stacks <@ba.vup>+6</> (Alliance need not be active)"}
+{"id":2418,"en":"Holder loses <@ba.vdown>60</> HP per second; ATK <@ba.vup>+60%</>"}
+{"id":2419,"en":"Adds 3 Barrier Drone·P to your <@ba.vup>next battle</>; achieve a Perfect Battle during your own action phase to gain 2 Funds"}
+{"id":2420,"en":"Adds 2 Arts Master A2 to <@ba.vdown>every</> subsequent battle; achieve a Perfect Battle during your own action phase to gain 2 Funds"}
+{"id":2421,"en":"Adds 1 Arts Master A2 to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>2</> Funds"}
+{"id":2422,"en":"Adds 1 \"Eye of Sankta\" to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>2</> Funds"}
+{"id":2423,"en":"Adds 1 Nucleus Spawn to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>3</> Funds"}
+{"id":2424,"en":"Adds 1 Phantom Leader to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>1</> Funds"}
+{"id":2425,"en":"Adds 1 Shanhaizhong Leader to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>2</> Funds"}
+{"id":2426,"en":"Adds 1 Heavy Defender to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>1</> Funds"}
+{"id":2427,"en":"Adds 1 Heavy Crossbow Raider to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>2</> Funds"}
+{"id":2428,"en":"Adds 1 Shanhaizhong Leader to <@ba.vdown>every</> subsequent battle; whoever defeats it gains <@ba.vup>1</> Funds"}
+{"id":2429,"en":"Adds 1 Duke Duck to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>3</> Funds"}
+{"id":2430,"en":"Adds 1 Originium Slug to your <@ba.vup>next battle</>, but <@ba.vup>no</> Funds are gained"}
+{"id":2431,"en":"Adds 1 Gopnik to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>3</> Funds"}
+{"id":2432,"en":"Adds 1 Crying Kid to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>3</> Funds"}
+{"id":2433,"en":"Adds 1 Yuanzai to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>3</> Funds"}
+{"id":2434,"en":"Adds 1 Yaoguai to your <@ba.vup>next battle</>; achieve a Perfect Battle during your own action phase to gain <@ba.vup>1</> Funds"}
+{"id":2435,"en":"Adds 1 Raging Wagtail to your <@ba.vup>next battle</>; achieve a Perfect Battle during your own action phase to gain <@ba.vup>2</> Funds"}
+{"id":2436,"en":"Adds 1 Imperial Artillery Core Harbinger to your <@ba.vup>next battle</>; achieve a Perfect Battle during your own action phase to gain <@ba.vup>3</> Funds"}
+{"id":2437,"en":"Adds 1 Yaoguai to your next <@ba.vup>two battles</>; whoever defeats it gains <@ba.vup>1</> Funds"}
+{"id":2438,"en":"Adds 1 Raging Wagtail to your next <@ba.vup>two battles</>; whoever defeats it gains <@ba.vup>2</> Funds"}
+{"id":2439,"en":"Adds 1 Arts Master A1 to your next <@ba.vup>two battles</>; whoever defeats it gains <@ba.vup>3</> Funds"}
+{"id":2440,"en":"Adds 1 Arts Master A2 to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>1</> Funds"}
+{"id":2441,"en":"Adds 1 Withered Gathering Apostle to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>2</> Funds"}
+{"id":2442,"en":"Adds 1 Molong to your <@ba.vup>next battle</>; achieve a Perfect Battle during your own action phase to gain <@ba.vup>1</> Funds"}
+{"id":2443,"en":"Adds 1 Pengquan to your <@ba.vup>next battle</>; achieve a Perfect Battle during your own action phase to gain <@ba.vup>2</> Funds"}
+{"id":2444,"en":"Adds 1 Xinxing to your <@ba.vup>next battle</>; achieve a Perfect Battle during your own action phase to gain <@ba.vup>3</> Funds"}
+{"id":2445,"en":"Adds 1 Molong to your next <@ba.vup>two battles</>; whoever defeats it gains <@ba.vup>1</> Funds"}
+{"id":2446,"en":"Adds 1 Pengquan to your next <@ba.vup>two battles</>; whoever defeats it gains <@ba.vup>2</> Funds"}
+{"id":2447,"en":"Adds 1 Qingming to your next <@ba.vup>two battles</>; whoever defeats it gains <@ba.vup>3</> Funds"}
+{"id":2448,"en":"Adds 1 Qihong to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>1</> Funds"}
+{"id":2449,"en":"Adds 1 Xinxing to your <@ba.vup>next battle</>; whoever defeats it gains <@ba.vup>2</> Funds"}

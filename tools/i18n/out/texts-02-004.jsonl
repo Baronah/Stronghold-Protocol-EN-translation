@@ -1,0 +1,41 @@
+{"id":432,"en":"Next attack's ATK increases to <@ba.vup>200%</>"}
+{"id":436,"en":"Next attack restores HP equal to <@ba.vup>115%</> of Gummy's ATK to a nearby ally\n<@ba.rem>Can hold 1 charge</>"}
+{"id":438,"en":"When attacking, 10% chance to increase ATK to 150% for that attack and <$ba.stun>Stun</> the enemy for 0.5 seconds"}
+{"id":441,"en":"Starts cooking, stops attacking enemies for <@ba.vdown>10</> seconds, DEF <@ba.vup>+60%</>\nAfter cooking, focuses on healing nearby allies, ATK <@ba.vup>+40%</>"}
+{"id":442,"en":"Healing increased by <@ba.kw>15%</> when healing allies below 50% HP"}
+{"id":443,"en":"Next attack restores HP equal to <@ba.vup>130%</> of Gummy's ATK to a nearby ally\n<@ba.rem>Can hold 2 charges</>"}
+{"id":444,"en":"When attacking, 15% chance to increase ATK to 200% for that attack and <$ba.stun>Stun</> the enemy for 1 second"}
+{"id":445,"en":"Starts cooking, stops attacking enemies for <@ba.vdown>10</> seconds, DEF <@ba.vup>+70%</>\nAfter cooking, focuses on healing nearby allies, ATK <@ba.vup>+50%</>"}
+{"id":447,"en":"Attacks deal <@ba.kw>Arts damage</> and inflict a brief <$ba.sluggish>Slow</> on the enemy"}
+{"id":450,"en":"<@ba.vdown>Stops attacking</>; enemies within Attack Range are <$ba.sluggish>Slowed</> every <@ba.vup>1.7</> seconds"}
+{"id":451,"en":"Attacks deal <@ba.kw>Arts damage</> and inflict a <@ba.kw>long</> <$ba.sluggish>Slow</> on the enemy"}
+{"id":453,"en":"Slightly extends the duration of the Trait's <$ba.sluggish>Slow</>"}
+{"id":454,"en":"<@ba.vdown>Stops attacking</>; enemies within Attack Range are <$ba.sluggish>Slowed</> every <@ba.vup>1.6</> seconds"}
+{"id":456,"en":"Attacks <@ba.kw>all</> blocked enemies simultaneously"}
+{"id":458,"en":"ATK <@ba.vup>+100%</>, can no longer be targeted by other units' healing"}
+{"id":460,"en":"When an enemy within the 8 surrounding tiles is defeated, restores HP equal to 7% of own Max HP"}
+{"id":462,"en":"Physical damage taken reduced by <@ba.kw>20%</> while HP is above 50%"}
+{"id":463,"en":"ATK <@ba.vup>+115%</>, can no longer be targeted by other units' healing"}
+{"id":464,"en":"When an enemy within the 8 surrounding tiles is defeated, restores HP equal to 12% of own Max HP"}
+{"id":466,"en":"Immediately throws a vial that shatters and creates a spore cloud around it lasting <@ba.vup>5</> seconds\nAll enemies within the spore cloud are <$ba.sluggish>Slowed</> and lose their special abilities, taking Arts damage equal to <@ba.vup>50%</> of ATK per second"}
+{"id":468,"en":"While on the field, all [Supporter] Operators ATK +5%"}
+{"id":471,"en":"ATK <@ba.vup>+20%</>, normal attacks instead <@ba.vup>heal</> allied units"}
+{"id":472,"en":"SP recovery +0.2/s while there are enemies within Attack Range"}
+{"id":473,"en":"Immediately throws a vial that shatters and creates a spore cloud around it lasting <@ba.vup>5</> seconds\nAll enemies within the spore cloud are <$ba.sluggish>Slowed</> and lose their special abilities, taking Arts damage equal to <@ba.vup>60%</> of ATK per second"}
+{"id":474,"en":"While on the field, all [Supporter] Operators ATK +9%"}
+{"id":475,"en":"ATK <@ba.vup>+30%</>, normal attacks instead <@ba.vup>heal</> allied units"}
+{"id":477,"en":"Attacks deal <@ba.kw>AoE Arts damage</>"}
+{"id":479,"en":"ASPD <@ba.vup>+50</>, Talent <$ba.sluggish>Slow</> duration increased to <@ba.vup>1.6x</>"}
+{"id":481,"en":"Attacks inflict <$ba.sluggish>Slow</> on the target for 0.4 seconds"}
+{"id":484,"en":"ASPD <@ba.vup>+30</>"}
+{"id":485,"en":"DP Cost <@ba.kw>reduced</>"}
+{"id":486,"en":"ASPD <@ba.vup>+65</>, Talent <$ba.sluggish>Slow</> duration increased to <@ba.vup>1.7x</>"}
+{"id":487,"en":"Attacks inflict <$ba.sluggish>Slow</> on the target for 0.6 seconds"}
+{"id":489,"en":"Attacks deal <@ba.kw>Arts damage</> and can inflict <@ba.kw>Elemental Damage</>"}
+{"id":491,"en":"ASPD <@ba.vup>+70</>, attacks 2 targets simultaneously"}
+{"id":493,"en":"Attacks also inflict <$ba.dt.neural2>Nervous Impairment</> (priority), <$ba.dt.burning2>Burn Damage</>, and <$ba.dt.apoptosis2>Necrosis Damage</> equal to 18% of ATK; prioritizes targets not in Elemental Burst"}
+{"id":495,"en":"In [Stronghold Protocol], belongs to the [Harmony] Alliance"}
+{"id":497,"en":"Elemental Damage dealt to Elite and Leader enemies increased by <@ba.kw>18%</>"}
+{"id":498,"en":"ASPD <@ba.vup>+80</>, attacks 2 targets simultaneously"}
+{"id":500,"en":"Can throw <@ba.kw>Alchemy Units</> to assist in combat"}
+{"id":502,"en":"Throws an Alchemy Unit; for <@ba.vup>11</> seconds, ground enemies around the landing point take Arts damage equal to <@ba.vup>65%</> of ATK per second, and allied units restore HP equal to <@ba.vup>15%</> of ATK per second\n<@ba.rem>Can hold 1 charge</>"}

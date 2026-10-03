@@ -1,0 +1,50 @@
+{"id":2,"en":"[Intensive Care] At battle start, 1 random friendly Operator of each different Tier on the field gains +2 Stacks in their Alliances"}
+{"id":5,"en":"[United as One] When 3, 4, or 5+ Alliances are active on the field, all Operators gain ATK and HP +20/30/40% respectively"}
+{"id":8,"en":"[Befriend Heroes] The first 2 manual Refreshes each Round become special Refreshes: prioritize 1 <Yan> Operator\n<@ba.vdown>Experience may be incomplete while some <Yan> Operators are absent</>"}
+{"id":11,"en":"[Indestructible] Starting LP is 45"}
+{"id":14,"en":"[Headhunter] Every manual Refresh becomes a special Refresh: always offers 2 Operators of the same name and Freezes one of them; gain 1 <Pager Module> on Round 10\n<@ba.acrem><Pager Module>: Destroyed when equipped; immediately Refresh 3 Operators sharing that Operator's Alliance in the Dispatch Center and gain one of them for free! (not above current Dispatch Center level)</>"}
+{"id":15,"en":"Unlocked by clearing Round 9 in [Standard Simulation]"}
+{"id":18,"en":"[Private Fund] Gain 1 <Knight Piggy Bank> when entering the Rest Phase on Rounds 1, 4, 7, and 10\n<@ba.acrem><Knight Piggy Bank>: When equipped, gain 1~6 random Funds, then Destroy it</>"}
+{"id":22,"en":"[Secret of Fate Knots] The first 3 Operators knocked out in battle immediately revive!"}
+{"id":23,"en":"Unlocked by clearing Round 9 in [Perilous Simulation]"}
+{"id":26,"en":"[Yum Cha] Funds from Rounds 1 and 2 are held until Round 3; when entering the Rest Phase on Round 3, gain 1 random Tier 2 and 1 random Tier 4 Operator"}
+{"id":30,"en":"[Clear Reward] For every 20 Funds spent, gain 1 random Operator not above the current Dispatch Center level"}
+{"id":31,"en":"Unlocked by clearing Round 13 in [Perilous Simulation]"}
+{"id":33,"en":"[Erudite] After upgrading the Dispatch Center to level 2, 4, and 6, gain 1 special Refresh: Operators in that Refresh prioritize <Sargon> Operators\n<@ba.vdown>Experience may be incomplete while some <Sargon> Operators are absent</>"}
+{"id":34,"en":"Unlocked by clearing with 6 [Sargon] Operators in the final lineup"}
+{"id":36,"en":"[Talent Blind Box] From Round 4, gain 1 <Victoria> Operator every 2 Rounds\n<@ba.vdown>Experience may be incomplete while some <Victoria> Operators are absent</>"}
+{"id":37,"en":"Unlocked by clearing with 6 [Victoria] Operators in the final lineup"}
+{"id":40,"en":"[Snowland Gift] The first <Kjerag> Operator bought each Round costs 1 Funds\n<@ba.vdown>Experience may be incomplete while some <Kjerag> Operators are absent</>"}
+{"id":41,"en":"Unlocked by clearing with 6 [Kjerag] Operators in the final lineup"}
+{"id":44,"en":"[Custom Firearms] After spending a total of 55 Funds, gain 1 random Elite <Laterano> Operator of Tier 4 or higher\n<@ba.vdown>Experience may be incomplete while some <Laterano> Operators are absent</>"}
+{"id":45,"en":"Unlocked by accumulating 200 [Laterano] Alliance Stacks across simulations"}
+{"id":48,"en":"[Noble Sacrifice] When an <Aegir> Operator is knocked out, grant <Aegir> Alliance Stacks equal to that Operator's Tier\n<@ba.vdown>Experience may be incomplete while some <Aegir> Operators are absent</>"}
+{"id":49,"en":"Unlocked by accumulating 200 [Aegir] Alliance Stacks across simulations"}
+{"id":52,"en":"[Rush Dispatch] Friendly Operators' Redeploy Time -50% after each deployment"}
+{"id":53,"en":"Unlocked by clearing after obtaining 6 Specialist Operators in a single run"}
+{"id":56,"en":"[Drug Trial] At battle start, all friendly units in the rightmost column gain: each attack has a 25% chance to gain 1 Shield stack (max 1)"}
+{"id":59,"en":"[Recycling] When a ground Operator's Skill ends, 1 random Operator in the 4 surrounding tiles gains 3 SP"}
+{"id":63,"en":"[Unstable Element] Gain 1 special Equipment <Mutant Cell> on Round 3\n<@ba.acrem><Mutant Cell>: After battle, the wearer turns into a random Operator one Tier higher (max Tier 6)</>"}
+{"id":65,"en":"[Slow Simmer] At the start of Round 8, if only 1 Alliance is active, it gains 36 Stacks; otherwise all active Alliances gain 12 Stacks"}
+{"id":68,"en":"[Extra Training!] Gain 1 special Arts <Pointer> every 2 Rounds\n<@ba.acrem><Pointer>: When used, adds extra enemies to the next battle; gain Funds if your battle is perfect</>"}
+{"id":71,"en":"[Targeted Drop] Each time the Dispatch Center is upgraded, it Refreshes 3 random Equipment; choose and gain 1 of them"}
+{"id":74,"en":"[Commercial Packaging] Start with 1 <Packaging Plan>\n<@ba.acrem><Packaging Plan>: For every 8 Operators sold, gain 1 regular Operator sharing the wearer's Alliance</>"}
+{"id":77,"en":"[Scavenger Butterfly] When a friendly Operator is knocked out, remaining friendly units on the field gain ATK +20% (max 200%, lasts until that unit is knocked out or the battle ends)"}
+{"id":80,"en":"[Play to Strengths] All Physical and Arts damage dealt by Operators becomes weakness damage (damage type changes based on the enemy's DEF and RES)"}
+{"id":83,"en":"[Isomorphism] Gain 1 special Equipment <Isomorph> every 5 Rounds\n<@ba.acrem><Isomorph>: When equipped together with specific Equipment, the wearer counts as a member of a specific Alliance</>"}
+{"id":85,"en":"[Honor Student] On Round 1, gain 1 special Operator that can deal Nervous Impairment, Burn Damage, and Necrosis Damage; it belongs to the Harmony Alliance: can count as +1 member for some Alliances"}
+{"id":87,"en":"[True Face in Ink] If you have Operators of the same name on the field, those Operators gain ATK +30%\n[Painting Made Real] Gain 1 special Arts <Scroll Painting> on Round 1\n<@ba.acrem><Scroll Painting>: When used, copies 1 Operator within its range (including Elite status and carried Equipment)</>"}
+{"id":90,"en":"[Compound Interest] Leftover Funds carry over each Round; with at least 5 Funds left over, gain 1 extra Funds each Round"}
+{"id":93,"en":"[\"Mystery Shopper\"] From Round 5, some enemies you and your Teammates face may be replaced by <Duck Lord><Gopnik><Crying Kid><Yuanzai>; whoever defeats them gains 1 Funds (including the Unite Phase)"}
+{"id":95,"en":"[Omamori Power] At the start of each Round, trigger the on-gain effect of 1 Operator on the Battlefield once (prioritizes rightmost and bottommost)"}
+{"id":97,"en":"[Stand-in Doll] The first time each Round you sell an initial Operator, it is instead swapped with a random Operator in the Dispatch Center"}
+{"id":100,"en":"[Commanding Order] At battle start, for each Elite Operator on the field, Elite Operators gain ATK and HP +10%"}
+{"id":103,"en":"[Rally Signal] Gain 1 <Pager Module> when entering the Rest Phase on Rounds 4, 7, 10, and 13\n<@ba.acrem><Pager Module>: Destroyed when equipped; immediately Refresh 3 Operators sharing that Operator's Alliance in the Dispatch Center and gain one of them for free! (not above current Dispatch Center level)</>"}
+{"id":105,"en":"[Pure Crystallization] Gain 1 Elite <Doctor Projection> at the start of Round 1\n<@ba.acrem>Elite <Doctor Projection>: Can be equipped by any Operator; immediately promotes that Operator to an Elite Operator</>"}
+{"id":108,"en":"[Ties of All Walks] At the start of the Rest Phase on even Rounds, gain 1 random Operator from the Dispatch Center"}
+{"id":111,"en":"[Advance Together] On Rounds 8, 10, 12, and 14, gain 1 <Beacon>\n<@ba.acrem><Beacon>: When equipped, Destroys the carrier and Refreshes 2 Operators of the same Tier in the Dispatch Center, one of which can be gained for free; the original Operator is passed next Round to the Teammate with the most members of its Alliance</>"}
+{"id":113,"en":"[Business KPI] For each <Kazimierz> Operator bought, gain +1 Funds at the start of the next Round (max 3 Funds per Round)\n<@ba.vdown>Experience may be incomplete while some <Kazimierz> Operators are absent</>"}
+{"id":114,"en":"Unlocked by clearing with 6 [Kazimierz] Operators in the final lineup"}
+{"id":117,"en":"[Gang Operation] After manually Refreshing the Dispatch Center 6 times, gain 1 <Siracusa> Operator not above the current Dispatch Center level (max 2 per Round)\n<@ba.vdown>Experience may be incomplete while some <Siracusa> Operators are absent</>"}
+{"id":118,"en":"Unlocked by clearing with 6 [Siracusa] Operators in the final lineup"}
+{"id":121,"en":"[Share Alike] When entering the Rest Phase on even Rounds, the Dispatch Center special-Refreshes 2 Equipment, one of which can be gained for free; the Sargon Alliance effect <6 different [Sargon] Operators on field> is replaced with: after a [Sargon] Operator activates its Skill, Operators in the 8 surrounding tiles also enjoy the effects of its carried Equipment of Tier V or lower for 60 seconds\n<@ba.vdown>Experience may be incomplete while some <Sargon> Operators are absent</>"}

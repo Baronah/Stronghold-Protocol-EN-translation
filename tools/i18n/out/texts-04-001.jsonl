@@ -1,0 +1,49 @@
+{"id":909,"en":"ATK <@ba.vup>+40%</>, Attack Range <@ba.vdown>reduced</>; each prior use of this skill grants an additional ATK <@ba.vup>+20%</> (up to +60%)"}
+{"id":910,"en":"Immediately attacks once with <@ba.vup>180%</> ATK, ignoring <@ba.vup>210</> of the target's DEF\n<@ba.rem>Can hold 3 charges</>"}
+{"id":912,"en":"Consumes ammo to attack, with ATK increased to <@ba.kw>120%</>; slowly reloads ammo when not attacking (up to 8 rounds)"}
+{"id":914,"en":"Immediately fires special rounds for a double attack dealing <@ba.vup>160%</> ATK (increased to <@ba.vup>185%</> against stationary enemies)\n<@ba.rem>Can hold 1 charge</>"}
+{"id":916,"en":"When the skill is activated, sends the Cloudsplitter beast to attack, dealing Physical damage equal to 180% ATK and inflicting <$ba.cold>Cold</> for 3 seconds"}
+{"id":918,"en":"When out of ammo, the next reload loads 1 extra round"}
+{"id":919,"en":"Immediately fires special rounds for a double attack dealing <@ba.vup>180%</> ATK (increased to <@ba.vup>210%</> against stationary enemies)\n<@ba.rem>Can hold 2 charges</>"}
+{"id":921,"en":"ATK <@ba.vup>+65%</>, DEF <@ba.vup>+25%</>; each attack deals additional Arts damage equal to <@ba.vup>60%</> ATK and restores HP equal to <@ba.vup>70%</> ATK to one <@ba.rem>other</> nearby ally"}
+{"id":923,"en":"While deployed, all skills that recover SP when hit also recover 1 SP when the Operator attacks"}
+{"id":925,"en":"Can attack and prioritizes <$ba.sleep>Sleeping</> targets, with ATK increased to 140% against them"}
+{"id":928,"en":"The next attack deals Physical damage equal to <@ba.vup>200%</> ATK and restores HP equal to <@ba.vup>110%</> ATK to one nearby ally\n<@ba.rem>Can hold 1 charge</>"}
+{"id":930,"en":"ATK <@ba.vup>+55%</>; immediately puts all ground enemies on own tile to <$ba.sleep>Sleep</>, and all nearby allies restore HP equal to <@ba.vup>16%</> ATK per second"}
+{"id":931,"en":"Damage taken reduced by <@ba.kw>15%</>"}
+{"id":932,"en":"ATK <@ba.vup>+80%</>, DEF <@ba.vup>+30%</>; each attack deals additional Arts damage equal to <@ba.vup>70%</> ATK and restores HP equal to <@ba.vup>80%</> ATK to one <@ba.rem>other</> nearby ally"}
+{"id":933,"en":"The next attack deals Physical damage equal to <@ba.vup>220%</> ATK and restores HP equal to <@ba.vup>120%</> ATK to one nearby ally\n<@ba.rem>Can hold 2 charges</>"}
+{"id":934,"en":"ATK <@ba.vup>+70%</>; immediately puts all ground enemies on own tile to <$ba.sleep>Sleep</>, and all nearby allies restore HP equal to <@ba.vup>17%</> ATK per second"}
+{"id":937,"en":"The next attack deals Arts damage equal to <@ba.vup>130%</> ATK and hits twice\n<@ba.rem>Can hold 2 charges</>"}
+{"id":939,"en":"When attacking, 25% chance to increase ATK to 150% for that attack"}
+{"id":941,"en":"Controls <@ba.kw>Drones</> to deal <@ba.kw>Arts damage</>\nDrone damage increases when attacking the same enemy (up to 120% of the Operator's ATK)"}
+{"id":942,"en":"The next attack deals Arts damage equal to <@ba.vup>160%</> ATK and hits twice\n<@ba.rem>Can hold 3 charges</>"}
+{"id":944,"en":"All enemies within Attack Range have DEF <@ba.vup>-40%</> and RES <@ba.vup>-23%</>"}
+{"id":946,"en":"Enemies within Attack Range with less than 40% HP become <$ba.fragile>Fragile</> by 30%"}
+{"id":951,"en":"Attacks <@ba.vup>2</> targets simultaneously; all enemies within Attack Range have ASPD <@ba.vup>-40</>"}
+{"id":952,"en":"All enemies within Attack Range have DEF <@ba.vup>-45%</> and RES <@ba.vup>-26%</>"}
+{"id":953,"en":"Attacks <@ba.vup>2</> targets simultaneously; all enemies within Attack Range have ASPD <@ba.vup>-50</>"}
+{"id":954,"en":"Obtain a Cursed Doll (can store up to 1)\n<@ba.rem>Enemies around the Cursed Doll have ATK and DEF <@ba.vup>-25%</>; destroyed automatically after 15 seconds</>"}
+{"id":958,"en":"ATK <@ba.vup>+30%</>, Talent damage bonus increased to <@ba.vup>1.4</>x\n<@ba.rem>Infinite duration</>"}
+{"id":959,"en":"Obtain a Cursed Doll (can store up to 1)\n<@ba.rem>Enemies around the Cursed Doll have ATK and DEF <@ba.vup>-30%</>; destroyed automatically after 15 seconds</>"}
+{"id":960,"en":"ATK <@ba.vup>+40%</>, Talent damage bonus increased to <@ba.vup>1.5</>x\n<@ba.rem>Infinite duration</>"}
+{"id":962,"en":"Stops attacking; Block <@ba.vup>+1</>, DEF <@ba.vup>+75%</>, restores <@ba.vup>1%</> of Max HP per second"}
+{"id":966,"en":"Stops attacking; Block <@ba.vup>+1</>, DEF <@ba.vup>+95%</>, restores <@ba.vup>2%</> of Max HP per second"}
+{"id":968,"en":"Immediately deals Physical damage equal to <@ba.vup>155%</> ATK to up to <@ba.vup>5</> enemies within Attack Range, reducing their DEF by <@ba.vup>-30%</> for <@ba.vup>5</> seconds"}
+{"id":970,"en":"ATK increased to 135% when attacking aerial targets"}
+{"id":973,"en":"The next attack deals Physical damage equal to <@ba.vup>135%</> ATK and reduces the target's DEF by <@ba.vup>-25%</> for 5 seconds"}
+{"id":974,"en":"Immediately deals Physical damage equal to <@ba.vup>170%</> ATK to up to <@ba.vup>5</> enemies within Attack Range, reducing their DEF by <@ba.vup>-35%</> for <@ba.vup>5</> seconds"}
+{"id":975,"en":"The next attack deals Physical damage equal to <@ba.vup>150%</> ATK and reduces the target's DEF by <@ba.vup>-30%</> for 5 seconds"}
+{"id":977,"en":"Immediately gain <@ba.vup>7</> DP on activation; Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+65%</>, ASPD gradually decays from <@ba.vup>+160</> to +0; attacks all blocked enemies simultaneously, each attack <$ba.stun>Stuns</> enemies for <@ba.vup>0.2</> seconds\n<@ba.rem>If an enemy is defeated during the skill, gains Camouflage when the skill ends until the skill is next activated</>"}
+{"id":979,"en":"After first dealing damage to each enemy, Honeysuckle deals additional Arts damage equal to 30% ATK when damaging that enemy for 10 seconds"}
+{"id":981,"en":"While deployed, natural DP regeneration +10%; if no damage is taken for 4 seconds, restores 4% of Max HP per second"}
+{"id":984,"en":"The next attack deals additional Arts damage equal to <@ba.vup>215%</> ATK and grants <@ba.vup>1</> DP\n<@ba.rem>Can hold 3 charges</>"}
+{"id":986,"en":"Immediately gain <@ba.vup>5</> DP; deals Arts damage equal to <@ba.vup>200%</> ATK to up to 6 nearby enemies and makes them <$ba.sluggish>Sluggish</> for <@ba.vup>4.5</> seconds; enemies already <$ba.sluggish>Sluggish</> are also <$ba.stun>Stunned</> for <@ba.vup>4</> seconds\n<@ba.rem>Can hold 2 charges</>"}
+{"id":987,"en":"Can block 2 enemies; ATK and DEF +8% each while blocking an enemy"}
+{"id":988,"en":"Immediately gain <@ba.vup>8</> DP on activation; Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+80%</>, ASPD gradually decays from <@ba.vup>+170</> to +0; attacks all blocked enemies simultaneously, each attack <$ba.stun>Stuns</> enemies for <@ba.vup>0.2</> seconds\n<@ba.rem>If an enemy is defeated during the skill, gains Camouflage when the skill ends until the skill is next activated</>"}
+{"id":989,"en":"The next attack deals additional Arts damage equal to <@ba.vup>245%</> ATK and grants <@ba.vup>1</> DP\n<@ba.rem>Can hold 3 charges</>"}
+{"id":990,"en":"Immediately gain <@ba.vup>6</> DP; deals Arts damage equal to <@ba.vup>245%</> ATK to up to 6 nearby enemies and makes them <$ba.sluggish>Sluggish</> for <@ba.vup>4.5</> seconds; enemies already <$ba.sluggish>Sluggish</> are also <$ba.stun>Stunned</> for <@ba.vup>4.5</> seconds\n<@ba.rem>Can hold 2 charges</>"}
+{"id":993,"en":"Can select one <@ba.kw>Tactical Point</> within Attack Range to summon reinforcements; ATK increased to 150% when attacking enemies blocked by reinforcements"}
+{"id":995,"en":"Gradually gain <@ba.vup>10</> DP over the skill duration; attacks become <@ba.vup>triple attacks</>; when the wolfpack and Vigil damage units blocked by the wolfpack, they deal additional Arts damage equal to <@ba.vup>20%</> of Vigil's ATK"}
+{"id":997,"en":"Can summon a wolfpack at a Tactical Point, initially made of two \"Wolf Shadows\", to assist in combat; gains one more \"Wolf Shadow\" every 25 seconds (up to 3; each \"Wolf Shadow\" gives the wolfpack Block +1 and 1 extra hit per attack)"}
+{"id":999,"en":"When an enemy is blocked by the wolfpack, attacks from Vigil and the wolfpack ignore 175 of its DEF"}

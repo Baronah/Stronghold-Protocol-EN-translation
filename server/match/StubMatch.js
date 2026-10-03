@@ -225,7 +225,7 @@ export class StubMatch {
       })),
       fields: [],
       stub: true,
-      message: '对局核心尚未实现（平台占位 STUB）：全员确认本局信息或倒计时结束后将直接结算。',
+      message: 'Match core not implemented (STUB): the match settles once everyone confirms or the countdown ends.',
     };
   }
 

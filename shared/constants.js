@@ -10,7 +10,7 @@ export const ROOM_CODE_LEN = 4;
 export const NAME_MAX_LEN = 12;
 
 export const DIFFICULTIES = ['FUNNY', 'NORMAL', 'HARD', 'ABYSS'];
-export const DIFFICULTY_NAMES = { FUNNY: '标准模拟', NORMAL: '险境模拟', HARD: '绝境模拟', ABYSS: '终极模拟' };
+export const DIFFICULTY_NAMES = { FUNNY: 'Standard Simulation', NORMAL: 'Perilous Simulation', HARD: 'Dire Simulation', ABYSS: 'Ultimate Simulation' };
 export const DIFFICULTY_COLORS = { FUNNY: '#f6a329', NORMAL: '#e85a1a', HARD: '#e73118', ABYSS: '#ff0024' };
 
 // modeId in data/config.json = `mode_${type}_${difficulty.toLowerCase()}` with type single|multi
@@ -34,9 +34,9 @@ export const PHASE = Object.freeze({
 });
 
 export const PHASE_NAMES = {
-  LOBBY: '等待中', INFO_CHECK: '确认本局信息', BAND_DRAFT: '选择策略', BATTLE_CHECK: '协议启动',
-  ROUND_START: '回合开始', SP_DRAFT: '机变阶段', PREP: '休整期', COMBAT: '作战中', UNITE: '联防阶段',
-  SETTLE: '结算', FINAL_ASSAULT: '最终攻势', HIDDEN_CORE: '隐秘核心', RESULT: '模拟结束',
+  LOBBY: 'Waiting', INFO_CHECK: 'Confirm Match Info', BAND_DRAFT: 'Choose Strategy', BATTLE_CHECK: 'Protocol Start',
+  ROUND_START: 'Round Start', SP_DRAFT: 'Improv Phase', PREP: 'Rest Phase', COMBAT: 'In Combat', UNITE: 'Unite Phase',
+  SETTLE: 'Settlement', FINAL_ASSAULT: 'Final Assault', HIDDEN_CORE: 'Hidden Core', RESULT: 'Simulation Over',
 };
 
 // Board geometry on the 19x21 stage grid (row 0 = bottom). See DESIGN §3.
@@ -137,12 +137,12 @@ export const ERR = Object.freeze({
 });
 
 export const ERR_TEXT = {
-  BAD_MSG: '无效的请求', RATE: '操作过于频繁', NOT_IN_ROOM: '你不在房间中', ROOM_NOT_FOUND: '未找到该同盟密钥对应的房间',
-  ROOM_FULL: '房间已满', ROOM_STARTED: '模拟已开始', NOT_HOST: '只有房主可以操作', NOT_READY: '仍有玩家未就绪',
-  WRONG_PHASE: '当前阶段无法进行该操作', NO_FUNDS: '资金不足', HAND_FULL: '整备区已满', BOARD_FULL: '已达到部署上限',
-  BAD_TILE: '无法部署在该位置', BAD_TARGET: '无效的目标', SOLD_OUT: '已售出', MAX_LEVEL: '调度中心已达最高等级',
-  NOT_YOUR_TURN: '尚未轮到你', ALREADY: '已完成该操作', TEMP_NOT_EMPTY: '临时整备区不为空', ELIMINATED: '你已被淘汰',
-  INTERNAL: '服务器内部错误',
+  BAD_MSG: 'Invalid request', RATE: 'Too many actions, slow down', NOT_IN_ROOM: 'You are not in a room', ROOM_NOT_FOUND: 'No room found for this Alliance Key',
+  ROOM_FULL: 'Room is full', ROOM_STARTED: 'Simulation already started', NOT_HOST: 'Only the host can do that', NOT_READY: 'Some players are not ready',
+  WRONG_PHASE: 'Cannot do that in this phase', NO_FUNDS: 'Insufficient Funds', HAND_FULL: 'Bench is full', BOARD_FULL: 'Deployment limit reached',
+  BAD_TILE: 'Cannot deploy here', BAD_TARGET: 'Invalid target', SOLD_OUT: 'Sold Out', MAX_LEVEL: 'Dispatch Center is at max level',
+  NOT_YOUR_TURN: 'It is not your turn yet', ALREADY: 'Already done', TEMP_NOT_EMPTY: 'Temporary Bench is not empty', ELIMINATED: 'You have been eliminated',
+  INTERNAL: 'Internal server error',
 };
 
 // ---- Emotes (交流, research 09 §4) -----------------------------------------------------------------------------
@@ -156,53 +156,53 @@ export const ERR_TEXT = {
 // derived from the id (autochess_battle_fooldoctor_03…06 → pic_fooldoctor_04/05/06/08_battle).
 const emo = (id, sortId, picId, label) => Object.freeze({ id, sortId, picId, label });
 export const EMOTE_THEMES = Object.freeze([
-  { themeId: 'emoticon_autochess_basic', dir: 'basic', sortId: 100000, isBasic: true, name: '表情套组：卫戍协议', emotes: [
-    emo('autochess_battle_happy', 1001, 'pic_happy_battle', '开心'),
-    emo('autochess_battle_scared', 1002, 'pic_scared_battle', '害怕'),
-    emo('autochess_battle_sorry', 1003, 'pic_sorry_battle', '对不起'),
-    emo('autochess_battle_thanks', 1004, 'pic_thanks_battle', '谢谢'),
-    emo('autochess_battle_thinking', 1005, 'pic_thinking_battle', '思考'),
-    emo('autochess_battle_nice_cooperate', 1006, 'pic_cooperate_battle', '合作愉快'),
+  { themeId: 'emoticon_autochess_basic', dir: 'basic', sortId: 100000, isBasic: true, name: 'Emote Set: Stronghold Protocol', emotes: [
+    emo('autochess_battle_happy', 1001, 'pic_happy_battle', 'Happy'),
+    emo('autochess_battle_scared', 1002, 'pic_scared_battle', 'Scared'),
+    emo('autochess_battle_sorry', 1003, 'pic_sorry_battle', 'Sorry'),
+    emo('autochess_battle_thanks', 1004, 'pic_thanks_battle', 'Thanks'),
+    emo('autochess_battle_thinking', 1005, 'pic_thinking_battle', 'Thinking'),
+    emo('autochess_battle_nice_cooperate', 1006, 'pic_cooperate_battle', 'Nice teamwork'),
   ] },
-  { themeId: 'emoticon_originium_slug', dir: 'slug', sortId: 1001, isBasic: false, name: '表情套组：虫动', emotes: [
-    emo('slug_autochess_battle_nice_work', 2001, 'pic_nice_work_battle', '合作愉快！'),
-    emo('slug_autochess_battle_thanks', 2002, 'pic_thanks_battle', '谢谢！'),
-    emo('slug_autochess_battle_sorry', 2003, 'pic_sorry_battle', '对不起！'),
-    emo('slug_autochess_battle_bye', 2004, 'pic_bye_battle', '再见！'),
+  { themeId: 'emoticon_originium_slug', dir: 'slug', sortId: 1001, isBasic: false, name: 'Emote Set: Slug Moves', emotes: [
+    emo('slug_autochess_battle_nice_work', 2001, 'pic_nice_work_battle', 'Nice teamwork!'),
+    emo('slug_autochess_battle_thanks', 2002, 'pic_thanks_battle', 'Thanks!'),
+    emo('slug_autochess_battle_sorry', 2003, 'pic_sorry_battle', 'Sorry!'),
+    emo('slug_autochess_battle_bye', 2004, 'pic_bye_battle', 'Bye!'),
     emo('slug_autochess_battle_distrust', 2005, 'pic_distrust_battle', '？？？'),
-    emo('slug_autochess_battle_very_soon', 2006, 'pic_very_soon_battle', '很快就好！'),
+    emo('slug_autochess_battle_very_soon', 2006, 'pic_very_soon_battle', 'Almost done!'),
   ] },
-  { themeId: 'emoticon_autochess_basic_2', dir: 'basic_2', sortId: 100001, isBasic: true, name: '表情套组：卫戍协议', emotes: [
-    emo('autochess_battle_noproblem', 1007, 'pic_noproblem_battle', '没问题！'),
-    emo('autochess_battle_respect', 1008, 'pic_respect_battle', '敬礼！'),
-    emo('autochess_battle_call', 1009, 'pic_call_battle', '欢呼！'),
-    emo('autochess_battle_playingcool', 1010, 'pic_playingcool_battle', '酷！'),
-    emo('autochess_battle_sad', 1011, 'pic_sad_battle', '伤心'),
-    emo('autochess_battle_dying', 1012, 'pic_dying_battle', '快死了'),
+  { themeId: 'emoticon_autochess_basic_2', dir: 'basic_2', sortId: 100001, isBasic: true, name: 'Emote Set: Stronghold Protocol', emotes: [
+    emo('autochess_battle_noproblem', 1007, 'pic_noproblem_battle', 'No problem!'),
+    emo('autochess_battle_respect', 1008, 'pic_respect_battle', 'Salute!'),
+    emo('autochess_battle_call', 1009, 'pic_call_battle', 'Cheers!'),
+    emo('autochess_battle_playingcool', 1010, 'pic_playingcool_battle', 'Cool!'),
+    emo('autochess_battle_sad', 1011, 'pic_sad_battle', 'Sad'),
+    emo('autochess_battle_dying', 1012, 'pic_dying_battle', 'Dying'),
   ] },
-  { themeId: 'emoticon_foolsday_doctor', dir: 'fooldoctor', sortId: 1002, isBasic: false, name: '表情套组：博士士', emotes: [
-    emo('autochess_battle_fooldoctor_01', 1020, 'pic_fooldoctor_01_battle', '博士士 1'),
-    emo('autochess_battle_fooldoctor_02', 1021, 'pic_fooldoctor_02_battle', '博士士 2'),
-    emo('autochess_battle_fooldoctor_03', 1022, 'pic_fooldoctor_04_battle', '博士士 3'),
-    emo('autochess_battle_fooldoctor_04', 1023, 'pic_fooldoctor_05_battle', '博士士 4'),
-    emo('autochess_battle_fooldoctor_05', 1024, 'pic_fooldoctor_06_battle', '博士士 5'),
-    emo('autochess_battle_fooldoctor_06', 1025, 'pic_fooldoctor_08_battle', '博士士 6'),
+  { themeId: 'emoticon_foolsday_doctor', dir: 'fooldoctor', sortId: 1002, isBasic: false, name: 'Emote Set: Doctor-tor', emotes: [
+    emo('autochess_battle_fooldoctor_01', 1020, 'pic_fooldoctor_01_battle', 'Doctor-tor 1'),
+    emo('autochess_battle_fooldoctor_02', 1021, 'pic_fooldoctor_02_battle', 'Doctor-tor 2'),
+    emo('autochess_battle_fooldoctor_03', 1022, 'pic_fooldoctor_04_battle', 'Doctor-tor 3'),
+    emo('autochess_battle_fooldoctor_04', 1023, 'pic_fooldoctor_05_battle', 'Doctor-tor 4'),
+    emo('autochess_battle_fooldoctor_05', 1024, 'pic_fooldoctor_06_battle', 'Doctor-tor 5'),
+    emo('autochess_battle_fooldoctor_06', 1025, 'pic_fooldoctor_08_battle', 'Doctor-tor 6'),
   ] },
-  { themeId: 'emoticon_foolsday_amiya', dir: 'foolamiya', sortId: 1003, isBasic: false, name: '表情套组：米米子', emotes: [
-    emo('autochess_battle_foolamiya_01', 1040, 'pic_foolamiya_01_battle', '米米子 1'),
-    emo('autochess_battle_foolamiya_02', 1041, 'pic_foolamiya_02_battle', '米米子 2'),
-    emo('autochess_battle_foolamiya_03', 1042, 'pic_foolamiya_03_battle', '米米子 3'),
-    emo('autochess_battle_foolamiya_04', 1043, 'pic_foolamiya_04_battle', '米米子 4'),
-    emo('autochess_battle_foolamiya_05', 1044, 'pic_foolamiya_05_battle', '米米子 5'),
-    emo('autochess_battle_foolamiya_06', 1045, 'pic_foolamiya_06_battle', '米米子 6'),
+  { themeId: 'emoticon_foolsday_amiya', dir: 'foolamiya', sortId: 1003, isBasic: false, name: 'Emote Set: Mimiko', emotes: [
+    emo('autochess_battle_foolamiya_01', 1040, 'pic_foolamiya_01_battle', 'Mimiko 1'),
+    emo('autochess_battle_foolamiya_02', 1041, 'pic_foolamiya_02_battle', 'Mimiko 2'),
+    emo('autochess_battle_foolamiya_03', 1042, 'pic_foolamiya_03_battle', 'Mimiko 3'),
+    emo('autochess_battle_foolamiya_04', 1043, 'pic_foolamiya_04_battle', 'Mimiko 4'),
+    emo('autochess_battle_foolamiya_05', 1044, 'pic_foolamiya_05_battle', 'Mimiko 5'),
+    emo('autochess_battle_foolamiya_06', 1045, 'pic_foolamiya_06_battle', 'Mimiko 6'),
   ] },
-  { themeId: 'emoticon_foolsday_wisdel', dir: 'foolwisdel', sortId: 1004, isBasic: false, name: '表情套组：维维美', emotes: [
-    emo('autochess_battle_foolwisdel_01', 1060, 'pic_foolwisdel_01_battle', '维维美 1'),
-    emo('autochess_battle_foolwisdel_02', 1061, 'pic_foolwisdel_02_battle', '维维美 2'),
-    emo('autochess_battle_foolwisdel_03', 1062, 'pic_foolwisdel_03_battle', '维维美 3'),
-    emo('autochess_battle_foolwisdel_04', 1063, 'pic_foolwisdel_04_battle', '维维美 4'),
-    emo('autochess_battle_foolwisdel_05', 1064, 'pic_foolwisdel_05_battle', '维维美 5'),
-    emo('autochess_battle_foolwisdel_06', 1065, 'pic_foolwisdel_06_battle', '维维美 6'),
+  { themeId: 'emoticon_foolsday_wisdel', dir: 'foolwisdel', sortId: 1004, isBasic: false, name: 'Emote Set: Wiwime', emotes: [
+    emo('autochess_battle_foolwisdel_01', 1060, 'pic_foolwisdel_01_battle', 'Wiwime 1'),
+    emo('autochess_battle_foolwisdel_02', 1061, 'pic_foolwisdel_02_battle', 'Wiwime 2'),
+    emo('autochess_battle_foolwisdel_03', 1062, 'pic_foolwisdel_03_battle', 'Wiwime 3'),
+    emo('autochess_battle_foolwisdel_04', 1063, 'pic_foolwisdel_04_battle', 'Wiwime 4'),
+    emo('autochess_battle_foolwisdel_05', 1064, 'pic_foolwisdel_05_battle', 'Wiwime 5'),
+    emo('autochess_battle_foolwisdel_06', 1065, 'pic_foolwisdel_06_battle', 'Wiwime 6'),
   ] },
 ].map((t) => Object.freeze({ ...t, emotes: Object.freeze(t.emotes) })));
 /** Every emote with its theme: `{ id, sortId, picId, label, themeId, dir }`, in wheel order. */

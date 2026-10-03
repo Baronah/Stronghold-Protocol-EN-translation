@@ -119,6 +119,7 @@
 //     human is left at all the match ends ('abandoned'); when nobody alive is left it ends as 'eliminated'.
 
 import { C2S, unitStatsEntry } from '../../shared/protocol.js';
+import { tr } from '../i18n.js';
 import { PHASE, ERR, EMOTES, EMOTE_COOLDOWN_MS, GEO, modeIdFor, layerGainRoom } from '../../shared/constants.js';
 import { Battle } from '../sim/Battle.js';
 import { DataSource } from '../sim/simdata.js';
@@ -512,7 +513,7 @@ export class Match {
     }
     ps.lp = 0;
     ps.eliminate(passedRound);
-    this.tickerText(`${ps.name}博士中途退出了模拟`, FLOW_TICKER_PRIORITY);
+    this.tickerText(`Dr. ${ps.name} left the simulation`, FLOW_TICKER_PRIORITY);
     if (this.bossWaves && (phase === PHASE.ROUND_START || phase === PHASE.SP_DRAFT || phase === PHASE.PREP)) {
       // before the boss fight: pair the players left again (the prep preview shows the new partner / template); a
       // player moved to the other half re-checks its board there at once (recompute → deployMap, marks it private)
@@ -680,7 +681,7 @@ export class Match {
 
   toast(ps, kind, text) {
     if (!ps || ps.isBot || ps.left || !ps.connected) return;
-    this.sendTo(ps.playerId, { t: 'm.toast', kind, text });
+    this.sendTo(ps.playerId, { t: 'm.toast', kind, text: tr(text) });
   }
 
   /** Broadcast ticker from config.broadcasts by type; `param` picks the variant (SHOP_LEVEL level, BOSS_HIT share…). */
@@ -690,7 +691,7 @@ export class Match {
     if (param != null) b = list.find((x) => Array.isArray(x.params) && x.params.includes(String(param))) || b;
     const tpl = b && typeof b.text === 'string' ? b.text : null;
     if (!tpl) return;
-    const text = tpl.replace(/\{(\d)\}/g, (_, i) => (args[Number(i)] != null ? String(args[Number(i)]) : ''));
+    const text = tr(tpl).replace(/\{(\d)\}/g, (_, i) => (args[Number(i)] != null ? String(tr(args[Number(i)])) : ''));
     const msg = { t: 'm.ticker', text, id: b.id, type, priority: Number(b.priority) || 0, playerId };
     if (to) this.sendTo(to, msg);
     else this.broadcast(msg);
@@ -1291,7 +1292,7 @@ export class Match {
     if (this.draft.picks[ps.playerId]) return fail(ERR.ALREADY);
     if (this.draftTurn() !== ps.playerId) return fail(ERR.NOT_YOUR_TURN);
     if (typeof bandId !== 'string' || !this.gd.bandAllowed(bandId)) return fail(ERR.BAD_TARGET);
-    if (this.bandTaken(bandId, ps.playerId)) return fail(ERR.BAD_TARGET, '队友已选');
+    if (this.bandTaken(bandId, ps.playerId)) return fail(ERR.BAD_TARGET, 'Already picked by a teammate');
     this._applyBand(ps, bandId);
     return OK;
   }
@@ -1498,7 +1499,7 @@ export class Match {
     const rounds = bountyBattles(card);
     const b = {
       id: `bounty:${this.nextUid()}`,
-      card: { effectId: card.effectId ?? card.id ?? null, name: card.name ?? '悬赏', desc: card.desc ?? '', tier: card.tier ?? 1, coin: Math.max(0, Math.trunc(Number(card.coin) || 0)), payout: card.payout === 'perfect' ? 'perfect' : 'kill', rounds, multiRound: isMultiRoundBounty(card), enemyKey: card.enemyKey, count: Math.max(1, Math.min(20, Number.isInteger(card.count) ? card.count : 1)) },
+      card: { effectId: card.effectId ?? card.id ?? null, name: card.name ?? 'Bounty', desc: card.desc ?? '', tier: card.tier ?? 1, coin: Math.max(0, Math.trunc(Number(card.coin) || 0)), payout: card.payout === 'perfect' ? 'perfect' : 'kill', rounds, multiRound: isMultiRoundBounty(card), enemyKey: card.enemyKey, count: Math.max(1, Math.min(20, Number.isInteger(card.count) ? card.count : 1)) },
       roundsLeft: rounds,
     };
     ps.bounties.push(b);
@@ -1855,7 +1856,7 @@ export class Match {
     this.deadline = this.sched.instant ? 0 : this.sched.now() + Math.round((limit / this.gameSpeed) * 1000);
     this._defaultWatch();
     this.markPublic();
-    this.tickerText(`联防阶段：${plan.helpers.map((p) => p.name).join('、')} 迎战突破防线的敌人`, FLOW_TICKER_PRIORITY);
+    this.tickerText(`Unite Phase: ${plan.helpers.map((p) => p.name).join(', ')} take on the enemies that broke through`, FLOW_TICKER_PRIORITY);
     this._uniteLeftKey = null;
     this.runner = new FieldRunner(this, this.fields, {
       onTick: (runner) => this._uniteTick(runner),
@@ -2275,7 +2276,7 @@ export class Match {
       this._sendStart(ps.playerId, f, { watch: !f.players.includes(ps.playerId) });
     }
     this.markPublic();
-    this.tickerText(`联防阶段：${plan.helpers.map((p) => p.name).join('、')} 迎战突破防线的敌人`, FLOW_TICKER_PRIORITY);
+    this.tickerText(`Unite Phase: ${plan.helpers.map((p) => p.name).join(', ')} take on the enemies that broke through`, FLOW_TICKER_PRIORITY);
   }
 
   _finishUniteClient() {
@@ -2755,8 +2756,8 @@ export class Match {
       if (ps.lp <= 0) {
         ps.lp = 0;
         ps.eliminate(this.round);
-        this.toast(ps, 'error', '你的目标生命值耗尽，已被淘汰');
-        this.tickerText(`${ps.name}博士的目标生命值已耗尽`, FLOW_TICKER_PRIORITY);
+        this.toast(ps, 'error', 'Your LP ran out. You have been eliminated');
+        this.tickerText(`Dr. ${ps.name} has run out of LP`, FLOW_TICKER_PRIORITY);
       }
     }
     this.fields = [];
@@ -3023,7 +3024,7 @@ export class Match {
         if (eligible) {
           this.hiddenReached = true;
           this.bossPool = null;
-          this.tickerText('隐秘核心已解锁', FLOW_TICKER_PRIORITY);
+          this.tickerText('Hidden Core unlocked', FLOW_TICKER_PRIORITY);
           this.startRound(this.gd.hiddenRound);
         } else {
           this.finish({ victory, reason: victory ? 'victory' : 'defeat' });

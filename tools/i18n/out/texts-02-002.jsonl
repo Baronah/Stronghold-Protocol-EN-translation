@@ -1,0 +1,50 @@
+{"id":263,"en":"All Operators take <@ba.vup>-20%</> Physical and Arts damage; [Assist Operator] damage increased to <@ba.vup>120%</>, Elite [Assist] Operators' damage increased to <@ba.vup>140%</>"}
+{"id":264,"en":"All Operators take <@ba.vup>-20%</> Physical and Arts damage; [Assist Operator] damage increased to <@ba.vup>120%</>, Elite [Assist Operator] damage increased to <@ba.vup>140%</>"}
+{"id":265,"en":"ALL operators take -20% physical and magic damage; Assist Operator members deal damage x1.2 (elite Assist x1.4)."}
+{"id":266,"en":"\"Assist Operator\" (assist operators) = fallback bond (constData.fallbackBondId). DIY/self-selected 6-star operators whose faction matches no core bond become Assist Operators; some preset operators (Perfumer, Pinecone, Rose Salt, Civilight Eterna, Suzuran, Rosmontis, Alliance - Support Operator) are natively Assist."}
+{"id":267,"en":"noStack=true: no layer-scaled effect, but layers are still counted (Bahamut)."}
+{"id":269,"en":"<With 1 [Lone Wolf] Operator on the field>[Lone Wolf] Operator ATK and HP <@ba.vup>+60%</>, initial SP <@ba.vup>+15</> (disabled when 2 or more [Lone Wolf] Operators are on the field)"}
+{"id":270,"en":"<With <@ba.vup>1</> [Lone Wolf] Operator on the field>[Lone Wolf] Operator ATK and HP <@ba.vup>+60%</>, initial SP <@ba.vup>+15</><@ba.acrem> (disabled when 2 or more [Lone Wolf] Operators are on the field)</>"}
+{"id":271,"en":"exactly 1 distinct Lone Wolf on board"}
+{"id":272,"en":"That operator ATK +60%, maxHP +60%, +15 SP when deployed. Disabled when 2+ different Lone Wolf operators are on the board."}
+{"id":274,"en":"<With <@autochess.dgreen>2</> Elite Operators on the field>Elite Operators ATK <@ba.vup>+30%</>\n<With <@autochess.dgreen>5</> Elite Operators on the field>Elite Operators SP cost <@ba.vup>-30%</>\n<@ba.acrem>(Any Operator in Elite state can activate this Alliance)</>"}
+{"id":275,"en":"<With <@ba.vup>2</> Elite Operators on the field>Elite Operators ATK <@ba.vup>+30%</>\n<With <@ba.vup>5</> Elite Operators on the field>Elite Operators SP cost <@ba.vup>-30%</>\n<@ba.acrem>(Any Operator in Elite state can activate this Alliance)</>"}
+{"id":276,"en":"2 Elite Operators on board (any operators, duplicates count)"}
+{"id":277,"en":"isHiddenCharList=true, chessIdList empty: no member operators; elites are not \"members\" of Virtuoso (PRTS)."}
+{"id":280,"en":"When HP falls below a certain threshold, Physical and Arts damage taken is reduced, and [Overwhelming Calamity] additionally fires <Spiked Helm Shell>"}
+{"id":283,"en":"[Swords and Hammers of Old] When specific conditions are met during the simulation and the Hidden Core round is entered, <OpFor: Helm> gains <\"Helm-Cleaving Sword\"> and <\"Helm-Breaking Hammer\"> and appears in its complete form"}
+{"id":284,"en":"<\"Helm-Cleaving Sword\"> and <\"Helm-Breaking Hammer\"> are initially invulnerable; when shot down, a portion of the damage taken is transferred to <OpFor: Helm>"}
+{"id":288,"en":"ASPD gradually increases when attacking the same target"}
+{"id":289,"en":"[Final Punishment] Stops attacking, Movement Speed greatly increased, and charges at the unit with the highest DEF on the field. Deals Physical damage to units it passes"}
+{"id":290,"en":"[Unfinished Confession] When specific conditions are met during the simulation and the Hidden Core round is entered, <\"Gun-Shattering Spring\"> appears on the field, and <OpFor: Gun> takes greatly reduced Physical and Arts damage"}
+{"id":291,"en":"[Oath of Blind Faith] Links with all <\"Gun-Shattering Spring\"> on the field; a portion of damage taken by <\"Gun-Shattering Spring\"> is transferred to <OpFor: Gun>; friendly units on the [Oath of Blind Faith] link take Physical damage every second"}
+{"id":292,"en":"[Doomsday Sermon] Continuously summons all <\"Gun-Shattering Spring\"> on the field toward itself; <\"Gun-Shattering Spring\"> gains greatly increased Movement Speed and is immune to damage, dealing Physical damage to friendly units it passes"}
+{"id":294,"en":"While on the field, continuously summons <\"Echo\"> in [Dark Lament] form; when HP falls below a certain threshold, the summon interval is shortened"}
+{"id":295,"en":"Prioritizes attacking <\"Echo\"> in [Dark Lament] form"}
+{"id":296,"en":"When specific conditions are met during the simulation and the Hidden Core round is entered, <OpFor: String> appears together with <OpFor: Pipe>"}
+{"id":299,"en":"[Collapse] Deals Physical damage to several friendly units"}
+{"id":300,"en":"[Species Outbreak] After the battle lasts a long time, deducts LP from all targets"}
+{"id":302,"en":"Has a chance to dodge Physical and Arts attacks while not blocked; when blocked, can quickly move behind the blocker, leaving an <Ominous Phantom> in place"}
+{"id":304,"en":"When HP drops to half or below, DEF and RES increase, and [All Under Heaven] activates two pieces of Equipment each time"}
+{"id":305,"en":"[Repel] After the battle lasts a long time, deals Arts splash damage to all friendly units on the field, and deducts LP from all targets"}
+{"id":306,"en":"[Royal Decree] Locks onto a friendly unit and its 4 surrounding tiles, deals heavy Physical damage once to targets in range, and generates random Equipment on tiles within the area"}
+{"id":307,"en":"[All Under Heaven] When Equipment exists on the field, activates one piece of Equipment; different Equipment produces different effects."}
+{"id":309,"en":"[Icicle] Attacks deal Physical damage to friendly units in the entire column"}
+{"id":310,"en":"When HP falls below half, Physical and Arts damage taken is reduced, and [Icicle] and [Natural Surge] select one additional target"}
+{"id":312,"en":"When HP falls below a certain threshold, Physical and Arts damage taken is reduced, and [Overwhelming Calamity] additionally fires <Spiked Helm Shell>"}
+{"id":313,"en":"[Swords and Hammers of Old] When specific conditions are met during the simulation and the Hidden Core round is entered, <OpFor: Helm> reveals its complete form"}
+{"id":314,"en":"[Unfinished Confession] When specific conditions are met during the simulation and the Hidden Core round is entered, <\"Gun-Shattering Spring\"> appears on the field, and <OpFor: Gun> takes drastically reduced Physical and Arts damage"}
+{"id":315,"en":"[Oath of Blind Faith] Links with all <\"Gun-Shattering Spring\"> on the field; a portion of damage taken by <\"Gun-Shattering Spring\"> is transferred to <OpFor: Gun> and other <\"Gun-Shattering Spring\"> on the field; friendly units on the [Oath of Blind Faith] link take Physical damage every second"}
+{"id":319,"en":"ATK <@ba.vup>+80%</>, Attack Interval <@ba.vup>slightly reduced</>, prioritizes enemies using ranged weapons and is less likely to be targeted by enemies\n<@ba.rem>Attacks have 14 ammo; skill ends when ammo runs out (can be stopped at any time)</>"}
+{"id":321,"en":"After staying on the field for 20 seconds, ammo capacity of own ammo-type skills +2"}
+{"id":324,"en":"Each attack deals Physical damage equal to <@ba.vup>185%</> of ATK\n<@ba.rem>Attacks have 4 ammo; skill ends when ammo runs out (can be stopped at any time)</>"}
+{"id":325,"en":"ATK increases to <@ba.kw>110%</> when attacking aerial units"}
+{"id":326,"en":"ATK <@ba.vup>+100%</>, Attack Interval <@ba.vup>slightly reduced</>, prioritizes enemies using ranged weapons and is less likely to be targeted by enemies\n<@ba.rem>Attacks have 14 ammo; skill ends when ammo runs out (can be stopped at any time)</>"}
+{"id":327,"en":"After staying on the field for 20 seconds, ammo capacity of own ammo-type skills +3, and ammo capacity of ammo-type skills of 1 other random [Laterano] Operator +1"}
+{"id":328,"en":"Each attack deals Physical damage equal to <@ba.vup>200%</> of ATK\n<@ba.rem>Attacks have 4 ammo; skill ends when ammo runs out (can be stopped at any time)</>"}
+{"id":332,"en":"Max HP <@ba.vup>+30%</>, DEF <@ba.vup>+10%</>, RES <@ba.vup>+60%</>"}
+{"id":337,"en":"Max HP <@ba.vup>+30%</>, restores <@ba.vup>25</> HP per second"}
+{"id":339,"en":"Max HP <@ba.vup>+40%</>, DEF <@ba.vup>+15%</>, RES <@ba.vup>+70%</>"}
+{"id":341,"en":"Max HP <@ba.vup>+40%</>, restores <@ba.vup>30</> HP per second"}
+{"id":343,"en":"Attacks deal <@ba.kw>Arts damage</> and jump between <@ba.kw>3</> enemies, each jump reducing damage by 15% and inflicting a brief <$ba.sluggish>Slow</> (updated after Elite 2)"}
+{"id":345,"en":"ATK <@ba.vup>+80%</>, attacks <@ba.vup>no longer lose damage</> when jumping"}

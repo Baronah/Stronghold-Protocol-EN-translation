@@ -1,0 +1,50 @@
+{"id":1095,"en":"Attack Interval <@ba.vup>moderately reduced</>, attacks become <@ba.vup>2</>-round bursts; after hitting targets <@ba.vup>40</> times, attacks become <@ba.vup>4</>-round bursts for the rest of the skill"}
+{"id":1096,"en":"ATK <@ba.vup>+30%</>, attacks become <@ba.vup>2</>-round bursts, and gains <$ba.camou>Camouflage</>"}
+{"id":1098,"en":"The next attack has ATK increased to <@ba.vup>145%</> and attacks one additional time\n<@ba.rem>Can hold 1 charge</>"}
+{"id":1100,"en":"Each attack has a 25% chance to increase ATK to 130% and hit one additional target"}
+{"id":1102,"en":"When in the squad, all [Vanguard] Operators gain +6 initial SP"}
+{"id":1105,"en":"Attack Interval <@ba.vdown>increased</>, Block <@ba.vup>+1</>, ATK and DEF <@ba.vup>+60%</>, attacks become <@ba.vup>triple attacks</>"}
+{"id":1106,"en":"The next attack has ATK increased to <@ba.vup>160%</> and attacks one additional time\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1107,"en":"Attack Interval <@ba.vdown>increased</>, Block <@ba.vup>+1</>, ATK and DEF <@ba.vup>+90%</>, attacks become <@ba.vup>triple attacks</>"}
+{"id":1110,"en":"Attack Interval <@ba.vup>slightly reduced</>; <@ba.vup>20%</> of Physical and Arts damage taken by allied Operators within Attack Range is converted into HP loss over <@ba.vup>5</> seconds"}
+{"id":1112,"en":"Own ATK -5%, but allied Operators within Attack Range receive 15% more healing"}
+{"id":1115,"en":"The next heal restores HP equal to <@ba.vup>150%</> ATK\n<@ba.rem>Can hold 1 charge</>"}
+{"id":1116,"en":"Attack Interval <@ba.vup>reduced</>; <@ba.vup>30%</> of Physical and Arts damage taken by allied Operators within Attack Range is converted into HP loss over <@ba.vup>5</> seconds"}
+{"id":1117,"en":"The next heal restores HP equal to <@ba.vup>165%</> ATK\n<@ba.rem>Can hold 1 charge</>"}
+{"id":1119,"en":"Deals damage to <@ba.kw>all enemies</> within Attack Range\nHas 50% Physical and Arts Dodge and is less likely to become an enemy's <@ba.kw>attack target</>"}
+{"id":1121,"en":"Attack Interval <@ba.vup>slightly reduced</>, ATK <@ba.vup>+15%</>; the first Talent hits <@ba.vup>1</> additional target and inflicts <$ba.root>Bind</> for <@ba.vup>0.8</> seconds"}
+{"id":1123,"en":"When attacking, deals additional Arts damage equal to 50% ATK to the enemy with the lowest HP among the targets"}
+{"id":1125,"en":"ATK +10% while an enemy with less than half HP is within Attack Range"}
+{"id":1128,"en":"The next attack deals Physical damage equal to <@ba.vup>200%</> ATK, and the first Talent's damage multiplier is increased to <@ba.vup>2.0</>x\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1130,"en":"Attack Range <@ba.vup>expanded</>, ATK <@ba.vup>+90%</>; the first Talent hits <@ba.vup>2</> additional targets and inflicts <$ba.stun>Stun</> for <@ba.vup>0.7</> seconds; whenever an attack hits fewer than 3 enemies, loses <@ba.vup>15%</> of Max HP."}
+{"id":1131,"en":"All enemies within Attack Range have Movement Speed <@ba.kw>-20%</>"}
+{"id":1132,"en":"Attack Interval <@ba.vup>reduced</>, ATK <@ba.vup>+20%</>; the first Talent hits <@ba.vup>1</> additional target and inflicts <$ba.root>Bind</> for <@ba.vup>1</> second"}
+{"id":1133,"en":"The next attack deals Physical damage equal to <@ba.vup>230%</> ATK, and the first Talent's damage multiplier is increased to <@ba.vup>2.3</>x\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1134,"en":"Attack Range <@ba.vup>expanded</>, ATK <@ba.vup>+105%</>; the first Talent hits <@ba.vup>2</> additional targets and inflicts <$ba.stun>Stun</> for <@ba.vup>1</> second; whenever an attack hits fewer than 3 enemies, loses <@ba.vup>15%</> of Max HP."}
+{"id":1136,"en":"Deals damage to <@ba.kw>all enemies</> within Attack Range\nHas 65% Physical and Arts Dodge and is less likely to become an enemy's <@ba.kw>attack target</>"}
+{"id":1138,"en":"In <@ba.kw>Integrated Strategies</>, ASPD +50 and restores 4% HP per second"}
+{"id":1140,"en":"ATK <@ba.vup>+65%</>; when <$ba.levitate>Levitated</> enemies within Attack Range land, deals Arts damage equal to <@ba.vup>65%</> ATK to them"}
+{"id":1142,"en":"The first attack on each enemy has ATK increased to 110% and <$ba.levitate>Levitates</> the target for 2.5 seconds"}
+{"id":1145,"en":"The next attack deals Arts damage equal to <@ba.vup>150%</> ATK, and additional Arts damage equal to <@ba.vup>55%</> ATK to aerial enemies\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1146,"en":"ATK <@ba.vup>+80%</>; when <$ba.levitate>Levitated</> enemies within Attack Range land, deals Arts damage equal to <@ba.vup>80%</> ATK to them"}
+{"id":1147,"en":"The next attack deals Arts damage equal to <@ba.vup>180%</> ATK, and additional Arts damage equal to <@ba.vup>70%</> ATK to aerial enemies\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1149,"en":"Can block 2 enemies; uses <Support Devices> to assist in combat"}
+{"id":1151,"en":"Stops attacking, Max HP <@ba.vup>+40%</>, DEF <@ba.vup>+10%</>; device effect changes to grant the target Operator a <$ba.barrier>Barrier</> equal to <@ba.vup>6%</> of Catherine's Max HP per second (cannot exceed the Talent cap)"}
+{"id":1153,"en":"Carries 3 Support Devices (up to 2 deployed) that grant an Operator a <$ba.barrier>Barrier</> equal to 20% of Catherine's Max HP (if the target has not been attacked in the last 5 seconds, replenishes a <$ba.barrier>Barrier</> equal to 6% of Catherine's Max HP per second, up to the initial cap); device effects do not stack"}
+{"id":1156,"en":"Self and other Operators with a device <$ba.barrier>Barrier</> gain ATK <@ba.vup>+8%</> and DEF <@ba.vup>+8%</>"}
+{"id":1157,"en":"<Support Device> holding limit <@ba.kw>+1</> and DP Cost <@ba.kw>reduced</>"}
+{"id":1158,"en":"Stops attacking, Max HP <@ba.vup>+55%</>, DEF <@ba.vup>+15%</>; device effect changes to grant the target Operator a <$ba.barrier>Barrier</> equal to <@ba.vup>6%</> of Catherine's Max HP per second (cannot exceed the Talent cap)"}
+{"id":1159,"en":"Self and other Operators with a device <$ba.barrier>Barrier</> gain ATK <@ba.vup>+11%</> and DEF <@ba.vup>+11%</>"}
+{"id":1161,"en":"<$ba.root>Binds</> a distant target and creates a tornado that reduces nearby enemies' Movement Speed by <@ba.vup>-50%</>, dealing <@ba.vup>Arts damage</> equal to <@ba.vup>85%</> ATK every <@ba.vup>1.5</> seconds and pulling them toward the center with <@ba.vup>small force</>. When the skill ends, pulls enemies around the target location toward self with <@ba.vup>small force</>"}
+{"id":1163,"en":"While deployed, all [Abyssal Hunter] Operators restore 2.5% of Max HP per second and take 25% less Physical and Arts damage from [Sea Monster] enemies"}
+{"id":1165,"en":"ATK increased to 130% when attacking enemies with weight 3 or less"}
+{"id":1168,"en":"The next attack pulls the target toward self with <@ba.vup>moderate force</> and deals Physical damage equal to <@ba.vup>150%</> ATK\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1170,"en":"Attack Interval <@ba.vdown>increased</>, Attack Range expanded; each attack prioritizes 2 blocked targets, dealing Physical damage equal to <@ba.vup>135%</> ATK and pulling them toward self with <@ba.vup>moderate force</>"}
+{"id":1171,"en":"<$ba.root>Binds</> a distant target and creates a tornado that reduces nearby enemies' Movement Speed by <@ba.vup>-50%</>, dealing <@ba.vup>Arts damage</> equal to <@ba.vup>100%</> ATK every <@ba.vup>1.5</> seconds and pulling them toward the center with <@ba.vup>moderate force</>. When the skill ends, pulls enemies around the target location toward self with <@ba.vup>moderate force</>"}
+{"id":1172,"en":"The next attack pulls the target toward self with <@ba.vup>moderate force</> and deals Physical damage equal to <@ba.vup>180%</> ATK\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1173,"en":"Attack Interval <@ba.vdown>increased</>, Attack Range expanded; each attack prioritizes 2 blocked targets, dealing Physical damage equal to <@ba.vup>150%</> ATK and pulling them toward self with <@ba.vup>moderate force</>"}
+{"id":1175,"en":"Skills can <@ba.kw>Shift</> enemies; force is increased by one level when pulling distant enemies toward self\nCan be deployed on ranged tiles"}
+{"id":1177,"en":"Inflicts <$ba.cold>Cold</> for <@ba.vup>2.5</> seconds and deals Arts damage equal to <@ba.vup>130%</> ATK to all enemies within range; <$ba.charged>Charged</>: inflicts an additional stack of <$ba.cold>Cold</>"}
+{"id":1179,"en":"Attacks inflict <$ba.cold>Cold</> for 1 second; <$ba.cold>Cold</> enemies within range become 25% <$ba.fragile>Fragile</>, and <$ba.frozen>Frozen</> enemies within range have the <$ba.fragile>Fragile</> effect doubled"}
+{"id":1181,"en":"10 seconds after Gnosis is deployed, while Gnosis remains on the field, all [Kjerag] Operators gain <$ba.buffres>Resistance</>"}
+{"id":1184,"en":"The next attack <@ba.vup>hits twice</>, each dealing Arts damage equal to <@ba.vup>135%</> ATK"}

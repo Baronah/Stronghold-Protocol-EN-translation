@@ -1,0 +1,44 @@
+{"id":1936,"en":"When added to the squad, all [Siracusa] Operators' initial SP +5"}
+{"id":1939,"en":"Passive: Floating Units <@ba.vup>+1</>\n<@ba.rem>Manual activation toggles between the following state and the initial state:</>\nATK <@ba.vup>+14%</>, releases Floating Units that randomly lock onto non-moving enemies across the entire battlefield to attack; seeks a new target when the target moves or falls"}
+{"id":1941,"en":"Floating Units <@ba.vup>+3</>, Attack Range <@ba.vup>expanded</>, ATK <@ba.vup>+60%</>, releases Floating Units that randomly lock onto enemies to attack; Floating Unit attacks have a <@ba.vup>10%</> chance to inflict <$ba.fear>Fear</> on the target for <@ba.vup>1</> second\n<@ba.rem>Floating Units seek a new target after the locked target falls, and return to the Operator when the skill ends</>"}
+{"id":1942,"en":"Floating Units <@ba.vup>+2</>, ATK <@ba.vup>+60%</>, releases Floating Units in <@ba.vup>a special form</> that spread out across the entire battlefield, each chasing nearby enemies; upon reaching a target, inflicts <$ba.fear>Fear</> for <@ba.vup>2</> seconds and locks onto it to attack. Enemies near Floating Units have Movement Speed <@ba.vup>-40%</> and take Arts damage equal to <@ba.vup>100%</> ATK per second (non-stacking); <@ba.rem>Floating Units seek a new target after the locked target falls, and return to the Operator when the skill ends</>"}
+{"id":1943,"en":"When added to the squad, all [Siracusa] Operators' initial SP +5, and ASPD +10 after their skill is first activated"}
+{"id":1944,"en":"Passive: Floating Units <@ba.vup>+1</>\n<@ba.rem>Manual activation toggles between the following state and the initial state:</>\nATK <@ba.vup>+23%</>, releases Floating Units that randomly lock onto non-moving enemies across the entire battlefield to attack; seeks a new target when the target moves or falls"}
+{"id":1945,"en":"Floating Units <@ba.vup>+3</>, Attack Range <@ba.vup>expanded</>, ATK <@ba.vup>+80%</>, releases Floating Units that randomly lock onto enemies to attack; Floating Unit attacks have a <@ba.vup>10%</> chance to inflict <$ba.fear>Fear</> on the target for <@ba.vup>1</> second\n<@ba.rem>Floating Units seek a new target after the locked target falls, and return to the Operator when the skill ends</>"}
+{"id":1947,"en":"Normal attacks deal damage <@ba.kw>twice</> in succession"}
+{"id":1949,"en":"Performs a total of <@ba.vup>10</> consecutive slashes, each dealing Physical damage equal to <@ba.vup>180%</> ATK to up to <@ba.vup>5</> enemies; Talent trigger chance increased to <@ba.vup>100%</>, and continuously pulls enemies toward self with <@ba.vup>medium force</>; afterwards, deals Physical damage equal to <@ba.vup>300%</> ATK once and pulls enemies toward self with <@ba.vup>great force</>"}
+{"id":1951,"en":"When dealing damage, 10% chance to increase ATK to 160% and inflict <$ba.tremble>Tremble</> on the target for 5 seconds"}
+{"id":1953,"en":"When attacking <$ba.tremble>Trembling</> targets, ignores 25% of the target's DEF"}
+{"id":1956,"en":"The next attack deals Physical damage equal to <@ba.vup>175%</> ATK twice to up to <@ba.vup>5</> nearby ground enemies"}
+{"id":1958,"en":"Performs <@ba.vup>2</> slashes on up to <@ba.vup>5</> ground enemies in the area ahead (<@ba.vup>3</> slashes when attacking blocked enemies); Talent trigger chance increased to <@ba.vup>100%</>, each slash deals Physical damage equal to <@ba.vup>250%</> ATK\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1959,"en":"Skill damage <@ba.vup>+10%</>"}
+{"id":1960,"en":"Performs a total of <@ba.vup>10</> consecutive slashes, each dealing Physical damage equal to <@ba.vup>200%</> ATK to up to <@ba.vup>6</> enemies; Talent trigger chance increased to <@ba.vup>100%</>, and continuously pulls enemies toward self with <@ba.vup>medium force</>; afterwards, deals Physical damage equal to <@ba.vup>300%</> ATK once and pulls enemies toward self with <@ba.vup>great force</>"}
+{"id":1961,"en":"When dealing damage, 10% chance to increase ATK to 170% and inflict <$ba.tremble>Tremble</> on the target for 5 seconds"}
+{"id":1962,"en":"The next attack deals Physical damage equal to <@ba.vup>190%</> ATK twice to up to <@ba.vup>6</> nearby ground enemies"}
+{"id":1963,"en":"Performs <@ba.vup>2</> slashes on up to <@ba.vup>5</> ground enemies in the area ahead (<@ba.vup>3</> slashes when attacking blocked enemies); Talent trigger chance increased to <@ba.vup>100%</>, each slash deals Physical damage equal to <@ba.vup>280%</> ATK\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1965,"en":"Attacks ignore <@ba.vup>70</> of the enemy's DEF"}
+{"id":1966,"en":"ATK +8%; when attacking <$ba.tremble>Trembling</> targets, ignores 33% of the target's DEF; when a ground enemy first enters Attack Range, inflicts <$ba.tremble>Tremble</> on it for 6 seconds"}
+{"id":1968,"en":"Attack Range expanded to the entire battlefield; heals become <@ba.vup>5</> consecutive shots, each healing <@ba.vup>35%</> and restoring <$ba.dt.element>Elemental Damage</> by the same amount, prioritizing different targets; Talent 2 effect increased to <@ba.vup>2.9</>x"}
+{"id":1970,"en":"Normal heals grant the target an additional bonus heal every second that heals and restores <$ba.dt.element>Elemental Damage</> by 10% of the heal amount, lasting 6 seconds (stacks up to 3 times)"}
+{"id":1972,"en":"Allied units within Attack Range gain Max HP +6% and take 12% less <$ba.dt.element>Elemental Damage</>"}
+{"id":1975,"en":"ATK <@ba.vup>+20%</>, heals one additional unit each time; all allied units within Attack Range restore <$ba.dt.element>Elemental Damage</> equal to <@ba.vup>4%</> of Eyjafjalla the Hvit Aska's ATK per second\n<@ba.rem>Infinite duration</>"}
+{"id":1977,"en":"Immediately heals all allied units within Attack Range once and creates an area <$ba.epbarrier>Damage Barrier</> lasting <@ba.vup>12</> seconds that absorbs <$ba.dt.element>Elemental Damage</> equal to <@ba.vup>500%</> ATK for allied units within the area"}
+{"id":1978,"en":"Attack Range expanded to the entire battlefield; heals become <@ba.vup>5</> consecutive shots, each healing <@ba.vup>45%</> and restoring <$ba.dt.element>Elemental Damage</> by the same amount, prioritizing different targets; Talent 2 effect increased to <@ba.vup>3.8</>x"}
+{"id":1979,"en":"Allied units within Attack Range gain Max HP +8% and take 14% less <$ba.dt.element>Elemental Damage</>"}
+{"id":1980,"en":"ATK <@ba.vup>+30%</>, heals one additional unit each time; all allied units within Attack Range restore <$ba.dt.element>Elemental Damage</> equal to <@ba.vup>6%</> of Eyjafjalla the Hvit Aska's ATK per second\n<@ba.rem>Infinite duration</>"}
+{"id":1981,"en":"Immediately heals all allied units within Attack Range once and creates an area <$ba.epbarrier>Damage Barrier</> lasting <@ba.vup>14</> seconds that absorbs <$ba.dt.element>Elemental Damage</> equal to <@ba.vup>650%</> ATK for allied units within the area"}
+{"id":1983,"en":"ASPD <@ba.vup>+8</> when there are allied units suffering Elemental Damage within Attack Range"}
+{"id":1984,"en":"Normal heals grant the target an additional bonus heal every second that heals and restores <$ba.dt.element>Elemental Damage</> by 13% of the heal amount, lasting 8 seconds (stacks up to 3 times)"}
+{"id":1992,"en":"at shopDraft.rounds (R11): six slots drawn with replacement (VI, VI, V, Alliance Coin, 2 × V / IV / III / Alliance Coin); other rounds: random normal EQUIP shop items of tiers I–VI (duplicates allowed) — the same item can come twice"}
+{"id":2104,"en":"All enemies receive a debuff: ATK -5%"}
+{"id":2106,"en":"All enemies receive a debuff: DEF -100"}
+{"id":2108,"en":"All enemies receive a debuff: RES -3"}
+{"id":2110,"en":"Elite enemies receive a debuff: ATK -6%"}
+{"id":2112,"en":"Elite enemies receive a debuff: DEF -150"}
+{"id":2114,"en":"Elite enemies receive a debuff: RES -5"}
+{"id":2116,"en":"Leader enemies receive a debuff: ATK -7%"}
+{"id":2118,"en":"Leader enemies receive a debuff: DEF -200"}
+{"id":2120,"en":"Leader enemies receive a debuff: RES -7"}
+{"id":2129,"en":"Perilous R6 drafts like R3"}
+{"id":2130,"en":"other rounds (Standard / Perilous) keep the previous draw: tiers I–VI with replacement"}
+{"id":2131,"en":"other rounds (Standard / Perilous) keep every card, uniform, with replacement"}

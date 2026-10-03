@@ -8,9 +8,6 @@
 //                                /data.js → a generated browser stand-in of server/data.js (the sim's content modules
 //                                           import `../../../data.js`; in the browser it serves the data injected with
 //                                           /sim/simdata.js setSimData). No other server file is ever served.
-//                                /media/bgm/act1 → public/assets/audio/bgm/act1.mp3 — the same audio files, addressed
-//                                           **without** an extension so download managers (IDM / 迅雷 …) stop popping a
-//                                           "下载文件信息" dialog for every BGM track (shared/media.js, public/js/media.js)
 //     MIME types incl. .mjs/.js text/javascript, .skel application/octet-stream, .atlas text/plain;
 //     gzip for text-like types, .skel and uncompressed fonts when the client accepts it (small files are
 //     compressed once and cached in memory); strong ETag + Last-Modified with 304s; Cache-Control
@@ -42,7 +39,6 @@ import { Network, SessionRegistry, NET_DEFAULTS } from './net.js';
 import { Lobby } from './lobby.js';
 import { getData, loadData } from './data.js';
 import { PROTOCOL_VERSION, APP_VERSION } from '../shared/constants.js';
-import { MEDIA_PREFIX, AUDIO_EXTS } from '../shared/media.js';
 
 /** Repository root. */
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -245,11 +241,11 @@ const escapeHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', 
 
 function errorPage(status, title, detail = '') {
   return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${status} · 卫戍协议：盟约</title><style>
+<title>${status} · Stronghold Protocol: Alliance</title><style>
 :root{color-scheme:dark}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#111614;color:#d8e3de;font:16px/1.6 "Noto Sans SC",system-ui,sans-serif}
 main{border:1px solid #2c3a35;padding:32px 40px;max-width:520px;text-align:center}h1{margin:0;color:#4ed8af;font-size:56px;letter-spacing:4px}
 p{margin:8px 0}a{color:#4ed8af}</style></head><body><main><h1>${status}</h1><p>${escapeHtml(title)}</p>
-${detail ? `<p style="opacity:.6">${escapeHtml(detail)}</p>` : ''}<p><a href="/">返回首页 · Back to home</a></p></main></body></html>`;
+${detail ? `<p style="opacity:.6">${escapeHtml(detail)}</p>` : ''}<p><a href="/">Back to home</a></p></main></body></html>`;
 }
 
 function sendError(req, res, status, title, detail) {
@@ -303,9 +299,9 @@ export function createStaticHandler({ publicDir, dataDir, sharedDir, simDir = pa
 
   return async function serveStatic(req, res, rawPath, query) {
     let decoded;
-    try { decoded = decodeURIComponent(rawPath); } catch { sendError(req, res, 400, '请求地址无效 · Bad request'); return; }
+    try { decoded = decodeURIComponent(rawPath); } catch { sendError(req, res, 400, 'Bad request'); return; }
     if (!decoded.startsWith('/') || decoded.includes('\0') || decoded.includes('\\')) {
-      sendError(req, res, 400, '请求地址无效 · Bad request');
+      sendError(req, res, 400, 'Bad request');
       return;
     }
     if (decoded === '/data.js') {
@@ -315,25 +311,20 @@ export function createStaticHandler({ publicDir, dataDir, sharedDir, simDir = pa
       res.end(req.method === 'HEAD' ? undefined : shimBody);
       return;
     }
-    // Extension-less audio (download-manager avoidance): /media/bgm/act1 → /assets/audio/bgm/act1.mp3
-    if (decoded.startsWith(MEDIA_PREFIX)) {
-      await serveMedia(req, res, decoded.slice(MEDIA_PREFIX.length), query, publicDir, gzipCache, log);
-      return;
-    }
     // Bare mount paths (e.g. "/data") → treat as the mount directory.
     const mount = mounts.find((m) => decoded.startsWith(m.prefix) || decoded === m.prefix.slice(0, -1)) || mounts[mounts.length - 1];
     const rest = decoded.length > mount.prefix.length ? decoded.slice(mount.prefix.length) : '';
     const segments = rest.split('/').filter((s) => s.length > 0);
-    if (segments.some((s) => s === '..' || s === '.')) { sendError(req, res, 403, '禁止访问 · Forbidden'); return; }
-    if (segments.some((s) => s.startsWith('.'))) { sendError(req, res, 404, '页面不存在 · Not found'); return; }
+    if (segments.some((s) => s === '..' || s === '.')) { sendError(req, res, 403, 'Forbidden'); return; }
+    if (segments.some((s) => s.startsWith('.'))) { sendError(req, res, 404, 'Not found'); return; }
     if (mount.only && (!segments.length || !mount.only.has(path.extname(segments[segments.length - 1]).toLowerCase())
       // (case-insensitive: the host may be Windows / macOS, where NODEDATA.JS opens nodeData.js)
       || (mount.deny && mount.deny.has(segments[segments.length - 1].toLowerCase())))) {
-      sendError(req, res, 404, '页面不存在 · Not found');
+      sendError(req, res, 404, 'Not found');
       return;
     }
     let absPath = path.join(mount.dir, ...segments);
-    if (absPath !== mount.dir && !absPath.startsWith(mount.dir + path.sep)) { sendError(req, res, 403, '禁止访问 · Forbidden'); return; }
+    if (absPath !== mount.dir && !absPath.startsWith(mount.dir + path.sep)) { sendError(req, res, 403, 'Forbidden'); return; }
 
     let stat;
     let viaDirectory = false;
@@ -368,62 +359,17 @@ export function createStaticHandler({ publicDir, dataDir, sharedDir, simDir = pa
         res.writeHead(200, { 'Content-Type': MIME['.json'], 'Cache-Control': 'no-cache', 'Content-Length': EMPTY_LOCAL_ART.length });
         res.end(req.method === 'HEAD' ? undefined : EMPTY_LOCAL_ART);
       } else if (e && (e.code === 'ENOENT' || e.code === 'ENOTDIR' || e.code === 'EISDIR' || e.code === 'ENAMETOOLONG')) {
-        sendError(req, res, 404, '页面不存在 · Not found', decoded.length <= 200 ? decoded : '');
+        sendError(req, res, 404, 'Not found', decoded.length <= 200 ? decoded : '');
       } else if (e && (e.code === 'EACCES' || e.code === 'EPERM')) {
-        sendError(req, res, 403, '禁止访问 · Forbidden');
+        sendError(req, res, 403, 'Forbidden');
       } else {
         log.error('[http] stat failed', e);
-        sendError(req, res, 500, '服务器内部错误 · Internal error');
+        sendError(req, res, 500, 'Internal error');
       }
       return;
     }
     await serveFile(req, res, absPath, stat, mount.name, segments, query, gzipCache, log);
   };
-}
-
-/**
- * Extension-less audio route: `/media/bgm/act1` → `public/assets/audio/bgm/act1.mp3`.
- *
- * Clients ask for audio through this path because download managers (IDM, 迅雷, FDM …) hijack XHR/fetch whose
- * URL ends in a media extension and pop a "下载文件信息" dialog for every BGM track — see `public/js/media.js`.
- * Requests for the direct `/assets/audio/…` URLs keep working (they are the fallback for plain static hosts).
- * `MEDIA_PREFIX` / `AUDIO_EXTS` live in `shared/media.js`: the browser decides which URLs to rewrite with the
- * same two values, and they must not drift apart.
- */
-async function serveMedia(req, res, rest, query, publicDir, gzipCache, log) {
-  const root = path.join(path.resolve(publicDir), 'assets', 'audio');
-  const segments = String(rest || '').split('/').filter((s) => s.length > 0);
-  if (!segments.length || rest.endsWith('/')) { sendError(req, res, 404, '页面不存在 · Not found'); return; }
-  if (segments.some((s) => s === '..' || s === '.')) { sendError(req, res, 403, '禁止访问 · Forbidden'); return; }
-  // A leading or trailing dot would address something else (dotfiles, "x..mp3") — and the client never asks for it.
-  if (segments.some((s) => s.startsWith('.') || s.endsWith('.'))) { sendError(req, res, 404, '页面不存在 · Not found'); return; }
-
-  const last = segments[segments.length - 1];
-  const given = path.extname(last).toLowerCase();
-  const wanted = AUDIO_EXTS.includes(given) ? given : '';
-  const stem = wanted ? last.slice(0, -wanted.length) : last;
-  if (!stem || stem.startsWith('.')) { sendError(req, res, 404, '页面不存在 · Not found'); return; }
-  const dir = path.join(root, ...segments.slice(0, -1));
-  if (dir !== root && !dir.startsWith(root + path.sep)) { sendError(req, res, 403, '禁止访问 · Forbidden'); return; }
-
-  // An explicit extension wins (`/media/bgm.ogg` → bgm.ogg), otherwise the usual order decides.
-  const order = wanted ? [wanted, ...AUDIO_EXTS.filter((e) => e !== wanted)] : AUDIO_EXTS;
-  for (const ext of order) {
-    const absPath = path.join(dir, stem + ext);
-    if (!absPath.startsWith(root + path.sep)) continue;
-    let stat;
-    try {
-      // eslint-disable-next-line no-await-in-loop
-      stat = await fsp.stat(absPath);
-    } catch { continue; }
-    if (!stat.isFile()) continue;
-    // serveFile decides Content-Type from the resolved name (`.mp3` → audio/mpeg) — Range/ETag handling is shared.
-    // Cache policy is that of the public path the client would otherwise have asked for (`/assets/audio/…`, 1 day).
-    // eslint-disable-next-line no-await-in-loop
-    await serveFile(req, res, absPath, stat, 'public', ['assets', 'audio', ...segments], query, gzipCache, log);
-    return;
-  }
-  sendError(req, res, 404, '页面不存在 · Not found');
 }
 
 async function serveFile(req, res, absPath, stat, mountName, segments, query, gzipCache, log) {
@@ -578,18 +524,18 @@ export async function startServer(opts = {}) {
     res.setHeader('Referrer-Policy', 'same-origin');
     handleRequest(req, res).catch((e) => {
       log.error('[http] request failed', e);
-      sendError(req, res, 500, '服务器内部错误 · Internal error');
+      sendError(req, res, 500, 'Internal error');
     });
   });
 
   async function handleRequest(req, res) {
     const url = req.url || '/';
-    if (url.length > MAX_URL_LENGTH) { sendError(req, res, 414, '请求地址过长 · URI too long'); return; }
+    if (url.length > MAX_URL_LENGTH) { sendError(req, res, 414, 'URI too long'); return; }
     const parts = splitUrl(url);
-    if (!parts) { sendError(req, res, 400, '请求地址无效 · Bad request'); return; }
+    if (!parts) { sendError(req, res, 400, 'Bad request'); return; }
     if (req.method !== 'GET' && req.method !== 'HEAD') {
       res.setHeader('Allow', 'GET, HEAD');
-      sendError(req, res, 405, '不支持的请求方法 · Method not allowed');
+      sendError(req, res, 405, 'Method not allowed');
       return;
     }
     if (parts.rawPath === '/healthz') {
@@ -689,11 +635,11 @@ async function main() {
   try {
     srv = await startServer();
   } catch (e) {
-    if (e && e.code === 'EADDRINUSE') console.error(`端口已被占用 / port in use: ${e.port ?? process.env.PORT ?? 3000}. Try PORT=3001 npm start`);
+    if (e && e.code === 'EADDRINUSE') console.error(`Port in use: ${e.port ?? process.env.PORT ?? 3000}. Try PORT=3001 npm start`);
     else console.error('[boot] failed to start', e);
     process.exit(1);
   }
-  console.log(`\n  卫戍协议：盟约 · Stronghold Protocol: Covenant v${APP_VERSION}`);
+  console.log(`\n  Stronghold Protocol: Alliance v${APP_VERSION}`);
   console.log(`  Local:   ${srv.url}`);
   if (srv.host === '0.0.0.0' || srv.host === '::') {
     for (const u of lanUrls(srv.port)) console.log(`  LAN:     ${u}`);

@@ -1,0 +1,191 @@
+{"id":200,"ctx":"preciShip.spec.layerGain","zh":"Kill/skill/deploy in battle: 寒芒克洛丝 gives front operator \"开技能 +1 精准 (<=10/battle)\"; 远牙 grant (+4/deploy); 缇缇 +1 per sleep/stun; 蕾缪安, 送葬人; 莱恩哈特 休整期结束 +5 own active bonds; 获得时: 深靛 +2, 雪猎 +5. 机变 \"缇缇的盟誓\" +10."}
+{"id":201,"ctx":"preciShip.spec.assumed","zh":"penetration = ratio ignore (like 无视 x% 防御)"}
+{"id":203,"ctx":"bonds.swiftShip.descRaw","zh":"【迅捷】干员技能结束时有概率<@autochess.gray>（受层数影响）</>立刻回复<@ba.vup>12点</>技力\n<达到<@autochess.dgreen>40</>层>所有干员技能结束时有等概率额外回复<@ba.vup>15点</>技力"}
+{"id":204,"ctx":"bonds.swiftShip.effectDescRaw","zh":"【迅捷】干员技能结束时有<@ba.vup>{0:0%}</>概率<@ba.acrem>（受层数影响）</>立刻回复<@ba.vup>12</>点技力\n<达到<@ba.vup>40</>层>所有干员技能结束时有等概率额外回复<@ba.vup>15</>点技力"}
+{"id":205,"ctx":"spec.tiers.effect","zh":"When a 迅捷 member's skill ends: with p = min(1, 0.20 + 0.0035*L) immediately +12 SP."}
+{"id":206,"ctx":"swiftShip.spec.layerGain","zh":"妮芙 休整期结束 +2 per operator on the bench; 蒂比 进入休整期 +2 own active bonds; 莱恩哈特 +5; 引星棘刺 +4 self & front; 获得时: 锡人/野鬃 +2, 忍冬 +6, 锏 +8. 机变 \"银灰的盟誓\" +8."}
+{"id":207,"ctx":"swiftShip.spec.assumed","zh":"迅捷 members roll both the 12 SP and the 15 SP independently"}
+{"id":209,"ctx":"bonds.skillfulShip.descRaw","zh":"【灵巧】干员及周围4格干员<@ba.vup>攻击速度</>提升<@autochess.gray>（受层数影响）</>\n<达到<@autochess.dgreen>40</>层>生效范围变为【灵巧】干员周围8格"}
+{"id":210,"ctx":"bonds.skillfulShip.effectDescRaw","zh":"【灵巧】干员及周围4格的干员攻击速度<@ba.vup>+{0:0}</><@ba.acrem>（受层数影响）</>\n <达到<@ba.vup>40</>层>生效范围变为【灵巧】干员周围8格"}
+{"id":211,"ctx":"spec.tiers.effect","zh":"灵巧 members and operators on their 4 orthogonally adjacent tiles: ASPD +(10 + 1*L)."}
+{"id":212,"ctx":"skillfulShip.spec.layerGain","zh":"溯光星源 休整期结束 +2 灵巧/奥术 per 3 gold spent this round ; 断崖 +3 self & behind; 空弦 +3 self & front; 蒂比 +2; 获得时 灵知 +5. (act1 灵巧 also had a 20-layer shop reward; removed in act2.)"}
+{"id":213,"ctx":"skillfulShip.spec.assumed","zh":"a unit covered by several 灵巧 auras gets the bonus once"}
+{"id":215,"ctx":"bonds.arcaneShip.descRaw","zh":"【奥术】干员造成法术伤害时使目标受到的法术伤害提升<@autochess.gray>（受层数影响）</>，持续3秒\n<在场<@autochess.dgreen>3</>名不同【奥术】干员>【奥术】干员对生命值低于<@ba.vup>50%</>的敌人施加的伤害提升比例提升<@autochess.gray>（受层数影响）</>"}
+{"id":216,"ctx":"bonds.arcaneShip.effectDescRaw","zh":"【奥术】干员造成法术伤害时使目标受到的法术伤害提升<@ba.vup>{0:0%}</><@ba.acrem>（受层数影响）</>，持续3秒\n<在场<@ba.vup>3</>名不同【奥术】干员>【奥术】干员对生命值低于50%的敌人施加的伤害提升比例为<@ba.vup>{1:0%}</><@ba.acrem>（受层数影响）</>"}
+{"id":217,"ctx":"spec.tiers.effect","zh":"When an 奥术 member deals magic damage, the target takes magic damage x(1.20 + 0.01*L) (i.e. +(20+L)%) for 3 s. ONE instance per target whatever applies it: the strongest value wins, a weaker one resumes if it outlasts it; reapplying refreshes (corrected 2026-10-01: PRTS 作战机制 同名buff默认只表现出一个; 巴哈姆特 12316 the two players of a pair field compete for it)."}
+{"id":218,"ctx":"arcaneShip.spec.layerGain","zh":"夕 +2 per operator gained; 阿罗玛 +2 per refresh (<=6); 溯光星源 +2 per 3 gold spent; 海霓 first kill +3; 获得时: 深靛 +2, 协律 +4 (hidden). 机变 \"莫斯提马的盟誓\" +10."}
+{"id":220,"ctx":"bonds.steadShip.descRaw","zh":"所有干员<@ba.vup>生命值</>提升<@autochess.gray>（受层数影响）</>\n<在场<@autochess.dgreen>3</>名不同【坚守】干员>场上非【坚守】干员受到伤害时，所受伤害的<@ba.vup>40%</>由所有【坚守】干员<@ba.vup>平均承担</>。【坚守】干员受到伤害时，伤害来源将受到一定法术伤害<@autochess.gray>（受层数影响，每0.2秒至多触发1次）</>和持续<@ba.vup>5</>秒的<@ba.vup>40%</>脆弱效果"}
+{"id":221,"ctx":"bonds.steadShip.effectDescRaw","zh":"所有干员生命值<@ba.vup>+{0:0%}</><@ba.acrem>（受层数影响）</>\n<在场<@ba.vup>3</>名不同【坚守】干员>场上非【坚守】干员受到伤害时，所受伤害的<@ba.vup>40%</>由【坚守】干员平均承担；【坚守】干员受到伤害时，伤害来源受到<@ba.vup>{1:0}</>点法术伤害<@ba.acrem>（受层数影响，每0.2秒至多触发1次）</>和持续5秒的<@ba.vup>40%</>的脆弱效果"}
+{"id":222,"ctx":"spec.tiers.effect","zh":"When a non-坚守 operator takes damage, 40% of that damage is taken instead by the 坚守 members, split evenly. When a 坚守 member takes damage, the damage source takes (850 + 10*L) sourceless magic damage and 脆弱 (damage taken x1.4) for 5 s; each 坚守 member can reflect at most once per 0.2 s."}
+{"id":223,"ctx":"steadShip.spec.layerGain","zh":"折桠 休整期结束 +4; 蛇屠箱 +1 per operator in same row; 斯卡蒂 kills; 获得时 角峰 +2; 机变 \"斯卡蒂的盟誓\" +8."}
+{"id":225,"ctx":"bonds.deputShip.descRaw","zh":"所有干员<@ba.vup>防御力</>提升<@autochess.gray>（受层数影响）</>，<@ba.vup>再部署时间</>减少\n休整期结束时，使当前所有已激活盟约层数<@ba.vup>+2</>\n<在场<@autochess.dgreen>3</>名不同【助力】干员>改为层数<@ba.vup>+4</>"}
+{"id":226,"ctx":"bonds.deputShip.effectDescRaw","zh":"所有干员防御力<@ba.vup>+{0:0%}</><@ba.acrem>（受层数影响）</>，再部署时间<@ba.vup>-30%</>\n休整期结束时，使当前所有已激活的盟约层数<@ba.vup>+2</>\n<在场<@ba.vup>3</>名不同【助力】干员>改为层数<@ba.vup>+4</>"}
+{"id":227,"ctx":"spec.tiers.effect","zh":"ALL operators DEF x(1 + 0.15 + 0.012*L); redeploy time -30%. At the end of every prep phase (休整期结束时) every currently active bond (incl. 助力) gets +2 layers."}
+{"id":228,"ctx":"spec.tiers.need","zh":"3 助力 (distinct name or elite state)"}
+{"id":229,"ctx":"deputShip.spec.layerGain","zh":"波登可 +1 / 调香师 +2 to highest-layer bond at prep end (work from bench); 流明 +2 to active bonds of every bench operator; 纯烬艾雅法拉 +3 highest-layer bond per skill; its own +2/+4 per round."}
+{"id":231,"ctx":"bonds.visiShip.descRaw","zh":"<每叠加<@autochess.dgreen>10</>层>获得一次<@ba.vup>2</>资金\n<首次达到<@autochess.dgreen>80</>层>所有【远见】干员购买价格<@ba.vup>永久-1</>资金\n<首次达到<@autochess.dgreen>150</>层>以上效果改为调度中心内所有干员的购买价格<@ba.vup>永久-1</>资金（整备区的【远见】干员也可用于激活盟约）"}
+{"id":232,"ctx":"bonds.visiShip.effectDescRaw","zh":"<每叠加<@ba.vup>10</>层>获得一次<@ba.vup>2</>资金\n<首次到达<@ba.vup>80</>层>所有【远见】干员购买价格永久-1资金\n<首次到达<@ba.vup>150</>层>上述效果改为所有干员购买价格永久-1资金\n整备区的【远见】干员也可用于激活盟约"}
+{"id":233,"ctx":"spec.tiers.effect","zh":"All 远见 operators' shop price permanently -1."}
+{"id":234,"ctx":"visiShip.spec.layerGain","zh":"寒檀 进入/结束休整期 +4 each; 伊内丝 +5 own active bonds; 赫默 +2; 圣约送葬人 +3 per 7 bullets (<=21/battle); 风笛 kills +2; 机变 \"风笛的盟誓\" +8."}
+{"id":236,"ctx":"bonds.miraShip.descRaw","zh":"刷新调度中心时，有概率使下次刷新<@ba.vup>不消耗资金</><@autochess.gray>（受层数影响）</>\n<每叠加<@autochess.dgreen>100</>层>获得<@ba.vup>20</>资金（整备区的【奇迹】干员也可用于激活盟约）"}
+{"id":237,"ctx":"bonds.miraShip.effectDescRaw","zh":"刷新调度中心时，有<@ba.vup>{0:0%}</><@ba.acrem>（受层数影响）</>概率使下次刷新不消耗资金\n<每叠加<@ba.vup>100</>层>获得<@ba.vup>20</>资金\n整备区的【奇迹】干员也可用于激活盟约"}
+{"id":238,"ctx":"miraShip.spec.layerGain","zh":"维娜·维多利亚 +2 per distinct-tier 奇迹; 录武官 获得时 +3; 伺夜 kills +1; 引星棘刺 +4 self & front; 华法琳 (奇迹 member) gives the operator in front \"开技能时 +1 own active bonds\" (data: <=7/battle, elite +2 <=14; PRTS 3/27 patch note says cap raised to 12/24)."}
+{"id":240,"ctx":"bonds.investShip.descRaw","zh":"干员的“获得时”类特质每次<@ba.vup>触发2次</>\n<达到<@autochess.dgreen>100</>层>“获得时”类特质每次<@ba.vup>触发3次</>（整备区的【投资人】干员也可用于激活盟约）"}
+{"id":241,"ctx":"bonds.investShip.effectDescRaw","zh":"干员的“获得时”类特质每次触发2次\n<达到<@ba.vup>100</>层>“获得时”类特质每次触发3次\n整备区的【投资人】干员也可用于激活盟约"}
+{"id":242,"ctx":"spec.tiers.effect","zh":"Every \"获得时\" (SERVER_GAIN) trait of every operator triggers 2 times."}
+{"id":243,"ctx":"investShip.spec.layerGain","zh":"山 休整期结束 +1 per operator gained this round; 机变 \"诗怀雅的盟誓\" +10, \"银灰的盟誓\" +8; generic sources."}
+{"id":244,"ctx":"investShip.spec.howToPlay","zh":"Pair with high \"获得时 +N 自身所属盟约\" operators (忍冬 +6, 锏 +8, 星熊 +8, 雪猎 +5) - their layers double/triple."}
+{"id":246,"ctx":"bonds.raidShip.descRaw","zh":"【突袭】干员<@ba.vup>10</>秒内未进行攻击或技能就绪时，若范围内没有敌人，则保留技力立即<@ba.vup>再部署至一名地面敌人周围</>，期间<@ba.vup>攻击力</>和<@ba.vup>生命值</>提升<@autochess.gray>（受层数影响）</>\n<达到<@autochess.dgreen>50</>层>所有干员攻击速度<@ba.vup>+50</>"}
+{"id":247,"ctx":"bonds.raidShip.effectDescRaw","zh":"【突袭】干员10秒内未进行攻击或技能就绪时，若范围内没有敌人，则保留技力立即再部署至一名地面敌人周围，期间攻击力和生命值<@ba.vup>+{0:0%}</><@ba.acrem>（受层数影响）</>\n <达到<@ba.vup>50</>层>所有干员攻击速度<@ba.vup>+50</>"}
+{"id":248,"ctx":"spec.tiers.effect","zh":"If a 突袭 member has not attacked for 10 s, or its skill is ready, and no enemy is in its range: it is immediately redeployed (keeping SP) onto a tile next to a ground enemy; while in that redeployed state its ATK and maxHP x(1 + 0.25 + 0.01*L)."}
+{"id":249,"ctx":"raidShip.spec.layerGain","zh":"史尔特尔 部署时 +8 (<=50/battle); 休谟斯 each 2 kills +1; 瑕光 +4/deploy; 斯卡蒂; 伊内丝 +5; 机变 \"斯卡蒂的盟誓\" +8, \"德克萨斯的盟誓\" +10."}
+{"id":251,"ctx":"bonds.indomShip.descRaw","zh":"<@ba.vup>地面干员</>被击倒时，有概率立即<@ba.vup>重新部署</><@autochess.gray>（受层数影响）</>\n<在场<@autochess.dgreen>3</>名不同【不屈】干员><@ba.vup>地面干员</>被击倒时使场上所有干员<@ba.vup>技力+5</>"}
+{"id":252,"ctx":"bonds.indomShip.effectDescRaw","zh":"<@ba.vup>地面干员</>被击倒时，有<@ba.vup>{0:0%}</><@ba.acrem>（受层数影响）</>概率立刻重新部署\n<在场<@ba.vup>3</>名不同【不屈】干员><@ba.vup>地面干员</>被击倒时使场上所有干员技力<@ba.vup>+5</>"}
+{"id":253,"ctx":"spec.tiers.effect","zh":"When a ground operator is knocked out / retreats / swaps 替身<->本体: with p = min(1, 0.18 + 0.004*L) it is redeployed at once (next deployment has 0 redeploy time and 0 cost). Also consumes a \"复活\" charge if it had one."}
+{"id":254,"ctx":"indomShip.spec.layerGain","zh":"雷蛇 休整期结束 +1; 砾 被击倒 +2; 归溟幽灵鲨 +5; 风笛 kills +2; 机变 \"风笛的盟誓\" +8."}
+{"id":256,"ctx":"bonds.maniShip.descRaw","zh":"激活时使场上核心盟约的<@ba.vup>激活人数+1</>，【调和】干员享受已激活的核心盟约的效果"}
+{"id":257,"ctx":"bonds.maniShip.effectDescRaw","zh":"激活时可以使场上核心盟约的<@ba.vup>激活人数+1</>，【调和】干员<@ba.vup>享受</>已激活的核心盟约的效果"}
+{"id":259,"ctx":"spec.tiers.effect","zh":"Every core bond's member count +1; 调和 operators receive the effects of all active core bonds."}
+{"id":260,"ctx":"maniShip.spec.members","zh":"缪尔赛思 (T6) and 盟约·辅助干员 (T1, hidden; given in round 1 by strategy Pith \"优等生\")."}
+{"id":261,"ctx":"maniShip.spec.assumed","zh":"one +1 total no matter how many 调和 operators"}
+{"id":263,"ctx":"bonds.emptyShip.descRaw","zh":"所有干员受到的物理和法术伤害<@ba.vup>-20%</>，【协防干员】伤害提升至<@ba.vup>120%</>，精锐【协防】干员造成伤害提升至<@ba.vup>140%</>"}
+{"id":264,"ctx":"bonds.emptyShip.effectDescRaw","zh":"所有干员受到的物理和法术伤害<@ba.vup>-20%</>；【协防干员】伤害提升至<@ba.vup>120%</>，精锐【协防干员】造成伤害提升至<@ba.vup>140%</>"}
+{"id":265,"ctx":"spec.tiers.effect","zh":"ALL operators take -20% physical and magic damage; 协防干员 members deal damage x1.2 (elite 协防 x1.4)."}
+{"id":266,"ctx":"emptyShip.spec.meaning","zh":"\"协防干员\" (assist operators) = fallback bond (constData.fallbackBondId). DIY/self-selected 6-star operators whose faction matches no core bond become 协防干员; some preset operators (调香师, 松果, 瑰盐, 魔王, 铃兰, 迷迭香, 盟约·辅助干员) are natively 协防."}
+{"id":267,"ctx":"emptyShip.spec.notes","zh":"noStack=true: no layer-scaled effect, but layers are still counted (巴哈姆特)."}
+{"id":269,"ctx":"bonds.soloShip.descRaw","zh":"<在场1名【独行】干员>【独行】干员攻击力和生命值<@ba.vup>+60%</>，初始技力<@ba.vup>+15</>（在场2名及以上【独行】干员时失效）"}
+{"id":270,"ctx":"bonds.soloShip.effectDescRaw","zh":"<在场<@ba.vup>1</>名【独行】干员>【独行】干员攻击力和生命值<@ba.vup>+60%</>，初始技力<@ba.vup>+15</><@ba.acrem>（在场2名及以上【独行】干员时失效）</>"}
+{"id":271,"ctx":"spec.tiers.need","zh":"exactly 1 distinct 独行 on board"}
+{"id":272,"ctx":"spec.tiers.effect","zh":"That operator ATK +60%, maxHP +60%, +15 SP when deployed. Disabled when 2+ different 独行 operators are on the board."}
+{"id":274,"ctx":"bonds.suntShip.descRaw","zh":"<在场<@autochess.dgreen>2</>名精锐状态的干员>精锐状态的干员攻击力<@ba.vup>+30%</>\n<在场<@autochess.dgreen>5</>名精锐状态的干员>精锐状态的干员技力消耗<@ba.vup>-30%</>\n<@ba.acrem>（所有干员的精锐状态均可激活本盟约）</>"}
+{"id":275,"ctx":"bonds.suntShip.effectDescRaw","zh":"<在场<@ba.vup>2</>名精锐状态的干员>精锐状态的干员攻击力<@ba.vup>+30%</>\n<在场<@ba.vup>5</>名精锐状态的干员>精锐状态的干员技力消耗<@ba.vup>-30%</>\n<@ba.acrem>（所有干员的精锐状态均可激活本盟约）</>"}
+{"id":276,"ctx":"spec.tiers.need","zh":"2 elite (精锐) operators on board (any operators, duplicates count)"}
+{"id":277,"ctx":"suntShip.spec.notes","zh":"isHiddenCharList=true, chessIdList empty: no member operators; elites are not \"members\" of 绝技 (PRTS)."}
+{"id":280,"ctx":"bosses.abilities","zh":"生命值低于一定比例时，受到的物理与法术伤害降低，【灭顶之灾】额外发射<刺胄之弹>"}
+{"id":283,"ctx":"bosses.abilities","zh":"【旧日的剑与锤】在模拟中达成特定条件并进入隐秘核心回合时，<假想敌：胄>将获得<“斩胄之剑”>和<“破胄之锤”>以完全形态登场"}
+{"id":284,"ctx":"bosses.abilities","zh":"<“斩胄之剑”>和<“破胄之锤”>初始无敌；被击落时受到伤害以一定比例传递给<假想敌：胄>"}
+{"id":288,"ctx":"bosses.abilities","zh":"对同一个目标进行攻击时，攻击速度逐渐提升"}
+{"id":289,"ctx":"bosses.abilities","zh":"【最终之罚】停止攻击，移动速度大幅提升，向全场防御力最高的单位冲锋。对经过的单位造成物理伤害"}
+{"id":290,"ctx":"bosses.abilities","zh":"【未尽的告解】在模拟中达成特定条件并进入隐秘核心回合时，场上出现<“碎铳之簧”>，同时<假想敌：铳>受到的物理与法术伤害大幅降低"}
+{"id":291,"ctx":"bosses.abilities","zh":"【盲信之誓】与场上所有<“碎铳之簧”>连结，<“碎铳之簧”>受到伤害时以一定比例传递给<假想敌：铳>，处于【盲信之誓】连结上的我方单位每秒受到物理伤害"}
+{"id":292,"ctx":"bosses.abilities","zh":"【末日布道】持续召唤场上所有<“碎铳之簧”>向自身移动，<“碎铳之簧”>移动速度大幅提升并免疫伤害，对经过的我方单位造成物理伤害"}
+{"id":294,"ctx":"bosses.abilities","zh":"在场时持续召唤【暗色的喟叹】形态<“余音”>；生命值低于一定比例时，召唤间隔缩短"}
+{"id":295,"ctx":"bosses.abilities","zh":"优先攻击【暗色的喟叹】形态<“余音”>"}
+{"id":296,"ctx":"bosses.abilities","zh":"在模拟中达成特定条件并进入隐秘核心回合时，<假想敌：弦>将与<假想敌：管>同时登场"}
+{"id":299,"ctx":"bosses.abilities","zh":"【崩坍】对若干我方单位造成物理伤害"}
+{"id":300,"ctx":"bosses.abilities","zh":"【物种爆发】战斗经过较长时间后扣除所有目标生命"}
+{"id":302,"ctx":"bosses.abilities","zh":"未被阻挡时有几率闪避物理与法术攻击，被阻挡时可以快速移动至其身后并在原地留下一个<不祥幻影>"}
+{"id":304,"ctx":"bosses.abilities","zh":"生命值降至一半及以下时，防御力及法术抗性提升，【莫非王土】每次活化两件装备"}
+{"id":305,"ctx":"bosses.abilities","zh":"【斥退】战斗经过较长时间后，对全场我方单位造成法术溅射伤害, 并扣除所有目标生命"}
+{"id":306,"ctx":"bosses.abilities","zh":"【王权号令】锁定一个我方单位及其周围四格，对范围内目标造成一次高额物理伤害并在此范围内的地块上生成随机装备"}
+{"id":307,"ctx":"bosses.abilities","zh":"【莫非王土】场上存在装备时，使一件装备活化，不同的装备将产生不同效果。"}
+{"id":309,"ctx":"bosses.abilities","zh":"【冰凌】攻击时对整列的我方单位造成物理伤害"}
+{"id":310,"ctx":"bosses.abilities","zh":"生命值低于一半时，受到的物理和法术伤害降低，【冰凌】和【自然涌动】额外选择一个目标"}
+{"id":312,"ctx":"bosses.abilities","zh":"生命值低于一定比例时，受到的物理与法术伤害降低，且【灭顶之灾】额外发射<刺胄之弹>"}
+{"id":313,"ctx":"bosses.abilities","zh":"【旧日的剑与锤】在模拟中达成特定条件并进入隐秘核心回合时，<假想敌：胄>将展现它的完全形态"}
+{"id":314,"ctx":"bosses.abilities","zh":"【未尽的告解】在模拟中达成特定条件并进入隐秘核心回合时，场上出现<“碎铳之簧”>，同时<假想敌：铳>受到的物理与法术伤害极大幅降低"}
+{"id":315,"ctx":"bosses.abilities","zh":"【盲信之誓】与场上所有<“碎铳之簧”>连结，<“碎铳之簧”>受到伤害时以一定比例传递给<假想敌：铳>和场上其他<“碎铳之簧”>，处于【盲信之誓】连结上的我方单位每秒受到物理伤害"}
+{"id":319,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+80%</>，攻击间隔<@ba.vup>略微缩短</>，优先攻击使用远程武器的敌人并且不容易成为敌人的攻击目标\n<@ba.rem>攻击装有14发弹药，打完后结束（可随时停止技能）</>"}
+{"id":321,"ctx":"chess.talents.desc","zh":"在场停留20秒后，自身弹药类技能弹药上限+2"}
+{"id":324,"ctx":"chess.skills.descRaw","zh":"每次攻击造成相当于攻击力<@ba.vup>185%</>的物理伤害\n<@ba.rem>攻击装有4发弹药，打完后结束（可随时停止技能）</>"}
+{"id":325,"ctx":"chess.trait.moduleDescRaw","zh":"攻击空中单位时攻击力提升至<@ba.kw>110%</>"}
+{"id":326,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+100%</>，攻击间隔<@ba.vup>略微缩短</>，优先攻击使用远程武器的敌人并且不容易成为敌人的攻击目标\n<@ba.rem>攻击装有14发弹药，打完后结束（可随时停止技能）</>"}
+{"id":327,"ctx":"chess.talents.desc","zh":"在场停留20秒后，自身弹药类技能弹药上限+3，其他随机一名【拉特兰】干员的弹药类技能弹药上限+1"}
+{"id":328,"ctx":"chess.skills.descRaw","zh":"每次攻击造成相当于攻击力<@ba.vup>200%</>的物理伤害\n<@ba.rem>攻击装有4发弹药，打完后结束（可随时停止技能）</>"}
+{"id":332,"ctx":"chess.skill.descRaw","zh":"生命上限<@ba.vup>+30%</>，防御力<@ba.vup>+10%</>，法术抗性<@ba.vup>+60%</>"}
+{"id":337,"ctx":"chess.skills.descRaw","zh":"生命上限<@ba.vup>+30%</>，每秒恢复<@ba.vup>25</>点生命"}
+{"id":339,"ctx":"chess.skill.descRaw","zh":"生命上限<@ba.vup>+40%</>，防御力<@ba.vup>+15%</>，法术抗性<@ba.vup>+70%</>"}
+{"id":341,"ctx":"chess.skills.descRaw","zh":"生命上限<@ba.vup>+40%</>，每秒恢复<@ba.vup>30</>点生命"}
+{"id":343,"ctx":"chess.trait.descRaw","zh":"攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>3</>个敌人间跳跃，每次跳跃伤害降低15%并造成短暂<$ba.sluggish>停顿</>（精英2后更新）"}
+{"id":345,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+80%</>，攻击在跳跃时<@ba.vup>不再降低伤害</>"}
+{"id":347,"ctx":"chess.talents.desc","zh":"攻击未被阻挡的敌人时攻击力提升至110%"}
+{"id":350,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+45%</>"}
+{"id":351,"ctx":"chess.trait.descRaw","zh":"攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>4</>个敌人间跳跃，每次跳跃伤害降低<@ba.kw>10%</>并造成一定时间<$ba.sluggish>停顿</>"}
+{"id":352,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+100%</>，攻击在跳跃时<@ba.vup>不再降低伤害</>"}
+{"id":353,"ctx":"chess.talents.desc","zh":"攻击未被阻挡的敌人时攻击力提升至120%"}
+{"id":354,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+60%</>"}
+{"id":355,"ctx":"chess.traitBase.descRaw","zh":"攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>4</>个敌人间跳跃，每次跳跃伤害降低15%并造成短暂<$ba.sluggish>停顿</>"}
+{"id":357,"ctx":"chess.trait.desc","zh":"能够阻挡三个敌人，可以进行远程攻击"}
+{"id":359,"ctx":"chess.skill.descRaw","zh":"攻击距离<@ba.vup>加长</>，攻击力<@ba.vup>+30%</>，攻击速度<@ba.vup>+25</>，攻击变为向正前方发射的毒性鳍刺，能穿过<@ba.vup>3</>个目标且造成<@ba.vup>1</>秒<$ba.sluggish>停顿</>。"}
+{"id":361,"ctx":"chess.talents.desc","zh":"攻击使目标在3秒内每秒受到40点法术伤害（对【海怪】敌人伤害加倍）"}
+{"id":364,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+32%</>，防御力<@ba.vup>+32%</>"}
+{"id":365,"ctx":"chess.trait.moduleDescRaw","zh":"攻击范围内敌人的<$ba.invisible>隐匿</>效果失效"}
+{"id":366,"ctx":"chess.skill.descRaw","zh":"攻击距离<@ba.vup>加长</>，攻击力<@ba.vup>+40%</>，攻击速度<@ba.vup>+30</>，攻击变为向正前方发射的毒性鳍刺，能穿过<@ba.vup>3</>个目标且造成<@ba.vup>1</>秒<$ba.sluggish>停顿</>。"}
+{"id":367,"ctx":"chess.talents.desc","zh":"攻击使目标在3秒内每秒受到80点法术伤害（对【海怪】敌人伤害加倍）"}
+{"id":368,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+39%</>，防御力<@ba.vup>+39%</>"}
+{"id":370,"ctx":"chess.trait.desc","zh":"击杀敌人后获得1点部署费用，撤退时返还初始部署费用"}
+{"id":372,"ctx":"chess.skill.descRaw","zh":"攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+120%</>"}
+{"id":374,"ctx":"chess.talents.desc","zh":"攻击时，10%几率当次攻击的攻击力+50%。技能中这个几率提高到30%"}
+{"id":377,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+35%</>"}
+{"id":378,"ctx":"chess.trait.moduleDescRaw","zh":"攻击生命值低于<@ba.vup>40%</>的敌人时攻击力提升至<@ba.vup>115%</>"}
+{"id":379,"ctx":"chess.skill.descRaw","zh":"攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+150%</>"}
+{"id":380,"ctx":"chess.talents.desc","zh":"攻击时，10%几率当次攻击的攻击力+100%。技能中这个几率提高到30%"}
+{"id":381,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+50%</>"}
+{"id":383,"ctx":"chess.trait.descRaw","zh":"攻击造成<@ba.kw>法术伤害</>，攻击敌人时为攻击范围内一名友方干员治疗相当于<@ba.kw>50%</>伤害的生命值"}
+{"id":385,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+55%</>，使攻击范围内生命上限最高的友方角色更容易受到敌人攻击，且该角色受到攻击时刺玫对目标造成攻击力<@ba.vup>20%</>的法术伤害并仅对该角色触发刺玫特性"}
+{"id":387,"ctx":"chess.talents.desc","zh":"攻击范围内生命上限最高的友方角色受到的治疗效果提升8%"}
+{"id":390,"ctx":"chess.skills.descRaw","zh":"攻击速度<@ba.vup>+45</>"}
+{"id":391,"ctx":"chess.trait.descRaw","zh":"攻击造成<@ba.kw>法术伤害</>，攻击敌人时为攻击范围内一名友方干员治疗相当于<@ba.kw>60%</>伤害的生命值"}
+{"id":392,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+75%</>，使攻击范围内生命上限最高的友方角色更容易受到敌人攻击，且该角色受到攻击时刺玫对目标造成攻击力<@ba.vup>30%</>的法术伤害并仅对该角色触发刺玫特性"}
+{"id":393,"ctx":"chess.talents.desc","zh":"攻击范围内生命上限最高的友方角色受到的治疗效果提升15%"}
+{"id":394,"ctx":"chess.skills.descRaw","zh":"攻击速度<@ba.vup>+60</>"}
+{"id":398,"ctx":"chess.skill.descRaw","zh":"目标敌人的生命<@ba.vup>每降低20%</>，对其造成伤害时的攻击力<@ba.vup>+12%</>"}
+{"id":400,"ctx":"chess.talents.desc","zh":"攻击时，20%几率当次攻击的攻击力提升至140%。当敌人在正前方一格时，该几率提升到50%"}
+{"id":403,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+145%</>，但普通攻击不再以生命值高于<@ba.vdown>80%</>的敌人作为目标"}
+{"id":404,"ctx":"chess.trait.moduleDescRaw","zh":"再部署时间<@ba.kw>减少</>"}
+{"id":405,"ctx":"chess.skill.descRaw","zh":"目标敌人的生命<@ba.vup>每降低20%</>，对其造成伤害时的攻击力<@ba.vup>+16%</>"}
+{"id":406,"ctx":"chess.talents.desc","zh":"攻击时，20%几率当次攻击的攻击力提升至180%。当敌人在正前方一格时，该几率提升到50%"}
+{"id":407,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+160%</>，但普通攻击不再以生命值高于<@ba.vdown>80%</>的敌人作为目标"}
+{"id":411,"ctx":"chess.skill.descRaw","zh":"立即获得<@ba.vup>10</>点费用；对周围所有敌人造成<@ba.vup>两次</>相当于攻击力<@ba.vup>120%</>的法术伤害，并令击中目标<$ba.stun>晕眩</><@ba.vup>2</>秒"}
+{"id":413,"ctx":"chess.talents.desc","zh":"编入队伍后，额外获得1点初始部署费用"}
+{"id":416,"ctx":"chess.skills.descRaw","zh":"立即获得<@ba.vup>12</>点部署费用"}
+{"id":418,"ctx":"chess.skill.descRaw","zh":"立即获得<@ba.vup>11</>点费用；对周围所有敌人造成<@ba.vup>两次</>相当于攻击力<@ba.vup>135%</>的法术伤害，并令击中目标<$ba.stun>晕眩</><@ba.vup>2</>秒"}
+{"id":419,"ctx":"chess.talents.desc","zh":"编入队伍后，额外获得2点初始部署费用"}
+{"id":421,"ctx":"chess.trait.descRaw","zh":"持有<@ba.kw>回旋投射物</>时才能够攻击（投射物需要时间回收）"}
+{"id":423,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+25%</>，每次攻击额外发射<@ba.vup>1</>个回旋投射物"}
+{"id":425,"ctx":"chess.talents.desc","zh":"攻击时，25%几率当次攻击的攻击力提升至130%"}
+{"id":428,"ctx":"chess.skills.descRaw","zh":"下次攻击的攻击力提高至<@ba.vup>185%</>"}
+{"id":429,"ctx":"chess.trait.moduleDescRaw","zh":"攻击周围8格的敌人时攻击力提升至<@ba.kw>110%</>"}
+{"id":430,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+40%</>，每次攻击额外发射<@ba.vup>1</>个回旋投射物"}
+{"id":431,"ctx":"chess.talents.desc","zh":"攻击时，25%几率当次攻击的攻击力提升至150%"}
+{"id":432,"ctx":"chess.skills.descRaw","zh":"下次攻击的攻击力提高至<@ba.vup>200%</>"}
+{"id":436,"ctx":"chess.skill.descRaw","zh":"下次攻击会恢复附近一名友方角色相当于古米攻击力<@ba.vup>115%</>的生命值\n<@ba.rem>可充能1次</>"}
+{"id":438,"ctx":"chess.talents.descRaw","zh":"攻击时，10%几率当次攻击的攻击力提升至150%，并<$ba.stun>晕眩</>敌人0.5秒"}
+{"id":441,"ctx":"chess.skills.descRaw","zh":"开始烹饪，<@ba.vdown>10</>秒内停止攻击敌人，防御力<@ba.vup>+60%</>\n烹饪完成后专注于治疗附近的友方角色，攻击力<@ba.vup>+40%</>"}
+{"id":442,"ctx":"chess.trait.moduleDescRaw","zh":"治疗生命值低于50%的友方单位时治疗量提升<@ba.kw>15%</>"}
+{"id":443,"ctx":"chess.skill.descRaw","zh":"下次攻击会恢复附近一名友方角色相当于古米攻击力<@ba.vup>130%</>的生命值\n<@ba.rem>可充能2次</>"}
+{"id":444,"ctx":"chess.talents.descRaw","zh":"攻击时，15%几率当次攻击的攻击力提升至200%，并<$ba.stun>晕眩</>敌人1秒"}
+{"id":445,"ctx":"chess.skills.descRaw","zh":"开始烹饪，<@ba.vdown>10</>秒内停止攻击敌人，防御力<@ba.vup>+70%</>\n烹饪完成后专注于治疗附近的友方角色，攻击力<@ba.vup>+50%</>"}
+{"id":447,"ctx":"chess.trait.descRaw","zh":"攻击造成<@ba.kw>法术伤害</>，并对敌人造成短暂的<$ba.sluggish>停顿</>"}
+{"id":450,"ctx":"chess.skills.descRaw","zh":"<@ba.vdown>停止攻击</>；攻击范围内的敌方单位每<@ba.vup>1.7</>秒受到一次<$ba.sluggish>停顿</>效果"}
+{"id":451,"ctx":"chess.trait.descRaw","zh":"攻击造成<@ba.kw>法术伤害</>，并对敌人造成<@ba.kw>较长</>的<$ba.sluggish>停顿</>"}
+{"id":453,"ctx":"chess.talents.descRaw","zh":"略微延长特性<$ba.sluggish>停顿</>的持续时间"}
+{"id":454,"ctx":"chess.skills.descRaw","zh":"<@ba.vdown>停止攻击</>；攻击范围内的敌方单位每<@ba.vup>1.6</>秒受到一次<$ba.sluggish>停顿</>效果"}
+{"id":456,"ctx":"chess.trait.descRaw","zh":"同时攻击阻挡的<@ba.kw>所有敌人</>"}
+{"id":458,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+100%</>，不再成为其他角色的治疗目标"}
+{"id":460,"ctx":"chess.talents.desc","zh":"周围8格内有敌人倒下时，恢复自身最大生命值7%的生命"}
+{"id":462,"ctx":"chess.trait.moduleDescRaw","zh":"生命值高于50%时受到的物理伤害降低<@ba.kw>20%</>"}
+{"id":463,"ctx":"chess.skill.descRaw","zh":"攻击力<@ba.vup>+115%</>，不再成为其他角色的治疗目标"}
+{"id":464,"ctx":"chess.talents.desc","zh":"周围8格内有敌人倒下时，恢复自身最大生命值12%的生命"}
+{"id":466,"ctx":"chess.skill.descRaw","zh":"立即投掷一个小瓶，碎裂后在周围产生一个持续<@ba.vup>5</>秒的孢子群\n孢子群范围内所有敌人被<$ba.sluggish>停顿</>且失去特殊能力，每秒受到相当于攻击力<@ba.vup>50%</>的法术伤害"}
+{"id":468,"ctx":"chess.talents.desc","zh":"在场时，所有【辅助】干员攻击力+5%"}
+{"id":471,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+20%</>，普通攻击改为<@ba.vup>治疗</>友方单位"}
+{"id":472,"ctx":"chess.trait.moduleDesc","zh":"攻击范围内存在敌人时技力自然恢复速度+0.2/秒"}
+{"id":473,"ctx":"chess.skill.descRaw","zh":"立即投掷一个小瓶，碎裂后在周围产生一个持续<@ba.vup>5</>秒的孢子群\n孢子群范围内所有敌人被<$ba.sluggish>停顿</>且失去特殊能力，每秒受到相当于攻击力<@ba.vup>60%</>的法术伤害"}
+{"id":474,"ctx":"chess.talents.desc","zh":"在场时，所有【辅助】干员攻击力+9%"}
+{"id":475,"ctx":"chess.skills.descRaw","zh":"攻击力<@ba.vup>+30%</>，普通攻击改为<@ba.vup>治疗</>友方单位"}
+{"id":477,"ctx":"chess.trait.descRaw","zh":"攻击造成<@ba.kw>群体法术伤害</>"}
+{"id":479,"ctx":"chess.skill.descRaw","zh":"攻击速度<@ba.vup>+50</>，天赋<$ba.sluggish>停顿</>的持续时间提升至<@ba.vup>1.6倍</>"}
+{"id":481,"ctx":"chess.talents.descRaw","zh":"攻击时对攻击目标造成0.4秒的<$ba.sluggish>停顿</>"}
+{"id":484,"ctx":"chess.skills.descRaw","zh":"攻击速度<@ba.vup>+30</>"}
+{"id":485,"ctx":"chess.trait.moduleDescRaw","zh":"部署费用<@ba.kw>减少</>"}
+{"id":486,"ctx":"chess.skill.descRaw","zh":"攻击速度<@ba.vup>+65</>，天赋<$ba.sluggish>停顿</>的持续时间提升至<@ba.vup>1.7倍</>"}
+{"id":487,"ctx":"chess.talents.descRaw","zh":"攻击时对攻击目标造成0.6秒的<$ba.sluggish>停顿</>"}
+{"id":489,"ctx":"chess.trait.descRaw","zh":"攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>"}
+{"id":491,"ctx":"chess.skill.descRaw","zh":"攻击速度<@ba.vup>+70</>，同时攻击2个目标"}
+{"id":493,"ctx":"chess.talents.descRaw","zh":"攻击同时附带18%攻击力的<$ba.dt.neural2>神经损伤</>（优先）、<$ba.dt.burning2>灼燃损伤</>、<$ba.dt.apoptosis2>凋亡损伤</>；优先攻击未处于损伤爆发的目标"}
+{"id":495,"ctx":"chess.talents.desc","zh":"在【卫戍协议】中，隶属于盟约【调和】"}
+{"id":497,"ctx":"chess.trait.moduleDescRaw","zh":"对精英和领袖敌人造成的元素损伤提升<@ba.kw>18%</>"}
+{"id":498,"ctx":"chess.skill.descRaw","zh":"攻击速度<@ba.vup>+80</>，同时攻击2个目标"}
+{"id":500,"ctx":"chess.trait.descRaw","zh":"可以投掷<@ba.kw>炼金单元</>协助作战"}
+{"id":502,"ctx":"chess.skill.descRaw","zh":"投掷一个炼金单元，在<@ba.vup>11</>秒内使落点周围的地面敌人每秒受到相当于攻击力<@ba.vup>65%</>的法术伤害、友方单位每秒恢复相当于攻击力<@ba.vup>15%</>的生命\n<@ba.rem>可充能1次</>"}

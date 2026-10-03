@@ -1,0 +1,50 @@
+{"id":504,"en":"In [Sarkaz's Furnaceside Fables], Hope cost when recruited -2; as a Burden Operator, Burden Threshold +3"}
+{"id":507,"en":"Throws an alchemy unit; for <@ba.vup>8</> seconds, ground enemies around the landing point are inflicted with <@ba.vup>20%</> <$ba.weaken>Weaken</> and take Arts damage equal to <@ba.vup>45%</> of ATK per second"}
+{"id":508,"en":"While an alchemy unit is on the field, SP recovery +0.1/s"}
+{"id":509,"en":"Throws an alchemy unit; for <@ba.vup>12</> seconds, ground enemies around the landing point take Arts damage equal to <@ba.vup>80%</> of ATK per second, and allies restore HP equal to <@ba.vup>20%</> of ATK per second\n<@ba.rem>Can hold 2 charges</>"}
+{"id":510,"en":"In [Sarkaz's Furnaceside Fables], Hope cost when recruited -2; as a Burden Operator, Burden Threshold +9"}
+{"id":512,"en":"Ground enemies within the range of own alchemy units take 20% more damage over time"}
+{"id":513,"en":"Throws an alchemy unit; for <@ba.vup>8</> seconds, ground enemies around the landing point are inflicted with <@ba.vup>25%</> <$ba.weaken>Weaken</> and take Arts damage equal to <@ba.vup>60%</> of ATK per second"}
+{"id":515,"en":"Deals <@ba.kw>Arts damage</>; when there are no targets, can <@ba.kw>store</> attack energy to release all at once (max 3)"}
+{"id":517,"en":"Attack Interval <@ba.vup>slightly reduced</>, Talent trigger chance increased to <@ba.vup>2.0</>x; <$ba.root>Bound</> enemies within Attack Range take Arts damage equal to <@ba.vup>12%</> of Indigo's ATK every <@ba.vup>0.5</> seconds"}
+{"id":519,"en":"Attacks have a 12% chance to <$ba.root>Bind</> the target for 4 seconds; does not target Bound enemies"}
+{"id":522,"en":"Attack Range <@ba.vup>changes</>, Attack Interval <@ba.vup>greatly reduced</>, each attack deals Arts damage equal to <@ba.vup>35%</> of ATK"}
+{"id":523,"en":"Deals <@ba.kw>Arts damage</>; when there are no targets, can <@ba.kw>store</> attack energy to release all at once (max 4)"}
+{"id":524,"en":"Attack Interval <@ba.vup>moderately reduced</>, Talent trigger chance increased to <@ba.vup>2.5</>x; <$ba.root>Bound</> enemies within Attack Range take Arts damage equal to <@ba.vup>15%</> of Indigo's ATK every <@ba.vup>0.5</> seconds"}
+{"id":525,"en":"Attacks have an 18% chance to <$ba.root>Bind</> the target for 4 seconds; does not target Bound enemies"}
+{"id":526,"en":"Attack Range <@ba.vup>changes</>, Attack Interval <@ba.vup>greatly reduced</>, each attack deals Arts damage equal to <@ba.vup>40%</> of ATK"}
+{"id":528,"en":"Cannot be healed by other units; restores <@ba.kw>50</> HP to self each time an enemy is hit (upgraded after Elite 2)"}
+{"id":530,"en":"Immediately loses <@ba.vdown>50%</> of current HP upon deployment; ATK <@ba.vup>+65%</> for <@ba.vup>14</> seconds, and damage type becomes <@ba.vup>Arts</>"}
+{"id":532,"en":"While deployed, gains <$ba.berserk>Tenacity</> of up to +75 ASPD (maximum bonus when 60% HP is lost)"}
+{"id":535,"en":"Stops attacking, Block becomes <@ba.vup>0</>, DEF <@ba.vup>+130%</>, restores <@ba.vup>7%</> of Max HP per second"}
+{"id":536,"en":"Cannot be healed by other units; restores <@ba.kw>70</> HP to self each time an enemy is hit"}
+{"id":537,"en":"When HP is below 50%, gains 25% <$ba.protect>Sanctuary</>"}
+{"id":538,"en":"Immediately loses <@ba.vdown>50%</> of current HP upon deployment; ATK <@ba.vup>+80%</> for <@ba.vup>15</> seconds, and damage type becomes <@ba.vup>Arts</>"}
+{"id":539,"en":"While deployed, gains <$ba.berserk>Tenacity</> of up to +100 ASPD (maximum bonus when 70% HP is lost)"}
+{"id":540,"en":"Stops attacking, Block becomes <@ba.vup>0</>, DEF <@ba.vup>+160%</>, restores <@ba.vup>8%</> of Max HP per second"}
+{"id":542,"en":"Attack Range expanded, ATK <@ba.vup>+45%</>, attacks push the target back <@ba.vup>with moderate force</> in the attack direction"}
+{"id":544,"en":"After first deployment, DP Cost of all undeployed [Guard] Operators -1"}
+{"id":547,"en":"ASPD <@ba.vup>+80</> after deployment"}
+{"id":548,"en":"Gains <@ba.vup>2</> DP after defeating an enemy; refunds <@ba.kw>the</> DP Cost upon retreat"}
+{"id":549,"en":"Attack Range expanded, ATK <@ba.vup>+60%</>, attacks push the target back <@ba.vup>with moderate force</> in the attack direction"}
+{"id":550,"en":"After deployment, DP Cost of all undeployed [Guard] Operators -1 (each Operator can be reduced by at most 5 DP before each deployment)"}
+{"id":551,"en":"ASPD <@ba.vup>+100</> after deployment"}
+{"id":553,"en":"Attack Interval <@ba.vdown>increased</>, ATK <@ba.vup>+105%</>, each attack deals <@ba.vup>Arts damage</> to up to <@ba.vup>3</> enemies, with a <@ba.vup>15%</> chance to <$ba.stun>Stun</> targets hit for <@ba.vup>1</> second\n<@ba.rem>Liskarm is <$ba.stun>Stunned</> for 5 seconds after the skill ends</>"}
+{"id":555,"en":"When attacked, restores 1 SP to self and a random ally within 1 tile"}
+{"id":558,"en":"Blocks the next instance of damage; DEF <@ba.vup>+60%</> for <@ba.vup>8</> seconds\n<@ba.rem>Auto activation</>"}
+{"id":559,"en":"Attack Interval <@ba.vdown>increased</>, ATK <@ba.vup>+125%</>, each attack deals <@ba.vup>Arts damage</> to up to <@ba.vup>3</> enemies, with a <@ba.vup>20%</> chance to <$ba.stun>Stun</> targets hit for <@ba.vup>1</> second\n<@ba.rem>Liskarm is <$ba.stun>Stunned</> for 5 seconds after the skill ends</>"}
+{"id":562,"en":"Blocks the next instance of damage; DEF <@ba.vup>+80%</> for <@ba.vup>8</> seconds\n<@ba.rem>Auto activation</>"}
+{"id":564,"en":"Attacks <@ba.kw>all enemies</> within Attack Range; ATK increased to 150% against enemies in the row directly in front"}
+{"id":566,"en":"Normal attacks become double strikes, and Attack Interval <@ba.vup>slightly reduced</>"}
+{"id":571,"en":"ATK <@ba.vup>+35%</>, Trait bonus applies to all enemies within Attack Range when attacking"}
+{"id":572,"en":"Attacks <@ba.kw>all enemies</> within Attack Range; ATK increased to <@ba.kw>160%</> against enemies in the row directly in front"}
+{"id":573,"en":"Normal attacks become double strikes, and Attack Interval <@ba.vup>moderately reduced</>"}
+{"id":575,"en":"ATK <@ba.vup>+50%</>, Trait bonus applies to all enemies within Attack Range when attacking"}
+{"id":579,"en":"Obtains a Medical Drone\n<@ba.rem>Can store up to 1 drone; once deployed, the drone heals nearby allies and self-destructs after 10 seconds</>"}
+{"id":581,"en":"While deployed, ASPD of all allied [Medic] Operators +6"}
+{"id":584,"en":"ATK <@ba.vup>+55%</>"}
+{"id":585,"en":"Healing amount increased by <@ba.kw>15%</> when healing ground units"}
+{"id":586,"en":"While deployed, ASPD of all allied [Medic] Operators +12"}
+{"id":587,"en":"ATK <@ba.vup>+70%</>"}
+{"id":589,"en":"Skills can <@ba.kw>displace</> enemies\nCan be deployed on ranged tiles"}
+{"id":591,"en":"Immediately pulls up to <@ba.vup>2</> targets in a large area ahead <@ba.vup>with moderate force</>, dealing <@ba.vup>True</> damage equal to <@ba.vup>150%</> of ATK and <$ba.stun>Stunning</> them for <@ba.vup>1.5</> seconds"}

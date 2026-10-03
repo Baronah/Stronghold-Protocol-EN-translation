@@ -1,0 +1,38 @@
+{"id":3684,"en":"Gains enhancements based on the Alliance with the highest current Stacks: each Alliance Stack grants self ASPD <@ba.vup>+1</>, and attacks additionally inflict <@ba.vup>0.1%</> <$ba.fragile>Fragile</> for 2 seconds (up to 300 Stacks)"}
+{"id":3686,"en":"Changes the enemies' path\n<@ba.rem>If the Barricade blocks enemies, they will destroy it</>"}
+{"id":3692,"en":"Battlefield #05 (First Half) High Tide/Special Water Platform"}
+{"id":3697,"en":"Builds a platform on water where <@ba.vup>any</> unit can be deployed"}
+{"id":3698,"en":"Battlefield #06 (First Half) Sandstorm/Earth-and-Stone Structure"}
+{"id":3702,"en":"Reinforced: blocks the <@ba.vup>Sandstorm</> and no longer takes <@ba.vup>Sandstorm</> damage, but can be destroyed directly by a <High-Energy Originium Bomb>."}
+{"id":3709,"en":"Battlefield #05 (Second Half) Originium Flow Generator"}
+{"id":3712,"en":"Blows an airflow 3 tiles forward; Operators deployed <@ba.vup>with</>/<@ba.vdown>against</> the airflow have ATK <@ba.vup>increased</>/<@ba.vdown>decreased</>; enemies moving <@ba.vdown>with</>/<@ba.vup>against</> it have Movement Speed <@ba.vdown>increased</>/<@ba.vup>decreased</>"}
+{"id":3717,"en":"Cannot be attacked; restores HP of nearby friendly units"}
+{"id":3719,"en":"Self-destructs automatically after <@ba.vup>10</> seconds"}
+{"id":3721,"en":"Enemies within range have ATK and DEF <@ba.vup>-25%</>"}
+{"id":3722,"en":"Enemies within range have ATK and DEF <@ba.vup>-30%</>"}
+{"id":3724,"en":"On appearing, deals Arts damage equal to <@ba.vup>200%</> of ATK to nearby enemies and <$ba.stun>Stuns</> them for <@ba.vup>1</> second"}
+{"id":3725,"en":"On appearing, deals Arts damage equal to <@ba.vup>230%</> of ATK to nearby enemies and <$ba.stun>Stuns</> them for <@ba.vup>1.5</> seconds"}
+{"id":3726,"en":"Can block 2 enemies; reduces the DEF of blocked units"}
+{"id":3728,"en":"On appearing, <$ba.stun>Stuns</> nearby enemies for <@ba.vup>2</> seconds"}
+{"id":3729,"en":"On appearing, <$ba.stun>Stuns</> nearby enemies for <@ba.vup>2.5</> seconds"}
+{"id":3730,"en":"Can block 2 enemies. In <@ba.kw>Integrated Strategies</>, the Stun on appearing lasts 5 seconds, and the DEF reduction on blocked enemies is replaced by reducing the DEF of ground enemies in the surrounding 8 tiles by <@ba.kw>-400</> and RES by <@ba.kw>-20</> (does not stack)"}
+{"id":3732,"en":"Its Attack Range counts as an extension of Skadi the Corrupting Heart's Attack Range"}
+{"id":3735,"en":"When deployed, deals True damage equal to <@ba.vup>90%</> of Nearl the Radiant Knight's ATK to enemies in the surrounding 4 tiles and <$ba.stun>Stuns</> them for <@ba.vup>3</> seconds; deals one additional hit if the previously deployed Operator's faction is [Kazimierz]"}
+{"id":3736,"en":"When deployed, deals True damage equal to <@ba.vup>100%</> of Nearl the Radiant Knight's ATK to enemies in the surrounding 4 tiles and <$ba.stun>Stuns</> them for <@ba.vup>3</> seconds; deals one additional hit if the previously deployed Operator's faction is [Kazimierz]"}
+{"id":3739,"en":"Gains a \"Wolf Shadow\" every 25 seconds (up to 3); for each \"Wolf Shadow\", the Wolf Pack's Block +1 and each attack deals one additional hit; when there is more than 1 \"Wolf Shadow\", upon taking lethal damage, loses one \"Wolf Shadow\" but restores all HP"}
+{"id":3740,"en":"Ignores 175 DEF of the target when attacking blocked targets"}
+{"id":3741,"en":"Initially deals <@ba.kw>Arts damage</>; can only be deployed within the summoner's Attack Range"}
+{"id":3742,"en":"Can copy one Operator in the deployment zone. If ranged, gains the trait: every <@ba.vup>10</> attacks, splits itself onto a deployable tile in the surrounding 4 tiles (lasts <@ba.vup>25</> seconds); if melee, each attack <$ba.steal>steals</> <@ba.vup>10</> ATK and DEF from the enemy (up to <@ba.vup>250</>, resets after copying)"}
+{"id":3743,"en":"When the skill is activated, copies 90% of the target's HP, ATK, DEF and RES, as well as its Block, Attack Interval, Attack Range and initial damage type (non-attacking and healing types are not inherited)"}
+{"id":3744,"en":"When the skill is activated, copies 100% of the target's HP, ATK, DEF and RES, as well as its Block, Attack Interval, Attack Range and initial damage type (non-attacking and healing types are not inherited)"}
+{"id":3745,"en":"Deals Physical damage to the first enemy it touches and <$ba.sluggish>Slows</> the target\n<@ba.rem>The Champagne Bomb can deal one additional hit after being on the field for 3 seconds</>"}
+{"id":3746,"en":"Ulpianus returns to this position when his skill ends; other Operators cannot be deployed here"}
+{"id":3747,"en":"Can block 1 enemy; attacks deal <@ba.kw>True damage</>"}
+{"id":3748,"en":"Grants one friendly Operator within Attack Range a <$ba.barrier>Barrier</> equal to 20% of Catherine's Max HP (if the target has not been attacked in the last 5 seconds, replenishes a <$ba.barrier>Barrier</> equal to 6% of Catherine's Max HP per second, not exceeding the initial cap); device effects do not stack; lasts indefinitely"}
+{"id":3749,"en":"Added to the deployment zone while Silverash the Reignfrost is on the field. DP Cost changes with Silverash the Reignfrost's skill"}
+{"id":3750,"en":"Increases the Initial SP of the Operator on the left and reduces its Redeploy Time"}
+{"id":3751,"en":"When the first Operator is deployed during \"Change Has Come\", the \"Eye of the Blizzard\" is deployed to that Operator's position and performs <@ba.vup>linear AoE attacks</> simultaneously with Silverash the Reignfrost. It can be redeployed during the skill to change position, with its <@ba.vup>DP Cost refunded</>"}
+{"id":3752,"en":"A friendly unit summoned when 6 members of [Yan] are active; at battle start, ATK/HP increased by 30% of the total ATK/HP of [Yan] Operators (see bonds.json yanShip)"}
+{"id":3756,"en":"Attack Range <@ba.vup>+2</>, ATK <@ba.vup>+40%</>, heals <@ba.vup>2</> targets at a time, and additionally heals the target or 1 friendly unit adjacent to it once, for <@ba.vup>30%</> of the main target's healing amount. Healing on friendly units at or below half HP increased to <@ba.vup>150%</>"}
+{"id":3760,"en":"Gains 5 SP when a friendly Operator within Attack Range is defeated"}
+{"id":3761,"en":"Rock Solid text is least LP lost, not most LP remaining"}

@@ -1,0 +1,50 @@
+{"id":2908,"en":"<@eb.key>Camouflage</>; the next attack after Camouflage ends deals <@eb.key>higher damage</>"}
+{"id":2909,"en":"The next attack after <$ba.invisible>Camouflage</> ends deals higher damage"}
+{"id":2911,"en":"<@eb.key>Camouflage</>; the next attack after Camouflage ends deals <@eb.key>higher damage</>."}
+{"id":2913,"en":"Can only be blocked by units with Block 4 or more; can <@eb.key>carry up to 4 passengers</>, releasing them upon first reaching a <@eb.key>Scaling Ladder</>"}
+{"id":2915,"en":"Loads nearby non-mechanical, non-leader enemies as passengers (up to 4), releasing them upon first reaching a Scaling Ladder"}
+{"id":2917,"en":"A wild infected creature that sprays scorching bodily fluids at enemies. Attacks deal Arts damage and <@eb.key>Burn Damage</>"}
+{"id":2918,"en":"Attacks deal <$ba.dt.burning>Burn Damage</>"}
+{"id":2921,"en":"Can only be blocked by units with Block 3 or more; the first attack deals splash damage"}
+{"id":2925,"en":"Does not attack; periodically summons several Withered Seeds"}
+{"id":2926,"en":"Periodically summons several <Withered Seeds>"}
+{"id":2928,"en":"The first military hounds put into service in Bolivar."}
+{"id":2930,"en":"Elite military hounds bred through strict selection. They see nothing but prey and never stop until death."}
+{"id":2932,"en":"Attacks deal <@eb.key>Arts damage</>; loses HP proportional to <@eb.key>distance</> when moved while off-balance."}
+{"id":2935,"en":"Has high initial DEF and RES, which decrease each time it takes damage."}
+{"id":2936,"en":"Has high initial DEF and RES, which decrease each time it takes damage"}
+{"id":2939,"en":"<@eb.key>[Aerial Unit]</> <@eb.key>Increases the RES</> of nearby enemies"}
+{"id":2943,"en":"Professional armed personnel guarding the bones of a colossal beast. Restores some HP and gains ATK when a nearby enemy or friendly unit is defeated; leaves 2 <@eb.key><Blood Amber></> when defeated"}
+{"id":2944,"en":"Restores some HP and gains ATK (stackable) when a nearby enemy or friendly unit is defeated"}
+{"id":2947,"en":"An extremely solid blood essence. When affected by the pulse of the Bloodcalling Altar, revives at the altar as a Newborn Bloodline."}
+{"id":2948,"en":"When affected by the pulse of the Bloodcalling Altar, revives at the altar as a Newborn Bloodline"}
+{"id":2950,"en":"Soldiers conscripted by the Delegation, with solid and standard tactics. They now prefer quiet, uneventful leisure time."}
+{"id":2952,"en":"Soldiers who share the Delegation's fate, with seasoned and fierce tactics. They are now wary of any conflict about to escalate."}
+{"id":2954,"en":"DEF and RES gradually increase within <@eb.key>Frozen</> areas; DEF and RES gradually decrease within range of an <@eb.key>Emergency Heater</>."}
+{"id":2955,"en":"DEF and RES gradually increase within <Frozen> areas; DEF and RES gradually decrease within range of an \"Emergency Heater\""}
+{"id":2957,"en":"<@eb.key>Camouflage</>; prioritizes targets <@eb.key>to the right of the Emergency Heater</>."}
+{"id":2960,"en":"A scout in reinforced armor. When attacked, Exposes the attacker.\r\nExposed units cannot use obstacles to avoid enemy sight and take increased damage."}
+{"id":2961,"en":"A scout in reinforced armor. When attacked, <@eb.key>Exposes</> the attacker.\r\nExposed units cannot use obstacles to avoid enemy sight and take increased damage."}
+{"id":2963,"en":"Exposed friendly units cannot use obstacles to avoid enemy sight and take increased damage"}
+{"id":2965,"en":"<@eb.key>Camouflage</>; performs a <@eb.key>Direct Shot</> when in the same row or column as a friendly unit: fires 1 bolt that deals <@eb.key>Arts damage </>."}
+{"id":2966,"en":"Performs a Direct Shot when in a straight line with a friendly unit: fires 1 bolt toward the target that deals Arts damage and <$ba.stun>Stuns</> the target"}
+{"id":2968,"en":"<@eb.key>[Aerial Unit]</> Can perform <@eb.key>ranged physical attacks</>; when defeated, <@eb.key>Exposes</> nearby friendly units. Exposed units cannot use obstacles to avoid enemy sight and take increased damage."}
+{"id":2971,"en":"A large pack beast with very low DEF. When it meets a <@eb.key>Secured Chain</>, it takes a hard fall and is stunned, dealing Physical damage to other nearby enemies"}
+{"id":2972,"en":"When it meets a Secured Chain, it takes a hard fall and is stunned, dealing Physical damage to other nearby enemies"}
+{"id":2974,"en":"While in an Originium Contamination Zone, <@eb.key>attacks deal Arts damage</>."}
+{"id":2975,"en":"While in an Originium Contamination Zone, attacks deal Arts damage"}
+{"id":2978,"en":"After being affected by an Originium Contamination Zone or Active Originium Storm, continuously creates Originium Contamination Zones around itself, and attacks deal higher <@eb.key>Arts damage</> instead."}
+{"id":2979,"en":"After being affected by an Originium Contamination Zone or Active Originium Storm, continuously creates Originium Contamination Zones around itself, and attacks deal Arts damage instead"}
+{"id":2982,"en":"Attacks deal Physical damage to all units around it. While in an Originium Contamination Zone or Active Originium Storm, attacks deal Physical damage to all friendly units around it and within Originium Contamination Zones and Active Originium Storms."}
+{"id":2983,"en":"Attacks deal Physical damage to all units around it"}
+{"id":2984,"en":"While in an Originium Contamination Zone or Active Originium Storm, attacks deal Physical damage to all friendly units around it and within Originium Contamination Zones and Active Originium Storms"}
+{"id":2986,"en":"<@eb.key>[Aerial Unit]</>, shares part of the damage taken by nearby non-aerial enemies."}
+{"id":2987,"en":"Shares part of the damage taken by nearby non-aerial enemies"}
+{"id":2989,"en":"A simply structured Seaborn, presumed to be a gatherer of the Seaborn colony. Its life activities consume almost no energy."}
+{"id":2991,"en":"A simply structured but nourished newborn Seaborn, able to gather nutrients more efficiently."}
+{"id":2993,"en":"Can devour <@eb.key>Overgrown Carapaces</> to greatly increase its ATK and HP"}
+{"id":2995,"en":"Enters <Combat-Ready> state when damaged, continuously dealing <@eb.key>Nervous Impairment</> to nearby friendly units; each time it hits an <@eb.key>Overgrown Carapace</>, it loses a large amount of HP to destroy it"}
+{"id":2996,"en":"Enters Combat-Ready state when taking damage: movement speed greatly increases and continuously deals <$ba.dt.neural>Nervous Impairment</> to its surroundings"}
+{"id":2997,"en":"When blocked by an <Overgrown Carapace>, destroys it, losing a percentage of HP each time"}
+{"id":3000,"en":"If possible, throw your whole team at him. This enemy is <@eb.danger>extremely dangerous</>; <@eb.key>both ranged and melee attacks deal heavy damage</>."}
+{"id":3001,"en":"Fires grenades when not blocked, greatly reducing the DEF of the target and nearby units for a short time"}

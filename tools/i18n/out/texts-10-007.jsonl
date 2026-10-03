@@ -1,0 +1,19 @@
+{"id":3559,"en":"<In Combat> When first defeating an enemy, active [Precision] [Laterano] Stacks <@ba.vup>+3</>"}
+{"id":3560,"en":"<In Combat> When first defeating an enemy, active [Precision] [Laterano] Stacks <@ba.vup>+6</>"}
+{"id":3561,"en":"<In Combat> When activating a skill, Stacks of the currently active Alliance with the most Stacks <@ba.vup>+3</>"}
+{"id":3562,"en":"<In Combat> When activating a skill, Stacks of the currently active Alliance with the most Stacks <@ba.vup>+6</>"}
+{"id":3563,"en":"<Start of Rest Phase><End of Rest Phase> Active [Foresight] Stacks <@ba.vup>+4</>"}
+{"id":3564,"en":"<Start of Rest Phase><End of Rest Phase> Active [Foresight] Stacks <@ba.vup>+8</>"}
+{"id":3565,"en":"<End of Rest Phase> Active [Foresight] Stacks <@ba.vup>+4</>"}
+{"id":3566,"en":"<End of Rest Phase> Active [Foresight] Stacks <@ba.vup>+8</>"}
+{"id":3567,"en":"<On Deploy> Active [Kazimierz] Stacks <@ba.vup>+1</>"}
+{"id":3568,"en":"<On Deploy> Active [Kazimierz] Stacks <@ba.vup>+2</>"}
+{"id":3569,"en":"[145] For every 3 Stacks of [Kazimierz], this Operator's Redeploy Time <@ba.vup>-1.5%</> and ASPD <@ba.vup>+0.5</>"}
+{"id":3570,"en":"For every 3 Stacks of [Kazimierz], this Operator's Redeploy Time <@ba.vup>-3%</> and ASPD <@ba.vup>+1</>"}
+{"id":3571,"en":"<Start of Battle> <@ba.vup>Self</> and the Operator <@ba.vup>1 tile in front</> gain the Attribute \"For every 3 Stacks of [Kazimierz], this Operator's Redeploy Time <@ba.vup>-1.5%</> and ASPD <@ba.vup>+0.5</>\""}
+{"id":3572,"en":"<Start of Battle> <@ba.vup>Self</> and the Operator <@ba.vup>1 tile in front</> gain the Attribute \"For every 3 Stacks of [Kazimierz], this Operator's Redeploy Time <@ba.vup>-3%</> and ASPD <@ba.vup>+1</>\""}
+{"id":3573,"en":"<End of Rest Phase> For each Refresh this Round, active [Siracusa] Stacks <@ba.vup>+4</> (up to 12 Stacks per Round)"}
+{"id":3574,"en":"<End of Rest Phase> For each Refresh this Round, active [Siracusa] Stacks <@ba.vup>+8</> (up to 24 Stacks per Round)"}
+{"id":3575,"en":"<Start of Battle> The rightmost Operator in the same row gains the Attribute \"<On Deploy> Active [Kazimierz] [Precision] Stacks <@ba.vup>+4</> (up to 24 Stacks per battle)\""}
+{"id":3576,"en":"<Start of Battle> The rightmost Operator in the same row gains the Attribute \"<On Deploy> Active [Kazimierz] [Precision] Stacks <@ba.vup>+8</> (up to 48 Stacks per battle)\""}
+{"id":3577,"en":"<On Acquire> Gain 1 Wild Mane or Ashlock, with a small chance to gain Fartooth"}

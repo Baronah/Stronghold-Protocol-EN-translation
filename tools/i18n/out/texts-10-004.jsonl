@@ -1,0 +1,49 @@
+{"id":3393,"en":"ATK increased to <@ba.vup>150%</> when attacking Drone enemies"}
+{"id":3394,"en":"ATK increased to <@ba.vup>200%</> when attacking Drone enemies"}
+{"id":3395,"en":"<On Sell> Gain 2 extra Funds at the next Rest Phase"}
+{"id":3396,"en":"<On Sell> Gain 4 extra Funds at the next Rest Phase"}
+{"id":3397,"en":"<In Combat> For every 6 rounds of ammo consumed by Operators in the <@ba.vup>surrounding 4 tiles</>, active [Laterano] Stacks <@ba.vup>+1</>"}
+{"id":3399,"en":"<In Combat> For every 6 rounds of ammo consumed by Operators in the <@ba.vup>surrounding 4 tiles</>, active [Laterano] Stacks <@ba.vup>+2</>"}
+{"id":3400,"en":"<In Combat> For every 7 bullets consumed by self, active [Laterano] Stacks <@ba.vup>+7</> and [Foresight] Stacks <@ba.vup>+3</> (each up to 7 times per battle)"}
+{"id":3401,"en":"<In Combat> For every 7 bullets consumed by self, active [Laterano] Stacks <@ba.vup>+14</> and [Foresight] Stacks <@ba.vup>+6</> (up to 7 times per battle)"}
+{"id":3402,"en":"<In Combat> For every 10 bullets consumed by self, if there are 3 Operators in the same row, active [Laterano] [Precision] Stacks <@ba.vup>+2</>"}
+{"id":3403,"en":"<In Combat> For every 10 bullets consumed by self, if there are 3 Operators in the same row, active [Laterano] [Precision] Stacks <@ba.vup>+4</>"}
+{"id":3404,"en":"<On Acquire> Own Alliance Stacks <@ba.vup>+2</> (Alliance need not be active)"}
+{"id":3406,"en":"<On Acquire> Own Alliance Stacks <@ba.vup>+4</> (Alliance need not be active)"}
+{"id":3407,"en":"<On Acquire> Gain <@ba.vup>1</> extra Funds at the next Rest Phase"}
+{"id":3408,"en":"<On Acquire> Gain <@ba.vup>2</> extra Funds at the next Rest Phase"}
+{"id":3409,"en":"<In Combat> Whenever an enemy within range becomes Frozen, 50% chance for active [Kjerag] Stacks <@ba.vup>+1</>"}
+{"id":3410,"en":"<In Combat> Whenever an enemy within range becomes Frozen, 50% chance for active [Kjerag] Stacks <@ba.vup>+2</>"}
+{"id":3411,"en":"<In Combat> Whenever an enemy within range becomes Frozen, 60% chance for active [Kjerag] Stacks <@ba.vup>+1</>"}
+{"id":3412,"en":"<In Combat> Whenever an enemy within range becomes Frozen, 60% chance for active [Kjerag] Stacks <@ba.vup>+2</>"}
+{"id":3413,"en":"<On Acquire> Gain [Yan] Stacks equal to the current Dispatch Center level (Alliance need not be active)"}
+{"id":3414,"en":"<On Acquire> Gain [Yan] Stacks equal to twice the current Dispatch Center level (Alliance need not be active)"}
+{"id":3415,"en":"<End of Rest Phase> For each Operator acquired this Round, active [Yan] Stacks <@ba.vup>+1</>"}
+{"id":3416,"en":"<End of Rest Phase> For each Operator acquired this Round, active [Yan] Stacks <@ba.vup>+2</>"}
+{"id":3417,"en":"<On Acquire> Gain <@ba.vup>4</> extra Funds at the next Rest Phase"}
+{"id":3418,"en":"<End of Rest Phase> For each Operator acquired this Round, active [Investor] Stacks <@ba.vup>+1</>"}
+{"id":3419,"en":"<End of Rest Phase> For each Operator acquired this Round, active [Investor] Stacks <@ba.vup>+2</>"}
+{"id":3420,"en":"<On Acquire> [Yan] [Victoria] Stacks <@ba.vup>+5</> (Alliance need not be active)"}
+{"id":3421,"en":"<On Acquire> [Yan] [Victoria] Stacks <@ba.vup>+10</> (Alliance need not be active)"}
+{"id":3422,"en":"<Start of Rest Phase> If there are 3 Operators in the same row, gain 1 random Operator from the Alliance with the most members"}
+{"id":3423,"en":"<Start of Rest Phase> Gain 1 random Operator from the Alliance with the most members"}
+{"id":3424,"en":"<In Combat> For every 2 units defeated, active [Aegir] [Durable] [Raid] Stacks <@ba.vup>+1</>"}
+{"id":3425,"en":"<In Combat> For every 2 enemies defeated, active [Aegir] [Durable] [Raid] Stacks <@ba.vup>+2</>"}
+{"id":3426,"en":"<Start of Rest Phase> If there are 3 Operators in the same row, gain 1 Skadi, Specter or Underflow"}
+{"id":3427,"en":"<Start of Rest Phase> If there are 3 Operators in the same row, gain 1 Skadi, Specter or Underflow, repeated 2 times"}
+{"id":3428,"en":"<In Combat> When self is defeated or switches between substitute and main body, active [Aegir] Stacks <@ba.vup>+5</> and [Resilient] Stacks <@ba.vup>+5</>"}
+{"id":3429,"en":"<In Combat> When self is defeated or switches between substitute and main body, active [Aegir] Stacks <@ba.vup>+10</> and [Resilient] Stacks <@ba.vup>+10</>"}
+{"id":3430,"en":"<On Acquire> Own Alliance Stacks <@ba.vup>+3</> (Alliance need not be active)"}
+{"id":3431,"en":"<On Acquire> Own Alliance Stacks <@ba.vup>+6</> (Alliance need not be active)"}
+{"id":3432,"en":"<In Combat> When first activating a skill, active [Sargon] Stacks <@ba.vup>+5</>"}
+{"id":3433,"en":"<In Combat> When first activating a skill, active [Sargon] Stacks <@ba.vup>+10</>"}
+{"id":3434,"en":"<In Combat> When activating a skill, active [Sargon] Stacks <@ba.vup>+6</>"}
+{"id":3435,"en":"<In Combat> When activating a skill, active [Sargon] Stacks <@ba.vup>+12</>"}
+{"id":3436,"en":"<In Combat> When self is defeated, active [Aegir] Stacks <@ba.vup>+3</>"}
+{"id":3437,"en":"<In Combat> When self is defeated, active [Aegir] Stacks <@ba.vup>+6</>"}
+{"id":3438,"en":"<End of Rest Phase> Active Alliances of self and the Operator 1 tile behind each gain <@ba.vup>+3</> Stacks"}
+{"id":3439,"en":"<End of Rest Phase> Active Alliances of self and the Operator 1 tile behind each gain <@ba.vup>+6</> Stacks"}
+{"id":3440,"en":"<End of Rest Phase> For each [Victoria] Operator of a different tier on the field, active [Victoria] Stacks <@ba.vup>+2</>"}
+{"id":3441,"en":"<End of Rest Phase> For each [Victoria] Operator of a different tier on the field, active [Victoria] Stacks <@ba.vup>+4</>"}
+{"id":3444,"en":"<In Combat> For the first 3 enemies defeated, active [Victoria] [Foresight] [Resilient] Stacks <@ba.vup>+2</>"}
+{"id":3445,"en":"<In Combat> For the first 3 enemies defeated, active [Victoria] [Foresight] [Resilient] Stacks <@ba.vup>+4</>"}

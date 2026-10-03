@@ -34,6 +34,7 @@ import { ToastHost, toast, toastError, describeError } from './ui/toasts.js';
 import { net, identity, NetError } from './net.js';
 import { store, useStore, emptyMatch, selectRoute, sessionResetNotice } from './store.js';
 import { data } from './data.js';
+import { ensureI18n, trDeep } from './i18n.js';
 import { GAME_FILES } from './ui/gameComponents.js';
 import { TitleScreen, sanitizeName } from './screens/title.js';
 import { LobbyScreen, rememberRoom, parseRoomParam } from './screens/lobby.js';
@@ -56,7 +57,7 @@ const SCREENS = { title: TitleScreen, lobby: LobbyScreen, room: RoomScreen, game
 /** Copy of a server message without transport fields. */
 function payload(msg) {
   const { t, rid, ...rest } = msg; // eslint-disable-line no-unused-vars
-  return rest;
+  return trDeep(rest); // data names / texts the server copies into its pushes (js/i18n.js)
 }
 
 function clearRoomParam() {
@@ -91,7 +92,7 @@ function schedulePendingJoin() {
     const code = s.ui.pendingJoin;
     if (!code || joinInFlight || !s.session.entered || net.status !== 'online') return;
     if (s.room) {
-      if (s.room.code !== code) toast('你已在其他同盟中，请先离开当前同盟', 'warn');
+      if (s.room.code !== code) toast('You are already in another Alliance. Leave it first.', 'warn');
       clearPendingJoin();
       return;
     }
@@ -169,7 +170,7 @@ function onRoomState(msg) {
   const seats = Array.isArray(room.seats) ? room.seats : [];
   if (myId != null && seats.length && !seats.some((s) => s && s.playerId === myId)) {
     // We are no longer seated (kicked / left elsewhere).
-    if (store.get().room) toast('你已不在该同盟中', 'warn');
+    if (store.get().room) toast('You are no longer in this Alliance', 'warn');
     store.set({ room: null, match: emptyMatch() });
     return;
   }
@@ -183,8 +184,8 @@ function onRoomState(msg) {
 
 const CLOSE_REASON = {
   // 'timeout' = this player was removed after staying disconnected past the lobby grace (server/lobby.js)
-  host_left: '创建者已离开，同盟已解散', timeout: '由于长时间断开连接，你已离开同盟', empty: '同盟已解散',
-  kicked: '你已被移出同盟', ended: '模拟已结束', expired: '同盟已过期', shutdown: '服务器维护中，同盟已关闭',
+  host_left: 'The host left. The Alliance has been disbanded.', timeout: 'You left the Alliance after being disconnected for too long', empty: 'The Alliance has been disbanded',
+  kicked: 'You were removed from the Alliance', ended: 'Simulation Over', expired: 'The Alliance has expired', shutdown: 'Server maintenance in progress. The Alliance has been closed.',
 };
 
 function wireNet() {
@@ -200,12 +201,12 @@ function wireNet() {
   net.on('clock', (c) => store.set({ clock: { offset: c.offset, rtt: c.rtt, synced: c.synced } }));
   net.on('welcome', onWelcome);
   net.on('helloError', (err) => toastError(err));
-  net.on('replaced', () => toast('该身份已在其他页面登录，本页已断开', 'warn', { ttl: 6000 }));
+  net.on('replaced', () => toast('This identity signed in on another page. This page has been disconnected.', 'warn', { ttl: 6000 }));
   net.on('unhandledError', (err) => toastError(err));
   net.on('room.state', onRoomState);
   net.on('room.closed', (msg) => {
     backToLobby();
-    toast(CLOSE_REASON[msg.reason] || (typeof msg.reason === 'string' && msg.reason.length < 60 ? `同盟已关闭：${msg.reason}` : '同盟已关闭'), 'warn');
+    toast(CLOSE_REASON[msg.reason] || (typeof msg.reason === 'string' && msg.reason.length < 60 ? `Alliance closed: ${msg.reason}` : 'Alliance closed'), 'warn');
   });
   net.on('m.public', (msg) => { matchAt = Date.now(); store.patch('match', { public: payload(msg) }); maybeFinishRestore(); });
   net.on('m.private', (msg) => { matchAt = Date.now(); store.patch('match', { private: payload(msg) }); });
@@ -256,9 +257,9 @@ function ScreenCrashed({ error, reset }) {
   return html`<div class="screen crash">
     <div class="crash__box brackets">
       <${MicroLabel} tone="mint">SYSTEM FAULT<//>
-      <h2>界面发生错误</h2>
+      <h2>An interface error occurred</h2>
       <p class="t-lo">${String(error?.message || error).slice(0, 200)}</p>
-      <${Button} variant="primary" icon="refresh" onClick=${reset}>重新加载界面<//>
+      <${Button} variant="primary" icon="refresh" onClick=${reset}>Reload Interface<//>
     </div>
   </div>`;
 }
@@ -300,7 +301,7 @@ function installGlobalErrorHandlers() {
     if (err && (err.name === 'NotAllowedError' || err.name === 'AbortError')) { console.warn('[app] ignored rejection', err.name); return; }
     console.error('[app] unhandled rejection', err);
     if (err instanceof NetError) toastError(err);
-    else toast(`发生意外错误：${describeError(err)}`.slice(0, 120), 'error');
+    else toast(`Unexpected error: ${describeError(err)}`.slice(0, 120), 'error');
   });
   window.addEventListener('error', (ev) => {
     if (!(ev instanceof ErrorEvent)) return; // resource load errors are not script errors
@@ -337,7 +338,7 @@ async function boot() {
   // Optional local-client art manifest (emotes, tutorial pages, official UI sprites; DESIGN §13).
   data.load('local').catch(() => {});
 
-  const connectWhenReady = identityReady.then(() => {
+  const connectWhenReady = Promise.all([identityReady, ensureI18n()]).then(() => {
     if (entered) net.setName(savedName);
     else net.connect();
   });
@@ -356,5 +357,5 @@ async function boot() {
 boot().catch((err) => {
   console.error('[app] boot failed', err);
   const el = document.getElementById('boot-err');
-  if (el) el.textContent = '启动失败，请刷新页面重试';
+  if (el) el.textContent = 'Failed to start. Please refresh the page and try again.';
 });

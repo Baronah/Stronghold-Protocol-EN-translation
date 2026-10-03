@@ -1,0 +1,44 @@
+{"id":3631,"en":"First time the carrier takes damage in a battle: gain Camouflage (not targeted by ranged enemies unless blocking) for `duration` s."}
+{"id":3632,"en":"\"I will make you remember this lesson. I will make you forever fear the shadows.\""}
+{"id":3633,"en":"\"I will protect my teammates, and I will protect myself.\""}
+{"id":3634,"en":"\"Don't poke a hole in the bag. You don't want to get up close and personal with these little guys.\""}
+{"id":3635,"en":"A banner representing Kazimierz knightly competition. \"Just seeing it, you can almost hear the thunderous cheers.\""}
+{"id":3636,"en":"A bridge clip that once set off a massive explosion in the night sky of Laterano.\n\"Fire, don't stop! Cliff, the three of us will make it big, even bigger than this!\""}
+{"id":3637,"en":"ATK% += atk. When dealing ARTS damage: also inflict Burn Damage (Burn elemental damage) = damage_scale * that damage."}
+{"id":3638,"en":"A heavy hammer that once forged peace in the factories of Victoria, its flames now burning even brighter.\n\"Use the same iron and fire to end that war.\""}
+{"id":3639,"en":"\"A formula with intensified potency. It keeps you awake, provided you can stand that peculiar taste.\""}
+{"id":3640,"en":"\"You can use it to block some attacks. It doesn't mind.\""}
+{"id":3641,"en":"\"She understood when you said thank you. She's very happy she could save you.\""}
+{"id":3642,"en":"On attack: prob chance to add 1 layer of Paralysis (each layer interrupts one enemy normal attack, max 3 layers)."}
+{"id":3643,"en":"\"It'll have the target rolling in pain. Be sure to check the wind direction before use.\""}
+{"id":3644,"en":"On attack: prob chance to apply Cold (ASPD -30; cold again while cold -> Frozen) for `cold` s."}
+{"id":3645,"en":"\"A piece of never-melting ice that once witnessed the rise and fall of the sun and moon atop the peaks of Kjerag.\n\"Calm yourself, like a glacier: unshakable, yet able to destroy everything.\"\""}
+{"id":3646,"en":"ATK% += atk; carrier's physical and arts damage becomes Weakness damage: each hit is dealt as whichever of physical/arts yields MORE damage against that target's DEF/RES."}
+{"id":3647,"en":"\"Yes, this device can help you quite a lot, but to win, you still have to rely on yourself.\""}
+{"id":3648,"en":"On equip: destroy BOTH the item and the target operator; special refresh of refresh_cnt(2) operators of the SAME tier as the target, take choice_cnt(1) free. Multiplayer: at next prep phase send 1 copy of the original operator to the teammate who has the most operators of that operator's bond(s) (tie -> random). Cannot target DIY (custom) operators. Never merges."}
+{"id":3649,"en":"\"This is a gift. You can turn it into anything you want.\""}
+{"id":3650,"en":"Normal: equip onto any normal operator (occupies a slot until next round start), at the start of the next round destroy item and promote the operator to elite (Elite/golden). Golden: on equip, destroy item and promote immediately. On promotion, equipped items return to hand."}
+{"id":3652,"en":"\"Raise your glass, mind the curve of your smile, and I guarantee you'll be a smash hit! No, that's not moving enough yet. Go try on another outfit.\""}
+{"id":3654,"en":"On taking effect, the original Operator is destroyed, and the Mutant Cell and other Equipment return to the Bench and can be equipped again; then gain a random starting Operator one tier higher (up to Tier 6), placed on the Bench and needing to be redeployed"}
+{"id":3656,"en":"maxHP% += max_hp. If carrier also holds Pegasus Lance (either quality): regen hp_recovery_per_sec_by_max_hp_ratio * maxHP per second."}
+{"id":3658,"en":"ATK% += atk. If carrier also holds Pegasus Helm: every damage instance additionally deals atk_scale * ATK as TRUE damage [ASSUMED: % of ATK, per blackboard key atk_scale; description says 30% true damage]."}
+{"id":3660,"en":"ATK% += atk. If carrier has bond Laterano: on each attack, prob chance to fire an extra bullet at 1 enemy in range dealing atk_scale_1 * ATK physical damage; if carrier also holds Laterano Bridge Clip -> atk_scale_2 * ATK."}
+{"id":3661,"en":"\"The people of Laterano have never doubted the majesty of the Gun Knights.\""}
+{"id":3662,"en":"maxHP% += max_hp. If carrier has bond Yan: at battle start ASPD += attack_speed * min(k, max_cnt), k = operators the player acquired during THIS round's prep. If also holding Yan Short Blade: each time the player acquires an operator, funds += count (max `max` times per round)."}
+{"id":3663,"en":"\"The people of Yan believe the ancient legends of the Celestial Masters are by no means pure fiction.\""}
+{"id":3664,"en":"Drag onto the field during prep: opens a personal bounty choice (choice event hunter_band_1). The chosen bounty adds extra enemies to your next battle; killing them / perfect defence grants funds (see ENEMY_GAIN '...Bounty' effects). Consumed."}
+{"id":3665,"en":"Flat damage reduction: each incoming hit reduced by `value` (180/300, min 0 [ASSUMED]). If carrier has bond Aegir: when taking damage, deal atk_scale * ATK arts damage to the source (internal CD lock_duration 0.5 s); if also holding Aegir Greatblade, one additional hit of atk_scale * ATK arts (same CD)."}
+{"id":3666,"en":"\"The secrets of the Aegirians are buried in the deepest ocean trenches, but they have never truly died.\""}
+{"id":3667,"en":"ASPD += attack_speed_1 (35/55). If carrier has bond Victoria: gains the special effects of every hammer (Burn/Sturdy/Haste/Tremble) currently equipped by ANY of the player's on-field operators (burn 10% of arts dmg, undying 8 s, ASPD +30, 10% tremble 2 s). If it also holds a hammer-series item, that hammer's special effect is doubled (burn 20%, undying 16 s, ASPD +60, tremble prob 20% [ASSUMED doubling targets])."}
+{"id":3668,"en":"\"The Victorians have proven over many eras that truth lies within steam and gears.\""}
+{"id":3669,"en":"RES += magic_resistance. If carrier has bond Kjerag: every `interval` (1 s) each Cold or Frozen enemy inside the carrier's attack range takes atk_scale * ATK arts damage; atk_scale_ex (100%) if carrier also holds Kjerag Unmelting Ice."}
+{"id":3670,"en":"\"The people of Kjerag believe the gems in the deepest part of the glaciers are the tears of Enciodes.\""}
+{"id":3671,"en":"Initial SP += init_sp (30/50). If carrier has bond Sargon: when its FIRST skill ends, SP += sp (30). If also holding Sargon Strong Tea: each time the carrier activates a skill, all Sargon operators on field gain addition_sp (3) SP."}
+{"id":3672,"en":"\"Legend has it that the people of Sargon will find the mark of time's reversal at the end of the yellow sands.\""}
+{"id":3673,"en":"\"This new guy can definitely help out, right?\""}
+{"id":3674,"en":"\"Mutant Cluster, we've already seen what you're capable of...\""}
+{"id":3675,"en":"respawnTime *= (1 + respawn_time) (-40%/-60%). If carrier has bond Kazimierz: for `duration` (20) s after activating a skill, enemies inside its attack range get ASPD x attack_speed(0.65) and move speed x move_speed(0.65) (i.e. -35%). If also holding Kazimierz Tournament Banner: during skill duration ATK% += atk (+100%), and lethal damage does not retreat it; it retreats when the skill ends."}
+{"id":3676,"en":"A code of conduct set down for the knights of Kazimierz. \"Honest, steadfast, brave, unyielding.\""}
+{"id":3677,"en":"spRecoveryPerSec += sp_recovery_per_sec (0.2/0.35). If carrier has bond Siracusa: while Camouflaged, ATK% += atk_per_sec per second (2%/s) up to max_atk (+100%, i.e. 200% ATK); the bonus lasts until the first damage dealt after camouflage ends, or until the carrier leaves the field. If also holding Siracusan Formal Wear: that first hit after losing camouflage additionally deals atk_scale (800%) * ATK true damage."}
+{"id":3678,"en":"A Siracusan badge that can make one a \"family member\". \"Learn to stay by your family. Your real family.\""}
+{"id":3682,"en":"Periodically inflicts <$ba.cold>Cold</> on all enemies on the field for a certain duration"}

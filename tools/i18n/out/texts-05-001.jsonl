@@ -1,0 +1,50 @@
+{"id":1237,"en":"DEF <@ba.vup>+65%</>, ATK <@ba.vup>+30%</>"}
+{"id":1238,"en":"ATK <@ba.vup>+95%</>, DEF <@ba.vup>+60%</>, slashes all enemies in the tile ahead with the shield"}
+{"id":1241,"en":"The next attack restores <@ba.vup>4%</> of own Max HP and deals Physical damage equal to <@ba.vup>190%</> of ATK to all surrounding ground enemies, with a <@ba.vup>30%</> chance to <$ba.stun>Stun</> them for <@ba.vup>0.5</> seconds"}
+{"id":1243,"en":"Gains 1 stack of <$ba.shield>Shield</> every 9 seconds (max 3 stacks; gains 1 stack immediately upon deployment); restores 20% of own Max HP whenever a Shield stack breaks"}
+{"id":1245,"en":"Takes 30% less damage from [Sarkaz] enemies"}
+{"id":1248,"en":"DEF <@ba.vup>+45%</>"}
+{"id":1250,"en":"Upon activation, cannot act and takes no damage for <@ba.vup>10</> seconds, and reduces the Movement Speed of surrounding enemies by <@ba.vup>-60%</>; after this state ends, <$ba.stun>Stuns</> surrounding ground enemies for <@ba.vup>3</> seconds, Attack Interval <@ba.vup>reduced</>, ATK <@ba.vup>+85%</>, DEF <@ba.vup>+40%</>, attacks all blocked enemies"}
+{"id":1251,"en":"The next attack restores <@ba.vup>5%</> of own Max HP and deals Physical damage equal to <@ba.vup>210%</> of ATK to all surrounding ground enemies, with a <@ba.vup>30%</> chance to <$ba.stun>Stun</> them for <@ba.vup>0.6</> seconds"}
+{"id":1252,"en":"DEF <@ba.vup>+60%</>"}
+{"id":1253,"en":"Upon activation, cannot act and takes no damage for <@ba.vup>10</> seconds, and reduces the Movement Speed of surrounding enemies by <@ba.vup>-60%</>; after this state ends, <$ba.stun>Stuns</> surrounding ground enemies for <@ba.vup>3.5</> seconds, Attack Interval <@ba.vup>reduced</>, ATK <@ba.vup>+100%</>, DEF <@ba.vup>+50%</>, attacks all blocked enemies"}
+{"id":1255,"en":"ATK and DEF <@ba.kw>+8%</> when there are no allied Operators in the surrounding 8 tiles"}
+{"id":1257,"en":"Gradually gains <@ba.vup>8</> DP over the skill duration, Attack Interval <@ba.vup>reduced</>, ATK <@ba.vup>+45%</>, Block <@ba.vup>+1</>, gains <@ba.vup>60%</> Physical and Arts Dodge"}
+{"id":1259,"en":"After dodging, the next attack becomes a double strike and hits all blocked enemies"}
+{"id":1261,"en":"While deployed, all [Kazimierz] Operators gain 22% Physical Dodge"}
+{"id":1264,"en":"Immediately gains <@ba.vup>6</> DP and dodges the next physical attack"}
+{"id":1266,"en":"Immediately gains <@ba.vup>11</> DP; deals Physical damage equal to <@ba.vup>180%</> of ATK <@ba.vup>twice</> to up to 6 surrounding enemies and <$ba.stun>Stuns</> the targets hit for <@ba.vup>0.5</> seconds; allied units within range gain <@ba.vup>40%</> Physical Dodge for <@ba.vup>10</> seconds"}
+{"id":1267,"en":"Gradually gains <@ba.vup>8</> DP over the skill duration, Attack Interval <@ba.vup>reduced</>, ATK <@ba.vup>+60%</>, Block <@ba.vup>+1</>, gains <@ba.vup>80%</> Physical and Arts Dodge"}
+{"id":1268,"en":"Immediately gains <@ba.vup>12</> DP; deals Physical damage equal to <@ba.vup>210%</> of ATK <@ba.vup>twice</> to up to 6 surrounding enemies and <$ba.stun>Stuns</> the targets hit for <@ba.vup>0.5</> seconds; allied units within range gain <@ba.vup>45%</> Physical Dodge for <@ba.vup>10</> seconds"}
+{"id":1271,"en":"Prioritizes attacking the enemy with the <@ba.kw>lowest DEF</> within Attack Range"}
+{"id":1273,"en":"Attack Range becomes an <@ba.rem>infinite straight line</> ahead, ATK <@ba.vup>+80%</>; damage dealt to targets outside the original range increases to <@ba.vup>125%</>"}
+{"id":1275,"en":"ATK +15% when no damage has been taken in the last 10 seconds"}
+{"id":1277,"en":"Less likely to be targeted by enemies while the skill is active, and attacks ignore the target's Physical Dodge"}
+{"id":1280,"en":"Can attack blocked enemies outside of range, ASPD <@ba.vup>+75</>"}
+{"id":1281,"en":"Deals more damage to more distant enemies (up to <@ba.kw>15%</> increase)"}
+{"id":1282,"en":"Attack Range becomes an <@ba.rem>infinite straight line</> ahead, ATK <@ba.vup>+100%</>; damage dealt to targets outside the original range increases to <@ba.vup>130%</>"}
+{"id":1283,"en":"Can attack blocked enemies outside of range, ASPD <@ba.vup>+90</>"}
+{"id":1285,"en":"Gains an additional <@ba.kw>1</> SP when the attacked enemy is not defeated"}
+{"id":1287,"en":"Attack Range expanded, Attack Interval <@ba.vup>considerably reduced</>"}
+{"id":1289,"en":"While deployed, SP Recovery of all allied units +0.3/s (highest effect of this type applies)"}
+{"id":1291,"en":"Attack Range expanded, Attack Interval <@ba.vup>greatly reduced</>"}
+{"id":1293,"en":"DEF <@ba.vdown>-70%</>, ATK <@ba.vup>+125%</>, Attack Range <@ba.vup>expanded</>, attacks up to <@ba.vup>4</> targets at once (counts as a melee attack)"}
+{"id":1295,"en":"ATK +10%; when in the squad, Redeploy Time of all allied units -10%"}
+{"id":1299,"en":"Next attack's ATK increases to <@ba.vup>205%</>"}
+{"id":1301,"en":"<@ba.rem>Can switch between the following state and the initial state:</>\nAttack Range <@ba.vdown>reduced</>, DEF <@ba.vup>+50%</>, restores <@ba.vup>3.5%</> of Max HP per second"}
+{"id":1302,"en":"DEF <@ba.vdown>-70%</>, ATK <@ba.vup>+140%</>, Attack Range <@ba.vup>expanded</>, attacks up to <@ba.vup>5</> targets at once (counts as a melee attack)"}
+{"id":1303,"en":"Next attack's ATK increases to <@ba.vup>225%</>"}
+{"id":1304,"en":"<@ba.rem>Can switch between the following state and the initial state:</>\nAttack Range <@ba.vdown>reduced</>, DEF <@ba.vup>+65%</>, restores <@ba.vup>4.0%</> of Max HP per second"}
+{"id":1306,"en":"ATK <@ba.vup>+85%</>, ASPD <@ba.vup>+60</>, Block <@ba.vup>+2</>; during the skill, only takes <@ba.vup>50%</> of damage, with the rest deferred until the skill ends and converted into an equal amount of HP loss over <@ba.vup>20</> seconds"}
+{"id":1308,"en":"ATK and DEF +10%, plus an additional 4% for each additional enemy blocked"}
+{"id":1310,"en":"Healing received +20%, increased to 40% when HP is below half"}
+{"id":1313,"en":"ATK <@ba.vup>+45%</>, each attack heals self for <@ba.vup>30%</> of the damage dealt"}
+{"id":1315,"en":"Attack Range <@ba.vup>expanded</>, ATK <@ba.vup>+110%</>, DEF <@ba.vup>+35%</>; when attacking an unblocked enemy, pulls it <@ba.vup>with moderate force</> toward self"}
+{"id":1316,"en":"ATK <@ba.vup>+100%</>, ASPD <@ba.vup>+80</>, Block <@ba.vup>+2</>; during the skill, only takes <@ba.vup>50%</> of damage, with the rest deferred until the skill ends and converted into an equal amount of HP loss over <@ba.vup>20</> seconds"}
+{"id":1317,"en":"ATK <@ba.vup>+60%</>, each attack heals self for <@ba.vup>35%</> of the damage dealt"}
+{"id":1318,"en":"Attack Range <@ba.vup>expanded</>, ATK <@ba.vup>+140%</>, DEF <@ba.vup>+40%</>; when attacking an unblocked enemy, pulls it <@ba.vup>with moderate force</> toward self"}
+{"id":1321,"en":"In <@ba.kw>Reclamation Algorithm</>, after the skill is activated for the first time, Max HP, ATK, and DEF increase to 150%"}
+{"id":1323,"en":"Attack Interval <@ba.vup>reduced</>, each attack inflicts 0.3s of <$ba.sluggish>Sluggish</> on the target;\n<$ba.charged>Charged</> bonus effect: ATK <@ba.vup>+10%</> and <$ba.sluggish>Sluggish</> becomes <$ba.root>Bind</> for <@ba.vup>0.3</> seconds"}
+{"id":1325,"en":"Immediately restores 40% of Max HP upon skill activation;\nEffect doubled when <$ba.charged>Charged</>"}
+{"id":1327,"en":"When SP exceeds the limit, SP Recovery +0.6/s"}
+{"id":1330,"en":"ATK <@ba.vup>+25%</>, DEF <@ba.vup>+40%</>;\n<$ba.charged>Charged</> bonus effect: Trait effect remains active during the skill"}

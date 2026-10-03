@@ -1,0 +1,12 @@
+{"id":1505,"en":"Heals all allies within a certain nearby area for HP equal to <@ba.vup>110%</> of Saria's ATK"}
+{"id":1506,"en":"The next attack restores HP equal to <@ba.vup>150%</> of ATK to one nearby allied unit below half HP\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1507,"en":"All nearby allies restore HP equal to <@ba.vup>20%</> of Saria's ATK per second\nAll nearby enemies take <@ba.vup>+40%</> Arts damage and have Movement Speed <@ba.vup>-60%</>"}
+{"id":1510,"en":"The next attack has an <@ba.vup>expanded</> splash radius and deals Arts damage equal to <@ba.vup>180%</> of ATK\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1512,"en":"When Dusk or a \"Freeling\" defeats an enemy, Dusk gains 2% ATK, stacking up to 15 times"}
+{"id":1514,"en":"The first time attacking an enemy after deployment, summons a \"Freeling\" at the target's location (deployable ground tile) for 25 seconds"}
+{"id":1517,"en":"Attack Range <@ba.vup>expanded</>, ATK <@ba.vup>+29%</>, ASPD <@ba.vup>+29</>, attacks all enemies within Attack Range, and Arts damage dealt to enemies below half HP increases to <@ba.vup>120%</>"}
+{"id":1519,"en":"Attack Interval <@ba.vdown>increased</>, prioritizes unblocked enemies, Attack Range and splash radius <@ba.vup>expanded</>, ATK <@ba.vup>+70%</>; each attack summons/refreshes a <@ba.vup>\"Freeling\"</> at the target's location (deployable ground tile) for 25 seconds"}
+{"id":1520,"en":"The next attack has an <@ba.vup>expanded</> splash radius and deals Arts damage equal to <@ba.vup>210%</> of ATK\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1521,"en":"Attack Range <@ba.vup>expanded</>, ATK <@ba.vup>+40%</>, ASPD <@ba.vup>+40</>, attacks all enemies within Attack Range, and Arts damage dealt to enemies below half HP increases to <@ba.vup>125%</>"}
+{"id":1522,"en":"Attack Interval <@ba.vdown>increased</>, prioritizes unblocked enemies, Attack Range and splash radius <@ba.vup>expanded</>, ATK <@ba.vup>+100%</>; each attack summons/refreshes a <@ba.vup>\"Freeling\"</> at the target's location (deployable ground tile) for 25 seconds"}
+{"id":1525,"en":"In <@ba.kw>Integrated Strategies</>, attacks one additional target"}

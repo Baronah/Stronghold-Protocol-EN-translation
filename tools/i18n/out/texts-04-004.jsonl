@@ -1,0 +1,28 @@
+{"id":1186,"en":"ASPD <@ba.vup>+120</>, attacks <@ba.vup>2</> enemies simultaneously; <$ba.frozen>Freeze</> on all enemies within range is extended until the skill ends, and when the skill ends deals <@ba.vup>300%</> Arts damage to all <$ba.frozen>Frozen</> enemies and ends their <$ba.frozen>Freeze</>; prioritizes units that are not <$ba.frozen>Frozen</>"}
+{"id":1187,"en":"Inflicts <$ba.cold>Cold</> for <@ba.vup>3</> seconds and deals Arts damage equal to <@ba.vup>160%</> ATK to all enemies within range; <$ba.charged>Charged</>: inflicts an additional stack of <$ba.cold>Cold</>"}
+{"id":1188,"en":"The next attack <@ba.vup>hits twice</>, each dealing Arts damage equal to <@ba.vup>150%</> ATK"}
+{"id":1189,"en":"ASPD <@ba.vup>+122</>, attacks <@ba.vup>2</> enemies simultaneously; <$ba.frozen>Freeze</> on all enemies within range is extended until the skill ends, and when the skill ends deals <@ba.vup>400%</> Arts damage to all <$ba.frozen>Frozen</> enemies and ends their <$ba.frozen>Freeze</>; prioritizes units that are not <$ba.frozen>Frozen</>"}
+{"id":1191,"en":"Natural SP regeneration +0.25/s while an Elite or Leader enemy is within Attack Range"}
+{"id":1193,"en":"In <@ba.kw>Integrated Strategies</>, while deployed, <$ba.cold>Cold</> or <$ba.frozen>Frozen</> enemies take Arts damage equal to 50% of Gnosis's ATK every 0.5 seconds"}
+{"id":1195,"en":"Attack Range <@ba.vup>expanded</>; immediately deals Arts damage equal to <@ba.vup>170%</> ATK to all enemies within Attack Range and reduces their RES by <@ba.vup>-8%</> for <@ba.vup>6</> seconds\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1197,"en":"ATK +4% for each enemy within Attack Range (stacks up to 5 times)"}
+{"id":1199,"en":"Attack Range <@ba.vup>expanded</>; immediately deals Arts damage equal to <@ba.vup>200%</> ATK to all enemies within Attack Range and reduces their RES by <@ba.vup>-12%</> for <@ba.vup>6</> seconds\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1201,"en":"ATK <@ba.vup>+45%</>; healed Operators gain a buff that restores <@ba.vup>80</> HP each time they take damage within 10 seconds"}
+{"id":1203,"en":"When an Operator within Attack Range activates a skill, recovers 1 SP and gains ASPD +16 for 8 seconds"}
+{"id":1206,"en":"The next heal restores HP equal to <@ba.vup>115%</> ATK and heals one additional target\n<@ba.rem>Can hold 2 charges</>"}
+{"id":1207,"en":"ATK <@ba.vup>+60%</>; healed Operators gain a buff that restores <@ba.vup>120</> HP each time they take damage within 10 seconds"}
+{"id":1208,"en":"The next heal restores HP equal to <@ba.vup>130%</> ATK and heals one additional target\n<@ba.rem>Can hold 3 charges</>"}
+{"id":1210,"en":"Upon deployment, immediately deals Arts damage equal to <@ba.vup>115%</> ATK twice to all nearby enemies and <$ba.stun>Stuns</> them for <@ba.vup>1.5</> seconds; then every second, rains swords on up to <@ba.vup>2</> different targets within Attack Range, dealing Arts damage equal to <@ba.vup>85%</> ATK and <$ba.stun>Stun</> for <@ba.vup>0.2</> seconds"}
+{"id":1212,"en":"ATK +20% while the passive skill is active; upon first defeating an enemy, restores all HP and recasts the passive skill"}
+{"id":1214,"en":"After each deployment, until an enemy is defeated, ASPD +8 and all damage taken reduced by 25%"}
+{"id":1217,"en":"After deployment ATK <@ba.vup>+40%</>; attacks make targets lose special abilities for <@ba.vup>5</> seconds, during which they take <@ba.vup>260</> Arts damage per second"}
+{"id":1219,"en":"Upon deployment, immediately deals Arts damage equal to <@ba.vup>150%</> ATK to all nearby enemies and reduces their RES by <@ba.vup>-15%</> for <@ba.vup>8</> seconds; ATK <@ba.vup>+30%</>, attacks become double attacks dealing Arts damage"}
+{"id":1220,"en":"ATK <@ba.kw>+10%</> when there are no allied Operators on the 4 adjacent tiles"}
+{"id":1221,"en":"Upon deployment, immediately deals Arts damage equal to <@ba.vup>130%</> ATK twice to all nearby enemies and <$ba.stun>Stuns</> them for <@ba.vup>1.5</> seconds; then every second, rains swords on up to <@ba.vup>3</> different targets within Attack Range, dealing Arts damage equal to <@ba.vup>100%</> ATK and <$ba.stun>Stun</> for <@ba.vup>0.2</> seconds"}
+{"id":1222,"en":"After deployment ATK <@ba.vup>+55%</>; attacks make targets lose special abilities for <@ba.vup>8</> seconds, during which they take <@ba.vup>320</> Arts damage per second"}
+{"id":1223,"en":"Upon deployment, immediately deals Arts damage equal to <@ba.vup>180%</> ATK to all nearby enemies and reduces their RES by <@ba.vup>-20%</> for <@ba.vup>10</> seconds; ATK <@ba.vup>+40%</>, attacks become double attacks dealing Arts damage"}
+{"id":1226,"en":"DEF <@ba.vup>+13%</>\nWhen attacked, deals Physical damage equal to <@ba.vup>65%</> of Hoshiguma's ATK to the attacker"}
+{"id":1230,"en":"While deployed, all allied [Defender] Operators gain DEF +6%"}
+{"id":1233,"en":"DEF <@ba.vup>+50%</>, ATK <@ba.vup>+20%</>"}
+{"id":1235,"en":"ATK <@ba.vup>+80%</>, DEF <@ba.vup>+50%</>; slashes all enemies on the tile in front with the shield"}
+{"id":1236,"en":"DEF <@ba.vup>+21%</>\nWhen attacked, deals Physical damage equal to <@ba.vup>80%</> of Hoshiguma's ATK to the attacker"}

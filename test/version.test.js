@@ -37,7 +37,7 @@ test('the release version is what players see', () => {
   assert.match(read('public/js/screens/title.js'), /v\$\{APP_VERSION\}/, 'title screen footer');
   assert.ok(!/PROTOCOL v1/.test(read('public/js/screens/title.js')), 'no protocol number posing as a version');
   const server = read('server/index.js');
-  assert.match(server, /Stronghold Protocol: Covenant v\$\{APP_VERSION\}/, 'boot banner');
+  assert.match(server, /Stronghold Protocol: Alliance v\$\{APP_VERSION\}/, 'boot banner');
   assert.match(server, /app: APP_VERSION/, '/healthz');
 });
 

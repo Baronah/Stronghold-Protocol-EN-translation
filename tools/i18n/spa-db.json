@@ -8,6 +8,9 @@
    "alliances": [
     "Laterano",
     "Swift"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -18,6 +21,9 @@
    "alliances": [
     "Kjerag",
     "Durable"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -27,6 +33,9 @@
    "tier": 1,
    "alliances": [
     "Yan"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -46,6 +55,9 @@
    "alliances": [
     "Victoria",
     "Aid"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -55,6 +67,9 @@
    "tier": 1,
    "alliances": [
     "Siracusa"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -65,6 +80,9 @@
    "alliances": [
     "Siracusa",
     "Solo"
+   ],
+   "effects": [
+    "When Sold"
    ]
   },
   {
@@ -92,6 +110,9 @@
    "tier": 1,
    "alliances": [
     "Sargon"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -101,6 +122,9 @@
    "tier": 1,
    "alliances": [
     "Aid"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -110,6 +134,9 @@
    "tier": 1,
    "alliances": [
     "Agile"
+   ],
+   "effects": [
+    "When Sold"
    ]
   },
   {
@@ -130,6 +157,9 @@
    "alliances": [
     "Arcane",
     "Precision"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -149,6 +179,9 @@
    "alliances": [
     "Kazimierz",
     "Swift"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -158,6 +191,9 @@
    "tier": 1,
    "alliances": [
     "Resilient"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -168,6 +204,9 @@
    "alliances": [
     "Laterano",
     "Precision"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -177,6 +216,9 @@
    "tier": 2,
    "alliances": [
     "Foresight"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -187,6 +229,9 @@
    "alliances": [
     "Yan",
     "Agile"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -197,6 +242,9 @@
    "alliances": [
     "Victoria",
     "Kjerag"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -206,6 +254,9 @@
    "tier": 2,
    "alliances": [
     "Sargon"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -215,6 +266,9 @@
    "tier": 2,
    "alliances": [
     "Ægir"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -225,6 +279,9 @@
    "alliances": [
     "Sargon",
     "Durable"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -234,6 +291,9 @@
    "tier": 2,
    "alliances": [
     "Raid"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -244,6 +304,9 @@
    "alliances": [
     "Victoria",
     "Arcane"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -263,6 +326,9 @@
    "alliances": [
     "Kazimierz",
     "Resilient"
+   ],
+   "effects": [
+    "On Deployment"
    ]
   },
   {
@@ -273,6 +339,9 @@
    "alliances": [
     "Swift",
     "Agile"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -283,12 +352,15 @@
    "alliances": [
     "Aid",
     "Assist_Operator"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
    "name": "Lappland",
    "attributeType": "Can stack",
-   "attribute": "<On refresh> <span class='blue'>+4</span>/<span class='green'>+8</span> stacks to active [Siracusa] Alliiance on first active refresh; takes effect even if the Operator is on Bench",
+   "attribute": "&ltOn refresh&gt <span class='blue'>+4</span>/<span class='green'>+8</span> stacks to active [Siracusa] Alliiance on first active refresh; takes effect even if the Operator is on Bench",
    "tier": 2,
    "alliances": [
     "Siracusa"
@@ -302,6 +374,9 @@
    "alliances": [
     "Durable",
     "Solo"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -312,6 +387,9 @@
    "alliances": [
     "Kazimierz",
     "Durable"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -322,6 +400,9 @@
    "alliances": [
     "Investor",
     "Swift"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -332,6 +413,9 @@
    "alliances": [
     "Laterano",
     "Marvel"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -341,6 +425,9 @@
    "tier": 3,
    "alliances": [
     "Agile"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -351,6 +438,9 @@
    "alliances": [
     "Yan",
     "Foresight"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -361,6 +451,9 @@
    "alliances": [
     "Yan",
     "Investor"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -372,6 +465,9 @@
     "Ægir",
     "Durable",
     "Raid"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -381,6 +477,9 @@
    "tier": 3,
    "alliances": [
     "Sargon"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -390,6 +489,9 @@
    "tier": 3,
    "alliances": [
     "Victoria"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -400,6 +502,9 @@
    "alliances": [
     "Ægir",
     "Arcane"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -410,6 +515,9 @@
    "alliances": [
     "Swift",
     "Assist_Operator"
+   ],
+   "effects": [
+    "When Sold"
    ]
   },
   {
@@ -420,6 +528,9 @@
    "alliances": [
     "Kjerag",
     "Precision"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -430,6 +541,9 @@
    "alliances": [
     "Kazimierz",
     "Raid"
+   ],
+   "effects": [
+    "On Deployment"
    ]
   },
   {
@@ -450,6 +564,9 @@
    "alliances": [
     "Kjerag",
     "Foresight"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -460,6 +577,9 @@
    "alliances": [
     "Durable",
     "Resilient"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -475,11 +595,14 @@
   {
    "name": "Vulpisfoglia",
    "attributeType": "One-time",
-   "attribute": "&ltWhen obtained&gt <span class='blue'>+6</span>/<span class='green'>+12</span> stacks to own active Alliance(s)",
+   "attribute": "&ltWhen obtained&gt <span class='blue'>+6</span>/<span class='green'>+12</span> stacks to own active Alliance(s) (Alliances do not need to be active)",
    "tier": 3,
    "alliances": [
     "Siracusa",
     "Swift"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -490,6 +613,9 @@
    "alliances": [
     "Siracusa",
     "Marvel"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -500,16 +626,22 @@
    "alliances": [
     "Kjerag",
     "Aid"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
    "name": "Archetto",
    "attributeType": "Can stack",
-   "attribute": "&ltWhen entering Rest Phase&gt <span class='blue'>+3</span>/<span class='green'>+6</span> stacks each to active Alliance(s) of self and the Operator 1 tile ahead",
+   "attribute": "&ltWhen entering Rest Phase&gt <span class='blue'>+3</span>/<span class='green'>+6</span> stacks each to active Alliance(s) of self and of the Operator 1 tile ahead",
    "tier": 3,
    "alliances": [
     "Laterano",
     "Agile"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -520,16 +652,22 @@
    "alliances": [
     "Laterano",
     "Durable"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
    "name": "Mostima",
    "attributeType": "Can stack",
-   "attribute": "&ltIn battle&gt Whenever Operators up to 4 tiles ahead of self spend 6 bullets, <span class='blue'>+1</span>/<span class='green'>+2</span> stack(s) to active [Laterano] Alliance",
+   "attribute": "&ltIn battle&gt Whenever Operators in the 4 adjacent tiles spend 6 bullets, <span class='blue'>+1</span>/<span class='green'>+2</span> stack(s) to active [Laterano] Alliance",
    "tier": 4,
    "alliances": [
     "Laterano",
     "Arcane"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -540,6 +678,9 @@
    "alliances": [
     "Foresight",
     "Raid"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -549,6 +690,9 @@
    "tier": 4,
    "alliances": [
     "Precision"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -560,6 +704,9 @@
     "Victoria",
     "Foresight",
     "Resilient"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -570,6 +717,9 @@
    "alliances": [
     "Ægir",
     "Solo"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -580,6 +730,9 @@
    "alliances": [
     "Siracusa",
     "Arcane"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -590,6 +743,9 @@
    "alliances": [
     "Victoria",
     "Agile"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -599,6 +755,9 @@
    "tier": 4,
    "alliances": [
     "Ægir"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -609,6 +768,9 @@
    "alliances": [
     "Kjerag",
     "Agile"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -619,6 +781,9 @@
    "alliances": [
     "Swift",
     "Precision"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -629,6 +794,9 @@
    "alliances": [
     "Siracusa",
     "Raid"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -638,6 +806,9 @@
    "tier": 4,
    "alliances": [
     "Yan"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -647,6 +818,9 @@
    "tier": 4,
    "alliances": [
     "Solo"
+   ],
+   "effects": [
+    "When Sold"
    ]
   },
   {
@@ -656,6 +830,9 @@
    "tier": 4,
    "alliances": [
     "Kazimierz"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -666,6 +843,10 @@
    "alliances": [
     "Kazimierz",
     "Precision"
+   ],
+   "effects": [
+    "On Deployment",
+    "In Battle"
    ]
   },
   {
@@ -676,6 +857,9 @@
    "alliances": [
     "Aid",
     "Agile"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -685,6 +869,9 @@
    "tier": 4,
    "alliances": [
     "Kjerag"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -694,6 +881,9 @@
    "tier": 4,
    "alliances": [
     "Sargon"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -704,6 +894,9 @@
    "alliances": [
     "Sargon",
     "Aid"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -713,6 +906,9 @@
    "tier": 4,
    "alliances": [
     "Assist_Operator"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -722,6 +918,9 @@
    "tier": 4,
    "alliances": [
     "Marvel"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -731,6 +930,9 @@
    "tier": 5,
    "alliances": [
     "Swift"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -741,6 +943,9 @@
    "alliances": [
     "Laterano",
     "Foresight"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -751,6 +956,9 @@
    "alliances": [
     "Sargon",
     "Precision"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -761,6 +969,9 @@
    "alliances": [
     "Yan",
     "Victoria"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -770,6 +981,9 @@
    "tier": 5,
    "alliances": [
     "Ægir"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -780,6 +994,9 @@
    "alliances": [
     "Resilient",
     "Agile"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -790,6 +1007,9 @@
    "alliances": [
     "Arcane",
     "Raid"
+   ],
+   "effects": [
+    "On Deployment"
    ]
   },
   {
@@ -799,6 +1019,9 @@
    "tier": 5,
    "alliances": [
     "Victoria"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -809,6 +1032,9 @@
    "alliances": [
     "Siracusa",
     "Assist_Operator"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -819,6 +1045,9 @@
    "alliances": [
     "Durable",
     "Solo"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -829,6 +1058,9 @@
    "alliances": [
     "Yan",
     "Arcane"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -839,6 +1071,9 @@
    "alliances": [
     "Ægir",
     "Resilient"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -850,6 +1085,9 @@
     "Kjerag",
     "Swift",
     "Investor"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -860,6 +1098,9 @@
    "alliances": [
     "Swift",
     "Marvel"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -869,6 +1110,9 @@
    "tier": 5,
    "alliances": [
     "Investor"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -878,6 +1122,9 @@
    "tier": 5,
    "alliances": [
     "Kazimierz"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -888,6 +1135,9 @@
    "alliances": [
     "Siracusa",
     "Marvel"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -897,6 +1147,10 @@
    "tier": 5,
    "alliances": [
     "Foresight"
+   ],
+   "effects": [
+    "Rest Phase - End",
+    "Rest Phase - Start"
    ]
   },
   {
@@ -907,6 +1161,9 @@
    "alliances": [
     "Yan",
     "Marvel"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -917,6 +1174,9 @@
    "alliances": [
     "Laterano",
     "Precision"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -927,16 +1187,22 @@
    "alliances": [
     "Kjerag",
     "Arcane"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
    "name": "Yu",
    "attributeType": "Prep",
-   "attribute": "&ltWhen entering Rest Phase&gt <span class='blue'>If there are 3 Operators in the same row, obtain 1 random Operator</span>/<span class='green'>Obtain 1 random Operator</span> from the Alliance from the Alliance with most members in your current squad",
+   "attribute": "&ltWhen entering Rest Phase&gt <span class='blue'>If there are 3 Operators in the same row, obtain 1 random Operator</span>/<span class='green'>Obtain 1 random Operator</span> from the Alliance with most members in your current squad",
    "tier": 6,
    "alliances": [
     "Yan",
     "Durable"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -946,6 +1212,9 @@
    "tier": 6,
    "alliances": [
     "Ægir"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -957,6 +1226,9 @@
     "Sargon",
     "Precision",
     "Swift"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -967,6 +1239,9 @@
    "alliances": [
     "Sargon",
     "Resilient"
+   ],
+   "effects": [
+    "Rest Phase - Start"
    ]
   },
   {
@@ -977,16 +1252,22 @@
    "alliances": [
     "Victoria",
     "Marvel"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
    "name": "Reed the Flame Shadow",
    "attributeType": "Combat",
-   "attribute": "For every 3 stacks added to [Victoria] Alliance, this Operator gains <span class='blue'>+1</span>/<span class='green'>+2</span> ATKSPD",
+   "attribute": "For every 3 stacks added to [Victoria] Alliance, this Operator gains <span class='blue'>+1</span>/<span class='green'>+2</span> ASPD",
    "tier": 6,
    "alliances": [
     "Victoria",
     "Precision"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -996,15 +1277,21 @@
    "tier": 6,
    "alliances": [
     "Laterano"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
    "name": "Muelsyse",
    "attributeType": "Prep",
-   "attribute": "&ltWhen obtained&gt Gain <span class='blue'>1</span>/<span class='green'>2</span> piece(s) of 'Damazti Isomorph",
+   "attribute": "&ltWhen obtained&gt Gain <span class='blue'>1</span>/<span class='green'>2</span> piece(s) of 'Damazti Isomorph'",
    "tier": 6,
    "alliances": [
     "Harmony"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -1016,6 +1303,9 @@
     "Precision",
     "Foresight",
     "Assist_Operator"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -1025,6 +1315,9 @@
    "tier": 6,
    "alliances": [
     "Laterano"
+   ],
+   "effects": [
+    "When Obtained"
    ]
   },
   {
@@ -1034,6 +1327,9 @@
    "tier": 6,
    "alliances": [
     "Aid"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
@@ -1044,6 +1340,9 @@
    "alliances": [
     "Yan",
     "Raid"
+   ],
+   "effects": [
+    "Direct Stack Buff"
    ]
   },
   {
@@ -1054,16 +1353,22 @@
    "alliances": [
     "Agile",
     "Arcane"
+   ],
+   "effects": [
+    "Rest Phase - End"
    ]
   },
   {
    "name": "Nearl the Radiant Knight",
    "attributeType": "Combat",
-   "attribute": "&ltIn combat&gt Grants self and the operator on the tile ahead 'For every 3 stacks added to [Kazmierz] Alliances, this Operator has <span class='blue'>-1.5%</span>/<span class='green'>-3%</span> reduced Redeployment Time and <span class='blue'>+0.5</span>/<span class='green'>+1</span> ATKSPD",
+   "attribute": "&ltIn combat&gt Grants self and the operator on the tile ahead 'For every 3 stacks added to [Kazmierz] Alliances, this Operator has <span class='blue'>-1.5%</span>/<span class='green'>-3%</span> reduced Redeployment Time and <span class='blue'>+0.5</span>/<span class='green'>+1</span> ASPD",
    "tier": 6,
    "alliances": [
     "Kazimierz",
     "Raid"
+   ],
+   "effects": [
+    "On Deployment, Direct Stack Buff"
    ]
   },
   {
@@ -1073,6 +1378,9 @@
    "tier": 6,
    "alliances": [
     "Siracusa"
+   ],
+   "effects": [
+    "In Battle"
    ]
   },
   {
@@ -1084,6 +1392,10 @@
     "Kjerag",
     "Kazimierz",
     "Swift"
+   ],
+   "effects": [
+    "When Obtained",
+    "On Deployment"
    ]
   },
   {
@@ -1093,6 +1405,9 @@
    "tier": 6,
    "alliances": [
     "Aid"
+   ],
+   "effects": [
+    "In Battle"
    ]
   }
  ],
@@ -1100,21 +1415,21 @@
   {
    "bondId": "yanship",
    "name": "Yan",
-   "desc": "[Yan] Operators' ATK gains <span class='blue'>(23 + 0.9 × stacks)%</span>\n&ltWith <span class='green'>6</span> different [Yan] Operators on field&gt At the start of battle, 'Yan's Protection' is summoned with ATK and HP equal to <span class='blue'>30%</span> of the total ATK and HP of all [Yan] Operators at that moment; can attacks 3 enemies simultaneously; can use 'Cleansing Flame'; attacks inflict a percentage of ATK as Burn and inflicts Elemental Fragility on surrounding enemies.\n&ltWith <span class='green'>9</span> different [Yan] operators on field&gt summon 2 'Yan's Protections' instead, with <span class='blue'>1.5x</span> ATK, and <span class='blue'>90%</span> damage reduction",
+   "desc": "[Yan] Operators' gains increased ATK: ATK x <span class='blue'>(23 + 0.9 × stacks)%</span>\n&ltWith <span class='green'>6</span> different [Yan] Operators on field&gt At the start of battle, 'Yan's Protection' is summoned with ATK and HP equal to <span class='blue'>30%</span> of the total ATK and HP of all [Yan] Operators at that moment; can attacks 3 enemies simultaneously; can use 'Cleansing Flame'; attacks inflict a percentage of ATK as Burn and inflicts Elemental Fragility on surrounding enemies.\n&ltWith <span class='green'>9</span> different [Yan] operators on field&gt summon 2 'Yan's Protections' instead, with <span class='blue'>1.5x</span> ATK, and <span class='blue'>90%</span> damage reduction",
    "activeCount": 3,
    "core": true
   },
   {
    "bondId": "sargonship",
    "name": "Sargon",
-   "desc": "When any [Sargon] Operator activates a skill, all [Sargon] Operators temporarily gain <span class='blue'>+12</span> ASPD (up to <span class='blue'>+300</span>) for <span class='blue'>(5 + 0.22 × stacks)</span> seconds\n&ltWith <span class='green'>6</span> different [Sargon] Operators on field&gt Skill activations will also cause all [Sargon] Operators to temporarily gain <span class='blue'>+12%</span> ATK (up to <span class='blue'>+300%</span>) for the same duration",
+   "desc": "When any [Sargon] Operator activates a skill, all [Sargon] Operators temporarily gain <span class='blue'>+12</span> ASPD (up to <span class='blue'>+300</span>) for <span class='blue'>(5 + 0.22 × stacks)</span> seconds\n&ltWith <span class='green'>6</span> different [Sargon] Operators on field&gt Skill activations will also cause all [Sargon] Operators to temporarily gain <span class='blue'>+12%</span> ATK (up to <span class='blue'>+300%</span>) for the same duration\n<span class='text-gray-500'>When using Narantuya's Strategy, &lt;With 6 different [Sargon] Operators on field&gt; effect changes </span>",
    "activeCount": 3,
    "core": true
   },
   {
    "bondId": "victoriaship",
    "name": "Victoria",
-   "desc": "[Victoria] Operators carrying equipment deal <span class='blue'>(120 + 0.8 × stacks)%</span> damage\n&ltFvery <span class='green'>25</span> stacks&gt Obtain 1 random Victorian Hammer\n&ltWith <span class='green'>6</span> different [Victoria] Operators on field&gt All [Victoria] Operators gain <span class='blue'>+50%</span> ATK for each piece of equipment; or <span class='blue'>+80%</span> ATK if equipment is upgraded*\n<span class='text-red-300'>* In-game translation says 'All [Victoria] Operators carrying equipment gain +50% ATK; or +80% ATK if equipment is upgraded', which is inaccurate. Thank you Yostar.</span>",
+   "desc": "[Victoria] Operators carrying equipment deal <span class='blue'>(120 + 0.8 × stacks)%</span> damage\n&ltFor every <span class='green'>25</span> stacks&gt Obtain 1 random Victorian Hammer\n&ltWith <span class='green'>6</span> different [Victoria] Operators on field&gt All [Victoria] Operators gain <span class='blue'>+50%</span> ATK for each piece of equipment; or <span class='blue'>+80%</span> ATK if equipment is upgraded",
    "activeCount": 3,
    "core": true
   },
@@ -1142,7 +1457,7 @@
   {
    "bondId": "kazimierzship",
    "name": "Kazimierz",
-   "desc": "On every Operator deployment, [Kazimierz] Operators <span class='blue'>+20%</span> ATK (up to <span class='blue'>+(50 + 1 × stacks)%</span>).\n&ltWith <span class='green'>6</span> different Kazimierz Operators on the field> [Kazimierz] Operators blocking enemies deal <span class='blue'>120%</span> of ATK as True Damage and inflict <span class='blue'>0.1</span> seconds of Stun on nearby enemies every 2 seconds (within a radius of 0.8); otherwise, dealing damage also deals extra <span class='blue'>30%</span> ATK as True damage when not blocking an enemy",
+   "desc": "On every Operator deployment, [Kazimierz] Operators <span class='blue'>+20%</span> ATK (up to <span class='blue'>+(50 + 1 × stacks)%</span>).\n&ltWith <span class='green'>6</span> different Kazimierz Operators on the field> [Kazimierz] Operators blocking enemies deal <span class='blue'>120%</span> of ATK as True Damage and inflict <span class='blue'>0.1</span> seconds of Stun on nearby enemies every <span class='blue'>2</span> seconds (within a radius of 0.8); otherwise, dealing damage also deals extra <span class='blue'>30%</span> ATK as True damage when not blocking an enemy",
    "activeCount": 3,
    "core": true
   },
@@ -1235,7 +1550,7 @@
    "bondId": "emptyship",
    "name": "Assist_Operator",
    "desc": "All Operators take <span class='blue'>-20%</span> Physical and Arts damage\n [Assist Operators] deal <span class='blue'>120%</span> more damage; Elite [Assist Operators] deal <span class='blue'>140%</span> more damage",
-   "activeCount": 3
+   "activeCount": 2
   },
   {
    "bondId": "suntship",
@@ -1312,28 +1627,28 @@
   {
    "iconLink": "trap_1113_acarm113",
    "itemName": "Budget-savvy Doll",
-   "effectDesc": "Destroyed when equipped; gains (an) extra <span class='blue'>1</span>/<span class='green'>2</span> Fund(s) at the start of each subsequent round.",
+   "effectDesc": "Destroyed when equipped; gains an extra <span class='blue'>1</span>/<span class='green'>2</span> Fund(s) at the start of each subsequent round.",
    "cost": 3,
    "tier": 2
   },
   {
    "iconLink": "trap_1114_acarm114",
    "itemName": "Simple Communicator",
-   "effectDesc": "Destroyed when equipped; gain <span class='blue'>1</span>/<span class='green'>2</span> random Operator(s) from the same Alliance as the equipped Operator",
+   "effectDesc": "Destroyed when equipped and obtain <span class='blue'>1</span>/<span class='green'>2</span> random Operator(s) from the same Alliance as the equipped Operator",
    "cost": 2,
    "tier": 2
   },
   {
    "iconLink": "trap_1116_acarm116",
-   "itemName": "Money-grubbing Doll",
-   "effectDesc": "Destroyed when equipped; grants <span class='blue'>2</span>/<span class='green'>4</span> additional Fund(s) next round.",
+   "itemName": "Money-Grubbing Doll",
+   "effectDesc": "Destroyed when equipped and gain <span class='blue'>2</span>/<span class='green'>4</span> Funds next round",
    "cost": 1,
    "tier": 2
   },
   {
    "iconLink": "trap_1121_acarm121",
    "itemName": "Siracusan Formalwear",
-   "effectDesc": "ASPD <span class='blue'>+15</span>/<span class='green'>+25</span>, allied Operators to the left and right of the equipped Operator's deployment direction gain <span class='blue'>+10</span>/<span class='green'>+15</span>",
+   "effectDesc": "ASPD <span class='blue'>+15</span>/<span class='green'>+25</span>, allied Operators to the left and right of the equipped Operator's deployment direction gain <span class='blue'>+10</span>/<span class='green'>+15</span> ASPD",
    "cost": 2,
    "tier": 3
   },
@@ -1409,7 +1724,7 @@
   },
   {
    "iconLink": "trap_1123_acarm123",
-   "itemName": "Knight's Savings",
+   "itemName": "Knightly Savings",
    "effectDesc": "Destroyed when equipped and grants <span class='blue'>1~6</span>/<span class='green'>2~12</span> Funds",
    "cost": 3,
    "tier": 3
@@ -1459,7 +1774,7 @@
   {
    "iconLink": "trap_1119_acarm119",
    "itemName": "Kazimierz Knightclub Pennant",
-   "effectDesc": "Damage dealt for 15 seconds after deployment is increased to <span class='blue'>135%</span>/<span class='green'>160%</span>, effect gradually decays",
+   "effectDesc": "Damage dealt for 15s after deployment is increased to <span class='blue'>135%</span>/<span class='green'>160%</span>, effect gradually decays",
    "cost": 1,
    "tier": 4
   },
@@ -1522,14 +1837,14 @@
   {
    "iconLink": "trap_1109_acarm109",
    "itemName": "Transmitter",
-   "effectDesc": "Destroys itself along with the Operator when equipped; then refreshes the Dispatch Center, offering two Operators of the same tier as the equipped Operator; one can be picked for free.\n<span class='text-yellow-500'>If there are Teammates present within the Team Simulation, a copy of the original Operator will be sent to the Teammate with the most corresponding Alliance members during the next Rest Phase</span>\n<span class='text-gray-500'>If multiple Teammates fulfill this condition, the copy will be sent to a random Teammate\nCannot be equipped by Custom Operators<span>",
-   "cost": 1,
+   "effectDesc": "Destroys itself along with the Operator when equipped, then refreshes the Dispatch Center, offering two Operators of the same Tier as the equipped Operator; one can be picked for free\n<span class='text-yellow-500'>If there are Teammates present within the Team Simulation, a copy of the original Operator will be sent to the Teammate with the most corresponding Alliance members during the next Rest Phase\n<span class='text-gray-500'>If multiple Teammates fulfill this condition, the copy will be sent to a random Teammate\n<span class='text-gray-500'>Cannot be equipped by Custom Operators",
+   "cost": 3,
    "tier": 5
   },
   {
    "iconLink": "trap_1069_acarm069",
    "itemName": "Mimic Matter",
-   "effectDesc": "Destroyed when equipped, and if you have at least two of this non-Elite Operator, obtain a third copy; otherwise obtain 1 random non-Elite Operator from the same Alliance",
+   "effectDesc": "Destroyed when equipped, and if you have at least two of this non-Elite Operator, obtain a third copy; otherwise obtain 1 random non-Elite Operator from the same Alliance\n<span class='text-gray-500'>The otherwise effect can give you operators of a higher tier than your Dispatch Center",
    "cost": 4,
    "tier": 5
   },
@@ -1557,14 +1872,14 @@
   {
    "iconLink": "trap_1118_acarm118",
    "itemName": "Pegasian Helm",
-   "effectDesc": "<span class='blue'>+50%</span>/<span class='green'>+75%</span> HP, if equipped alongside \"Pegasian Lance\", recovers 8% Max HP per second",
+   "effectDesc": "<span class='blue'>+50%</span>/<span class='green'>+75%</span> HP, if equipped alongside 'Pegasian Lance', recovers 8% Max HP per second",
    "cost": 3,
    "tier": 5
   },
   {
    "iconLink": "trap_1117_acarm117",
    "itemName": "Pegasian Lance",
-   "effectDesc": "<span class='blue'>+40%</span>/<span class='green'>+60%</span> ATK; if equipped alongside \"Pegasian Helm\", when dealing damage, deal an additional 30% as True damage",
+   "effectDesc": "<span class='blue'>+40%</span>/<span class='green'>+60%</span> ATK; if equipped alongside 'Pegasian Helm', when dealing damage, deal an additional 30% as True damage",
    "cost": 5,
    "tier": 6
   },
@@ -1585,7 +1900,7 @@
   {
    "iconLink": "trap_1078_acarm078",
    "itemName": "Trench Test Subject",
-   "effectDesc": "Damage taken <span class='blue'>-180</span>/<span class='green'>-300</span>; If equipped by an [Ægir] Operator, when taking damage, deal 50% of ATK as Arts damage to the attacker (once every 0.5 second)\n<span class='text-yellow-500'>If 'Ægirian Blade' is also equipped by the [Ægir] Operator, trigger the aforementioned effect an additional time</span>",
+   "effectDesc": "Gain <span class='blue'>180</span>/<span class='green'>300</span> Damage Reduction; If equipped by an [Ægir] Operator, deals 50% of equipped Operator's ATK as Arts damage to damage source when damage is taken (Triggers up to once every 0.5s)\n<span class='text-yellow-500'>If 'Ægirian Blade' is also equipped by the [Ægir] Operator, trigger the aforementioned effect an additional time</span>",
    "cost": 4,
    "tier": 6
   },
@@ -1606,7 +1921,7 @@
   {
    "iconLink": "trap_1103_acarm103",
    "itemName": "Desert Compass",
-   "effectDesc": "<span class='blue'>+30</span>/<span class='green'>+40</span> Starting SP; If equipped by a [Sargon] Operator, the Operator recovers 30 SP when skill ends for the first time\n<span class='text-yellow-500'>If 'Sargonian Teaspresso' is also equipped by the [Sargon] Operator, every skill activation grants 3 SP to all [Sargon] Operators</span>",
+   "effectDesc": "At the start of battle, <span class='blue'>+30</span>/<span class='green'>+40</span> Starting SP; If equipped by a [Sargon] Operator, the Operator recovers 30 SP when skill ends for the first time\n<span class='text-yellow-500'>If 'Sargonian Teaspresso' is also equipped by the [Sargon] Operator, every skill activation grants 3 SP to all [Sargon] Operators</span>",
    "cost": 4,
    "tier": 6
   },
@@ -1627,14 +1942,14 @@
   {
    "iconLink": "trap_1120_acarm120",
    "itemName": "Chivalric Commandments",
-   "effectDesc": "Redeployment Time <span class='blue'>-40%</span>/<span class='green'>-60%</span>; If equipped by a [Kazimierz] Operator, enemies within Attack Range have -35% ASPD and -35% Movement Speedfor 20s after skill activation\n<span class='text-yellow-500'>If \"Kazimierz Knightclub Pennant\" is also equipped by the [Kazimierz] Operator, while skill is active, Operator has +100% ATK, and will not retreat when receiving lethal damage, instead retreating once skill ends.</span>",
+   "effectDesc": "Redeployment Time <span class='blue'>-40%</span>/<span class='green'>-60%</span>; If equipped by a [Kazimierz] Operator, enemies within Attack Range have -35% ASPD and -35% Movement Speed for 20s after skill activation\n<span class='text-yellow-500'>      If \"Kazimierz Knightclub Pennant\" is also equipped by the [Kazimierz] Operator, Operator has ATK +100% ATK, and will not retreat when taking lethal damage, instead retreating once skill ends",
    "cost": 4,
    "tier": 6
   },
   {
    "iconLink": "trap_1122_acarm122",
    "itemName": "Famiglia Insignia",
-   "effectDesc": "SP recovery rate <span class='blue'>+0.2</span>/<span class='green'>+0.35</span> SP/second; If equipped by a [Siracusa] Operator, their ATK gradually increases to 200% when equipped Operator is Invisible, until the first instance of damage dealt after Invisibility ends or the Operator leaves the field\n<span class='text-yellow-500'>If \"Siracusan Formalwear\" is also equipped by the [Siracusa] Operator, the first instance of damage dealt after Invisibility ends deals an additional 800% of ATK as True damage</span>",
+   "effectDesc": "SP recovery rate <span class='blue'>+0.2</span>/<span class='green'>+0.35</span>/s; If equipped by a [Siracusa] Operator, their ATK gradually increases to 200% when equipped Operator is Invisible, until the first instance of damage dealt after Invisibility ends or the Operator leaves the field\n<span class='text-yellow-500'>If \"Siracusan Formalwear\" is also equipped by the [Siracusa] Operator, the first instance of damage dealt after Invisibility ends deals an additional 800% of ATK as True damage</span>",
    "cost": 4,
    "tier": 6
   },
@@ -1736,7 +2051,7 @@
    "iconLink": "icon_sciurus",
    "initialHp": 24,
    "effectName": "Snowfield's Gift",
-   "effectDesc": "<span class=\"font-bold\">[Snowfield's Gift]</span> The first <Kjerag> Operator purchased every round costs 1 Funds\n<span class=\"text-red-500\">Strategy may be flawed when some [Kjerag] Operators are missing</span></>"
+   "effectDesc": "<span class=\"font-bold\">[Snowfield's Gift]</span> The first &ltKjerag&gt Operator purchased every round costs 1 Funds\n<span class=\"text-red-500\">Strategy may be flawed when some [Kjerag] Operators are missing</span>"
   },
   {
    "name": "Panganini",
@@ -1804,9 +2119,9 @@
   {
    "name": "Malkiewicz",
    "iconLink": "icon_malkie",
-   "initialHp": 30,
+   "initialHp": 28,
    "effectName": "Commercial Packaging",
-   "effectDesc": "<span class=\"font-bold\">[Commercial Packaging]</span> Start with 1 Commercial Packaging Plan: For every 7 Operators sold, obtain 1 copy of the equipped Operator"
+   "effectDesc": "<span class=\"font-bold\">[Commercial Packaging]</span> Start with 1 Commercial Packaging Plan: For every 8 Operators sold, obtain 1 non-Elite Operator fron the same Alliance as the equipped Operator"
   },
   {
    "name": "Qalaiša",
@@ -1827,7 +2142,7 @@
    "iconLink": "icon_damaztic",
    "initialHp": 29,
    "effectName": "Damazti Isomorphism",
-   "effectDesc": "<span class=\"font-bold\">[Damazti Isomorphism]</span> In Round 5, obtain Damazti Isomorph: When equipped together with certain other equipment, the equipped Operator is treated as a member of a specific Alliance"
+   "effectDesc": "<span class=\"font-bold\">[Damazti Isomorphism]</span> Obtain 1 special equipment Damazti Isomorph every 5 rounds\n<span class='text-gray-500'>&ltDamazti Isomorph&gt When equipped together with certain other equipment, the equipped Operator is treated as a member of a specific Alliance</span>"
   },
   {
    "name": "Pith",
@@ -1876,14 +2191,14 @@
    "iconLink": "icon_makiri",
    "initialHp": 24,
    "effectName": "Streetwise Ties",
-   "effectDesc": "<span class=\"font-bold\">[Streetwise Ties]</span> Obtain a random Operator from the Dispatch Center on even-numbered-rounds"
+   "effectDesc": "<span class=\"font-bold\">[Streetwise Ties]</span> Obtain a random Operator from the Dispatch Center on even-numbered rounds"
   },
   {
    "name": "Młynar",
    "iconLink": "icon_mlynar",
    "initialHp": 24,
    "effectName": "Work Quota",
-   "effectDesc": "<span class=\"font-bold\">[Work Quota]</span> Every &ltKazimierz&gt Operator purchased grants 1 extra Fund next round (Max 3 Funds per round)\n<span class=\"text-red-500\">Strategy may be flawed when some [Kazimierz] Operators are missing</span>"
+   "effectDesc": "<span class=\"font-bold\">[Work Quota]</span> Every &ltKazimierz&gt Operator purchased grants 1 extra Funds next round (Max 3 Funds per round)\n<span class=\"text-red-500\">Strategy may be flawed when some [Kazimierz] Operators are missing</span>"
   },
   {
    "name": "Chiave",
@@ -1897,7 +2212,7 @@
    "iconLink": "icon_narant",
    "initialHp": 26,
    "effectName": "Passing Down the Profit",
-   "effectDesc": "<span class=\"font-bold\">[Passing Down the Profit]</span> Dispatch Center will offer two equipments during even-numbered rounds, and you can pick one for free; Sargon Alliance's &ltWith 6 different Sargon Operators&gt effect changes to: After Sargon Operators use a skill, Operators in the surrounding 8 tiles will share the Operator's equipment effects (limited to tier V and below) for 60 seconds\n<span class=\"text-red-500\">Strategy may be flawed when some [Sargon] Operators are missing</span></>"
+   "effectDesc": "<span class=\"font-bold\">[Passing Down the Profit]</span> Dispatch Center will offer two equipment during even-numbered rounds, and you can pick one for free; Sargon Alliance's &ltWith 6 different Sargon Operators&gt effect changes to: After Sargon Operators use a skill, Operators in the surrounding 8 tiles will share the Operator's equipment effects (limited to tier V and below) for 60 seconds\n<span class=\"text-red-500\">Strategy may be flawed when some [Sargon] Operators are missing</span></>"
   },
   {
    "name": "Touch",
@@ -1910,29 +2225,880 @@
    "name": "Suzuran",
    "iconLink": "icon_lisa",
    "initialHp": 20,
-   "effectName": "'Protective Power'",
-   "effectDesc": "<span class=\"font-bold\">[Protective Power]</span> At the start of each round, trigger the &ltWhen obtained&gt effect of one Operator on field (Prioritizes Operators deployed on upper right tiles)"
+   "effectName": "'Omamori's Blessing'",
+   "effectDesc": "<span class=\"font-bold\">[Omamori's Blessing]</span> When a round begins, trigger an Operator's 'When obtained' Attribute once (prioritizes the bottom-right-most Operator on map)"
   },
   {
    "name": "Jessica",
    "iconLink": "icon_jesica",
    "initialHp": 22,
-   "effectName": "'Rendezvous Orders'",
-   "effectDesc": "<span class=\"font-bold\">[Rendezvous Orders]</span> Upon entering Rest Phase on Rounds 4, 7, 10 and 13, obtain 1 Dispatch Module"
+   "effectName": "'Rally Directive'",
+   "effectDesc": "<span class=\"font-bold\">[Rally Directive]</span> Upon entering Rest Phase on Rounds 4, 7, 10 and 13, obtain 1 Dispatch Module"
   },
   {
    "name": "Muelsyse",
    "iconLink": "icon_mlyss",
    "initialHp": 28,
-   "effectName": "'Pure Drop'",
-   "effectDesc": "<span class=\"font-bold\">[Pure Drop]</span> At the start of round 1, obtain 1 upgraded Doctor Hologram"
+   "effectName": "'Purified Condensation'",
+   "effectDesc": "<span class=\"font-bold\">[Purified Condensation]</span> At the start of round 1, obtain 1 upgraded Doctor Hologram"
   },
   {
    "name": "Fang",
    "iconLink": "icon_fang",
    "initialHp": 24,
-   "effectName": "'Teamwork'",
-   "effectDesc": "<span class=\"font-bold\">[Teamwork]</span> Upon entering Rest Phase on Rounds 8, 10, 12 and 14, obtain 1 Transmitter"
+   "effectName": "'Joint Advance'",
+   "effectDesc": "<span class=\"font-bold\">[Joint Advance] </span>Obtain 1 Transmitter on Rounds 8, 10, 12, and 14"
   }
+ ],
+ "tacticalDecisions": [
+  {
+   "name": "Equip",
+   "description": "Obtain 2 pieces of Tier 1 equipment; also affects Teammates"
+  },
+  {
+   "name": "Acute",
+   "description": "If the Bench is empty when Rest Phase ends, all allied Operators ignore 30% DEF; also affects Teammates"
+  },
+  {
+   "name": "Draft",
+   "description": "When the battle starts, if there are at least 3 Operators deployed in a row on the battlefield, all allied Operators -50% Redeployment Time; also affects Teammates"
+  },
+  {
+   "name": "Firepower",
+   "description": "If there are at least 3 units on the Bench when Rest Phase ends, all allied Operators ignore 20 RES; also affects Teammates"
+  },
+  {
+   "name": "Flawless",
+   "description": "When allied Operators have full HP, gain +30% ATK and DEF; also affects Teammates"
+  },
+  {
+   "name": "Kazimierzian Support",
+   "description": "You obtain a random Kazimierz Alliance Operator"
+  },
+  {
+   "name": "Kjeragi Support",
+   "description": "You obtain a random Kjerag Alliance Operator"
+  },
+  {
+   "name": "Lateran Support",
+   "description": "You obtain a random Laterano Alliance Operator"
+  },
+  {
+   "name": "Skadi's Pledge",
+   "description": "+8 stacks to Ægir, Raid, and Durable Alliances; also affects Teammates"
+  },
+  {
+   "name": "Titi's Pledge",
+   "description": "+10 stacks to Sargon and Precision Alliances; also affects Teammates"
+  },
+  {
+   "name": "Texas's Pledge",
+   "description": "+10 stacks to Siracusa and Raid Alliances; also affects Teammates"
+  },
+  {
+   "name": "Swire's Pledge",
+   "description": "+10 stacks to Yan and Investor Alliances; also affects Teammates"
+  },
+  {
+   "name": "Bagpipe's Pledge",
+   "description": "+8 stacks to Victoria, Foresight, and Resilient Alliances; also affects Teammates"
+  },
+  {
+   "name": "SilverAsh's Pledge",
+   "description": "+8 stacks to Kjerag, Investor, and Swift Alliances; also affects Teammates"
+  },
+  {
+   "name": "Mostima's Pledge",
+   "description": "+10 stacks to Laterano and Arcane Alliances; also affects Teammates"
+  },
+  {
+   "name": "Mylnar's Pledge",
+   "description": "+12 stacks to Kazimierz Alliance; also affects Teammates"
+  },
+  {
+   "name": "Preparation",
+   "description": "The next equipment you buy will already be upgraded"
+  },
+  {
+   "name": "Promotion",
+   "description": "The next Operator you buy will already be promoted to Elite"
+  },
+  {
+   "name": "Punishment: Weakness",
+   "description": "Elite enemies -6% ATK"
+  },
+  {
+   "name": "Punishment: Fragility",
+   "description": "Elite enemies -150 DEF"
+  },
+  {
+   "name": "Punishment: Hallucination",
+   "description": "Elite enemies -5 RES"
+  },
+  {
+   "name": "Recovery",
+   "description": "Allied units recover 50 HP on taking damage; also affects Teammates"
+  },
+  {
+   "name": "Rejection: Weakness",
+   "description": "All enemies -5% ATK"
+  },
+  {
+   "name": "Rejection: Fragility",
+   "description": "All enemies -100 DEF"
+  },
+  {
+   "name": "Rejection: Hallucination",
+   "description": "All enemies -3 RES"
+  },
+  {
+   "name": "Sargonian Support",
+   "description": "You obtain a random Sargon Alliance Operator"
+  },
+  {
+   "name": "Siracusan Support",
+   "description": "You obtain a random Siracusa Alliance Operator"
+  },
+  {
+   "name": "Supply",
+   "description": "Next 2 refreshes are free (can stack); also affects Teammates"
+  },
+  {
+   "name": "Verdict: Weakness",
+   "description": "Leader enemies -7% ATK"
+  },
+  {
+   "name": "Verdict: Fragility",
+   "description": "Leader enemies -200 DEF"
+  },
+  {
+   "name": "Verdict: Hallucination",
+   "description": "Leader enemies -7 RES"
+  },
+  {
+   "name": "Wealth",
+   "description": "Obtain 1 Funds; also affects Teammates"
+  },
+  {
+   "name": "Victorian Support",
+   "description": "You obtain a random Victoria Alliance Operator"
+  },
+  {
+   "name": "Yanese Support",
+   "description": "You obtain a random Yan Alliance Operator"
+  },
+  {
+   "name": "Ægirian Support",
+   "description": "You obtain a random Ægir Alliance Operator"
+  }
+ ],
+ "bountyDecisions": [
+  {
+   "name": "Originium Slug/Training",
+   "description": "Adds 1 Originium Slug to your next battle, but will not obtain extra Funds",
+   "image": "Originium_Slug.webp"
+  },
+  {
+   "name": "Bounty/Special I",
+   "description": "Adds 1 Basic Slug to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Basic_Slug.webp"
+  },
+  {
+   "name": "Bounty/Special I",
+   "description": "Adds 1 Infused Originium Slug to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Infused_Originium_Slug.webp"
+  },
+  {
+   "name": "Bounty/Special I",
+   "description": "Adds 1 Carnevale Balloon to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Carnevale_Balloon.webp"
+  },
+  {
+   "name": "Bounty/Special I",
+   "description": "Adds 1 Confused Maintenance Helper to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Confused_Maintenance_Helper.webp"
+  },
+  {
+   "name": "Bounty/Special I",
+   "description": "Adds 1 Lurker to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Lurker.webp"
+  },
+  {
+   "name": "Bounty/Special I",
+   "description": "Adds 1 Decode Basis α to your next battle; defeat to obtain 1 Funds",
+   "image": "Decode_Basis_α.webp"
+  },
+  {
+   "name": "Bounty/Special II",
+   "description": "Adds 1 Shrine Swordsman to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Shrine_Swordsman.webp"
+  },
+  {
+   "name": "Bounty/Special II",
+   "description": "Adds 1 Avenger to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Avenger.webp"
+  },
+  {
+   "name": "Bounty/Special II",
+   "description": "Adds 1 Abnormal Manglerbeast α to your next battle; defeat to obtain 2 Funds",
+   "image": "Abnormal_Manglerbeast_α.webp"
+  },
+  {
+   "name": "Bounty/Special III",
+   "description": "Adds 1 Handmade Catapult to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Handmade_Catapult.webp"
+  },
+  {
+   "name": "Bounty/Special III",
+   "description": "Adds 1 Wooden Burdenbeast of Ilion to your next battle; defeat to obtain 3 Funds",
+   "image": "Wooden_Burdenbeast_of_Ilion.webp"
+  },
+  {
+   "name": "Bounty/Special II",
+   "description": "Adds 1 Garum Gourmet to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Garum_Gourmet.webp"
+  },
+  {
+   "name": "Bounty/Special III",
+   "description": "Adds 1 Greater Armored Burdenbeast to your next battle; defeat to obtain 3 Funds",
+   "image": "Greater_Armored_Burdenbeast.webp"
+  },
+  {
+   "name": "Bounty/Continuous I",
+   "description": "Adds 1 OpFor: Fissure to your next battle; defeat to obtain 1 Funds",
+   "image": "OpFor_Fissure.webp"
+  },
+  {
+   "name": "Withered Knight/Bounty",
+   "description": "Adds 1 Withered Knight to your next battle; defeat to obtain 3 Funds",
+   "image": "Withered_Knight.webp"
+  },
+  {
+   "name": "Corrupted Knight/Bounty",
+   "description": "Adds 1 Corrupted Knight to your next battle; defeat to obtain 3 Funds",
+   "image": "Corrupted_Knight.webp"
+  },
+  {
+   "name": "'Gravestone'/Bounty",
+   "description": "Adds 1 Gravestone to your next battle; defeat to obtain 4 Funds",
+   "image": "Gravestone.webp"
+  },
+  {
+   "name": "Bounty/Refraction I",
+   "description": "Adds 1 Dublinn Sniffer Hound Pro to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Dublinn_Sniffer_Hound_Pro.webp"
+  },
+  {
+   "name": "Bounty/Refraction II",
+   "description": "Adds 1 Dublinn Shadowcaster to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Dublinn_Shadowcaster.webp"
+  },
+  {
+   "name": "Bounty/Refraction II",
+   "description": "Adds 1 Dublinn Heavy Defender to your next battle; defeat to obtain 2 Funds",
+   "image": "Dublinn_Heavy_Defender.webp"
+  },
+  {
+   "name": "Bounty/Flying I",
+   "description": "Adds 1 Arts Master A2 to your next battle; defeat to obtain 1 Funds",
+   "image": "Arts_Master_A2.webp"
+  },
+  {
+   "name": "Bounty/Flying II",
+   "description": "Adds 1 Lucky Flyfin to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Lucky_Flyfin.webp"
+  },
+  {
+   "name": "Bounty/Frequency I",
+   "description": "Adds 1 Grindstone to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Grindstone.webp"
+  },
+  {
+   "name": "Bounty/Frequency I",
+   "description": "Adds 1 Rainbowbrew to your next battle; defeat to obtain 1 Funds",
+   "image": "Rainbowbrew.webp"
+  },
+  {
+   "name": "Bounty/Injury I",
+   "description": "Adds 1 Audio Technician your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Audio_Technician.webp"
+  },
+  {
+   "name": "Bounty/Injury II",
+   "description": "Adds 1 Burning Vine to your next battle; defeat to obtain 2 Funds",
+   "image": "Burning_Vine.webp"
+  },
+  {
+   "name": "Bounty/Injury III",
+   "description": "Adds 1 Boiling Pot to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Boiling_Pot.webp"
+  },
+  {
+   "name": "Bounty/Injury III",
+   "description": "Adds 1 Villain's Minion to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Villain's_Minion.webp"
+  },
+  {
+   "name": "Bounty/Injury III",
+   "description": "Adds 1 Hero's Sidekick to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Hero's_Sidekick.webp"
+  },
+  {
+   "name": "Bounty/Invisible I",
+   "description": "Adds 1 Invisible Crossbowman to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Invisible_Crossbowman.webp"
+  },
+  {
+   "name": "Bounty/Invisible II",
+   "description": "Adds 1 Famiglia Shadow Silencer to your next battle; defeat to obtain 2 Funds",
+   "image": "Famiglia_Shadow_Silencer.webp"
+  },
+  {
+   "name": "Bounty/Continuous II",
+   "description": "Adds 1 Rotchaser to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Rotchaser.webp"
+  },
+  {
+   "name": "Big Bob/Bounty",
+   "description": "Adds 1 Big Bob to your next battle; defeat to obtain 2 Funds",
+   "image": "Big_Bob.webp"
+  },
+  {
+   "name": "W/Bounty",
+   "description": "Adds 1 W to your next battle; defeat to obtain 1 Funds",
+   "image": "W.webp"
+  },
+  {
+   "name": "\"Rat King\"/Bounty",
+   "description": "Adds 1 \"Rat King\" to your next battle; defeat to obtain 3 Funds",
+   "image": "Rat_King.webp"
+  },
+  {
+   "name": "Skullshatterer/Bounty",
+   "description": "Adds 1 Skullshatterer to your next battle; defeat to obtain 1 Funds",
+   "image": "Skullshatterer.webp"
+  },
+  {
+   "name": "Crownslayer/Bounty",
+   "description": "Adds 1 Crownslayer to your next battle; defeat to obtain 1 Funds",
+   "image": "Crownslayer.webp"
+  },
+  {
+   "name": "Sarkaz Centurion/Bounty",
+   "description": "Adds 1 Sarkaz Centurion to your next battle; defeat to obtain 2 Funds",
+   "image": "Sarkaz_Centurion.webp"
+  },
+  {
+   "name": "'The Big Ugly Thing'/Bounty",
+   "description": "Adds 1 The Big Ugly Thing to your next battle; defeat to obtain 5 Funds",
+   "image": "The_Big_Ugly_Thing.webp"
+  },
+  {
+   "name": "\"Gravestone\"/Bounty",
+   "description": "Adds 1 \"Gravestone\" to your next battle; defeat to obtain 4 Funds",
+   "image": "Gravestone.webp"
+  },
+  {
+   "name": "Mudrock/Bounty",
+   "description": "Adds 1 Mudrock to your next battle; defeat to obtain 4 Funds",
+   "image": "Mudrock.webp"
+  },
+  {
+   "name": "Zaaro, Signore dei Lupi/Bounty",
+   "description": "Adds 1 Zaaro, \"Signore dei Lupi\" to your next battle; defeat to obtain 5 Funds",
+   "image": "Zaaro,_Signore_dei_Lupi.webp"
+  },
+  {
+   "name": "Lost Colossus/Bounty",
+   "description": "Adds 1 Lost Colossus to your next battle; defeat to obtain 5 Funds",
+   "image": "Lost_Colossus.webp"
+  },
+  {
+   "name": "Weaving Vinecreeps/Bounty",
+   "description": "Adds 1 Weaving Vinecreeps to your next battle; defeat to obtain 3 Funds",
+   "image": "Weaving_Vinecreeps.webp"
+  },
+  {
+   "name": "'Demon's Blade'/Bounty",
+   "description": "Adds 1 'Demon's Blade' to your next battle; defeat to obtain 3 Funds",
+   "image": "Demon's_Blade.webp"
+  },
+  {
+   "name": "'Eyes of the Sankta'/Bounty",
+   "description": "Adds 1 'Eyes of the Sankta' to your next battle; defeat to obtain 2 Funds",
+   "image": "Eyes_of_the_Sankta.webp"
+  },
+  {
+   "name": "'Forsaken One'/Bounty",
+   "description": "Adds 1 'Forsaken One' to your next battle; defeat to obtain 4 Funds",
+   "image": "Forsaken_One.webp"
+  },
+  {
+   "name": "'Free'/Bounty",
+   "description": "Adds 1 'Free' to your next battle; defeat to obtain 4 Funds",
+   "image": "Free.webp"
+  },
+  {
+   "name": "'Hateful Avenger'/Bounty",
+   "description": "Adds 1 'Hateful Avenger' to your next battle; defeat to obtain 6 Funds",
+   "image": "Hateful_Avenger.webp"
+  },
+  {
+   "name": "'Pompeii'/Bounty",
+   "description": "Adds 1 'Pompeii' to your next battle; defeat to obtain 2 Funds",
+   "image": "Pompeii.webp"
+  },
+  {
+   "name": "Bounty/Continuous I",
+   "description": "Adds 1 Sarkaz Witherer Captain to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Sarkaz_Witherer_Captain.webp"
+  },
+  {
+   "name": "Bounty/Continuous I",
+   "description": "Adds 1 Sarkaz Witherer to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Sarkaz_Witherer.webp"
+  },
+  {
+   "name": "Bounty/Continuous II",
+   "description": "Adds 1 Advanced Sarkaz Wither Tank to your next battle; defeat to obtain 2 Funds",
+   "image": "Advanced_Sarkaz_Wither_Tank.webp"
+  },
+  {
+   "name": "Bounty/Continuous III",
+   "description": "Adds 1 Sarkaz Wither Tank to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Sarkaz_Wither_Tank.webp"
+  },
+  {
+   "name": "Bounty/Flying II",
+   "description": "Adds 1 Bombtail to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Bombtail.webp"
+  },
+  {
+   "name": "Bounty/Flying II",
+   "description": "Adds 1 Withering Collector Disciple to your next battle; defeat to obtain 2 Funds",
+   "image": "Withering_Collector_Disciple.webp"
+  },
+  {
+   "name": "Bounty/Flying III",
+   "description": "Adds 1 Arts Master A1 to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Arts_Master_A1.webp"
+  },
+  {
+   "name": "Bounty/Frequency I",
+   "description": "Adds 1 Vernacularism to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Vernacularism.webp"
+  },
+  {
+   "name": "Bounty/Frequency II",
+   "description": "Adds 1 Sharpedge to your next battle; defeat to obtain 2 Funds",
+   "image": "Sharpedge.webp"
+  },
+  {
+   "name": "Bounty/Frequency III",
+   "description": "Adds 1 Clarity to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Clarity.webp"
+  },
+  {
+   "name": "Bounty/Injury I",
+   "description": "Adds 1 Uneasy Designer to your next battle; defeat to obtain 1 Funds",
+   "image": "Uneasy_Designer.webp"
+  },
+  {
+   "name": "Bounty/Injury II",
+   "description": "Adds 1 Allotropic Maleficent to the next battle; defeat to obtain 2 Funds",
+   "image": "Allotropic_Maleficent.webp"
+  },
+  {
+   "name": "Bounty/Injury II",
+   "description": "Adds 1 Armorless Union Cleanup Squad to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Armorless_Union_Cleanup_Squad.webp"
+  },
+  {
+   "name": "Bounty/Injury II",
+   "description": "Adds 1 Tidal Caster to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Tidal_Caster.webp"
+  },
+  {
+   "name": "Bounty/Injury III",
+   "description": "Adds 1 Caster Speedboat to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Caster_Speedboat.webp"
+  },
+  {
+   "name": "Bounty/Invisible I",
+   "description": "Adds 1 Heavy Crossbowman Ambusher to your next battle; defeat to obtain 1 Funds",
+   "image": "Heavy_Crossbowman_Ambusher.webp"
+  },
+  {
+   "name": "Bounty/Invisible II",
+   "description": "Adds 1 Invisible Caster to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Invisible_Caster.webp"
+  },
+  {
+   "name": "Bounty/Invisible III",
+   "description": "Adds 1 Shanhaizhong Ringleader to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Shanhaizhong_Ringleader.webp"
+  },
+  {
+   "name": "Bounty/Refraction I",
+   "description": "Adds 1 Dublinn Phalanx Infantry to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Dublinn_Phalanx_Infantry.webp"
+  },
+  {
+   "name": "Bounty/Refraction II",
+   "description": "Adds 1 Dublinn Heavy Defender Leader to your next battle; defeat to obtain 2 Funds",
+   "image": "Dublinn_Heavy_Defender_Leader.webp"
+  },
+  {
+   "name": "Bounty/Refraction II",
+   "description": "Adds 1 Enraged Tombkeeper Grotesque to the next battle; defeat to obtain 2 Funds",
+   "image": "Enraged_Tombkeeper_Grotesque.webp"
+  },
+  {
+   "name": "Bounty/Refraction III",
+   "description": "Adds 1 Dublinn Companion Guard to your next 2 battles; defeat to obtain 3 Funds",
+   "image": "Dublinn_Companion_Guard.webp"
+  },
+  {
+   "name": "Bounty/Special I",
+   "description": "Adds 1 Careless Underling to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Careless_Underling.webp"
+  },
+  {
+   "name": "Bounty/Special I",
+   "description": "Adds 1 Novice Acolyte to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Novice_Acolyte.webp"
+  },
+  {
+   "name": "Bounty/Special I",
+   "description": "Adds 1 Snowchild to your next 2 battles; defeat to obtain 1 Funds",
+   "image": "Snowchild.webp"
+  },
+  {
+   "name": "Bounty/Special II",
+   "description": "Adds 1 'Unicycle Toy' to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Unicycle_Toy.webp"
+  },
+  {
+   "name": "Bounty/Special II",
+   "description": "Adds 1 Derisive Audience to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Derisive_Audience.webp"
+  },
+  {
+   "name": "Bounty/Special II",
+   "description": "Adds 1 Frostcradler Fowlbeast to your next battle; defeat to obtain 2 Funds",
+   "image": "Frostcradler_Fowlbeast.webp"
+  },
+  {
+   "name": "Bounty/Special II",
+   "description": "Adds 1 Suiton Ninja to your next 2 battles; defeat to obtain 2 Funds",
+   "image": "Suiton_Ninja.webp"
+  },
+  {
+   "name": "Bounty/Special III",
+   "description": "Adds 1 'Sand Voyager' to your next battle; defeat to obtain 3 Funds",
+   "image": "Sand_Voyager.webp"
+  },
+  {
+   "name": "Bounty/Special III",
+   "description": "Adds 1 Blackhorn Rhuul to your next battle; defeat to obtain 3 Funds",
+   "image": "Blackhorn_Rhuul.webp"
+  },
+  {
+   "name": "Bounty/Special III",
+   "description": "Adds 1 Enraged Possessed Leader to your next battle; defeat to obtain 3 Funds",
+   "image": "Enraged_Possessed_Leader.webp"
+  },
+  {
+   "name": "Bounty/Special III",
+   "description": "Adds 1 Londinium Precision Mobile Defense Artillery to your next battle; defeat to obtain 3 Funds",
+   "image": "Londinium_Precision_Mobile_Defense_Artillery.webp"
+  },
+  {
+   "name": "Bounty/Special III",
+   "description": "Adds 1 Mudrock Colossus to your next battle; defeat to obtain 3 Funds",
+   "image": "Mudrock_Colossus.webp"
+  },
+  {
+   "name": "Bounty/Special III",
+   "description": "Adds 1 Sarkaz Boneguard Torturer to your next battle; defeat to obtain 3 Funds",
+   "image": "Sarkaz_Boneguard_Torturer.webp"
+  },
+  {
+   "name": "Crying Thief/Bounty",
+   "description": "Adds 1 Crying Thief to your next battle; defeat to obtain 3 Funds",
+   "image": "Crying_Thief.webp"
+  },
+  {
+   "name": "Degenbrecher/Bounty",
+   "description": "Adds 1 Degenbrecher to your next battle; defeat to obtain 5 Funds",
+   "image": "Degenbrecher.webp"
+  },
+  {
+   "name": "Duck Lord/Bounty",
+   "description": "Adds 1 Duck Lord to your next battle; defeat to obtain 3 Funds",
+   "image": "Duck_Lord.webp"
+  },
+  {
+   "name": "Fallen Snowpriest/Bounty",
+   "description": "Adds 1 Fallen Snowpriest to your next battle; defeat to obtain 3 Funds",
+   "image": "Fallen_Snowpriest.webp"
+  },
+  {
+   "name": "Fatty/Bounty",
+   "description": "Adds 1 Fatty to your next battle; defeat to obtain 3 Funds",
+   "image": "Fatty.webp"
+  },
+  {
+   "name": "Gopnik/Bounty",
+   "description": "Adds 1 Gopnik to your next battle; defeat to obtain 3 Funds",
+   "image": "Gopnik.webp"
+  },
+  {
+   "name": "Heavy Crossbowman Ambusher/Bounty",
+   "description": "Adds 1 Heavy Crossbowman Ambusher to your next battle; defeat to obtain 2 Funds",
+   "image": "Heavy_Crossbowman_Ambusher.webp"
+  },
+  {
+   "name": "Heavy Defender/Bounty",
+   "description": "Adds 1 Heavy Defender to your next battle; defeat to obtain 1 Funds",
+   "image": "Heavy_Defender.webp"
+  },
+  {
+   "name": "Jesselton Williams/Bounty",
+   "description": "Adds 1 Jesselton Williams to your next battle; defeat to obtain 4 Funds",
+   "image": "Jesselton_Williams.webp"
+  },
+  {
+   "name": "Jetman/Bounty",
+   "description": "Adds 1 Jetman to your next battle; defeat to obtain 3 Funds",
+   "image": "Jetman.webp"
+  },
+  {
+   "name": "Mio/Bounty",
+   "description": "Adds 1 Mio to your next battle; defeat to obtain 3 Funds",
+   "image": "Mio.webp"
+  },
+  {
+   "name": "Multi-Round Bounties/OpFor: BlackCloud",
+   "description": "Adds 1 OpFor: BlackCloud (Aerial enemy) to every subsequent battle; grants 1 Funds to whoever defeats it",
+   "image": "OpFor_BlackCloud.webp"
+  },
+  {
+   "name": "Multi-Round Bounties/OpFor: Bonespur",
+   "description": "Adds 1 OpFor: Bonespur (Has Invisibility) to every subsequent battle; grants 1 Funds to whoever defeats it",
+   "image": "OpFor_Bonespur.webp"
+  },
+  {
+   "name": "Multi-Round Bounties/OpFor: Fissure",
+   "description": "Adds 1 OpFor: Fissure (Deals continuous damage when defeated) to every subsequent battle; grants 1 Funds to whoever defeats it",
+   "image": "OpFor_Fissure.webp"
+  },
+  {
+   "name": "Multi-Round Bounties/OpFor: Mirror",
+   "description": "Adds 1 OpFor: Mirror (Has Refraction) to every subsequent battle; grants 1 Funds to whoever defeats it",
+   "image": "OpFor_Mirror.webp"
+  },
+  {
+   "name": "Multi-Round Bounties/OpFor: Quagmire",
+   "description": "Adds 1 OpFor: Quagmire (Deals Elemental Injury) to every subsequent battle; grants 1 Funds to whoever defeats it",
+   "image": "OpFor_Quagmire.webp"
+  },
+  {
+   "name": "Multi-Round Bounties/OpFor: Rebirth",
+   "description": "Adds 1 OpFor: Rebirth (Needs multiple hits to be defeated) to every subsequent battle; grants 1 Funds to whoever defeats it",
+   "image": "OpFor_Rebirth.webp"
+  },
+  {
+   "name": "Nucleic Maleficent/Bounty",
+   "description": "Adds 1 Nucleic Maleficent to your next battle; defeat to obtain 3 Funds",
+   "image": "Nucleic_Maleficent.webp"
+  },
+  {
+   "name": "Shanhaizhong Ringleader/Bounty",
+   "description": "Adds 1 Shanhaizhong Ringleader to your next battle; defeat to obtain 2 Funds",
+   "image": "Shanhaizhong_Ringleader.webp"
+  },
+  {
+   "name": "Shanhaizhong Ringleader/Multi-Round Bounties",
+   "description": "Adds 1 Shanhaizhong Ringleader to the every subsequent battle; defeat to obtain 1 Funds",
+   "image": "Shanhaizhong_Ringleader.webp"
+  },
+  {
+   "name": "Wraith Leader/Bounty",
+   "description": "Adds 1 Wraith Leader to your next battle; defeat to obtain 1 Funds",
+   "image": "Wraith_Leader.webp"
+  }
+ ],
+ "tacticalTraining": [
+  {
+   "id": "tacticalTrainingSpecial",
+   "name": "Tactical Training/Special",
+   "enemies": [
+    "Hound Pro",
+    "Heavy Defender Lieutenant",
+    "Sarkaz Greatswordsman",
+    "Sarkaz Greatswordsman Leader",
+    "Possessed Soldier",
+    "Defense Crusher",
+    "Defense Crusher Leader",
+    "Infantry",
+    "Possessed Heavy Defender",
+    "Sarkaz Swordsman",
+    "Sarkaz Lancer",
+    "Ordinary Prisoner",
+    "Seasoned Prisoner",
+    "Elite Pugilist Prisoner",
+    "Strongman Prisoner",
+    "Recidivist",
+    "Infamous Recidivist",
+    "Rhine Defense Senior Member",
+    "Dor-1 Failure",
+    "Dor-α Failure",
+    "Dor-β Replica",
+    "Test Power Armor",
+    "Sarkaz Absurdist Tyrant Captain",
+    "Military Hound",
+    "Elite Military Hound",
+    "Arc Frontliner",
+    "Arc Screenguard",
+    "Arc Screenguard Captain",
+    "Delegation Recruit",
+    "Delegation Veteran",
+    "Delegation Shieldbearer",
+    "Heavy Scout",
+    "Elite Sarkaz Wither Vanguard",
+    "Sacrilegious Chimera",
+    "Army Veteran Shieldguard"
+   ]
+  },
+  {
+   "id": "tacticalTrainingFlying",
+   "name": "Tactical Training/Flying",
+   "enemies": [
+    "Monster",
+    "Monster Mk II",
+    "Raptor",
+    "Defender-4",
+    "Arts Master A1",
+    "Arts Master A2",
+    "Frost",
+    "Imperial Artillery Targeteer",
+    "Blocker",
+    "Blocker-P",
+    "Farseer",
+    "Wings of the Sankta",
+    "Eyes of the Sankta",
+    "OpFor BlackCloud"
+   ]
+  },
+  {
+   "id": "tacticalTrainingFrequency",
+   "name": "Tactical Training/Frequency",
+   "enemies": [
+    "Grindstone",
+    "Brightmirror",
+    "Vernacularism",
+    "Sophistication",
+    "Introspection",
+    "Sinkingsand",
+    "Dublinn Flamechaser Soldier",
+    "Dublinn Flamechaser Elite Soldier",
+    "Dublinn Flamechaser Guard",
+    "OpFor Rebirth"
+   ]
+  },
+  {
+   "id": "tacticalTrainingElements",
+   "name": "Tactical Training/Elements",
+   "enemies": [
+    "Deep Sea Slider",
+    "Nourished Slider",
+    "Diver",
+    "Dockworker",
+    "Dockworker Leader",
+    "Tidal Caster",
+    "Tidal Leader",
+    "Sarkaz Royal Court Soldier",
+    "Sarkaz Royal Court Elite Soldier",
+    "Sarkaz Royal Court Elite Caster",
+    "Blazing Originium Slug",
+    "Pyric Originium Slug",
+    "Nucleic Maleficent",
+    "Cabbage Seedling",
+    "Burning Vine",
+    "Bone Sea Drifter",
+    "Skimming Sea Drifter",
+    "OpFor Quagmire"
+   ]
+  },
+  {
+   "id": "tacticalTrainingContinuous",
+   "name": "Tactical Training/Continuous",
+   "enemies": [
+    "Sarkaz Witherer",
+    "Sarkaz Witherer Captain",
+    "Army Heavy Artillery",
+    "Unicellular Predator",
+    "Allotropic Predator",
+    "Nethersea Swarmcaller",
+    "Nourished Swarmcaller",
+    "Rotchaser",
+    "Rampaging Rotchaser",
+    "Sarkaz Wither Tank",
+    "Advanced Sarkaz Wither Tank",
+    "OpFor Fissure"
+   ]
+  },
+  {
+   "id": "tacticalTrainingInvisible",
+   "name": "Tactical Training/Invisible",
+   "enemies": [
+    "Lurker",
+    "Invisible Crossbowman",
+    "Invisible Crossbowman Leader",
+    "Possessed Soldier",
+    "Heavy Crossbowman Ambusher",
+    "Elite Sarkaz Wither Vanguard",
+    "Amateur Performer",
+    "Bridge Builder",
+    "Bridge Holder",
+    "Risk-seeking Sailor",
+    "Famiglia Silencer",
+    "Shanhaizhong Ringleader",
+    "Shanhaizhong Secret-Keeper",
+    "Delegation Recruit",
+    "Delegation Centurion Champion",
+    "Festival Jazz Musician",
+    "OpFor Bonespur"
+   ]
+  },
+  {
+   "id": "tacticalTrainingRefraction",
+   "name": "Tactical Training/Refraction",
+   "enemies": [
+    "Dublinn Sniffer Hound",
+    "Dublinn Scout",
+    "Dublinn Scout Leader",
+    "Dublinn Shadowcaster",
+    "Dublinn Phalanx Infantry",
+    "Dublinn Phalanx Commander",
+    "Dublinn Heavy Defender",
+    "Dublinn Heavy Defender Leader",
+    "Tombkeeper Grotesque",
+    "Dublinn Companion Guard",
+    "Dublinn Elite Companion Guard",
+    "Dublinn Elite Companion Shadowblade",
+    "OpFor Mirror"
+   ]
+  }
+ ],
+ "leaders": [
+  "OpFor: Armor",
+  "OpFor: Gun",
+  "OpFor: Pipe",
+  "Sal Viento Bishop Quintus",
+  "Lucian, 'Blood Diamond'",
+  "Allstair, Final Flame if the Empire",
+  "'Samivilinn,' the Resolution of the Very North"
  ]
 }

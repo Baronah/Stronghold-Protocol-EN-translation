@@ -41,6 +41,21 @@ test('the release version is what players see', () => {
   assert.match(server, /app: APP_VERSION/, '/healthz');
 });
 
+test('the English title is the official one: Stronghold Protocol: Alliance (as in the reply to GitHub issue #38, which stays open)', () => {
+  // EN client data, activity_table basicInfo.act2autochess.name = "Stronghold Protocol: Alliance" (CN 卫戍协议:盟约);
+  // the project used to call it "Covenant". The Chinese title stays 卫戍协议：盟约; the repository keeps its name.
+  const readme = read('README.md');
+  assert.match(readme.split('\n')[0], /^# 卫戍协议：盟约 · Stronghold Protocol: Alliance$/, 'README title');
+  assert.match(readme, /mode \*Stronghold Protocol: Alliance\*/, 'README English summary');
+  assert.match(read('server/index.js'), /卫戍协议：盟约 · Stronghold Protocol: Alliance v/, 'boot banner');
+  assert.equal(pkg.name, 'stronghold-protocol-alliance');
+  assert.equal(lock.name, pkg.name);
+  assert.equal(lock.packages[''].name, pkg.name);
+  for (const f of ['README.md', 'server/index.js', 'package.json', 'package-lock.json', 'NOTICE.md', 'public/index.html', 'docs/DEPLOY.md']) {
+    assert.ok(!/covenant/i.test(read(f)), `${f}: no "Covenant" title left`);
+  }
+});
+
 test('GPL-3.0-or-later: LICENSE, package metadata and notices', () => {
   const license = read('LICENSE');
   assert.match(license.slice(0, 200), /GNU GENERAL PUBLIC LICENSE\s+Version 3, 29 June 2007/);

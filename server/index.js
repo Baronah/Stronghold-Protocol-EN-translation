@@ -309,12 +309,12 @@ function cacheControlFor(ext, mountName, segments, query) {
 const escapeHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
 function errorPage(status, title, detail = '') {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${status} · Stronghold Protocol: Alliance</title><style>
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${status} · 卫戍协议：盟约</title><style>
 :root{color-scheme:dark}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#111614;color:#d8e3de;font:16px/1.6 "Noto Sans SC",system-ui,sans-serif}
 main{border:1px solid #2c3a35;padding:32px 40px;max-width:520px;text-align:center}h1{margin:0;color:#4ed8af;font-size:56px;letter-spacing:4px}
 p{margin:8px 0}a{color:#4ed8af}</style></head><body><main><h1>${status}</h1><p>${escapeHtml(title)}</p>
-${detail ? `<p style="opacity:.6">${escapeHtml(detail)}</p>` : ''}<p><a href="/">Back to home</a></p></main></body></html>`;
+${detail ? `<p style="opacity:.6">${escapeHtml(detail)}</p>` : ''}<p><a href="/">返回首页 · Back to home</a></p></main></body></html>`;
 }
 
 function sendError(req, res, status, title, detail) {
@@ -368,9 +368,9 @@ export function createStaticHandler({ publicDir, dataDir, sharedDir, simDir = pa
 
   return async function serveStatic(req, res, rawPath, query) {
     let decoded;
-    try { decoded = decodeURIComponent(rawPath); } catch { sendError(req, res, 400, 'Bad request'); return; }
+    try { decoded = decodeURIComponent(rawPath); } catch { sendError(req, res, 400, '请求地址无效 · Bad request'); return; }
     if (!decoded.startsWith('/') || decoded.includes('\0') || decoded.includes('\\')) {
-      sendError(req, res, 400, 'Bad request');
+      sendError(req, res, 400, '请求地址无效 · Bad request');
       return;
     }
     if (decoded === '/data.js') {
@@ -389,16 +389,16 @@ export function createStaticHandler({ publicDir, dataDir, sharedDir, simDir = pa
     const mount = mounts.find((m) => decoded.startsWith(m.prefix) || decoded === m.prefix.slice(0, -1)) || mounts[mounts.length - 1];
     const rest = decoded.length > mount.prefix.length ? decoded.slice(mount.prefix.length) : '';
     const segments = rest.split('/').filter((s) => s.length > 0);
-    if (segments.some((s) => s === '..' || s === '.')) { sendError(req, res, 403, 'Forbidden'); return; }
-    if (segments.some((s) => s.startsWith('.'))) { sendError(req, res, 404, 'Not found'); return; }
+    if (segments.some((s) => s === '..' || s === '.')) { sendError(req, res, 403, '禁止访问 · Forbidden'); return; }
+    if (segments.some((s) => s.startsWith('.'))) { sendError(req, res, 404, '页面不存在 · Not found'); return; }
     if (mount.only && (!segments.length || !mount.only.has(path.extname(segments[segments.length - 1]).toLowerCase())
       // (case-insensitive: the host may be Windows / macOS, where NODEDATA.JS opens nodeData.js)
       || (mount.deny && mount.deny.has(segments[segments.length - 1].toLowerCase())))) {
-      sendError(req, res, 404, 'Not found');
+      sendError(req, res, 404, '页面不存在 · Not found');
       return;
     }
     let absPath = path.join(mount.dir, ...segments);
-    if (absPath !== mount.dir && !absPath.startsWith(mount.dir + path.sep)) { sendError(req, res, 403, 'Forbidden'); return; }
+    if (absPath !== mount.dir && !absPath.startsWith(mount.dir + path.sep)) { sendError(req, res, 403, '禁止访问 · Forbidden'); return; }
 
     let stat;
     let viaDirectory = false;
@@ -433,12 +433,12 @@ export function createStaticHandler({ publicDir, dataDir, sharedDir, simDir = pa
         res.writeHead(200, { 'Content-Type': MIME['.json'], 'Cache-Control': 'no-cache', 'Content-Length': EMPTY_LOCAL_ART.length });
         res.end(req.method === 'HEAD' ? undefined : EMPTY_LOCAL_ART);
       } else if (e && (e.code === 'ENOENT' || e.code === 'ENOTDIR' || e.code === 'EISDIR' || e.code === 'ENAMETOOLONG')) {
-        sendError(req, res, 404, 'Not found', decoded.length <= 200 ? decoded : '');
+        sendError(req, res, 404, '页面不存在 · Not found', decoded.length <= 200 ? decoded : '');
       } else if (e && (e.code === 'EACCES' || e.code === 'EPERM')) {
-        sendError(req, res, 403, 'Forbidden');
+        sendError(req, res, 403, '禁止访问 · Forbidden');
       } else {
         log.error('[http] stat failed', e);
-        sendError(req, res, 500, 'Internal error');
+        sendError(req, res, 500, '服务器内部错误 · Internal error');
       }
       return;
     }
@@ -458,18 +458,18 @@ export function createStaticHandler({ publicDir, dataDir, sharedDir, simDir = pa
 async function serveMedia(req, res, rest, query, publicDir, gzipCache, log) {
   const root = path.join(path.resolve(publicDir), 'assets', 'audio');
   const segments = String(rest || '').split('/').filter((s) => s.length > 0);
-  if (!segments.length || rest.endsWith('/')) { sendError(req, res, 404, 'Not found'); return; }
-  if (segments.some((s) => s === '..' || s === '.')) { sendError(req, res, 403, 'Forbidden'); return; }
+  if (!segments.length || rest.endsWith('/')) { sendError(req, res, 404, '页面不存在 · Not found'); return; }
+  if (segments.some((s) => s === '..' || s === '.')) { sendError(req, res, 403, '禁止访问 · Forbidden'); return; }
   // A leading or trailing dot would address something else (dotfiles, "x..mp3") — and the client never asks for it.
-  if (segments.some((s) => s.startsWith('.') || s.endsWith('.'))) { sendError(req, res, 404, 'Not found'); return; }
+  if (segments.some((s) => s.startsWith('.') || s.endsWith('.'))) { sendError(req, res, 404, '页面不存在 · Not found'); return; }
 
   const last = segments[segments.length - 1];
   const given = path.extname(last).toLowerCase();
   const wanted = AUDIO_EXTS.includes(given) ? given : '';
   const stem = wanted ? last.slice(0, -wanted.length) : last;
-  if (!stem || stem.startsWith('.')) { sendError(req, res, 404, 'Not found'); return; }
+  if (!stem || stem.startsWith('.')) { sendError(req, res, 404, '页面不存在 · Not found'); return; }
   const dir = path.join(root, ...segments.slice(0, -1));
-  if (dir !== root && !dir.startsWith(root + path.sep)) { sendError(req, res, 403, 'Forbidden'); return; }
+  if (dir !== root && !dir.startsWith(root + path.sep)) { sendError(req, res, 403, '禁止访问 · Forbidden'); return; }
 
   // An explicit extension wins (`/media/bgm.ogg` → bgm.ogg), otherwise the usual order decides.
   const order = wanted ? [wanted, ...AUDIO_EXTS.filter((e) => e !== wanted)] : AUDIO_EXTS;
@@ -488,7 +488,7 @@ async function serveMedia(req, res, rest, query, publicDir, gzipCache, log) {
     await serveFile(req, res, absPath, stat, 'public', ['assets', 'audio', ...segments], query, gzipCache, log);
     return;
   }
-  sendError(req, res, 404, 'Not found');
+  sendError(req, res, 404, '页面不存在 · Not found');
 }
 
 async function serveFile(req, res, absPath, stat, mountName, segments, query, gzipCache, log) {
@@ -646,18 +646,18 @@ export async function startServer(opts = {}) {
     res.setHeader('Referrer-Policy', 'same-origin');
     handleRequest(req, res).catch((e) => {
       log.error('[http] request failed', e);
-      sendError(req, res, 500, 'Internal error');
+      sendError(req, res, 500, '服务器内部错误 · Internal error');
     });
   });
 
   async function handleRequest(req, res) {
     const url = req.url || '/';
-    if (url.length > MAX_URL_LENGTH) { sendError(req, res, 414, 'URI too long'); return; }
+    if (url.length > MAX_URL_LENGTH) { sendError(req, res, 414, '请求地址过长 · URI too long'); return; }
     const parts = splitUrl(url);
-    if (!parts) { sendError(req, res, 400, 'Bad request'); return; }
+    if (!parts) { sendError(req, res, 400, '请求地址无效 · Bad request'); return; }
     if (req.method !== 'GET' && req.method !== 'HEAD') {
       res.setHeader('Allow', 'GET, HEAD');
-      sendError(req, res, 405, 'Method not allowed');
+      sendError(req, res, 405, '不支持的请求方法 · Method not allowed');
       return;
     }
     if (parts.rawPath === '/healthz') {
@@ -760,7 +760,7 @@ async function main() {
   try {
     srv = await startServer();
   } catch (e) {
-    if (e && e.code === 'EADDRINUSE') console.error(`Port in use: ${e.port ?? process.env.PORT ?? 3000}. Try PORT=3001 npm start`);
+    if (e && e.code === 'EADDRINUSE') console.error(`端口已被占用 / port in use: ${e.port ?? process.env.PORT ?? 3000}. Try PORT=3001 npm start`);
     else console.error('[boot] failed to start', e);
     process.exit(1);
   }

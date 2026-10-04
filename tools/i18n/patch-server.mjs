@@ -1,3 +1,5 @@
+// OBSOLETE — do not run. Superseded by the language switch: the server sends Chinese templates + args (shared/i18n.js
+// textMsg) and every client formats them in its own language (formatMsg); server/i18n.js is gone.
 // One-off: translate the texts the server composes itself (toasts, ticker lines, bot names).
 import fs from 'node:fs';
 

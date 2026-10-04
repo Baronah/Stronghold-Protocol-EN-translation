@@ -17,6 +17,7 @@ import { net, identity } from '../net.js';
 import { store, useStore, shallowEqual } from '../store.js';
 import { data, useData } from '../data.js';
 import { FullscreenButton, detectFeatures } from '../ui/device.js';
+import { T, lang, setLang } from '../i18n.js';
 
 // Same character classes as server/net.js sanitizeName (control, zero-width, bidi, BOM), so a name
 // the client accepts is never rejected by the server's hello validation.
@@ -174,9 +175,30 @@ function Ridges() {
 }
 
 const STATUS_TEXT = {
-  idle: 'Ready to connect', connecting: 'Connecting to server', connected: 'Connected to server', handshaking: 'Verifying identity',
-  online: 'Connected to server', reconnecting: 'Connection lost, reconnecting', closed: 'Connection closed',
+  idle: T('准备连接'), connecting: T('正在连接服务器'), connected: T('已连接服务器'), handshaking: T('正在验证身份'),
+  online: T('已连接服务器'), reconnecting: T('连接中断，正在重连'), closed: T('连接已关闭'),
 };
+
+/** Display language options of the title screen switch (each named in its own language). */
+const LANG_OPTIONS = [['zh', '中文'], ['en', 'EN']]; // i18n-ok: each named in its own language
+
+/**
+ * 中文 | EN switch: keeps the half-typed callsign, then saves the choice and reloads the page (js/i18n.js setLang).
+ * @param {{ name: string }} props
+ */
+function LangSwitch({ name }) {
+  const pick = (id) => {
+    if (id === lang) return;
+    const clean = sanitizeName(name);
+    if (clean) identity.saveName(clean);
+    setLang(id);
+  };
+  // i18n-ok (next line): the group's label names it in both languages
+  return html`<div class="set-seg title-lang" role="radiogroup" aria-label="语言 / Language">
+    ${LANG_OPTIONS.map(([id, label]) => html`<button key=${id} type="button" role="radio" lang=${id === 'zh' ? 'zh-CN' : 'en'}
+      aria-checked=${lang === id ? 'true' : 'false'} class=${lang === id ? 'is-on' : ''} onClick=${() => pick(id)}>${label}</button>`)}
+  </div>`;
+}
 
 /** Title screen component. */
 export function TitleScreen() {
@@ -199,7 +221,7 @@ export function TitleScreen() {
 
   const valid = isValidName(name);
   const start = () => {
-    if (!valid) { toast('Please enter your Doctor callsign', 'warn'); return; }
+    if (!valid) { toast(T('请输入博士代号'), 'warn'); return; }
     enterSession(name);
   };
 
@@ -241,22 +263,23 @@ export function TitleScreen() {
         <span class="title-en__a">STRONGHOLD PROTOCOL</span>
         <span class="title-en__b">ALLIANCE</span>
       </div>
-      <h1 class="title-cn">Stronghold Protocol<span class="title-cn__colon">: </span><em>Alliance</em></h1>
-      <p class="title-tag">Allocate Funds and Operators, coordinate defenses with your allies, hold off wave after wave, and defeat the Enemy Leader.</p>
+      <h1 class="title-cn">${T('卫戍协议')}<span class="title-cn__colon">${T('：')}</span><em>${T('盟约')}</em></h1>
+      <p class="title-tag">${T('调配资金与干员，与同伴协同布防，抵御多波次进攻，直至击败敌方领袖。')}</p>
 
       <div class="title-login">
         ${pendingJoin ? html`<div class="title-invite">
           <${Icon} name="key" />
-          <span>Alliance invite received</span><b class="num">${pendingJoin}</b><span class="t-lo">· You'll join automatically after entering your callsign</span>
+          <span>${T('收到同盟邀请')}</span><b class="num">${pendingJoin}</b><span class="t-lo">${T('· 输入代号后将自动加入')}</span>
         </div>` : null}
-        <${TextField} label="Doctor Callsign" micro="CALLSIGN" size="lg" icon="user" value=${name} maxLength=${NAME_MAX_LEN}
-          placeholder="Enter your callsign (max ${NAME_MAX_LEN} chars)" autoFocus=${!touchUi}
+        <${TextField} label=${T('博士代号')} micro="CALLSIGN" size="lg" icon="user" value=${name} maxLength=${NAME_MAX_LEN}
+          placeholder=${T('输入你的代号（最多 {0} 字）', NAME_MAX_LEN)} autoFocus=${!touchUi}
           onInput=${setName} onEnter=${start} />
-        <${Button} variant="primary" size="xl" block=${true} iconRight="chevrons" disabled=${!valid} onClick=${start}>Start<//>
+        <${Button} variant="primary" size="xl" block=${true} iconRight="chevrons" disabled=${!valid} onClick=${start}>${T('开始')}<//>
         <div class="title-conn">
           <span class=${`status-dot ${dotClass}`}></span>
           <span>${STATUS_TEXT[conn.status] || conn.status}</span>
           ${conn.status === 'online' ? html`<${PingPill} ms=${conn.ping} />` : null}
+          <${LangSwitch} name=${name} />
           <${GuideButton} class="title-guide" />
           <${FullscreenButton} class="title-fs" />
         </div>
@@ -264,7 +287,7 @@ export function TitleScreen() {
     </main>
 
     <footer class="title-foot">
-      <span>Unofficial fan remake · Game assets © Hypergryph / Yostar</span>
+      <span>${T('非官方同人复刻 · 游戏素材版权归 上海鹰角网络 / Yostar 所有')}</span>
       <${MicroLabel}>v${APP_VERSION} · WEB SIMULATION<//>
     </footer>
   </div>`;

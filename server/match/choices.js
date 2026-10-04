@@ -63,7 +63,7 @@
 
 import { weightedPick } from './waves.js';
 
-export const FAMILY_NAMES = { bounty: 'Bounty Decision', supply: 'Item Supply', shop: 'Secret Shop', tactic: 'Tactical Decision' };
+export const FAMILY_NAMES = { bounty: '悬赏决策', supply: '道具补给', shop: '机密商店', tactic: '战术决策' };
 
 /**
  * Battles a multi-round bounty card lasts (data `rounds` 99, official text "之后 / 后续的<@ba.vdown>每场</>作战":

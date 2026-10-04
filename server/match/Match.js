@@ -119,7 +119,7 @@
 //     human is left at all the match ends ('abandoned'); when nobody alive is left it ends as 'eliminated'.
 
 import { C2S, unitStatsEntry } from '../../shared/protocol.js';
-import { tr } from '../i18n.js';
+import { textMsg, nameArg, namesArg } from '../../shared/i18n.js';
 import { PHASE, ERR, EMOTES, EMOTE_COOLDOWN_MS, GEO, modeIdFor, layerGainRoom } from '../../shared/constants.js';
 import { Battle } from '../sim/Battle.js';
 import { DataSource } from '../sim/simdata.js';
@@ -513,7 +513,7 @@ export class Match {
     }
     ps.lp = 0;
     ps.eliminate(passedRound);
-    this.tickerText(`Dr. ${ps.name} left the simulation`, FLOW_TICKER_PRIORITY);
+    this.tickerText('{0}博士中途退出了模拟', FLOW_TICKER_PRIORITY, [nameArg(ps)]);
     if (this.bossWaves && (phase === PHASE.ROUND_START || phase === PHASE.SP_DRAFT || phase === PHASE.PREP)) {
       // before the boss fight: pair the players left again (the prep preview shows the new partner / template); a
       // player moved to the other half re-checks its board there at once (recompute → deployMap, marks it private)
@@ -679,9 +679,13 @@ export class Match {
     try { this.broadcastFn(msg); } catch (e) { this.reportError('broadcast', e); }
   }
 
-  toast(ps, kind, text) {
+  /**
+   * A toast to one player. `text` is a Chinese template ({0}, {1}… filled from `args`): the client shows it in its own
+   * language (m.toast tpl + args; `text` is the filled Chinese line).
+   */
+  toast(ps, kind, text, args = []) {
     if (!ps || ps.isBot || ps.left || !ps.connected) return;
-    this.sendTo(ps.playerId, { t: 'm.toast', kind, text: tr(text) });
+    this.sendTo(ps.playerId, { t: 'm.toast', kind, ...textMsg(text, args) });
   }
 
   /** Broadcast ticker from config.broadcasts by type; `param` picks the variant (SHOP_LEVEL level, BOSS_HIT share…). */
@@ -691,8 +695,7 @@ export class Match {
     if (param != null) b = list.find((x) => Array.isArray(x.params) && x.params.includes(String(param))) || b;
     const tpl = b && typeof b.text === 'string' ? b.text : null;
     if (!tpl) return;
-    const text = tr(tpl).replace(/\{(\d)\}/g, (_, i) => (args[Number(i)] != null ? String(tr(args[Number(i)])) : ''));
-    const msg = { t: 'm.ticker', text, id: b.id, type, priority: Number(b.priority) || 0, playerId };
+    const msg = { t: 'm.ticker', ...textMsg(tpl, args), id: b.id, type, priority: Number(b.priority) || 0, playerId };
     if (to) this.sendTo(to, msg);
     else this.broadcast(msg);
   }
@@ -701,9 +704,9 @@ export class Match {
    * A ticker line of the remake's own (type CUSTOM). `priority`: the match-flow notices (隐秘核心已解锁, 联防阶段, a player out
    * or gone) take FLOW_TICKER_PRIORITY so the strip does not hold them behind shop-level lines; other lines 0.
    */
-  tickerText(text, priority = 0) {
+  tickerText(text, priority = 0, args = []) {
     if (!text) return;
-    this.broadcast({ t: 'm.ticker', text: String(text).slice(0, 200), id: null, type: 'CUSTOM', priority: Number(priority) || 0, playerId: null });
+    this.broadcast({ t: 'm.ticker', ...textMsg(String(text).slice(0, 200), args), id: null, type: 'CUSTOM', priority: Number(priority) || 0, playerId: null });
   }
 
   markPublic() { this._pubDirty = true; }
@@ -1292,7 +1295,7 @@ export class Match {
     if (this.draft.picks[ps.playerId]) return fail(ERR.ALREADY);
     if (this.draftTurn() !== ps.playerId) return fail(ERR.NOT_YOUR_TURN);
     if (typeof bandId !== 'string' || !this.gd.bandAllowed(bandId)) return fail(ERR.BAD_TARGET);
-    if (this.bandTaken(bandId, ps.playerId)) return fail(ERR.BAD_TARGET, 'Already picked by a teammate');
+    if (this.bandTaken(bandId, ps.playerId)) return fail(ERR.BAD_TARGET, '队友已选');
     this._applyBand(ps, bandId);
     return OK;
   }
@@ -1499,7 +1502,7 @@ export class Match {
     const rounds = bountyBattles(card);
     const b = {
       id: `bounty:${this.nextUid()}`,
-      card: { effectId: card.effectId ?? card.id ?? null, name: card.name ?? 'Bounty', desc: card.desc ?? '', tier: card.tier ?? 1, coin: Math.max(0, Math.trunc(Number(card.coin) || 0)), payout: card.payout === 'perfect' ? 'perfect' : 'kill', rounds, multiRound: isMultiRoundBounty(card), enemyKey: card.enemyKey, count: Math.max(1, Math.min(20, Number.isInteger(card.count) ? card.count : 1)) },
+      card: { effectId: card.effectId ?? card.id ?? null, name: card.name ?? '悬赏', desc: card.desc ?? '', tier: card.tier ?? 1, coin: Math.max(0, Math.trunc(Number(card.coin) || 0)), payout: card.payout === 'perfect' ? 'perfect' : 'kill', rounds, multiRound: isMultiRoundBounty(card), enemyKey: card.enemyKey, count: Math.max(1, Math.min(20, Number.isInteger(card.count) ? card.count : 1)) },
       roundsLeft: rounds,
     };
     ps.bounties.push(b);
@@ -1856,7 +1859,7 @@ export class Match {
     this.deadline = this.sched.instant ? 0 : this.sched.now() + Math.round((limit / this.gameSpeed) * 1000);
     this._defaultWatch();
     this.markPublic();
-    this.tickerText(`Unite Phase: ${plan.helpers.map((p) => p.name).join(', ')} take on the enemies that broke through`, FLOW_TICKER_PRIORITY);
+    this.tickerText('联防阶段：{0} 迎战突破防线的敌人', FLOW_TICKER_PRIORITY, [namesArg(plan.helpers)]);
     this._uniteLeftKey = null;
     this.runner = new FieldRunner(this, this.fields, {
       onTick: (runner) => this._uniteTick(runner),
@@ -2276,7 +2279,7 @@ export class Match {
       this._sendStart(ps.playerId, f, { watch: !f.players.includes(ps.playerId) });
     }
     this.markPublic();
-    this.tickerText(`Unite Phase: ${plan.helpers.map((p) => p.name).join(', ')} take on the enemies that broke through`, FLOW_TICKER_PRIORITY);
+    this.tickerText('联防阶段：{0} 迎战突破防线的敌人', FLOW_TICKER_PRIORITY, [namesArg(plan.helpers)]);
   }
 
   _finishUniteClient() {
@@ -2756,8 +2759,8 @@ export class Match {
       if (ps.lp <= 0) {
         ps.lp = 0;
         ps.eliminate(this.round);
-        this.toast(ps, 'error', 'Your LP ran out. You have been eliminated');
-        this.tickerText(`Dr. ${ps.name} has run out of LP`, FLOW_TICKER_PRIORITY);
+        this.toast(ps, 'error', '你的目标生命值耗尽，已被淘汰');
+        this.tickerText('{0}博士的目标生命值已耗尽', FLOW_TICKER_PRIORITY, [nameArg(ps)]);
       }
     }
     this.fields = [];
@@ -2785,7 +2788,7 @@ export class Match {
     }
     for (const u of best.values()) {
       const hit = steps.find((s) => (u.dmg || 0) >= s);
-      if (hit) this.tickerFor('CHAR_DAMAGE', [ps.name, u.name || u.defId, String(hit)], { playerId: ps.playerId, param: String(hit) });
+      if (hit) this.tickerFor('CHAR_DAMAGE', [nameArg(ps), u.name || u.defId, String(hit)], { playerId: ps.playerId, param: String(hit) });
     }
   }
 
@@ -2822,7 +2825,7 @@ export class Match {
         BOSS_HIT_STEPS.forEach((s, i) => { if (share >= s) reached = Math.max(reached, i + 1); });
         if (reached > done) {
           hitSteps.set(pid, reached);
-          this.tickerFor('BOSS_HIT', [ps.name], { playerId: pid, param: String(BOSS_HIT_STEPS[reached - 1]) });
+          this.tickerFor('BOSS_HIT', [nameArg(ps)], { playerId: pid, param: String(BOSS_HIT_STEPS[reached - 1]) });
         }
       },
     });
@@ -3024,7 +3027,7 @@ export class Match {
         if (eligible) {
           this.hiddenReached = true;
           this.bossPool = null;
-          this.tickerText('Hidden Core unlocked', FLOW_TICKER_PRIORITY);
+          this.tickerText('隐秘核心已解锁', FLOW_TICKER_PRIORITY);
           this.startRound(this.gd.hiddenRound);
         } else {
           this.finish({ victory, reason: victory ? 'victory' : 'defeat' });

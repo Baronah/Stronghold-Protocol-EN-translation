@@ -28,7 +28,11 @@ import { rangeTiles, pieceDir } from './facing.js';
 import { layoutPen } from '../render/pen.js';
 import { BOSS_ROW_SHIFT, MAX_COL } from '../render/prepfield.js';
 import { bossLevelSeconds } from './matchStatus.js';
-
+import { T, lang } from '../i18n.js';
+/** Separator of a name list in the display language (、 in 中文). */
+export const LIST_SEP = lang === 'en' ? ', ' : '、';
+/** A bond / unit name in the display language's brackets (【X】 in 中文; punctuation alone is no dictionary key). */
+export const bracketName = (name) => (lang === 'en' ? `[${name}]` : `【${name}】`);
 // ---- small helpers -------------------------------------------------------------------------------
 
 const isObj = (v) => !!v && typeof v === 'object';
@@ -153,18 +157,18 @@ export function boardTileOf(field, r, c) {
 export function phaseBanner(phase, pub) {
   const r = int(pub?.round, 0);
   switch (phase) {
-    case PHASE.BATTLE_CHECK: return { title: 'Protocol Start', micro: 'PROTOCOL START', tone: 'mint', sub: 'The simulation is about to begin', duration: 2600 };
-    case PHASE.ROUND_START: return { title: `Round ${r}`, micro: `ROUND ${String(r).padStart(2, '0')}`, tone: 'mint', sub: 'Funds received' };
-    case PHASE.SP_DRAFT: return { title: 'Improv Phase', micro: 'CONTINGENCY', tone: 'gold', sub: 'Choose Improv in turn' };
-    case PHASE.PREP: return { title: 'Rest Phase', micro: `ROUND ${String(r).padStart(2, '0')} // REST`, tone: 'mint', sub: 'Deploy Operators and prepare for the enemy' };
-    case PHASE.COMBAT: return { title: 'Battle Start', micro: 'COMBAT', tone: 'orange', sub: 'Individual action phase' };
+    case PHASE.BATTLE_CHECK: return { title: T('协议启动'), micro: 'PROTOCOL START', tone: 'mint', sub: T('模拟即将开始'), duration: 2600 };
+    case PHASE.ROUND_START: return { title: T('第 {0} 回合', r), micro: `ROUND ${String(r).padStart(2, '0')}`, tone: 'mint', sub: T('资金已到账') };
+    case PHASE.SP_DRAFT: return { title: T('机变阶段'), micro: 'CONTINGENCY', tone: 'gold', sub: T('依次选择机变') };
+    case PHASE.PREP: return { title: T('休整期'), micro: `ROUND ${String(r).padStart(2, '0')} // REST`, tone: 'mint', sub: T('部署干员，准备迎敌') };
+    case PHASE.COMBAT: return { title: T('作战开始'), micro: 'COMBAT', tone: 'orange', sub: T('各自行动阶段') };
     case PHASE.UNITE: {
-      const names = new Map(sortedPlayers(pub).map((p) => [p.playerId, p.name || 'Doctor']));
+      const names = new Map(sortedPlayers(pub).map((p) => [p.playerId, p.name || T('博士')]));
       const helpers = Array.isArray(pub?.unite?.helpers) ? pub.unite.helpers.map((id) => names.get(id)).filter(Boolean) : [];
-      return { title: 'Unite Phase', micro: 'JOINT DEFENSE', tone: 'orange', sub: helpers.length ? `Unite: ${helpers.join(', ')}` : 'Doctors with a flawless battle take on the enemies that broke through' };
+      return { title: T('联防阶段'), micro: 'JOINT DEFENSE', tone: 'orange', sub: helpers.length ? T('联防：{0}', helpers.join(LIST_SEP)) : T('完美作战的博士迎战突破防线的敌人') };
     }
-    case PHASE.FINAL_ASSAULT: return { title: 'Final Assault', micro: 'FINAL ASSAULT', tone: 'red', sub: 'Defeat the Enemy Leader' };
-    case PHASE.HIDDEN_CORE: return { title: 'Hidden Core', micro: 'HIDDEN CORE', tone: 'red', sub: 'An OpFor eroded by Originium' };
+    case PHASE.FINAL_ASSAULT: return { title: T('最终攻势'), micro: 'FINAL ASSAULT', tone: 'red', sub: T('击败敌方领袖') };
+    case PHASE.HIDDEN_CORE: return { title: T('隐秘核心'), micro: 'HIDDEN CORE', tone: 'red', sub: T('被源石侵蚀的假想敌') };
     case PHASE.SETTLE: return null;
     default: return null;
   }
@@ -172,11 +176,11 @@ export function phaseBanner(phase, pub) {
 
 /** Label of the prep capsule ("休息一下" in the original). */
 export function prepCapsuleLabel(phase) {
-  if (phase === PHASE.SP_DRAFT) return 'Improv Phase';
-  if (phase === PHASE.ROUND_START) return 'Round Start';
-  if (phase === PHASE.BATTLE_CHECK) return 'Protocol Start';
-  if (phase === PHASE.SETTLE) return 'Round Settlement';
-  return 'Take a Break';
+  if (phase === PHASE.SP_DRAFT) return T('机变阶段');
+  if (phase === PHASE.ROUND_START) return T('回合开始');
+  if (phase === PHASE.BATTLE_CHECK) return T('协议启动');
+  if (phase === PHASE.SETTLE) return T('回合结算');
+  return T('休息一下');
 }
 
 // ---- countdown -------------------------------------------------------------------------------------
@@ -235,14 +239,14 @@ export function phaseTotalSeconds(pub, config, myId = null) {
 
 /** Status → glyph + text (research 06 §11.1). */
 export const STATUS_META = Object.freeze({
-  acting: { glyph: 'dots', text: 'Acting', tone: 'lo' },
-  ready: { glyph: 'check', text: 'Ready', tone: 'mint' },
-  deciding: { glyph: 'hourglass', text: 'Deciding', tone: 'gold' },
-  combat: { glyph: 'sword', text: 'In Combat', tone: 'orange' },
-  done: { glyph: 'check', text: 'Battle Over', tone: 'mint' },
-  helping: { glyph: 'shield', text: 'Uniting', tone: 'orange' },
-  left: { glyph: 'exit', text: 'Left', tone: 'red' },
-  dead: { glyph: 'close', text: 'Eliminated', tone: 'red' },
+  acting: { glyph: 'dots', text: T('行动中'), tone: 'lo' },
+  ready: { glyph: 'check', text: T('已就绪'), tone: 'mint' },
+  deciding: { glyph: 'hourglass', text: T('决策中'), tone: 'gold' },
+  combat: { glyph: 'sword', text: T('作战中'), tone: 'orange' },
+  done: { glyph: 'check', text: T('作战结束'), tone: 'mint' },
+  helping: { glyph: 'shield', text: T('联防中'), tone: 'orange' },
+  left: { glyph: 'exit', text: T('已离开'), tone: 'red' },
+  dead: { glyph: 'close', text: T('已淘汰'), tone: 'red' },
 });
 
 /** Players sorted by seat (nulls dropped). */
@@ -294,8 +298,8 @@ export function cycleField(fields, current, dir = 1) {
  * @returns {{ fieldId: string } | { reason: string }}
  */
 export function watchTarget(p, pub, myId) {
-  if (!isObj(p)) return { reason: 'Invalid target' };
-  if (p.alive === false) return { reason: 'This Teammate has been eliminated; their Field cannot be viewed' };
+  if (!isObj(p)) return { reason: T('无效的目标') };
+  if (p.alive === false) return { reason: T('该队友已被淘汰，无法查看其阵地') };
   const combat = isCombatPhase(pub?.phase);
   const fieldId = (combat && typeof p.fieldId === 'string' && p.fieldId) || ownFieldId(p.playerId);
   if (combat) {
@@ -304,7 +308,7 @@ export function watchTarget(p, pub, myId) {
     const me = sortedPlayers(pub).find((x) => x.playerId === myId);
     const mine = fields.find((x) => Array.isArray(x.players) && x.players.includes(myId));
     if (f && (f.kind === 'boss' || f.kind === 'hidden') && me?.alive !== false && mine && mine.fieldId !== f.fieldId) {
-      return { reason: "Cannot view the other pair's Battlefield" };
+      return { reason: T('无法查看另一组队友的战场') };
     }
   }
   return { fieldId };
@@ -323,9 +327,9 @@ export function switcherLabel(pub, watching, myId, spectating = false) {
   const cur = fields.find((f) => f.fieldId === watching);
   if (cur) return fieldLabel(cur, pub, myId);
   if (typeof watching === 'string' && watching.startsWith('n:') && watching !== ownFieldId(myId)) {
-    return sortedPlayers(pub).find((p) => p.playerId === watching.slice(2))?.name || 'Teammate';
+    return sortedPlayers(pub).find((p) => p.playerId === watching.slice(2))?.name || T('队友');
   }
-  return spectating ? 'Spectate' : 'Self';
+  return spectating ? T('观战') : T('自己');
 }
 
 /**
@@ -336,16 +340,16 @@ export function switcherLabel(pub, watching, myId, spectating = false) {
  */
 export function fieldLabel(field, pub, myId) {
   if (!isObj(field)) return '—';
-  const names = new Map(sortedPlayers(pub).map((p) => [p.playerId, p.name || 'Doctor']));
+  const names = new Map(sortedPlayers(pub).map((p) => [p.playerId, p.name || T('博士')]));
   const ps = Array.isArray(field.players) ? field.players : [];
-  if (field.kind === 'unite') return ps.includes(myId) ? 'Unite (Self)' : 'Unite Field';
+  if (field.kind === 'unite') return ps.includes(myId) ? T('联防（自己）') : T('联防阵地');
   if (field.kind === 'boss' || field.kind === 'hidden') {
-    if (ps.includes(myId)) return ps.length > 1 ? 'Overview' : 'Self';
-    return ps.map((id) => names.get(id) || 'Doctor').join(' · ') || 'Leader Battlefield';
+    if (ps.includes(myId)) return ps.length > 1 ? T('全景') : T('自己');
+    return ps.map((id) => names.get(id) || T('博士')).join(' · ') || T('领袖战场');
   }
-  if (ps.includes(myId) || field.fieldId === ownFieldId(myId)) return 'Self';
+  if (ps.includes(myId) || field.fieldId === ownFieldId(myId)) return T('自己');
   const id = ps[0] ?? String(field.fieldId || '').replace(/^n:/, '');
-  return names.get(id) || 'Teammate';
+  return names.get(id) || T('队友');
 }
 
 /**
@@ -594,8 +598,8 @@ export function disabledBondSets(pub, staticInactive = []) {
  * @param {number} bannedN banned operators of the bond
  */
 export function briefingBondTip(name, state, bannedN = 0) {
-  if (state === 'off') return `${name}: Disabled this match (this Alliance will not activate)`;
-  if (state === 'drawn' || bannedN > 0) return `${name}: Some of this Alliance's Operators are unavailable${bannedN ? ` (${bannedN} Operator${bannedN === 1 ? '' : 's'} cannot appear)` : ''}`;
+  if (state === 'off') return T('{0}：本局禁用（该盟约不会激活）', name);
+  if (state === 'drawn' || bannedN > 0) return T('{0}：部分盟约所含干员阵容不完整{1}', name, bannedN ? T('（{0} 名干员无法出现）', bannedN) : '');
   return name;
 }
 
@@ -632,7 +636,7 @@ export function bandOffBonds(band, off) {
  */
 export function bandOffLine(names) {
   const list = (Array.isArray(names) ? names : []).filter((n) => typeof n === 'string' && n);
-  return list.length ? `${list.map((n) => `[${n}]`).join('')} Alliance disabled this match; this Strategy may not take full effect` : '';
+  return list.length ? T('本局禁用{0}盟约，此策略效果可能无法发挥', list.map(bracketName).join('')) : '';
 }
 
 // ---- shop ---------------------------------------------------------------------------------------------
@@ -749,12 +753,12 @@ export function offerHeader(offer) {
   const items = slots.some((s) => isObj(s) && s.kind === 'item');
   const label = isObj(offer) && typeof offer.label === 'string' && offer.label ? offer.label : null;
   const queued = isObj(offer) && Number.isInteger(offer.queued) && offer.queued > 0 ? offer.queued : 0;
-  const tail = { queued, more: queued ? `${queued} more to come` : null };
+  const tail = { queued, more: queued ? T('之后还有 {0} 项', queued) : null };
   if (!items && (!isObj(offer) || offer.source === 'merge' || offer.source == null) && !label) {
-    return { title: 'Promotion Reward', micro: 'PROMOTION', sub: 'Choose 1 Operator for free', icon: 'crown', items: false, pill: 'Promotion Reward pending', ...tail };
+    return { title: T('晋升奖励'), micro: 'PROMOTION', sub: T('免费选择 1 名'), icon: 'crown', items: false, pill: T('晋升奖励待选择'), ...tail };
   }
-  const title = label || (items ? 'Equipment Supply' : 'Special Recruit');
-  return { title, micro: 'SPECIAL', sub: items ? 'Choose 1 Item for free' : 'Choose 1 Operator for free', icon: 'refresh', items, pill: `${title} pending`, ...tail };
+  const title = label || (items ? T('装备补给') : T('特殊招募'));
+  return { title, micro: 'SPECIAL', sub: items ? T('免费选择 1 件') : T('免费选择 1 名'), icon: 'refresh', items, pill: T('{0}待选择', title), ...tail };
 }
 
 /**
@@ -764,25 +768,25 @@ export function offerHeader(offer) {
  * @returns {string|null} Chinese reason
  */
 export function shopBlockReason(kind, { priv, editable, slot, getChess, getItem } = {}) {
-  if (!priv) return 'Not ready yet';
-  if (priv.alive === false) return 'You have been eliminated';
-  if (kind === 'ready') return priv.canReady === false ? 'The Temporary Bench is not empty; deal with the overflow first' : null;
+  if (!priv) return T('尚未就绪');
+  if (priv.alive === false) return T('你已被淘汰');
+  if (kind === 'ready') return priv.canReady === false ? T('临时整备区不为空，请先处理溢出的资源') : null;
   if (!editable) {
-    if (kind === 'reward') return 'Cannot choose right now';
-    return priv.ready ? 'You are Ready; cancel Ready to make changes' : 'Cannot do that in this phase';
+    if (kind === 'reward') return T('当前无法选择');
+    return priv.ready ? T('已准备就绪，取消准备后才能操作') : T('当前阶段无法进行该操作');
   }
   const funds = Number(priv.funds) || 0;
   const shop = priv.shop || {};
   if (kind === 'buy' || kind === 'reward') {
-    if (!isObj(slot) || slot.sold) return kind === 'reward' ? 'Selected' : 'Sold Out';
-    if ((Number(slot.price) || 0) > funds) return 'Insufficient Funds';
-    if (handFull(priv) && !completesMerge(priv, slot, { getChess, getItem })) return 'Bench is full';
+    if (!isObj(slot) || slot.sold) return kind === 'reward' ? T('已选择') : T('已售出');
+    if ((Number(slot.price) || 0) > funds) return T('资金不足');
+    if (handFull(priv) && !completesMerge(priv, slot, { getChess, getItem })) return T('整备区已满');
     return null;
   }
-  if (kind === 'refresh') return (Number(shop.refreshPrice) || 0) > funds ? 'Insufficient Funds' : null;
+  if (kind === 'refresh') return (Number(shop.refreshPrice) || 0) > funds ? T('资金不足') : null;
   if (kind === 'levelUp') {
-    if ((Number(shop.level) || 1) >= (Number(shop.maxLevel) || 6)) return 'Dispatch Center is at max level';
-    return (Number(shop.upgradePrice) || 0) > funds ? 'Insufficient Funds' : null;
+    if ((Number(shop.level) || 1) >= (Number(shop.maxLevel) || 6)) return T('调度中心已达最高等级');
+    return (Number(shop.upgradePrice) || 0) > funds ? T('资金不足') : null;
   }
   return null;
 }
@@ -1059,81 +1063,81 @@ function unitAllowed(ctx, piece, row, col, owner = null) {
  */
 export function canPlace(ctx, uid, target) {
   const no = (code, reason) => ({ ok: false, code, reason });
-  if (!ctx || !ctx.editable) return no('WRONG_PHASE', 'Cannot do that in this phase');
+  if (!ctx || !ctx.editable) return no('WRONG_PHASE', T('当前阶段无法进行该操作'));
   const src = ctx.pieces.get(uid);
-  if (!src) return no('BAD_TARGET', 'Unit not found');
-  if (!isObj(target)) return no('BAD_TILE', 'Cannot deploy here');
+  if (!src) return no('BAD_TARGET', T('找不到该单位'));
+  if (!isObj(target)) return no('BAD_TILE', T('无法部署在该位置'));
   const piece = src.piece;
   const isMagic = piece.kind === 'item' && ctx.getItem(piece.id)?.itemType === 'MAGIC';
 
   if (target.area === 'hand') {
     const idx = target.idx;
-    if (!Number.isInteger(idx) || idx < 0 || idx >= GEO.HAND_SIZE) return no('BAD_TILE', 'Cannot place here');
-    if (src.area === 'hand' && src.idx === idx) return no('ALREADY', 'Position unchanged');
+    if (!Number.isInteger(idx) || idx < 0 || idx >= GEO.HAND_SIZE) return no('BAD_TILE', T('无法放置在该位置'));
+    if (src.area === 'hand' && src.idx === idx) return no('ALREADY', T('位置未变化'));
     const occ = ctx.handAt.get(idx);
     if (!occ) return { ok: true, action: 'move' };
     if (piece.kind === 'item') {
-      if (occ.piece.kind === 'chess') return isMagic ? no('BAD_TARGET', 'This Item must be placed on the Battlefield to use') : equipCheck(ctx, piece, occ.piece);
+      if (occ.piece.kind === 'chess') return isMagic ? no('BAD_TARGET', T('该道具需要放置在战场上使用')) : equipCheck(ctx, piece, occ.piece);
       return { ok: true, action: 'swap' };
     }
     if (src.area === 'board') {
       if (piece.kind === 'token') return { ok: true, action: 'move' }; // back onto its stack
       if (occ.piece.kind === 'chess') {
-        if (!tileAllows(ctx, occ.piece, src.row, src.col)) return no('BAD_TILE', 'The swapped unit cannot be deployed at the original position');
+        if (!tileAllows(ctx, occ.piece, src.row, src.col)) return no('BAD_TILE', T('交换后的单位无法部署在原位置'));
         return { ok: true, action: 'swap' };
       }
       // the withdrawn operator goes to another free slot
       const free = [...Array(GEO.HAND_SIZE).keys()].some((i) => !ctx.handAt.has(i));
-      return free ? { ok: true, action: 'move' } : no('HAND_FULL', 'Bench is full');
+      return free ? { ok: true, action: 'move' } : no('HAND_FULL', T('整备区已满'));
     }
     return { ok: true, action: 'swap' };
   }
 
   if (target.area === 'board') {
     const { row, col } = target;
-    if (!Number.isInteger(row) || !Number.isInteger(col)) return no('BAD_TILE', 'Cannot deploy here');
+    if (!Number.isInteger(row) || !Number.isInteger(col)) return no('BAD_TILE', T('无法部署在该位置'));
     const inField = row >= GEO.FIELD.r0 && row <= GEO.FIELD.r1 && col >= GEO.FIELD.c0 && col <= GEO.FIELD.c1;
-    if (!inField) return no('BAD_TILE', 'Cannot deploy here');
+    if (!inField) return no('BAD_TILE', T('无法部署在该位置'));
     const occ = ctx.boardAt.get(tileKey(row, col));
     if (piece.kind === 'item') {
       if (isMagic) return { ok: true, action: 'art' };
-      if (!occ) return no('BAD_TARGET', 'Drag Equipment onto an Operator');
+      if (!occ) return no('BAD_TARGET', T('请将装备拖拽至干员身上'));
       return equipCheck(ctx, piece, occ.piece);
     }
     // its own tile: re-orient in place through the direction wheel (research 09 §1.2)
     if (src.area === 'board' && src.row === row && src.col === col) return { ok: true, action: 'orient' };
     if (!tileAllows(ctx, piece, row, col)) {
       const deployable = ctx.deploy.ranged.has(tileKey(row, col));
-      return no('BAD_TILE', deployable && piecePosition(ctx, piece) === 'MELEE' ? 'Melee units can only be deployed on ground tiles' : 'Cannot deploy here');
+      return no('BAD_TILE', deployable && piecePosition(ctx, piece) === 'MELEE' ? T('近战单位只能部署在地面') : T('无法部署在该位置'));
     }
     // a range-bound summon (战术点): inside its owner's attack range — seen from the summon's old tile when it is
     // dropped onto its own owner (the two swap)
     const ownerSwap = src.area === 'board' && occ && occ.piece.uid === piece.ownerUid ? { row: src.row, col: src.col, piece: occ.piece } : null;
     const range = summonRange(ctx, piece, ownerSwap);
-    if (range && !range.has(tileKey(row, col))) return no('BAD_TILE', "Can only be deployed within the summoner's Attack Range");
+    if (range && !range.has(tileKey(row, col))) return no('BAD_TILE', T('只能部署在召唤者攻击范围内'));
     if (src.area === 'board') {
       // board → board: move or swap (the occupant must be legal on the source tile — the mover's own summon excepted:
       // a moved operator's summons go back to the hand anyway)
       const ownSummon = occ && occ.piece.kind === 'token' && occ.piece.ownerUid === piece.uid;
-      if (occ && !ownSummon && !unitAllowed(ctx, occ.piece, src.row, src.col)) return no('BAD_TILE', 'The swapped unit cannot be deployed at the original position');
+      if (occ && !ownSummon && !unitAllowed(ctx, occ.piece, src.row, src.col)) return no('BAD_TILE', T('交换后的单位无法部署在原位置'));
       return { ok: true, action: occ ? 'swap' : 'move' };
     }
     if (piece.kind === 'token') {
-      if (occ) return no('BAD_TILE', 'This tile is already occupied');
+      if (occ) return no('BAD_TILE', T('该位置已有单位'));
       const ownerDeployed = [...ctx.boardAt.values()].some((e) => e.piece.uid === piece.ownerUid);
-      if (Number.isInteger(piece.ownerUid) && !ownerDeployed) return no('BAD_TARGET', 'The summoner is not deployed yet');
+      if (Number.isInteger(piece.ownerUid) && !ownerDeployed) return no('BAD_TARGET', T('召唤者尚未部署'));
       return { ok: true, action: 'move' };
     }
-    if ((!occ || occ.piece.kind !== 'chess') && ctx.count >= ctx.cap) return no('BOARD_FULL', 'Deployment limit reached');
+    if ((!occ || occ.piece.kind !== 'chess') && ctx.count >= ctx.cap) return no('BOARD_FULL', T('已达到部署上限'));
     return { ok: true, action: occ ? 'swap' : 'move' };
   }
-  return no('BAD_TILE', 'Cannot place here');
+  return no('BAD_TILE', T('无法放置在该位置'));
 }
 
 function equipCheck(ctx, itemPiece, targetPiece) {
   const item = ctx.getItem(itemPiece.id);
-  if (item?.itemType === 'MAGIC') return { ok: false, code: 'BAD_TARGET', reason: 'This Item must be placed on the Battlefield to use' };
-  if (!isObj(targetPiece) || targetPiece.kind !== 'chess') return { ok: false, code: 'BAD_TARGET', reason: 'Equipment can only be equipped on Operators' };
+  if (item?.itemType === 'MAGIC') return { ok: false, code: 'BAD_TARGET', reason: T('该道具需要放置在战场上使用') };
+  if (!isObj(targetPiece) || targetPiece.kind !== 'chess') return { ok: false, code: 'BAD_TARGET', reason: T('装备只能配发给干员') };
   return { ok: true, action: 'equip' };
 }
 
@@ -1223,12 +1227,12 @@ export function dropFailureReason(ctx, uid, tile) {
   let target = null;
   if (tile.area === 'board') target = { area: 'board', row: tile.row, col: tile.col };
   else if (tile.area === 'hand') target = { area: 'hand', idx: Number.isInteger(tile.idx) ? tile.idx : tile.col };
-  else if (tile.area === 'temp') return ctx.pieces.get(uid).area === 'temp' ? null : 'Units cannot be placed on the Temporary Bench';
-  else if (Number.isInteger(tile.row) && tile.row >= GEO.FIELD.r0 && tile.row <= GEO.FIELD.r1) return 'Cannot deploy here';
+  else if (tile.area === 'temp') return ctx.pieces.get(uid).area === 'temp' ? null : T('临时整备区无法放入单位');
+  else if (Number.isInteger(tile.row) && tile.row >= GEO.FIELD.r0 && tile.row <= GEO.FIELD.r1) return T('无法部署在该位置');
   else return null;
   const res = canPlace(ctx, uid, target);
   if (res.ok || res.code === 'ALREADY') return null;
-  return res.reason || 'Cannot place here';
+  return res.reason || T('无法放置在该位置');
 }
 
 // ---- 机变 / band draft normalisation ----------------------------------------------------------------------
@@ -1444,13 +1448,18 @@ export function attackInterval(bat, aspd = 100) {
   return b * 100 / a;
 }
 
-/** Compact number: 12345 → '12,345'; 1.5e6 → '150万'. */
+/** Compact number: 12345 → '12,345'; 1.5e6 → '150万' (English: '1.5M'). */
 export function fmtNum(v) {
   const n = Number(v);
   if (!Number.isFinite(n)) return '—';
-  if (Math.abs(n) >= 1e9) return `${(n / 1e9).toFixed(n >= 1e10 ? 0 : 1)}B`;
-  if (Math.abs(n) >= 1e6) return `${(n / 1e6).toFixed(n >= 1e7 ? 0 : 1)}M`;
-  if (Math.abs(n) >= 1e5) return `${(n / 1e3).toFixed(0)}K`;
+  if (lang === 'en') {
+    if (Math.abs(n) >= 1e9) return `${(n / 1e9).toFixed(n >= 1e10 ? 0 : 1)}B`;
+    if (Math.abs(n) >= 1e6) return `${(n / 1e6).toFixed(n >= 1e7 ? 0 : 1)}M`;
+    if (Math.abs(n) >= 1e5) return `${(n / 1e3).toFixed(0)}K`;
+    return Math.round(n).toLocaleString('en-US');
+  }
+  if (Math.abs(n) >= 1e8) return `${(n / 1e8).toFixed(n >= 1e9 ? 0 : 1)}亿`; // i18n-ok: Chinese number units (English branch above)
+  if (Math.abs(n) >= 1e5) return `${(n / 1e4).toFixed(n >= 1e6 ? 0 : 1)}万`; // i18n-ok
   return Math.round(n).toLocaleString('en-US');
 }
 
@@ -1561,7 +1570,7 @@ export function normalizeResult(res, pub) {
     return {
       playerId: p.playerId,
       seat: int(p.seat, int(pp.seat, 0)),
-      name: p.name || pp.name || 'Doctor',
+      name: p.name || pp.name || T('博士'),
       isBot: !!(p.isBot ?? pp.isBot),
       alive,
       lp: teamLp != null ? (alive === false ? 0 : Math.max(0, teamLp)) : ownLp,
@@ -1623,7 +1632,7 @@ export function chessLoadout(chess, loadout, getChess = () => null) {
   let defaultModule = true;
   if (chess.isGolden) {
     const id = r.moduleId ?? (chess.module?.active ? chess.module.id : MODULE_NONE);
-    if (id === MODULE_NONE) module = { id: MODULE_NONE, name: 'No Module', typeName: '', none: true };
+    if (id === MODULE_NONE) module = { id: MODULE_NONE, name: T('未装备模组'), typeName: '', none: true };
     else {
       const rec = (Array.isArray(chess.modules) ? chess.modules : []).find((m) => isObj(m) && m.uniEquipId === id)
         || (isObj(chess.module) && chess.module.id === id ? { uniEquipId: id, name: chess.module.name, typeName: chess.module.type } : null);

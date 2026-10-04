@@ -71,7 +71,6 @@
 //     normal chess → moduleId null, elite → uniEquipId | 'none'); m.private exposes `loadout`.
 
 import { ERR, GEO, PHASE, layerGainRoom } from '../../shared/constants.js';
-import { tr } from '../i18n.js';
 import { checkLoadout, resolveLoadout } from '../../shared/protocol.js';
 import { FIELD, tileKey, parseKey, inField, canPlace, positionClass, boardOrder, freeSlot, pieceDir, parseDir, mergeTile, ownerRangeKeys } from './board.js';
 import { attackRangeGrid, loadoutRecord, resolveRecordLoadout } from '../../shared/loadoutRecord.js';
@@ -285,7 +284,7 @@ export class PlayerState {
         }
       }
     }
-    if (names.length) this.m.toast(this, 'warn', `Terrain changed: ${names.map(tr).join(', ')} can no longer stay in place and returned to the Bench`);
+    if (names.length) this.m.toast(this, 'warn', '地形变化：{0}无法停留在原位置，已撤回整备区', [{ list: names }]);
     return moved;
   }
 
@@ -496,7 +495,7 @@ export class PlayerState {
       const where = this.stow(piece, { allowTemp: true, toTemp });
       if (!where) {
         this.returnCopies(piece);
-        this.m.toast(this, 'warn', 'Bench is full. The obtained Operator was returned');
+        this.m.toast(this, 'warn', '整备区已满，获得的干员已返还');
         return null;
       }
     }
@@ -567,7 +566,7 @@ export class PlayerState {
     if (where === 'board') this.grantTokensFor(elite);
     if (!where) {
       this.m.pool.give(baseId, copies);
-      this.m.toast(this, 'warn', 'Bench is full. The promoted Elite Operator cannot be placed');
+      this.m.toast(this, 'warn', '整备区已满，晋升的精锐干员无法放入');
       this.m.log.warn?.(`[match ${this.m.roomCode}] ${this.playerId}: merge result dropped (hand+temp full)`);
       this.recompute();
       return null;
@@ -722,7 +721,7 @@ export class PlayerState {
       piece = this._mergeItem(itemId, piece);
       if (!piece) return null;
     } else if (!this.stow(piece, { allowTemp: true, toTemp })) {
-      this.m.toast(this, 'warn', 'Bench is full. The obtained Equipment was destroyed');
+      this.m.toast(this, 'warn', '整备区已满，获得的装备已销毁');
       return null;
     }
     this.recompute();
@@ -744,7 +743,7 @@ export class PlayerState {
     if (!this.stow(golden, { allowTemp: true })) {
       const at = slotOf[0];
       if (!at || !this.find(at.holder.uid)) {
-        this.m.toast(this, 'warn', 'Bench is full. The combined Equipment was destroyed');
+        this.m.toast(this, 'warn', '整备区已满，合成的装备已销毁');
         return null;
       }
       at.holder.items.splice(Math.max(0, Math.min(at.idx, at.holder.items.length)), 0, golden);
@@ -1060,8 +1059,8 @@ export class PlayerState {
       this.board.delete(k);
       (this._returnToken(p, null, { allowTemp: true }) ? back : gone).push(this.gd.token(p.id)?.name || p.id);
     }
-    if (back.length) this.m.toast(this, 'warn', `${back.map(tr).join(', ')} can only be deployed within the summoner's attack range; returned to the Bench`);
-    if (gone.length) this.m.toast(this, 'warn', `${gone.map(tr).join(', ')} can only be deployed within the summoner's attack range; Bench is full, returned next round`);
+    if (back.length) this.m.toast(this, 'warn', '{0}只能部署在召唤者攻击范围内，已退回整备区', [{ list: back }]);
+    if (gone.length) this.m.toast(this, 'warn', '{0}只能部署在召唤者攻击范围内，整备区已满，下回合返还', [{ list: gone }]);
     return back.length + gone.length;
   }
 
@@ -1599,8 +1598,8 @@ export class PlayerState {
       const left = b.roundsLeft >= 90 ? null : b.roundsLeft;
       const eff = b.card.effectId ? this.gd.effect(b.card.effectId) : null;
       out.push({
-        id: b.id, name: b.card.name || 'Bounty', desc: bountyText((eff && eff.descRaw) || b.card.desc || '', b.card), iconKind: 'choice', iconId: b.card.effectId || 'bounty',
-        counter: left, counterText: left == null ? 'Every following battle' : `${left} battle${left === 1 ? '' : 's'} left`,
+        id: b.id, name: b.card.name || '悬赏', desc: bountyText((eff && eff.descRaw) || b.card.desc || '', b.card), iconKind: 'choice', iconId: b.card.effectId || 'bounty',
+        counter: left, counterText: left == null ? '之后的每场作战' : `还剩 ${left} 场作战`,
       });
     }
     return out;

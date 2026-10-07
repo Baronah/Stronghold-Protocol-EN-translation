@@ -13,6 +13,9 @@ import { createFallbackView } from './fallbackField.js';
 import { data } from '../data.js';
 import { audio } from '../audio.js';
 import { settingsStore } from './settings.js';
+import { loadoutStore } from './loadoutSync.js';
+import { recordsOf, effectiveChoice } from './loadoutModel.js';
+import { battleRunner } from '../battle/runner.js';
 
 const LOAD_TIMEOUT_MS = 12000;
 const METHODS = ['setStage', 'setCamera', 'setPrep', 'enterBattle', 'pushSnapshot', 'pushEvents', 'highlightTiles', 'on', 'resize', 'destroy'];
@@ -183,6 +186,34 @@ export function seedAssets(store) {
   give('local', store.seedLocal?.bind(store));
 }
 
+function baseIdOf(id) {
+  const rec = data.lookup('chess', id);
+  if (!rec) return id;
+  if (rec.baseId && rec.baseId !== id) return rec.baseId;
+  if (rec.isGolden) {
+    const guess = String(id).replace(/_b$/, '_a');
+    if (guess !== id && data.lookup('chess', guess)) return guess;
+  }
+  return id;
+}
+
+/** 
+ * Get the equipped skin for a character based on their ID and owner.
+ * @param {string} chessId
+ * @param {string|null} ownerId
+ * @returns {string|null}
+ */
+export function skinOf(chessId, ownerId = null) {
+  try {
+    const st = battleRunner?.state?.();
+    if (ownerId != null && st && (st.watch || st.kind === 'unite' || (st.members || []).length > 1)) return null;
+    const getChess = (id) => data.lookup('chess', id);
+    const { base, golden } = recordsOf(baseIdOf(chessId), getChess);
+    if (!base) return null;
+    return effectiveChoice(loadoutStore.get().entries, base, golden).skin || null;
+  } catch (err) { console.warn('[skinOf]', err); return null; }
+}
+
 /**
  * Create a field view in `host`: the render engine when available, else the DOM fallback.
  * @param {HTMLElement} host
@@ -190,7 +221,7 @@ export function seedAssets(store) {
  */
 export async function mountFieldView(host) {
   const pref = renderPref();
-  const opts = { data, assets: data.get('assets'), audio, settings: settingsStore.get(), padding: hudPadding, hud: hudBands };
+  const opts = { data, assets: data.get('assets'), audio, settings: settingsStore.get(), padding: hudPadding, hud: hudBands, skinOf };
   if (pref !== 'fallback') {
     try {
       // the shared asset store (public/js/assets.js) keeps its Spine cache across remounts (next match, reconnect)

@@ -46,8 +46,17 @@ import { settingsStore } from './ui/settings.js';
 import { GuideHost } from './ui/guide.js';
 import { installDeviceSupport } from './ui/device.js';
 import { LoadoutHost } from './screens/loadout.js';
-import { installLoadoutSync } from './ui/loadoutSync.js';
 import { startBuildGuard } from './ui/buildGuard.js';
+import { setSkinResolver, setCharSkinResolver } from './ui/assetUrls.js';
+import { installLoadoutSync, loadoutStore } from './ui/loadoutSync.js';
+
+const skinForBase = (baseId) => loadoutStore.get().entries?.[baseId]?.skin || null;
+setSkinResolver(skinForBase);
+
+setCharSkinResolver((charId) => {
+  const rec = data.list('chess').find((c) => c.charId === charId && !c.isGolden);
+  return rec ? skinForBase(rec.chessId) : null;
+});
 
 const RESTORE_GRACE_MS = 1500;
 const JOIN_DELAY_MS = 350;

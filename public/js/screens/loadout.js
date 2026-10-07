@@ -18,6 +18,7 @@ import { useEffect, useMemo, useRef, useState } from '../../vendor/hooks.module.
 import { html, Icon, MicroLabel, Button, TierChip, TextField, Countdown, Spinner, confirmDialog, hasDeadline, Modal, Fragment } from '../ui/components.js';
 import { Img, RichText, UnitThumb } from '../ui/gameComponents.js';
 import { chessAvatarUrl, chessPortraitUrl, subProfIconUrl, bondIconUrl, moduleTypeIconUrl } from '../ui/assetUrls.js';
+import { skinList, skinName } from '../ui/charArts.js';
 import { chessStatsBlock, traitText, chessTalents } from '../ui/detailPanel.js';
 import { chessLoadout } from '../ui/gameLogic.js';
 import { data, useData, localAsset } from '../data.js';
@@ -144,7 +145,7 @@ function RosterCard({ m, chess, golden, entries, selected, onPick }) {
       class=${cx('lo-card', `lo-card--t${chess.tier}`, selected && 'is-sel', choice.changed && 'is-changed')} onClick=${() => onPick(chess.chessId)}
       title=${`${chess.name} · ${skillRec?.name || ''}`}>
     <span class="lo-card__art">
-      <${Img} src=${chessAvatarUrl(m, chess)} fallback=${html`<span class="lo-card__glyph">${[...(chess.name || '?')][0]}</span>`} />
+      <${Img} src=${chessAvatarUrl(m, chess, choice.skin)} fallback=${html`<span class="lo-card__glyph">${[...(chess.name || '?')][0]}</span>`} />
     </span>
     <${TierChip} tier=${chess.tier} size="sm" class="lo-card__tier" />
     ${choice.changed ? html`<span class="lo-card__flag" aria-label=${T('已调整')}></span>` : null}
@@ -267,6 +268,30 @@ export function LoadoutStats({ base, golden, entries, level, onLevel, getChess =
   </section>`;
 }
 
+function SkinPicker({ m, chess, golden, current, onPick }) {
+  const ids = skinList(m, chess.charId);
+  if (!ids.length) return null;
+  const variant = golden || chess;                 
+  return html`<section class="lo-sec lo-sec--skin">
+    <header class="lo-sec__head">
+      <h3>${T('Skins')}<${MicroLabel}>SKINS<//></h3>
+      <span class="lo-sec__note">${T('Is important feature trust')}</span>
+    </header>
+    <div class="lo-skins" role="radiogroup" aria-label=${T('CLICK TO CHANGE SKIN')}>
+      ${[null, ...ids].map((id) => {
+        const on = (current || null) === id;
+        return html`<button key=${id ?? 'default'} type="button" role="radio" aria-checked=${on ? 'true' : 'false'}
+            data-skin=${id ?? ''} class=${cx('lo-skin', on && 'is-on')} onClick=${() => onPick(id)}>
+          <${Img} src=${chessAvatarUrl(m, variant, id)} class="lo-skin__img"
+            fallback=${html`<span class="lo-skin__glyph">${[...(chess.name || '?')][0]}</span>`} />
+          <b class="lo-skin__name" title=${skinName(m, chess.charId, id, T('默认'))}>${skinName(m, chess.charId, id, T('默认'))}</b>
+          ${on ? html`<span class="lo-badge lo-badge--on"><${Icon} name="check" /></span>` : null}
+        </button>`;
+      })}
+    </div>
+  </section>`;
+}
+
 function Detail({ m, chess, golden, entries, onChange, onReset, locked }) {
   const [level, setLevel] = useState('normal');
   const [statLevel, setStatLevel] = useState('elite'); // 局内数值: the 精锐 shows the chosen module's effect
@@ -280,7 +305,7 @@ function Detail({ m, chess, golden, entries, onChange, onReset, locked }) {
   return html`<aside class="lo-detail" aria-label=${T('{0} 调配', chess.name)}>
     <div class="lo-dhead">
       <div class=${cx('lo-dhead__art', `lo-dhead__art--t${chess.tier}`)}>
-        <${Img} src=${chessPortraitUrl(m, golden || chess)} fallback=${html`<${UnitThumb} kind="chess" id=${chess.chessId} size="lg" />`} />
+        <${Img} src=${chessPortraitUrl(m, golden || chess, choice.skin)} fallback=${html`<${UnitThumb} kind="chess" id=${chess.chessId} size="lg" />`} />
       </div>
       <div class="lo-dhead__info">
         <div class="lo-dhead__chips"><${TierChip} tier=${chess.tier} size="md" />
@@ -297,6 +322,7 @@ function Detail({ m, chess, golden, entries, onChange, onReset, locked }) {
       <${Button} variant="ghost" size="sm" icon="refresh" class="lo-dhead__reset" disabled=${!choice.changed} onClick=${onReset}>${T('恢复默认')}<//>
     </div>
     <div class="lo-detail__body" ref=${bodyRef}>
+      <${SkinPicker} m=${m} chess=${chess} golden=${golden} current=${choice.skin} onPick=${(id) => onChange({ skin: id })} />
       <section class="lo-sec">
         <header class="lo-sec__head">
           <h3>${T('技能')}<${MicroLabel}>SKILL<//></h3>

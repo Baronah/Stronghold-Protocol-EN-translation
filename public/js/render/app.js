@@ -280,6 +280,7 @@ export function renderInfo(u) {
     // tap hands them to the detail card (a teammate's unit shows its owner's skill / module)
     skillIndex: Number.isInteger(u.skillIndex) ? u.skillIndex : undefined,
     moduleId: typeof u.moduleId === 'string' ? u.moduleId : undefined,
+    skin: typeof u.skin === 'string' ? u.skin : undefined,
   };
 }
 
@@ -857,10 +858,11 @@ export async function createFieldView(host, options = {}) {
       return { kind: 'token', side: 'ally', defId: piece.id, spine: rec?.assets?.spine || piece.id, avatar: rec?.assets?.avatar || piece.id, tier: piece.tier || 1, golden: false, dir };
     }
     const rec = data.chess(piece.id);
+    const skin = typeof piece.skin === 'string' ? piece.skin : (typeof opts.skinOf === 'function' ? opts.skinOf(piece.id) || null : null);
     return {
       kind: 'op', side: 'ally', defId: piece.id,
       spine: rec?.assets?.spine || rec?.charId || null, avatar: rec?.assets?.avatar || rec?.charId || null,
-      tier: rec?.tier || piece.tier || 1, golden: !!(piece.golden || rec?.isGolden), dir,
+      tier: rec?.tier || piece.tier || 1, golden: !!(piece.golden || rec?.isGolden), dir, skin,
     };
   }
 
@@ -935,7 +937,7 @@ export async function createFieldView(host, options = {}) {
       const key = 'p:' + e.uid;
       e.key = key;
       const info = pieceInfo(e.piece, e.area);
-      const sig = `${info.kind}|${info.defId}|${info.golden ? 1 : 0}`;
+      const sig = `${info.kind}|${info.defId}|${info.golden ? 1 : 0}|${info.skin || ''}`;
       let v = views.get(key);
       if (v && v._sig !== sig) { dropView(key); v = null; }
       const w = slotWorld(e);
@@ -1363,7 +1365,12 @@ export async function createFieldView(host, options = {}) {
 
   function addInfo(u) {
     const info = renderInfo(u);
-    if (info) infos.set(info.id, info);
+    if (info) {
+      if (!info.skin && info.side === 'ally' && info.kind !== 'device' && typeof opts.skinOf === 'function') {
+        info.skin = opts.skinOf(info.defId, info.ownerId) || undefined;
+      }
+      infos.set(info.id, info);
+    }
     return info;
   }
 
@@ -1920,5 +1927,6 @@ export async function createFieldView(host, options = {}) {
       pick: { pieceAt, battleUnitAt, penUnitAt, groundTile },
     },
   };
+  window.__fv = view;
   return view;
 }

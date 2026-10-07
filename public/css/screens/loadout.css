@@ -186,7 +186,13 @@
 .lo-sicon--md { width: max(.72rem, 38px); height: max(.72rem, 38px); }
 .lo-sicon__glyph { font-family: var(--font-num); font-size: max(.2rem, 12px); font-weight: 700; color: var(--text-lo); letter-spacing: .04em; }
 .lo-sicon.is-on { border-color: #1ea0ff; }
-.lo-sicon__outline { position: absolute; inset: -.05rem; width: calc(100% + .1rem) !important; height: calc(100% + .1rem) !important; object-fit: fill; pointer-events: none; }
+.lo-sicon__outline {
+  position: absolute;
+  width: calc(100% + 0.05rem) !important;
+  height: calc(100% + 0.05rem) !important;
+  object-fit: fill;
+  pointer-events: none;
+}
 .lo-sicon__ring { position: absolute; inset: -.05rem; border: 2px solid #1ea0ff; pointer-events: none; }
 
 .lo-mglyph { position: relative; flex: none; display: inline-grid; place-items: center; width: max(.56rem, 30px); height: max(.56rem, 30px);
@@ -253,9 +259,19 @@
 }
 .lo-skill:hover { border-color: var(--line-3); background: rgba(255, 255, 255, .04); }
 .lo-skill.is-on { color: var(--text-hi); background: linear-gradient(90deg, rgba(30, 160, 255, .13), rgba(30, 160, 255, .02) 70%); border-color: rgba(30, 160, 255, .55); }
-.lo-skill__deco { position: absolute; left: -1px; top: 50%; transform: translate(-40%, -50%); width: .14rem; height: .17rem; }
+.lo-skill__deco {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  width: .14rem;
+  height: .17rem;
+}
 .lo-skill__deco img, .lo-skill__deco i { display: block; width: 100%; height: 100%; }
-.lo-skill__deco i { background: #1ea0ff; clip-path: polygon(0 0, 100% 50%, 0 100%); }
+.lo-skill__deco i {
+  background: #1ea0ff;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
 .lo-skill__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: .05rem; }
 .lo-skill__head { display: flex; align-items: center; gap: .08rem; flex-wrap: wrap; }
 .lo-skill__slot { font-family: var(--font-num); font-size: max(.13rem, 9px); font-weight: 700; color: var(--text-dim); padding: 0 .05rem; border: 1px solid var(--line-2); letter-spacing: .06em; }
@@ -399,3 +415,12 @@
 .lo-io__text:focus { border-color: var(--mint-700); }
 .lo-io__text::placeholder { color: var(--text-lo); }
 .lo-io__file { display: none; }
+
+/* ---- skins --------------------------------------------------------------------------------------------------------------- */
+.lo-skins { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; }
+.lo-skin { position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px;
+  border: 1px solid var(--line, #3a4048); background: transparent; cursor: pointer; }
+.lo-skin.is-on { color: var(--mint, #7fe0c0); background: linear-gradient(0deg, rgba(62, 242, 212, 0.14), rgba(62, 242, 140, 0.02) 75%); border-color: var(--mint, #7fe0c0); }
+.lo-skin__img { width: 72px; height: 72px; object-fit: cover; }
+.lo-skin__name { font-size: 12px; }
+.lo-skin .lo-badge { position: absolute; top: 4px; right: 4px; }

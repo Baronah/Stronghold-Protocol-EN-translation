@@ -13,9 +13,15 @@
 
 import { createStore, loadPref, savePref } from '../store.js';
 import { data } from '../data.js';
-import { LOADOUT_PREF, parseStored, toStored, sanitizeEntries } from './loadoutModel.js';
 import { toast } from './toasts.js';
 import { T } from '../i18n.js';
+
+import { LOADOUT_PREF, parseStored, toStored, sanitizeEntries, setSkinValidator } from './loadoutModel.js';
+import { hasSkin } from './charArts.js';
+
+// skins are cosmetic and local: valid when the asset manifest lists them.
+setSkinValidator((charId, id) => { const m = data.get('assets'); return !m || hasSkin(m, charId, id); });
+
 export const SYNC_DEBOUNCE_MS = 500;
 export const RETRY_MS = 1500;
 
@@ -51,7 +57,7 @@ export function setEntries(entries) {
  */
 export function applyLoadoutEntries(entries, lookup) {
   const asked = Object.keys(entries || {}).length;
-  const clean = sanitizeEntries(entries, lookup);
+  const clean = sanitizeEntries(entries, lookup, { skins: true });
   const applied = Object.keys(clean).length;
   if (applied) setEntries(clean);
   return { applied, dropped: Math.max(0, asked - applied) };

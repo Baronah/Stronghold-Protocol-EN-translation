@@ -33,12 +33,18 @@ const isInt = (v) => Number.isInteger(v);
 /** id keys a parsed payload must never inject into an entry map: `{ "__proto__": … }` would rewrite the prototype. */
 const UNSAFE_IDS = new Set(['__proto__', 'constructor', 'prototype']);
 
+const SKIN_RE = /^[A-Za-z0-9_\-.:]{1,64}$/;
+/** (charId, skinId) => boolean, registered by loadoutSync.js (it knows the asset manifest). null → any well-formed id. */
+let skinValidator = null;
+export const setSkinValidator = (fn) => { skinValidator = typeof fn === 'function' ? fn : null; };
+const skinOk = (base, id) => typeof id === 'string' && SKIN_RE.test(id) && (!skinValidator || skinValidator(base?.charId, id));
+
 // ---- storage -----------------------------------------------------------------------------------------------------
 
 /**
  * Parse a stored loadout (any junk → {}): keeps structurally valid entries only (ids, skill ints, module ids).
  * @param {any} raw `{ v, entries }` (or a bare entries map from an older build)
- * @returns {Record<string, { skill?: number, module?: string }>}
+ * @returns {Record<string, { skill?: number, module?: string, skin?: string }>}
  */
 export function parseStored(raw) {
   const src = isObj(raw) && isObj(raw.entries) ? raw.entries : isObj(raw) && raw.v == null ? raw : null;
@@ -50,6 +56,7 @@ export function parseStored(raw) {
     const x = {};
     if (isInt(e.skill) && e.skill >= 0 && e.skill <= LOADOUT_LIMITS.skillIndex) x.skill = e.skill;
     if (typeof e.module === 'string' && /^[A-Za-z0-9_\-.:]{1,64}$/.test(e.module)) x.module = e.module;
+    if (typeof e.skin === 'string' && SKIN_RE.test(e.skin)) x.skin = e.skin;
     if (Object.keys(x).length) out[id] = x;
   }
   return out;
@@ -176,21 +183,22 @@ export function chessOptions(base, golden) {
 
 /**
  * The effective choice of a chess under a stored loadout (defaults for missing / unavailable choices).
- * @returns {{ skill: number|null, module: string|null, changed: boolean }}
+ * @returns {{ skill: number|null, module: string|null, skin: string|null, changed: boolean }}
  */
 export function effectiveChoice(entries, base, golden) {
   const opt = loadoutOptions(base, golden);
   const e = base && entries && Object.hasOwn(entries, base.chessId) ? entries[base.chessId] : null;
   const skill = e && opt.skills.includes(e.skill) ? e.skill : opt.defaultSkill;
   const module = golden ? (e && opt.modules.includes(e.module) ? e.module : opt.defaultModule) : null;
-  return { skill, module, changed: skill !== opt.defaultSkill || module !== opt.defaultModule };
+  const skin = e && skinOk(base, e.skin) ? e.skin : null;
+  return { skill, module, skin, changed: skill !== opt.defaultSkill || module !== opt.defaultModule || skin != null };
 }
 
 /**
  * Set (part of) one chess's choice; an entry equal to the defaults is removed. Returns a new entries map.
  * @param {Record<string, any>} entries
  * @param {any} base @param {any} golden
- * @param {{ skill?: number, module?: string }} patch
+ * @param {{ skill?: number, module?: string, skin?: string }} patch
  */
 export function setChoice(entries, base, golden, patch) {
   if (!base) return entries;
@@ -198,11 +206,13 @@ export function setChoice(entries, base, golden, patch) {
   const cur = effectiveChoice(entries, base, golden);
   const skill = patch && patch.skill !== undefined && opt.skills.includes(patch.skill) ? patch.skill : cur.skill;
   const module = golden && patch && patch.module !== undefined && opt.modules.includes(patch.module) ? patch.module : cur.module;
+  const skin = patch && patch.skin !== undefined ? (patch.skin === null || skinOk(base, patch.skin) ? patch.skin : cur.skin) : cur.skin;
   const out = { ...(entries || {}) };
   delete out[base.chessId];
   const e = {};
   if (skill !== opt.defaultSkill && skill != null) e.skill = skill;
   if (golden && module !== opt.defaultModule && module != null) e.module = module;
+  if (skin) e.skin = skin;
   if (Object.keys(e).length) out[base.chessId] = e;
   return out;
 }
@@ -222,25 +232,29 @@ export function resetChoice(entries, baseId) {
  * @param {(id: string) => any} getChess
  * @returns {Record<string, { skill?: number, module?: string }>}
  */
-export function sanitizeEntries(entries, getChess) {
+export function sanitizeEntries(entries, getChess, { skins = false } = {}) {
   const out = {};
   for (const [id, e] of Object.entries(entries || {})) {
     if (Object.keys(out).length >= LOADOUT_LIMITS.entries) break;
     const one = {};
     if (isInt(e?.skill)) one.skill = e.skill;
     if (typeof e?.module === 'string') one.module = e.module;
-    if (!Object.keys(one).length) continue;
-    const res = checkLoadout({ [id]: one }, getChess);
-    if (!res.ok) {
-      // keep the part that is still legal (e.g. the skill when a module disappeared)
-      for (const k of ['skill', 'module']) {
-        if (one[k] === undefined) continue;
-        const r = checkLoadout({ [id]: { [k]: one[k] } }, getChess);
-        if (r.ok && r.loadout[id]) out[id] = { ...(out[id] || {}), [k]: one[k] };
-      }
-      continue;
+    if (Object.keys(one).length) {
+      const res = checkLoadout({ [id]: one }, getChess);
+      if (!res.ok) {
+        // keep the part that is still legal (e.g. the skill when a module disappeared)
+        for (const k of ['skill', 'module']) {
+          if (one[k] === undefined) continue;
+          const r = checkLoadout({ [id]: { [k]: one[k] } }, getChess);
+          if (r.ok && r.loadout[id]) out[id] = { ...(out[id] || {}), [k]: one[k] };
+        }
+      } else if (res.loadout[id]) out[id] = one;
     }
-    if (res.loadout[id]) out[id] = one;
+    
+    if (skins && typeof e?.skin === 'string') {
+      const base = getChess(id);
+      if (isLoadoutSlot(base) && base.chessId === id && skinOk(base, e.skin)) out[id] = { ...(out[id] || {}), skin: e.skin };
+    }
   }
   return out;
 }

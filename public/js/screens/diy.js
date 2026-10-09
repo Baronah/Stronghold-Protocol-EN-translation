@@ -18,6 +18,7 @@ import { PROF_NAME, skillLabel, moduleBadge, fullTraitText } from '../ui/loadout
 import { diySlotList, pickChoices, pickOptions, slotRecord, defaultPick } from '../ui/diyModel.js';
 import { CultivationSelects } from './cultivation.js';
 import { t } from '../../../shared/i18n.js';
+import { skinList, skinName } from '../ui/charArts.js';
 
 const cx = (...p) => p.flat().filter(Boolean).join(' ');
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI'];
@@ -26,7 +27,7 @@ const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI'];
 export const diyData = () => ({ chess: data.get('chess'), backups: data.get('backups') });
 
 /** A unit summary's avatar / portrait URL (a backups.json unit or a composed record). */
-const avatarOf = (m, unit, elite = false) => chessAvatarUrl(m, unit && { charId: unit.charId, assets: { avatar: elite ? unit.assets?.avatarGolden : unit.assets?.avatar } });
+const avatarOf = (m, unit, elite = false, skin = null) => chessAvatarUrl(m, unit && { charId: unit.charId, assets: { avatar: elite ? unit.assets?.avatarGolden : unit.assets?.avatar } }, skin);
 const classLine = (u) => `${t(PROF_NAME[u?.profession] || '') || ''}${u?.subProfessionName ? ` · ${u.subProfessionName}` : ''}`;
 const bondName = (id) => data.lookup('bonds', id)?.name || id;
 
@@ -61,7 +62,7 @@ function SlotCard({ m, slot, pick, illegal, onOpen, onClear, ops = {}, onOps = n
   const sk = rec.skill;
   const mod = elite?.module?.active ? elite.module : null;
   return html`<div class=${cx('diy-slot', `diy-slot--t${slot.tier}`, illegal && 'is-bad')} data-slot=${slot.slotId} data-char=${rec.charId}>
-    <div class="diy-slot__art"><${Img} src=${chessPortraitUrl(m, elite || rec)} fallback=${html`<b>${[...(rec.name || '?')][0]}</b>`} /></div>
+    <div class="diy-slot__art"><${Img} src=${chessPortraitUrl(m, elite || rec, pick.skin)} fallback=${html`<b>${[...(rec.name || '?')][0]}</b>`} /></div>
     <div class="diy-slot__body">
       <div class="diy-slot__head"><${TierChip} tier=${slot.tier} size="sm" /><span class="diy-slot__label">${label}</span><${KindTag} proto=${proto} /></div>
       <b class="diy-slot__name">${rec.name}</b>
@@ -132,6 +133,29 @@ function ModuleRow({ id, rec, on, locked, onPick }) {
       ${talents.map((x, i) => html`<${RichText} key=${i} as="span" class="diy-choice__desc" text=${x.descRaw || x.desc} />`)}
     </span>
   </button>`;
+}
+
+/**
+ * The skin choices of an operator (cosmetic only). `unit.charId` is the operator's charId; `current` is the chosen
+ * skin id (null = default outfit); `onPick(skinId | null)` is called when one is chosen.
+ * @param {{ m: any, unit: any, current: string|null, onPick: (skinId: string|null) => void }} props
+ */
+function SkinChoices({ m, unit, current, onPick }) {
+  const ids = skinList(m, unit.charId);
+  if (!ids.length) return null;
+  return html`<h4 class="diy-pick__sec">${t('Skins')}<small></small></h4>
+    <div class="diy-skins" role="radiogroup" aria-label=${t('点击切换皮肤')}>
+      ${[null, ...ids].map((id) => {
+        const on = (current || null) === id;
+        const nm = skinName(m, unit.charId, id, t('默认'));
+        return html`<button key=${id ?? 'default'} type="button" role="radio" aria-checked=${on ? 'true' : 'false'}
+            data-skin=${id ?? ''} class=${cx('diy-skin', on && 'is-on')} onClick=${() => onPick(id)}>
+          <${Img} src=${avatarOf(m, unit, true, id)} class="diy-skin__img" fallback=${html`<b>${[...(unit.name || '?')][0]}</b>`} />
+          <b class="diy-skin__name" title=${nm}>${nm}</b>
+          ${on ? html`<span class="lo-badge lo-badge--on"><${Icon} name="check" /></span>` : null}
+        </button>`;
+      })}
+    </div>`;
 }
 
 /**
@@ -206,10 +230,11 @@ export function DiyPickerView({ m, slot, picks, kitted, onDone, onClose, filter,
       <div class="diy-pick__detail">
         ${ch && unit ? html`
           <div class="diy-pick__who">
-            <span class="diy-pick__ava"><${Img} src=${avatarOf(m, unit, true)} fallback=${html`<b>${[...(unit.name || '?')][0]}</b>`} /></span>
+            <span class="diy-pick__ava"><${Img} src=${avatarOf(m, unit, true, draft.skin)} fallback=${html`<b>${[...(unit.name || '?')][0]}</b>`} /></span>
             <span class="diy-pick__wtxt"><b>${unit.name}</b><small>${classLine(unit)}</small></span>
             <${KindTag} proto=${ch.proto} />
           </div>
+          <${SkinChoices} m=${m} unit=${unit} current=${draft.skin} onPick=${(id) => { const { skin, ...rest } = draft; setDraft(id ? { ...rest, skin: id } : rest); }} />
           <h4 class="diy-pick__sec">${t('技能')}${ch.proto ? html`<small>${t('原型干员的技能与补位时一致，不可更改')}</small>` : null}</h4>
           <div role="radiogroup" aria-label=${t('选择技能')} class="diy-pick__choices">
             ${ch.skills.filter((s) => !ch.proto || s.index === skillOn).map((s) => html`<${SkillRow} key=${s.index} m=${m} s=${s} on=${s.index === skillOn} locked=${ch.proto}
@@ -227,7 +252,7 @@ export function DiyPickerView({ m, slot, picks, kitted, onDone, onClose, filter,
     </div>
     <footer class="diy-pick__foot">
       <${Button} variant="ghost" onClick=${onClose}>${t('取消')}<//>
-      <${Button} variant="primary" icon="check" data-testid="diy-confirm" disabled=${!ch} onClick=${() => onDone(ch.proto ? { charId: draft.charId } : draft)}>${t('确认')}<//>
+<${Button} variant="primary" icon="check" data-testid="diy-confirm" disabled=${!ch} onClick=${() => onDone(ch.proto ? { charId: draft.charId, ...(draft.skin ? { skin: draft.skin } : null) } : draft)}>${t('确认')}<//>
     </footer>
   </section>`;
 }

@@ -18,7 +18,8 @@
 
 import { createStore, loadPref, savePref } from '../store.js';
 import { data } from '../data.js';
-import { LOADOUT_PREF, parseStored, parseStoredOps, toStored, sanitizeEntries, sanitizeOps } from './loadoutModel.js';
+import { LOADOUT_PREF, parseStored, parseStoredOps, toStored, sanitizeEntries, sanitizeOps, setSkinValidator } from './loadoutModel.js';
+import { hasSkin } from './charArts.js';
 import { cultivationCharIds } from '../../../shared/protocol.js';
 import { OWNERSHIP_PREF, parseStoredOwnership, toStoredOwnership, cleanIds, sanitizeNotOwned } from './ownershipModel.js';
 import { DIY_PREF, parseStoredDiy, toStoredDiy, cleanPicks, sanitizeDiyPicks } from './diyModel.js';
@@ -27,6 +28,9 @@ import { t, N_ } from '../../../shared/i18n.js';
 
 export const SYNC_DEBOUNCE_MS = 500;
 export const RETRY_MS = 1500;
+
+// skins are cosmetic and local: valid when the asset manifest lists them.
+setSkinValidator((charId, id) => { const m = data.get('assets'); return !m || hasSkin(m, charId, id); });
 
 function readStored() {
   try { return parseStored(loadPref(LOADOUT_PREF, null)); } catch { return {}; }
@@ -56,6 +60,7 @@ export const loadoutStore = createStore({
   sync: 'idle',
   ownSync: 'idle',
   diySync: 'idle',
+  diy: readStoredDiy(),
 });
 
 /** Replace the stored entries (persisted at once with the settings; the sync picks the change up). */
@@ -87,7 +92,7 @@ export function setOpsMap(ops) {
  */
 export function applyLoadoutEntries(entries, lookup, { ops = null, isOperator = null } = {}) {
   const asked = Object.keys(entries || {}).length;
-  const clean = sanitizeEntries(entries, lookup);
+  const clean = sanitizeEntries(entries, lookup, { skins: true });
   const applied = Object.keys(clean).length;
   const cleanOps = ops && isOperator ? sanitizeOps(ops, isOperator) : null;
   const nOps = cleanOps ? Object.keys(cleanOps).length : 0;
@@ -314,7 +319,9 @@ export function installDiySync({ net, timers, target = loadoutStore, notify } = 
   const sync = installPrefSync({
     net, timers, target, notify, key: 'diy', stateKey: 'diySync', msgType: 'room.diy', field: 'picks', tag: 'diy',
     lockedText: N_('自选编队是局外设置，修改将在下一局生效'),
-    prepare: async () => cleanPicks(target.get().diy),
+    prepare: async () => Object.fromEntries(
+      Object.entries(cleanPicks(target.get().diy)).map(([slotId, { skin, ...p }]) => [slotId, p]),
+    ),
   });
   return { flush: sync.flush, dispose() { offKit?.(); sync.dispose(); } };
 }

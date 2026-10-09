@@ -42,6 +42,8 @@
 // so it can be unit tested without a browser. Helpers never throw on unknown ids — they return null and the
 // caller falls back (docs/ASSETS.md "Other fallbacks").
 
+import { charArt } from './ui/charArts.js';
+
 const isObj = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
 const str = (v) => (typeof v === 'string' && v ? v : null);
 const get = (o, k) => (isObj(o) && Object.hasOwn(o, k) ? o[k] : undefined);
@@ -55,35 +57,34 @@ export function baseCharId(id) {
   return s.replace(/_(1|2)$/, '');
 }
 
+/** Retrieve the art entry for a character, considering their base, promote status and skin. */
+function artOf(m, id, skin) {
+  const s = str(id);
+  if (!s) return { art: null, e2: false };
+  const chars = get(m, 'chars');
+  const direct = !!get(chars, s);
+  const key = direct ? s : baseCharId(s);
+  const e2 = !direct && /_2$/.test(s);
+  return { art: key && get(chars, key) ? charArt(m, key, skin || null) : null, e2 };
+}
+
 /**
  * Operator avatar. Accepts a charId (`char_002_amiya`) or an asset id with the E2 suffix (`char_002_amiya_2`).
  * `opts.e2` prefers the E2 art. Falls back to the base avatar, then null.
  */
 export function avatarUrl(m, id, opts) {
-  const s = str(id);
-  if (!s) return null;
-  const direct = get(get(m, 'chars'), s);
-  let rec = direct, e2 = !!(opts && opts.e2);
-  if (!rec) {
-    const base = baseCharId(s);
-    rec = get(get(m, 'chars'), base);
-    if (rec && /_2$/.test(s)) e2 = true;
-  }
-  if (rec) return str(e2 && rec.avatarE2) || str(rec.avatar) || null;
-  return null;
+  const { art, e2: suffixE2 } = artOf(m, id, opts && opts.skin);
+  if (!art) return null;
+  const e2 = !!(opts && opts.e2) || suffixE2;
+  return str(e2 && art.avatarE2) || str(art.avatar) || null;
 }
 
 /** Operator half-body portrait (`_1` base, `_2` E2). */
 export function portraitUrl(m, id, opts) {
-  const s = str(id);
-  if (!s) return null;
-  let rec = get(get(m, 'chars'), s), e2 = !!(opts && opts.e2);
-  if (!rec) {
-    rec = get(get(m, 'chars'), baseCharId(s));
-    if (rec && /_2$/.test(s)) e2 = true;
-  }
-  if (!rec) return null;
-  return str(e2 && rec.portraitE2) || str(rec.portrait) || null;
+  const { art, e2: suffixE2 } = artOf(m, id, opts && opts.skin);
+  if (!art) return null;
+  const e2 = !!(opts && opts.e2) || suffixE2;
+  return str(e2 && art.portraitE2) || str(art.portrait) || null;
 }
 
 export function enemyIconUrl(m, enemyId) {
@@ -151,10 +152,14 @@ export function subProfIconUrl(m, sub) {
 export function spineEntry(m, id, opts) {
   const s = str(id);
   if (!s) return null;
-  const ch = get(get(m, 'chars'), s) || get(get(m, 'chars'), baseCharId(s));
-  if (ch && isObj(ch.spine)) {
-    const sp = (opts && opts.back && isObj(ch.spine.back)) ? ch.spine.back : ch.spine.front;
-    return validSpine(sp) ? sp : null;
+  const chars = get(m, 'chars');
+  const key = get(chars, s) ? s : baseCharId(s);
+  if (key && get(chars, key)) {
+    const art = charArt(m, key, (opts && opts.skin) || null);
+    if (art && isObj(art.spine)) {
+      const sp = (opts && opts.back && isObj(art.spine.back)) ? art.spine.back : art.spine.front;
+      return validSpine(sp) ? sp : null;
+    }
   }
   const tk = get(get(m, 'tokens'), s);
   if (tk) {
@@ -199,10 +204,12 @@ export function localSpineEntry(sl, local, web) {
   return entry;
 }
 
-/** Whether an operator/token/enemy has a Back model. */
-export function hasBackSpine(m, id) {
-  const ch = get(get(m, 'chars'), str(id) || '') || get(get(m, 'chars'), baseCharId(id) || '');
-  return !!(ch && isObj(ch.spine) && validSpine(ch.spine.back));
+/** Whether an operator/token/enemy has a Back model (in the given skin, null = default outfit). */
+export function hasBackSpine(m, id, skin = null) {
+  const chars = get(m, 'chars');
+  const key = get(chars, str(id) || '') ? str(id) : baseCharId(id);
+  const art = key && get(chars, key) ? charArt(m, key, skin) : null;
+  return !!(art && isObj(art.spine) && validSpine(art.spine.back));
 }
 
 export function validSpine(sp) {
@@ -210,8 +217,8 @@ export function validSpine(sp) {
 }
 
 /** Best 2D picture for a unit asset id (operator avatar, token avatar, enemy icon, item icon). */
-export function unitPictureUrl(m, id) {
-  return avatarUrl(m, id) || tokenAvatarUrl(m, id) || enemyIconUrl(m, id) || itemIconUrl(m, id) || null;
+export function unitPictureUrl(m, id, opts) {
+  return avatarUrl(m, id, opts) || tokenAvatarUrl(m, id) || enemyIconUrl(m, id) || itemIconUrl(m, id) || null;
 }
 
 // ---- audio ---------------------------------------------------------------------------------------------------
@@ -899,9 +906,9 @@ export function createAssets(options) {
     profIcon: (p, kind) => profIconUrl(m(), p, kind),
     subProfIcon: (s) => subProfIconUrl(m(), s),
     ui: (name) => uiUrl(m(), name),
-    picture: (id) => unitPictureUrl(m(), id),
+    picture: (id, o) => unitPictureUrl(m(), id, o),
     spineEntry: (id, o) => spineEntry(m(), id, localManifest ? { ...o, local: localManifest } : o),
-    hasBack: (id) => hasBackSpine(m(), id),
+    hasBack: (id, skin = null) => hasBackSpine(m(), id, skin),
     audio: {
       bgm: (kind) => bgmEntry(m(), kind),
       sfx: (group, key) => sfxUrl(m(), group, key),

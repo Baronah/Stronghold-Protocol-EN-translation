@@ -30,12 +30,13 @@ const ID_RE = /^[A-Za-z0-9_\-.:]{1,64}$/;
 const UNSAFE_IDS = new Set(['__proto__', 'constructor', 'prototype']);
 const isObj = (v) => !!v && typeof v === 'object' && !Array.isArray(v);
 const isId = (v) => typeof v === 'string' && ID_RE.test(v) && !UNSAFE_IDS.has(v);
+const SKIN_RE = /^[A-Za-z0-9_\-.:]{1,64}$/;
 
 /**
  * The structurally valid picks of a raw map (junk dropped, empty slots left out; at most DIY_LIMITS.slots): each pick
  * `{ charId, skillIndex?, uniEquipId? }` (skill 0–9, module an id; absent / null = the locked or no module).
  * @param {any} raw
- * @returns {Record<string, { charId: string, skillIndex?: number, uniEquipId?: string|null }>}
+ * @returns {Record<string, { charId: string, skillIndex?: number, uniEquipId?: string|null, skin?: string }>}
  */
 export function cleanPicks(raw) {
   const out = {};
@@ -47,6 +48,7 @@ export function cleanPicks(raw) {
     if (Number.isInteger(p.skillIndex) && p.skillIndex >= 0 && p.skillIndex <= 9) pick.skillIndex = p.skillIndex;
     if (isId(p.uniEquipId)) pick.uniEquipId = p.uniEquipId;
     else if (p.uniEquipId === null) pick.uniEquipId = null;
+    if (typeof p.skin === 'string' && SKIN_RE.test(p.skin) && !UNSAFE_IDS.has(p.skin)) pick.skin = p.skin;
     out[slotId] = pick;
   }
   return out;
@@ -66,11 +68,18 @@ export const diyCount = (picks) => Object.keys(cleanPicks(picks)).length;
 /**
  * The legal picks of a stored roster against the loaded data and the kit list (checkDiyPicks: what the server keeps).
  * @param {any} picks @param {any} data `{ chess, backups }` @param {Iterable<string>|null} kitted
- * @returns {Record<string, { charId: string, skillIndex: number, uniEquipId: string|null }>}
+ * @returns {Record<string, { charId: string, skillIndex: number, uniEquipId: string|null, skin?: string }>}
  */
 export function sanitizeDiyPicks(picks, data, kitted) {
-  const res = checkDiyPicks(cleanPicks(picks), { data, kitted });
-  return res && 'ok' in res ? res.picks : {};
+  const clean = cleanPicks(picks);
+  const res = checkDiyPicks(clean, { data, kitted });
+  const legal = res && 'ok' in res ? res.picks : {};
+  const out = {};
+  for (const [slotId, p] of Object.entries(legal)) {
+    const skin = clean[slotId]?.skin;
+    out[slotId] = skin && clean[slotId].charId === p.charId ? { ...p, skin } : p;
+  }
+  return out;
 }
 
 /**

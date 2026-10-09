@@ -41,6 +41,7 @@ export function renderInfo(u) {
     // skill aura is drawn for it (render/fx/rings.js _aura)
     ammoSkill: u.ammoSkill === true ? true : undefined,
     moduleId: typeof u.moduleId === 'string' ? u.moduleId : undefined,
+    skin: typeof u.skin === 'string' ? u.skin : undefined,
     // Scouted hand and temp units have details but no field attack range.
     area: typeof u.area === 'string' ? u.area : undefined,
     // the ally's equipped item ids (UnitInfo.items, DESIGN §16 / §21.11): the detail card needs them for a teammate's

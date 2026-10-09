@@ -634,3 +634,21 @@
 .lo-io__text:focus { border-color: var(--mint-700); }
 .lo-io__text::placeholder { color: var(--text-lo); }
 .lo-io__file { display: none; }
+
+/* ---- skins, normal loadout ---- */
+.lo-skins { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; }
+.lo-skin { position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px;
+  border: 1px solid var(--line, #3a4048); background: transparent; cursor: pointer; }
+.lo-skin.is-on { color: var(--mint, #7fe0c0); background: linear-gradient(0deg, rgba(62, 242, 212, 0.14), rgba(62, 242, 140, 0.02) 75%); border-color: var(--mint, #7fe0c0); }
+.lo-skin__img { width: 72px; height: 72px; object-fit: cover; }
+.lo-skin__name { font-size: 11px; text-overflow: ellipsis; }
+.lo-skin .lo-badge { position: absolute; top: 4px; right: 4px; }
+
+/* ---- skins, diy loadout ---- */
+.diy-skins { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 6px; }
+.diy-skin { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px;
+  border: 1px solid var(--line, #3a4048); background: transparent; cursor: pointer; }
+.diy-skin.is-on { color: var(--mint, #7fe0c0); background: linear-gradient(0deg, rgba(62, 242, 212, 0.14), rgba(62, 242, 140, 0.02) 75%); border-color: var(--mint, #7fe0c0); }
+.diy-skin__img { width: 48px; height: 48px; object-fit: cover; }
+.diy-skin__name { font-size: 10px; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.diy-skin .lo-badge { position: absolute; top: 2px; right: 2px; padding: 0 .04rem; }

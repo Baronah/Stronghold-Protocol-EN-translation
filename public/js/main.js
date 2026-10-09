@@ -51,11 +51,20 @@ import { installDeviceSupport } from './ui/device.js';
 import { LoadoutHost } from './screens/loadout.js';
 import { StatsHost } from './screens/stats.js';
 import { recordResult, installStatsRecorder } from './ui/stats.js';
-import { installLoadoutSync, installOwnershipSync, installDiySync } from './ui/loadoutSync.js';
+import { installLoadoutSync, installOwnershipSync, installDiySync, loadoutStore } from './ui/loadoutSync.js';
 import { startBuildGuard } from './ui/buildGuard.js';
 import { initLang, useLang, tickerText } from './ui/lang.js';
 import { t, N_, translateWire } from '../../shared/i18n.js';
 import { recordError } from './diag.js';
+import { setSkinResolver, setCharSkinResolver } from './ui/assetUrls.js';
+
+const skinForBase = (baseId) => loadoutStore.get().entries?.[baseId]?.skin || null;
+setSkinResolver(skinForBase);
+
+setCharSkinResolver((charId) => {
+  const rec = data.list('chess').find((c) => c.charId === charId && !c.isGolden);
+  return rec ? skinForBase(rec.chessId) : null;
+});
 
 const RESTORE_GRACE_MS = 1500;
 const JOIN_DELAY_MS = 350;

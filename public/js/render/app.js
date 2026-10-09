@@ -670,10 +670,13 @@ export async function createFieldView(host, options = {}) {
     const pick = chess && chess.isDiy ? diyPicks[chess.baseId || chess.chessId] : null;
     const dr = pick ? data.diy(piece.id, pick) : null;
     const rec = si || dr || chess;
+    const skin = si || dr ? null
+      : typeof piece.skin === 'string' ? piece.skin
+      : (typeof opts.skinOf === 'function' ? opts.skinOf(piece.id) || null : null);
     return {
       kind: 'op', side: 'ally', defId: piece.id,
       spine: rec?.assets?.spine || rec?.charId || null, avatar: rec?.assets?.avatar || rec?.charId || null,
-      tier: chess?.tier || piece.tier || 1, golden: !!(piece.golden || chess?.isGolden), dir,
+      tier: chess?.tier || piece.tier || 1, golden: !!(piece.golden || chess?.isGolden), dir, skin,
       ...(si ? { standInFor: si.standInFor } : null),
       ...(dr ? { diy: { charId: pick.charId, skillIndex: pick.skillIndex ?? null, uniEquipId: pick.uniEquipId ?? null } } : null),
     };
@@ -753,7 +756,7 @@ export async function createFieldView(host, options = {}) {
       e.key = key;
       const info = pieceInfo(e.piece, e.area);
       // (the model is part of it: a piece whose body changes — a merge, an own 补位 / 自选 setting arriving — is rebuilt)
-      const sig = `${info.kind}|${info.defId}|${info.golden ? 1 : 0}|${info.spine || ''}`;
+      const sig = `${info.kind}|${info.defId}|${info.golden ? 1 : 0}|${info.spine || ''}|${info.skin || ''}`;
       let v = views.get(key);
       if (v && v._sig !== sig) { dropView(key); v = null; }
       const w = slotWorld(e);
@@ -816,7 +819,7 @@ export async function createFieldView(host, options = {}) {
       const info = u && Number.isInteger(u.uid) ? renderInfo({ ...u, id: `m:${u.uid}` }) : null;
       if (!info) continue;
       keep.add(info.id);
-      const sig = `${info.defId}|${info.golden ? 1 : 0}|${info.spine || ''}|${info.x},${info.y}|${info.dir || ''}|${(info.items || []).join(',')}`;
+const sig = `${info.defId}|${info.golden ? 1 : 0}|${info.spine || ''}|${info.skin || ''}|${info.x},${info.y}|${info.dir || ''}|${(info.items || []).join(',')}`;
       let v = views.get(info.id);
       if (v && v._sig !== sig) { dropView(info.id); v = null; }
       if (v) continue;
@@ -1313,7 +1316,12 @@ export async function createFieldView(host, options = {}) {
 
   function addInfo(u) {
     const info = renderInfo(u);
-    if (info) infos.set(info.id, info);
+    if (info) {
+      if (!info.skin && info.side === 'ally' && info.kind !== 'device' && typeof opts.skinOf === 'function') {
+        info.skin = opts.skinOf(info.defId, info.ownerId) || undefined;
+      }
+      infos.set(info.id, info);
+    }
     return info;
   }
 
@@ -1929,6 +1937,7 @@ export async function createFieldView(host, options = {}) {
   await withTimeout(artPromise, 2500, signal);
   if (want3d) await withTimeout(boardReady, 6000, signal);
   signal?.throwIfAborted();
+  window.__fv = view;
   return view;
   } catch (err) {
     if (view) view.destroy();

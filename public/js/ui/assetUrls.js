@@ -3,6 +3,8 @@
 // (glyph, CSS shape) when null. Only URLs present in the manifest are ever returned, so the client
 // never requests files the asset pipeline did not produce (no 404 noise in the console).
 
+import { charArt } from './charArts.js';
+
 const str = (v) => (typeof v === 'string' && v ? v : null);
 const obj = (v) => (v && typeof v === 'object' ? v : null);
 
@@ -11,44 +13,73 @@ export function uiUrl(m, key) {
   return str(obj(obj(m)?.ui)?.[key]);
 }
 
+// update skin portrait / avatar URLs when the skin changes 
+let skinResolver = null;
+let charSkinResolver = null;
+export function setSkinResolver(fn) { skinResolver = typeof fn === 'function' ? fn : null; }
+export function setCharSkinResolver(fn) { charSkinResolver = typeof fn === 'function' ? fn : null; }
+
+const baseOf = (chess) => {
+  const id = chess?.chessId;
+  if (chess?.baseId && chess.baseId !== id) return chess.baseId;
+  if (chess?.isGolden && chess.goldenId == null && typeof id === 'string') {
+    const guess = id.replace(/_b$/, '_a');
+    if (guess !== id) return guess;
+  }
+  return chess?.baseId || id;
+};
+
+const resolveSkin = (chess, skinId) => {
+  if (skinId !== undefined) return skinId;
+  try {
+    const baseId = baseOf(chess);
+    return skinResolver && baseId ? skinResolver(baseId) || null : null;
+  } catch { return null; }
+};
+
+const resolveCharSkin = (charId, skinId) => {
+  if (skinId !== undefined) return skinId;
+  try { return charSkinResolver && charId ? charSkinResolver(charId) || null : null; }
+  catch { return null; }
+};
+
 /**
  * Operator avatar for a chess record (golden → E2 art when present).
  * @param {any} m manifest
  * @param {any} chess chess.json record (or { assets: { avatar } })
+ * @param {string|null} skinId
  */
-export function chessAvatarUrl(m, chess) {
+export function chessAvatarUrl(m, chess, skinId) {
+  skinId = resolveSkin(chess, skinId);
   const chars = obj(obj(m)?.chars);
   const id = str(chess?.assets?.avatar) || str(chess?.charId);
   if (!chars || !id) return null;
-  if (id.endsWith('_2') && !chars[id]) {
-    const base = chars[id.slice(0, -2)];
-    return str(base?.avatarE2) || str(base?.avatar);
-  }
-  return str(chars[id]?.avatar) || (chess?.charId ? str(chars[chess.charId]?.avatar) : null);
+  const e2 = id.endsWith('_2') && !chars[id];
+  const key = e2 ? id.slice(0, -2) : id;
+  const pick = (a) => (e2 ? str(a?.avatarE2) : null) || str(a?.avatar);
+  return pick(charArt(m, key, skinId)) || (chess?.charId ? pick(charArt(m, chess.charId, skinId)) : null);
 }
 
 /**
  * Half-body portrait (180×360) for a chess record (golden → E2 portrait when present).
  * @param {any} m
  * @param {any} chess
+ * @param {string|null} skinId
  */
-export function chessPortraitUrl(m, chess) {
+export function chessPortraitUrl(m, chess, skinId) {
+  skinId = resolveSkin(chess, skinId);
   const chars = obj(obj(m)?.chars);
-  const id = str(chess?.assets?.portrait);
   if (!chars) return null;
-  if (id) {
-    if (id.endsWith('_2')) {
-      const base = chars[id.slice(0, -2)];
-      if (base) return str(base.portraitE2) || str(base.portrait);
-    }
-    if (id.endsWith('_1')) {
-      const base = chars[id.slice(0, -2)];
-      if (base) return str(base.portrait);
-    }
+  const id = str(chess?.assets?.portrait);
+  let key = chess?.charId || null;
+  let e2 = !!chess?.isGolden;
+  if (id && (id.endsWith('_2') || id.endsWith('_1')) && chars[id.slice(0, -2)]) {
+    key = id.slice(0, -2);
+    e2 = id.endsWith('_2');
   }
-  const byChar = chess?.charId ? chars[chess.charId] : null;
-  if (!byChar) return null;
-  return (chess?.isGolden ? str(byChar.portraitE2) : null) || str(byChar.portrait);
+  const a = key ? charArt(m, key, skinId) : null;
+  if (!a) return null;
+  return (e2 ? str(a.portraitE2) : null) || str(a.portrait);
 }
 
 /** Skill icon of a chess record (manifest `skills[iconId]`, else the empty skill sprite). */

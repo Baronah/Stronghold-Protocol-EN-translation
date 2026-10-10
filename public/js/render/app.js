@@ -670,7 +670,7 @@ export async function createFieldView(host, options = {}) {
     const pick = chess && chess.isDiy ? diyPicks[chess.baseId || chess.chessId] : null;
     const dr = pick ? data.diy(piece.id, pick) : null;
     const rec = si || dr || chess;
-    const skin = si || dr ? null
+    const skin = si ? null
       : typeof piece.skin === 'string' ? piece.skin
       : (typeof opts.skinOf === 'function' ? opts.skinOf(piece.id) || null : null);
     return {
@@ -1843,6 +1843,7 @@ const sig = `${info.defId}|${info.golden ? 1 : 0}|${info.spine || ''}|${info.ski
     stripesUnder() { return !destroyed && !board3d; },
     /** Where the prep pieces are shown: { kind: 'board'|'bossPrep', side: 'L'|'R', mirror } (render/prepfield.js). */
     prepField() { return { kind: prepXf.kind, side: prepXf.side, mirror: prepXf.mirror }; },
+    refreshPrep() { if (!destroyed && mode === 'prep' && lastPrep) setPrep(lastPrep.ps, lastPrep.o); },
     holdPiece(uid, tile) {
       if (destroyed || !Number.isInteger(uid)) return false;
       if (!tile || !Number.isInteger(tile.row) || !Number.isInteger(tile.col)) { held.delete(uid); return true; }

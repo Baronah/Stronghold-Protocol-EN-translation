@@ -16,13 +16,16 @@ import { settingsStore } from './settings.js';
 import { loadoutStore } from './loadoutSync.js';
 import { recordsOf, effectiveChoice } from './loadoutModel.js';
 import { battleRunner } from '../battle/runner.js';
+import { setDiySkinResolver } from './assetUrls.js';
+
+setDiySkinResolver((slotBaseId) => loadoutStore.get().diy?.[slotBaseId]?.skin || null);
 
 const LOAD_TIMEOUT_MS = 12000;
 const METHODS = ['setStage', 'setCamera', 'setPrep', 'enterBattle', 'pushSnapshot', 'pushEvents', 'highlightTiles', 'on', 'resize', 'destroy'];
 // direction-step hooks (ui/facingWheel.js): optional — the wheel falls back to the engine's dev hooks when absent;
 // setPen (enemy preview pen list), prepField ({ kind, side, mirror } of the Final Assault prep), stripesUnder (the view
 // stripes range previews under the units itself) — render/app.js; the DOM fallback lacks them (→ null)
-const OPTIONAL = ['pieceScreenRect', 'setSettings', 'off', 'tileScreen', 'holdPiece', 'setPieceDir', 'setPen', 'prepField', 'stripesUnder'];
+const OPTIONAL = ['pieceScreenRect', 'setSettings', 'off', 'tileScreen', 'holdPiece', 'setPieceDir', 'setPen', 'prepField', 'stripesUnder', 'refreshPrep'];
 
 /**
  * Camera padding (px) that keeps the field clear of the DOM HUD (top bar + bond strip, team panel, shop bar /
@@ -231,10 +234,12 @@ export function skinOf(chessId, ownerId = null) {
   try {
     const st = battleRunner?.state?.();
     if (ownerId != null && st && (st.watch || st.kind === 'unite' || (st.members || []).length > 1)) return null;
+    const base = baseIdOf(chessId);
+    if (data.lookup('chess', chessId)?.isDiy) return loadoutStore.get().diy?.[base]?.skin || null;
     const getChess = (id) => data.lookup('chess', id);
-    const { base, golden } = recordsOf(baseIdOf(chessId), getChess);
-    if (!base) return null;
-    return effectiveChoice(loadoutStore.get().entries, base, golden).skin || null;
+    const rec = recordsOf(base, getChess);
+    if (!rec.base) return null;
+    return effectiveChoice(loadoutStore.get().entries, rec.base, rec.golden).skin || null;
   } catch (err) { console.warn('[skinOf]', err); return null; }
 }
 
@@ -313,6 +318,9 @@ export function useFieldView(hostRef) {
       setState({ view, kind: view.kind });
     }, (err) => { if (!dead && !controller.signal.aborted) console.error('[field] mount failed', err); });
     const unsub = settingsStore.subscribe((s) => viewRef.current?.setSettings?.(s));
+    const unsubLoadout = loadoutStore.subscribe((s, prev) => {
+      if (s.entries !== prev.entries || s.diy !== prev.diy) viewRef.current?.refreshPrep?.();
+    });
     const onResize = () => viewRef.current?.resize();
     window.addEventListener('resize', onResize);
     return () => {

@@ -31,17 +31,14 @@ const baseOf = (chess) => {
 
 const resolveSkin = (chess, skinId) => {
   if (skinId !== undefined) return skinId;
-  try {
-    const baseId = baseOf(chess);
-    return skinResolver && baseId ? skinResolver(baseId) || null : null;
-  } catch { return null; }
+  if (chess?.diyFor) return chess.skin || (diySkinResolver ? diySkinResolver(chess.diyFor) || null : null);
+  if (chess?.skin && typeof chess.skin.current === 'string') return chess.skin.current;
+  const baseId = baseOf(chess);
+  return skinResolver && baseId ? skinResolver(baseId) || null : null;
 };
 
-const resolveCharSkin = (charId, skinId) => {
-  if (skinId !== undefined) return skinId;
-  try { return charSkinResolver && charId ? charSkinResolver(charId) || null : null; }
-  catch { return null; }
-};
+let diySkinResolver = null;
+export function setDiySkinResolver(fn) { diySkinResolver = typeof fn === 'function' ? fn : null; }
 
 /**
  * Operator avatar for a chess record (golden → E2 art when present).

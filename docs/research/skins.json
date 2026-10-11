@@ -1,0 +1,1132 @@
+{
+  "files": [
+    {
+      "rel": "char/avatar/char_4040_rockr_lxh_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4040_rockr_lxh#1.png"
+    },
+    {
+      "rel": "char/portrait/char_4040_rockr_lxh_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4040_rockr_lxh#1.png"
+    },
+    {
+      "rel": "spine/op/char_4040_rockr_lxh_1/front/char_4040_rockr_lxh_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4040_rockr/char_4040_rockr_lxh_1/Front/char_4040_rockr_lxh_1.skel"
+    },
+    {
+      "rel": "spine/op/char_4040_rockr_lxh_1/front/char_4040_rockr_lxh_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4040_rockr/char_4040_rockr_lxh_1/Front/char_4040_rockr_lxh_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_4040_rockr_lxh_1/front/char_4040_rockr_lxh_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4040_rockr/char_4040_rockr_lxh_1/Front/char_4040_rockr_lxh_1.png"
+    },
+    {
+      "rel": "spine/op/char_4040_rockr_lxh_1/back/char_4040_rockr_lxh_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4040_rockr/char_4040_rockr_lxh_1/Back/char_4040_rockr_lxh_1.skel"
+    },
+    {
+      "rel": "spine/op/char_4040_rockr_lxh_1/back/char_4040_rockr_lxh_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4040_rockr/char_4040_rockr_lxh_1/Back/char_4040_rockr_lxh_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_4040_rockr_lxh_1/back/char_4040_rockr_lxh_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4040_rockr/char_4040_rockr_lxh_1/Back/char_4040_rockr_lxh_1.png"
+    },
+    {
+      "rel": "char/avatar/char_1012_skadi2_boc_4.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_1012_skadi2_boc#4.png"
+    },
+    {
+      "rel": "char/portrait/char_1012_skadi2_boc_4.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_1012_skadi2_boc#4.png"
+    },
+    {
+      "rel": "spine/op/char_1012_skadi2_boc_4/front/char_1012_skadi2_boc_4.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1012_skadi2/char_1012_skadi2_boc_4/Spine/char_1012_skadi2_boc_4.skel"
+    },
+    {
+      "rel": "spine/op/char_1012_skadi2_boc_4/front/char_1012_skadi2_boc_4.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1012_skadi2/char_1012_skadi2_boc_4/Spine/char_1012_skadi2_boc_4.atlas"
+    },
+    {
+      "rel": "spine/op/char_1012_skadi2_boc_4/front/char_1012_skadi2_boc_4.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1012_skadi2/char_1012_skadi2_boc_4/Spine/char_1012_skadi2_boc_4.png"
+    },
+    {
+      "rel": "char/avatar/char_469_indigo_nian_7.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_469_indigo_nian#7.png"
+    },
+    {
+      "rel": "char/portrait/char_469_indigo_nian_7.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_469_indigo_nian#7.png"
+    },
+    {
+      "rel": "spine/op/char_469_indigo_nian_7/front/char_469_indigo_nian_7.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_469_indigo/char_469_indigo_nian_7/Front/char_469_indigo_nian_7.skel"
+    },
+    {
+      "rel": "spine/op/char_469_indigo_nian_7/front/char_469_indigo_nian_7.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_469_indigo/char_469_indigo_nian_7/Front/char_469_indigo_nian_7.atlas"
+    },
+    {
+      "rel": "spine/op/char_469_indigo_nian_7/front/char_469_indigo_nian_7.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_469_indigo/char_469_indigo_nian_7/Front/char_469_indigo_nian_7.png"
+    },
+    {
+      "rel": "spine/op/char_469_indigo_nian_7/back/char_469_indigo_nian_7.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_469_indigo/char_469_indigo_nian_7/Back/char_469_indigo_nian_7.skel"
+    },
+    {
+      "rel": "spine/op/char_469_indigo_nian_7/back/char_469_indigo_nian_7.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_469_indigo/char_469_indigo_nian_7/Back/char_469_indigo_nian_7.atlas"
+    },
+    {
+      "rel": "spine/op/char_469_indigo_nian_7/back/char_469_indigo_nian_7.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_469_indigo/char_469_indigo_nian_7/Back/char_469_indigo_nian_7.png"
+    },
+    {
+      "rel": "char/avatar/char_423_blemsh_littlePony_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_423_blemsh_littlePony#1.png"
+    },
+    {
+      "rel": "char/portrait/char_423_blemsh_littlePony_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_423_blemsh_littlePony#1.png"
+    },
+    {
+      "rel": "spine/op/char_423_blemsh_littlePony_1/front/char_423_blemsh_littlePony_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_423_blemsh/char_423_blemsh_littlePony_1/Front/char_423_blemsh_littlePony_1.skel"
+    },
+    {
+      "rel": "spine/op/char_423_blemsh_littlePony_1/front/char_423_blemsh_littlePony_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_423_blemsh/char_423_blemsh_littlePony_1/Front/char_423_blemsh_littlePony_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_423_blemsh_littlePony_1/front/char_423_blemsh_littlePony_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_423_blemsh/char_423_blemsh_littlePony_1/Front/char_423_blemsh_littlePony_1.png"
+    },
+    {
+      "rel": "spine/op/char_423_blemsh_littlePony_1/back/char_423_blemsh_littlePony_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_423_blemsh/char_423_blemsh_littlePony_1/Back/char_423_blemsh_littlePony_1.skel"
+    },
+    {
+      "rel": "spine/op/char_423_blemsh_littlePony_1/back/char_423_blemsh_littlePony_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_423_blemsh/char_423_blemsh_littlePony_1/Back/char_423_blemsh_littlePony_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_423_blemsh_littlePony_1/back/char_423_blemsh_littlePony_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_423_blemsh/char_423_blemsh_littlePony_1/Back/char_423_blemsh_littlePony_1.png"
+    },
+    {
+      "rel": "char/avatar/char_358_lisa_lxh_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_358_lisa_lxh#1.png"
+    },
+    {
+      "rel": "char/portrait/char_358_lisa_lxh_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_358_lisa_lxh#1.png"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_lxh_1/front/char_358_lisa_lxh_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_lxh_1/Front/char_358_lisa_lxh_1.skel"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_lxh_1/front/char_358_lisa_lxh_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_lxh_1/Front/char_358_lisa_lxh_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_lxh_1/front/char_358_lisa_lxh_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_lxh_1/Front/char_358_lisa_lxh_1.png"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_lxh_1/back/char_358_lisa_lxh_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_lxh_1/Back/char_358_lisa_lxh_1.skel"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_lxh_1/back/char_358_lisa_lxh_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_lxh_1/Back/char_358_lisa_lxh_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_lxh_1/back/char_358_lisa_lxh_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_lxh_1/Back/char_358_lisa_lxh_1.png"
+    },
+    {
+      "rel": "char/avatar/char_358_lisa_epoque_22.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_358_lisa_epoque#22.png"
+    },
+    {
+      "rel": "char/portrait/char_358_lisa_epoque_22.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_358_lisa_epoque#22.png"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_epoque_22/front/char_358_lisa_epoque_22.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_epoque_22/Front/char_358_lisa_epoque_22.skel"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_epoque_22/front/char_358_lisa_epoque_22.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_epoque_22/Front/char_358_lisa_epoque_22.atlas"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_epoque_22/front/char_358_lisa_epoque_22.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_epoque_22/Front/char_358_lisa_epoque_22.png"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_epoque_22/back/char_358_lisa_epoque_22.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_epoque_22/Back/char_358_lisa_epoque_22.skel"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_epoque_22/back/char_358_lisa_epoque_22.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_epoque_22/Back/char_358_lisa_epoque_22.atlas"
+    },
+    {
+      "rel": "spine/op/char_358_lisa_epoque_22/back/char_358_lisa_epoque_22.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_358_lisa/char_358_lisa_epoque_22/Back/char_358_lisa_epoque_22.png"
+    },
+    {
+      "rel": "char/avatar/char_306_leizi_game_3.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_306_leizi_game#3.png"
+    },
+    {
+      "rel": "char/portrait/char_306_leizi_game_3.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_306_leizi_game#3.png"
+    },
+    {
+      "rel": "spine/op/char_306_leizi_game_3/front/char_306_leizi_game_3.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_306_leizi/char_306_leizi_game_3/Front/char_306_leizi_game_3.skel"
+    },
+    {
+      "rel": "spine/op/char_306_leizi_game_3/front/char_306_leizi_game_3.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_306_leizi/char_306_leizi_game_3/Front/char_306_leizi_game_3.atlas"
+    },
+    {
+      "rel": "spine/op/char_306_leizi_game_3/front/char_306_leizi_game_3.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_306_leizi/char_306_leizi_game_3/Front/char_306_leizi_game_3.png"
+    },
+    {
+      "rel": "spine/op/char_306_leizi_game_3/back/char_306_leizi_game_3.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_306_leizi/char_306_leizi_game_3/Back/char_306_leizi_game_3.skel"
+    },
+    {
+      "rel": "spine/op/char_306_leizi_game_3/back/char_306_leizi_game_3.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_306_leizi/char_306_leizi_game_3/Back/char_306_leizi_game_3.atlas"
+    },
+    {
+      "rel": "spine/op/char_306_leizi_game_3/back/char_306_leizi_game_3.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_306_leizi/char_306_leizi_game_3/Back/char_306_leizi_game_3.png"
+    },
+    {
+      "rel": "char/avatar/char_128_plosis_yun_4.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_128_plosis_yun#4.png"
+    },
+    {
+      "rel": "char/portrait/char_128_plosis_yun_4.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_128_plosis_yun#4.png"
+    },
+    {
+      "rel": "spine/op/char_128_plosis_yun_4/front/char_128_plosis_yun_4.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_128_plosis/char_128_plosis_yun_4/Front/char_128_plosis_yun_4.skel"
+    },
+    {
+      "rel": "spine/op/char_128_plosis_yun_4/front/char_128_plosis_yun_4.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_128_plosis/char_128_plosis_yun_4/Front/char_128_plosis_yun_4.atlas"
+    },
+    {
+      "rel": "spine/op/char_128_plosis_yun_4/front/char_128_plosis_yun_4.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_128_plosis/char_128_plosis_yun_4/Front/char_128_plosis_yun_4.png"
+    },
+    {
+      "rel": "spine/op/char_128_plosis_yun_4/back/char_128_plosis_yun_4.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_128_plosis/char_128_plosis_yun_4/Back/char_128_plosis_yun_4.skel"
+    },
+    {
+      "rel": "spine/op/char_128_plosis_yun_4/back/char_128_plosis_yun_4.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_128_plosis/char_128_plosis_yun_4/Back/char_128_plosis_yun_4.atlas"
+    },
+    {
+      "rel": "spine/op/char_128_plosis_yun_4/back/char_128_plosis_yun_4.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_128_plosis/char_128_plosis_yun_4/Back/char_128_plosis_yun_4.png"
+    },
+    {
+      "rel": "char/avatar/char_4146_nymph_epoque_42.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4146_nymph_epoque#42.png"
+    },
+    {
+      "rel": "char/portrait/char_4146_nymph_epoque_42.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4146_nymph_epoque#42.png"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_epoque_42/front/char_4146_nymph_epoque_42.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_epoque_42/Front/char_4146_nymph_epoque_42.skel"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_epoque_42/front/char_4146_nymph_epoque_42.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_epoque_42/Front/char_4146_nymph_epoque_42.atlas"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_epoque_42/front/char_4146_nymph_epoque_42.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_epoque_42/Front/char_4146_nymph_epoque_42.png"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_epoque_42/back/char_4146_nymph_epoque_42.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_epoque_42/Back/char_4146_nymph_epoque_42.skel"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_epoque_42/back/char_4146_nymph_epoque_42.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_epoque_42/Back/char_4146_nymph_epoque_42.atlas"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_epoque_42/back/char_4146_nymph_epoque_42.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_epoque_42/Back/char_4146_nymph_epoque_42.png"
+    },
+    {
+      "rel": "char/avatar/char_1020_reed2_epoque_30.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_1020_reed2_epoque#30.png"
+    },
+    {
+      "rel": "char/portrait/char_1020_reed2_epoque_30.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_1020_reed2_epoque#30.png"
+    },
+    {
+      "rel": "spine/op/char_1020_reed2_epoque_30/front/char_1020_reed2_epoque_30.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1020_reed2/char_1020_reed2_epoque_30/Front/char_1020_reed2_epoque_30.skel"
+    },
+    {
+      "rel": "spine/op/char_1020_reed2_epoque_30/front/char_1020_reed2_epoque_30.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1020_reed2/char_1020_reed2_epoque_30/Front/char_1020_reed2_epoque_30.atlas"
+    },
+    {
+      "rel": "spine/op/char_1020_reed2_epoque_30/front/char_1020_reed2_epoque_30.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1020_reed2/char_1020_reed2_epoque_30/Front/char_1020_reed2_epoque_30.png"
+    },
+    {
+      "rel": "spine/op/char_1020_reed2_epoque_30/back/char_1020_reed2_epoque_30.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1020_reed2/char_1020_reed2_epoque_30/Back/char_1020_reed2_epoque_30.skel"
+    },
+    {
+      "rel": "spine/op/char_1020_reed2_epoque_30/back/char_1020_reed2_epoque_30.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1020_reed2/char_1020_reed2_epoque_30/Back/char_1020_reed2_epoque_30.atlas"
+    },
+    {
+      "rel": "spine/op/char_1020_reed2_epoque_30/back/char_1020_reed2_epoque_30.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1020_reed2/char_1020_reed2_epoque_30/Back/char_1020_reed2_epoque_30.png"
+    },
+    {
+      "rel": "char/avatar/char_1016_agoat2_epoque_57.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_1016_agoat2_epoque#57.png"
+    },
+    {
+      "rel": "char/portrait/char_1016_agoat2_epoque_57.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_1016_agoat2_epoque#57.png"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_57/front/char_1016_agoat2_epoque_57.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_57/Front/char_1016_agoat2_epoque_57.skel"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_57/front/char_1016_agoat2_epoque_57.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_57/Front/char_1016_agoat2_epoque_57.atlas"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_57/front/char_1016_agoat2_epoque_57.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_57/Front/char_1016_agoat2_epoque_57.png"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_57/back/char_1016_agoat2_epoque_57.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_57/Back/char_1016_agoat2_epoque_57.skel"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_57/back/char_1016_agoat2_epoque_57.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_57/Back/char_1016_agoat2_epoque_57.atlas"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_57/back/char_1016_agoat2_epoque_57.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_57/Back/char_1016_agoat2_epoque_57.png"
+    },
+    {
+      "rel": "char/avatar/char_1016_agoat2_epoque_34.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_1016_agoat2_epoque#34.png"
+    },
+    {
+      "rel": "char/portrait/char_1016_agoat2_epoque_34.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_1016_agoat2_epoque#34.png"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_34/front/char_1016_agoat2_epoque_34.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_34/Front/char_1016_agoat2_epoque_34.skel"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_34/front/char_1016_agoat2_epoque_34.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_34/Front/char_1016_agoat2_epoque_34.atlas"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_34/front/char_1016_agoat2_epoque_34.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_34/Front/char_1016_agoat2_epoque_34.png"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_34/back/char_1016_agoat2_epoque_34.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_34/Back/char_1016_agoat2_epoque_34.skel"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_34/back/char_1016_agoat2_epoque_34.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_34/Back/char_1016_agoat2_epoque_34.atlas"
+    },
+    {
+      "rel": "spine/op/char_1016_agoat2_epoque_34/back/char_1016_agoat2_epoque_34.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_1016_agoat2/char_1016_agoat2_epoque_34/Back/char_1016_agoat2_epoque_34.png"
+    },
+    {
+      "rel": "char/avatar/char_440_pinecn_epoque_31.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_440_pinecn_epoque#31.png"
+    },
+    {
+      "rel": "char/portrait/char_440_pinecn_epoque_31.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_440_pinecn_epoque#31.png"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_epoque_31/front/char_440_pinecn_epoque_31.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_epoque_31/Front/char_440_pinecn_epoque_31.skel"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_epoque_31/front/char_440_pinecn_epoque_31.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_epoque_31/Front/char_440_pinecn_epoque_31.atlas"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_epoque_31/front/char_440_pinecn_epoque_31.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_epoque_31/Front/char_440_pinecn_epoque_31.png"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_epoque_31/back/char_440_pinecn_epoque_31.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_epoque_31/Back/char_440_pinecn_epoque_31.skel"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_epoque_31/back/char_440_pinecn_epoque_31.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_epoque_31/Back/char_440_pinecn_epoque_31.atlas"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_epoque_31/back/char_440_pinecn_epoque_31.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_epoque_31/Back/char_440_pinecn_epoque_31.png"
+    },
+    {
+      "rel": "char/avatar/char_388_mint_epoque_22.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_388_mint_epoque#22.png"
+    },
+    {
+      "rel": "char/portrait/char_388_mint_epoque_22.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_388_mint_epoque#22.png"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_22/front/char_388_mint_epoque_22.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_22/Front/char_388_mint_epoque_22.skel"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_22/front/char_388_mint_epoque_22.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_22/Front/char_388_mint_epoque_22.atlas"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_22/front/char_388_mint_epoque_22.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_22/Front/char_388_mint_epoque_22.png"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_22/back/char_388_mint_epoque_22.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_22/Back/char_388_mint_epoque_22.skel"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_22/back/char_388_mint_epoque_22.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_22/Back/char_388_mint_epoque_22.atlas"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_22/back/char_388_mint_epoque_22.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_22/Back/char_388_mint_epoque_22.png"
+    },
+    {
+      "rel": "char/avatar/char_388_mint_epoque_30.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_388_mint_epoque#30.png"
+    },
+    {
+      "rel": "char/portrait/char_388_mint_epoque_30.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_388_mint_epoque#30.png"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_30/front/char_388_mint_epoque_30.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_30/Front/char_388_mint_epoque_30.skel"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_30/front/char_388_mint_epoque_30.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_30/Front/char_388_mint_epoque_30.atlas"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_30/front/char_388_mint_epoque_30.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_30/Front/char_388_mint_epoque_30.png"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_30/back/char_388_mint_epoque_30.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_30/Back/char_388_mint_epoque_30.skel"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_30/back/char_388_mint_epoque_30.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_30/Back/char_388_mint_epoque_30.atlas"
+    },
+    {
+      "rel": "spine/op/char_388_mint_epoque_30/back/char_388_mint_epoque_30.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_388_mint/char_388_mint_epoque_30/Back/char_388_mint_epoque_30.png"
+    },
+    {
+      "rel": "char/avatar/char_4207_branch_yun_10.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4207_branch_yun#10.png"
+    },
+    {
+      "rel": "char/portrait/char_4207_branch_yun_10.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4207_branch_yun#10.png"
+    },
+    {
+      "rel": "spine/op/char_4207_branch_yun_10/front/char_4207_branch_yun_10.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4207_branch/char_4207_branch_yun_10/Front/char_4207_branch_yun_10.skel"
+    },
+    {
+      "rel": "spine/op/char_4207_branch_yun_10/front/char_4207_branch_yun_10.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4207_branch/char_4207_branch_yun_10/Front/char_4207_branch_yun_10.atlas"
+    },
+    {
+      "rel": "spine/op/char_4207_branch_yun_10/front/char_4207_branch_yun_10.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4207_branch/char_4207_branch_yun_10/Front/char_4207_branch_yun_10.png"
+    },
+    {
+      "rel": "spine/op/char_4207_branch_yun_10/back/char_4207_branch_yun_10.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4207_branch/char_4207_branch_yun_10/Back/char_4207_branch_yun_10.skel"
+    },
+    {
+      "rel": "spine/op/char_4207_branch_yun_10/back/char_4207_branch_yun_10.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4207_branch/char_4207_branch_yun_10/Back/char_4207_branch_yun_10.atlas"
+    },
+    {
+      "rel": "spine/op/char_4207_branch_yun_10/back/char_4207_branch_yun_10.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4207_branch/char_4207_branch_yun_10/Back/char_4207_branch_yun_10.png"
+    },
+    {
+      "rel": "char/avatar/char_4146_nymph_ambienceSynesthesia_6.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4146_nymph_ambienceSynesthesia#6.png"
+    },
+    {
+      "rel": "char/portrait/char_4146_nymph_ambienceSynesthesia_6.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4146_nymph_ambienceSynesthesia#6.png"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_ambienceSynesthesia_6/front/char_4146_nymph_ambienceSynesthesia_6.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_ambienceSynesthesia_6/Front/char_4146_nymph_ambienceSynesthesia_6.skel"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_ambienceSynesthesia_6/front/char_4146_nymph_ambienceSynesthesia_6.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_ambienceSynesthesia_6/Front/char_4146_nymph_ambienceSynesthesia_6.atlas"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_ambienceSynesthesia_6/front/char_4146_nymph_ambienceSynesthesia_6.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_ambienceSynesthesia_6/Front/char_4146_nymph_ambienceSynesthesia_6.png"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_ambienceSynesthesia_6/back/char_4146_nymph_ambienceSynesthesia_6.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_ambienceSynesthesia_6/Back/char_4146_nymph_ambienceSynesthesia_6.skel"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_ambienceSynesthesia_6/back/char_4146_nymph_ambienceSynesthesia_6.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_ambienceSynesthesia_6/Back/char_4146_nymph_ambienceSynesthesia_6.atlas"
+    },
+    {
+      "rel": "spine/op/char_4146_nymph_ambienceSynesthesia_6/back/char_4146_nymph_ambienceSynesthesia_6.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4146_nymph/char_4146_nymph_ambienceSynesthesia_6/Back/char_4146_nymph_ambienceSynesthesia_6.png"
+    },
+    {
+      "rel": "char/avatar/char_494_vendla_game_10.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_494_vendla_game#10.png"
+    },
+    {
+      "rel": "char/portrait/char_494_vendla_game_10.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_494_vendla_game#10.png"
+    },
+    {
+      "rel": "spine/op/char_494_vendla_game_10/front/char_494_vendla_game_10.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_494_vendla/char_494_vendla_game_10/Front/char_494_vendla_game_10.skel"
+    },
+    {
+      "rel": "spine/op/char_494_vendla_game_10/front/char_494_vendla_game_10.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_494_vendla/char_494_vendla_game_10/Front/char_494_vendla_game_10.atlas"
+    },
+    {
+      "rel": "spine/op/char_494_vendla_game_10/front/char_494_vendla_game_10.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_494_vendla/char_494_vendla_game_10/Front/char_494_vendla_game_10.png"
+    },
+    {
+      "rel": "spine/op/char_494_vendla_game_10/back/char_494_vendla_game_10.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_494_vendla/char_494_vendla_game_10/Back/char_494_vendla_game_10.skel"
+    },
+    {
+      "rel": "spine/op/char_494_vendla_game_10/back/char_494_vendla_game_10.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_494_vendla/char_494_vendla_game_10/Back/char_494_vendla_game_10.atlas"
+    },
+    {
+      "rel": "spine/op/char_494_vendla_game_10/back/char_494_vendla_game_10.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_494_vendla/char_494_vendla_game_10/Back/char_494_vendla_game_10.png"
+    },
+    {
+      "rel": "char/avatar/char_446_aroma_epoque_54.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_446_aroma_epoque#54.png"
+    },
+    {
+      "rel": "char/portrait/char_446_aroma_epoque_54.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_446_aroma_epoque#54.png"
+    },
+    {
+      "rel": "spine/op/char_446_aroma_epoque_54/front/char_446_aroma_epoque_54.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_446_aroma/char_446_aroma_epoque_54/Front/char_446_aroma_epoque_54.skel"
+    },
+    {
+      "rel": "spine/op/char_446_aroma_epoque_54/front/char_446_aroma_epoque_54.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_446_aroma/char_446_aroma_epoque_54/Front/char_446_aroma_epoque_54.atlas"
+    },
+    {
+      "rel": "spine/op/char_446_aroma_epoque_54/front/char_446_aroma_epoque_54.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_446_aroma/char_446_aroma_epoque_54/Front/char_446_aroma_epoque_54.png"
+    },
+    {
+      "rel": "spine/op/char_446_aroma_epoque_54/back/char_446_aroma_epoque_54.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_446_aroma/char_446_aroma_epoque_54/Back/char_446_aroma_epoque_54.skel"
+    },
+    {
+      "rel": "spine/op/char_446_aroma_epoque_54/back/char_446_aroma_epoque_54.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_446_aroma/char_446_aroma_epoque_54/Back/char_446_aroma_epoque_54.atlas"
+    },
+    {
+      "rel": "spine/op/char_446_aroma_epoque_54/back/char_446_aroma_epoque_54.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_446_aroma/char_446_aroma_epoque_54/Back/char_446_aroma_epoque_54.png"
+    },
+    {
+      "rel": "char/avatar/char_440_pinecn_shining_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_440_pinecn_shining#1.png"
+    },
+    {
+      "rel": "char/portrait/char_440_pinecn_shining_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_440_pinecn_shining#1.png"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_shining_1/front/char_440_pinecn_shining_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_shining_1/Front/char_440_pinecn_shining_1.skel"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_shining_1/front/char_440_pinecn_shining_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_shining_1/Front/char_440_pinecn_shining_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_shining_1/front/char_440_pinecn_shining_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_shining_1/Front/char_440_pinecn_shining_1.png"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_shining_1/back/char_440_pinecn_shining_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_shining_1/Back/char_440_pinecn_shining_1.skel"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_shining_1/back/char_440_pinecn_shining_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_shining_1/Back/char_440_pinecn_shining_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_440_pinecn_shining_1/back/char_440_pinecn_shining_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_440_pinecn/char_440_pinecn_shining_1/Back/char_440_pinecn_shining_1.png"
+    },
+    {
+      "rel": "char/avatar/char_180_amgoat_sanrio_2.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_180_amgoat_sanrio#2.png"
+    },
+    {
+      "rel": "char/portrait/char_180_amgoat_sanrio_2.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_180_amgoat_sanrio#2.png"
+    },
+    {
+      "rel": "spine/op/char_180_amgoat_sanrio_2/front/char_180_amgoat_sanrio_2.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_180_amgoat/char_180_amgoat_sanrio_2/Front/char_180_amgoat_sanrio_2.skel"
+    },
+    {
+      "rel": "spine/op/char_180_amgoat_sanrio_2/front/char_180_amgoat_sanrio_2.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_180_amgoat/char_180_amgoat_sanrio_2/Front/char_180_amgoat_sanrio_2.atlas"
+    },
+    {
+      "rel": "spine/op/char_180_amgoat_sanrio_2/front/char_180_amgoat_sanrio_2.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_180_amgoat/char_180_amgoat_sanrio_2/Front/char_180_amgoat_sanrio_2.png"
+    },
+    {
+      "rel": "spine/op/char_180_amgoat_sanrio_2/back/char_180_amgoat_sanrio_2.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_180_amgoat/char_180_amgoat_sanrio_2/Back/char_180_amgoat_sanrio_2.skel"
+    },
+    {
+      "rel": "spine/op/char_180_amgoat_sanrio_2/back/char_180_amgoat_sanrio_2.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_180_amgoat/char_180_amgoat_sanrio_2/Back/char_180_amgoat_sanrio_2.atlas"
+    },
+    {
+      "rel": "spine/op/char_180_amgoat_sanrio_2/back/char_180_amgoat_sanrio_2.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_180_amgoat/char_180_amgoat_sanrio_2/Back/char_180_amgoat_sanrio_2.png"
+    },
+    {
+      "rel": "char/avatar/char_391_rosmon_sale_16.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_391_rosmon_sale#16.png"
+    },
+    {
+      "rel": "char/portrait/char_391_rosmon_sale_16.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_391_rosmon_sale#16.png"
+    },
+    {
+      "rel": "spine/op/char_391_rosmon_sale_16/front/char_391_rosmon_sale_16.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_391_rosmon/char_391_rosmon_sale_16/Front/char_391_rosmon_sale_16.skel"
+    },
+    {
+      "rel": "spine/op/char_391_rosmon_sale_16/front/char_391_rosmon_sale_16.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_391_rosmon/char_391_rosmon_sale_16/Front/char_391_rosmon_sale_16.atlas"
+    },
+    {
+      "rel": "spine/op/char_391_rosmon_sale_16/front/char_391_rosmon_sale_16.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_391_rosmon/char_391_rosmon_sale_16/Front/char_391_rosmon_sale_16.png"
+    },
+    {
+      "rel": "spine/op/char_391_rosmon_sale_16/back/char_391_rosmon_sale_16.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_391_rosmon/char_391_rosmon_sale_16/Back/char_391_rosmon_sale_16.skel"
+    },
+    {
+      "rel": "spine/op/char_391_rosmon_sale_16/back/char_391_rosmon_sale_16.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_391_rosmon/char_391_rosmon_sale_16/Back/char_391_rosmon_sale_16.atlas"
+    },
+    {
+      "rel": "spine/op/char_391_rosmon_sale_16/back/char_391_rosmon_sale_16.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_391_rosmon/char_391_rosmon_sale_16/Back/char_391_rosmon_sale_16.png"
+    },
+    {
+      "rel": "char/avatar/char_377_gdglow_sanrio_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_377_gdglow_sanrio#1.png"
+    },
+    {
+      "rel": "char/portrait/char_377_gdglow_sanrio_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_377_gdglow_sanrio#1.png"
+    },
+    {
+      "rel": "spine/op/char_377_gdglow_sanrio_1/front/char_377_gdglow_sanrio_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_377_gdglow/char_377_gdglow_sanrio_1/Front/char_377_gdglow_sanrio_1.skel"
+    },
+    {
+      "rel": "spine/op/char_377_gdglow_sanrio_1/front/char_377_gdglow_sanrio_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_377_gdglow/char_377_gdglow_sanrio_1/Front/char_377_gdglow_sanrio_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_377_gdglow_sanrio_1/front/char_377_gdglow_sanrio_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_377_gdglow/char_377_gdglow_sanrio_1/Front/char_377_gdglow_sanrio_1.png"
+    },
+    {
+      "rel": "spine/op/char_377_gdglow_sanrio_1/back/char_377_gdglow_sanrio_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_377_gdglow/char_377_gdglow_sanrio_1/Back/char_377_gdglow_sanrio_1.skel"
+    },
+    {
+      "rel": "spine/op/char_377_gdglow_sanrio_1/back/char_377_gdglow_sanrio_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_377_gdglow/char_377_gdglow_sanrio_1/Back/char_377_gdglow_sanrio_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_377_gdglow_sanrio_1/back/char_377_gdglow_sanrio_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_377_gdglow/char_377_gdglow_sanrio_1/Back/char_377_gdglow_sanrio_1.png"
+    },
+    {
+      "rel": "char/avatar/char_4139_papyrs_game_8.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4139_papyrs_game#8.png"
+    },
+    {
+      "rel": "char/portrait/char_4139_papyrs_game_8.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4139_papyrs_game#8.png"
+    },
+    {
+      "rel": "spine/op/char_4139_papyrs_game_8/front/char_4139_papyrs_game_8.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4139_papyrs/char_4139_papyrs_game_8/Front/char_4139_papyrs_game_8.skel"
+    },
+    {
+      "rel": "spine/op/char_4139_papyrs_game_8/front/char_4139_papyrs_game_8.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4139_papyrs/char_4139_papyrs_game_8/Front/char_4139_papyrs_game_8.atlas"
+    },
+    {
+      "rel": "spine/op/char_4139_papyrs_game_8/front/char_4139_papyrs_game_8.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4139_papyrs/char_4139_papyrs_game_8/Front/char_4139_papyrs_game_8.png"
+    },
+    {
+      "rel": "spine/op/char_4139_papyrs_game_8/back/char_4139_papyrs_game_8.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4139_papyrs/char_4139_papyrs_game_8/Back/char_4139_papyrs_game_8.skel"
+    },
+    {
+      "rel": "spine/op/char_4139_papyrs_game_8/back/char_4139_papyrs_game_8.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4139_papyrs/char_4139_papyrs_game_8/Back/char_4139_papyrs_game_8.atlas"
+    },
+    {
+      "rel": "spine/op/char_4139_papyrs_game_8/back/char_4139_papyrs_game_8.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4139_papyrs/char_4139_papyrs_game_8/Back/char_4139_papyrs_game_8.png"
+    },
+    {
+      "rel": "char/avatar/char_4134_cetsyr_epoque_50.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4134_cetsyr_epoque#50.png"
+    },
+    {
+      "rel": "char/portrait/char_4134_cetsyr_epoque_50.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4134_cetsyr_epoque#50.png"
+    },
+    {
+      "rel": "spine/op/char_4134_cetsyr_epoque_50/front/char_4134_cetsyr_epoque_50.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4134_cetsyr/char_4134_cetsyr_epoque_50/Front/char_4134_cetsyr_epoque_50.skel"
+    },
+    {
+      "rel": "spine/op/char_4134_cetsyr_epoque_50/front/char_4134_cetsyr_epoque_50.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4134_cetsyr/char_4134_cetsyr_epoque_50/Front/char_4134_cetsyr_epoque_50.atlas"
+    },
+    {
+      "rel": "spine/op/char_4134_cetsyr_epoque_50/front/char_4134_cetsyr_epoque_50.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4134_cetsyr/char_4134_cetsyr_epoque_50/Front/char_4134_cetsyr_epoque_50.png"
+    },
+    {
+      "rel": "char/avatar/char_2015_dusk_nian_7.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_2015_dusk_nian#7.png"
+    },
+    {
+      "rel": "char/portrait/char_2015_dusk_nian_7.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_2015_dusk_nian#7.png"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_7/front/char_2015_dusk_nian_7.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_7/Front/char_2015_dusk_nian_7.skel"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_7/front/char_2015_dusk_nian_7.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_7/Front/char_2015_dusk_nian_7.atlas"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_7/front/char_2015_dusk_nian_7.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_7/Front/char_2015_dusk_nian_7.png"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_7/back/char_2015_dusk_nian_7.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_7/Back/char_2015_dusk_nian_7.skel"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_7/back/char_2015_dusk_nian_7.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_7/Back/char_2015_dusk_nian_7.atlas"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_7/back/char_2015_dusk_nian_7.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_7/Back/char_2015_dusk_nian_7.png"
+    },
+    {
+      "rel": "char/avatar/char_2015_dusk_nian_12.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_2015_dusk_nian#12.png"
+    },
+    {
+      "rel": "char/portrait/char_2015_dusk_nian_12.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_2015_dusk_nian#12.png"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_12/front/char_2015_dusk_nian_12.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_12/Front/char_2015_dusk_nian_12.skel"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_12/front/char_2015_dusk_nian_12.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_12/Front/char_2015_dusk_nian_12.atlas"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_12/front/char_2015_dusk_nian_12.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_12/Front/char_2015_dusk_nian_12.png"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_12/back/char_2015_dusk_nian_12.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_12/Back/char_2015_dusk_nian_12.skel"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_12/back/char_2015_dusk_nian_12.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_12/Back/char_2015_dusk_nian_12.atlas"
+    },
+    {
+      "rel": "spine/op/char_2015_dusk_nian_12/back/char_2015_dusk_nian_12.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2015_dusk/char_2015_dusk_nian_12/Back/char_2015_dusk_nian_12.png"
+    },
+    {
+      "rel": "char/avatar/char_258_podego_epoque_9.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_258_podego_epoque#9.png"
+    },
+    {
+      "rel": "char/portrait/char_258_podego_epoque_9.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_258_podego_epoque#9.png"
+    },
+    {
+      "rel": "spine/op/char_258_podego_epoque_9/front/char_258_podego_epoque_9.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_258_podego/char_258_podego_epoque_9/Front/char_258_podego_epoque_9.skel"
+    },
+    {
+      "rel": "spine/op/char_258_podego_epoque_9/front/char_258_podego_epoque_9.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_258_podego/char_258_podego_epoque_9/Front/char_258_podego_epoque_9.atlas"
+    },
+    {
+      "rel": "spine/op/char_258_podego_epoque_9/front/char_258_podego_epoque_9.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_258_podego/char_258_podego_epoque_9/Front/char_258_podego_epoque_9.png"
+    },
+    {
+      "rel": "spine/op/char_258_podego_epoque_9/back/char_258_podego_epoque_9.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_258_podego/char_258_podego_epoque_9/Back/char_258_podego_epoque_9.skel"
+    },
+    {
+      "rel": "spine/op/char_258_podego_epoque_9/back/char_258_podego_epoque_9.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_258_podego/char_258_podego_epoque_9/Back/char_258_podego_epoque_9.atlas"
+    },
+    {
+      "rel": "spine/op/char_258_podego_epoque_9/back/char_258_podego_epoque_9.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_258_podego/char_258_podego_epoque_9/Back/char_258_podego_epoque_9.png"
+    },
+    {
+      "rel": "char/avatar/char_4191_tippi_epoque_57.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4191_tippi_epoque#57.png"
+    },
+    {
+      "rel": "char/portrait/char_4191_tippi_epoque_57.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4191_tippi_epoque#57.png"
+    },
+    {
+      "rel": "spine/op/char_4191_tippi_epoque_57/front/char_4191_tippi_epoque_57.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4191_tippi/char_4191_tippi_epoque_57/Front/char_4191_tippi_epoque_57.skel"
+    },
+    {
+      "rel": "spine/op/char_4191_tippi_epoque_57/front/char_4191_tippi_epoque_57.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4191_tippi/char_4191_tippi_epoque_57/Front/char_4191_tippi_epoque_57.atlas"
+    },
+    {
+      "rel": "spine/op/char_4191_tippi_epoque_57/front/char_4191_tippi_epoque_57.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4191_tippi/char_4191_tippi_epoque_57/Front/char_4191_tippi_epoque_57.png"
+    },
+    {
+      "rel": "spine/op/char_4191_tippi_epoque_57/back/char_4191_tippi_epoque_57.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4191_tippi/char_4191_tippi_epoque_57/Back/char_4191_tippi_epoque_57.skel"
+    },
+    {
+      "rel": "spine/op/char_4191_tippi_epoque_57/back/char_4191_tippi_epoque_57.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4191_tippi/char_4191_tippi_epoque_57/Back/char_4191_tippi_epoque_57.atlas"
+    },
+    {
+      "rel": "spine/op/char_4191_tippi_epoque_57/back/char_4191_tippi_epoque_57.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4191_tippi/char_4191_tippi_epoque_57/Back/char_4191_tippi_epoque_57.png"
+    },
+    {
+      "rel": "char/avatar/char_127_estell_epoque_50.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_127_estell_epoque#50.png"
+    },
+    {
+      "rel": "char/portrait/char_127_estell_epoque_50.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_127_estell_epoque#50.png"
+    },
+    {
+      "rel": "spine/op/char_127_estell_epoque_50/front/char_127_estell_epoque_50.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_127_estell/char_127_estell_epoque_50/Front/char_127_estell_epoque_50.skel"
+    },
+    {
+      "rel": "spine/op/char_127_estell_epoque_50/front/char_127_estell_epoque_50.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_127_estell/char_127_estell_epoque_50/Front/char_127_estell_epoque_50.atlas"
+    },
+    {
+      "rel": "spine/op/char_127_estell_epoque_50/front/char_127_estell_epoque_50.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_127_estell/char_127_estell_epoque_50/Front/char_127_estell_epoque_50.png"
+    },
+    {
+      "rel": "spine/op/char_127_estell_epoque_50/back/char_127_estell_epoque_50.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_127_estell/char_127_estell_epoque_50/Back/char_127_estell_epoque_50.skel"
+    },
+    {
+      "rel": "spine/op/char_127_estell_epoque_50/back/char_127_estell_epoque_50.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_127_estell/char_127_estell_epoque_50/Back/char_127_estell_epoque_50.atlas"
+    },
+    {
+      "rel": "spine/op/char_127_estell_epoque_50/back/char_127_estell_epoque_50.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_127_estell/char_127_estell_epoque_50/Back/char_127_estell_epoque_50.png"
+    },
+    {
+      "rel": "char/avatar/char_145_prove_wild_5.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_145_prove_wild#5.png"
+    },
+    {
+      "rel": "char/portrait/char_145_prove_wild_5.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_145_prove_wild#5.png"
+    },
+    {
+      "rel": "spine/op/char_145_prove_wild_5/front/char_145_prove_wild_5.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_145_prove/char_145_prove_wild_5/Front/char_145_prove_wild_5.skel"
+    },
+    {
+      "rel": "spine/op/char_145_prove_wild_5/front/char_145_prove_wild_5.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_145_prove/char_145_prove_wild_5/Front/char_145_prove_wild_5.atlas"
+    },
+    {
+      "rel": "spine/op/char_145_prove_wild_5/front/char_145_prove_wild_5.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_145_prove/char_145_prove_wild_5/Front/char_145_prove_wild_5.png"
+    },
+    {
+      "rel": "spine/op/char_145_prove_wild_5/back/char_145_prove_wild_5.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_145_prove/char_145_prove_wild_5/Back/char_145_prove_wild_5.skel"
+    },
+    {
+      "rel": "spine/op/char_145_prove_wild_5/back/char_145_prove_wild_5.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_145_prove/char_145_prove_wild_5/Back/char_145_prove_wild_5.atlas"
+    },
+    {
+      "rel": "spine/op/char_145_prove_wild_5/back/char_145_prove_wild_5.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_145_prove/char_145_prove_wild_5/Back/char_145_prove_wild_5.png"
+    },
+    {
+      "rel": "char/avatar/char_237_gravel_winter_2.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_237_gravel_winter#2.png"
+    },
+    {
+      "rel": "char/portrait/char_237_gravel_winter_2.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_237_gravel_winter#2.png"
+    },
+    {
+      "rel": "spine/op/char_237_gravel_winter_2/front/char_237_gravel_winter_2.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_237_gravel/char_237_gravel_winter_2/Front/char_237_gravel_winter_2.skel"
+    },
+    {
+      "rel": "spine/op/char_237_gravel_winter_2/front/char_237_gravel_winter_2.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_237_gravel/char_237_gravel_winter_2/Front/char_237_gravel_winter_2.atlas"
+    },
+    {
+      "rel": "spine/op/char_237_gravel_winter_2/front/char_237_gravel_winter_2.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_237_gravel/char_237_gravel_winter_2/Front/char_237_gravel_winter_2.png"
+    },
+    {
+      "rel": "spine/op/char_237_gravel_winter_2/back/char_237_gravel_winter_2.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_237_gravel/char_237_gravel_winter_2/Back/char_237_gravel_winter_2.skel"
+    },
+    {
+      "rel": "spine/op/char_237_gravel_winter_2/back/char_237_gravel_winter_2.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_237_gravel/char_237_gravel_winter_2/Back/char_237_gravel_winter_2.atlas"
+    },
+    {
+      "rel": "spine/op/char_237_gravel_winter_2/back/char_237_gravel_winter_2.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_237_gravel/char_237_gravel_winter_2/Back/char_237_gravel_winter_2.png"
+    },
+    {
+      "rel": "char/avatar/char_4122_grabds_yun_3.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4122_grabds_yun#3.png"
+    },
+    {
+      "rel": "char/portrait/char_4122_grabds_yun_3.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4122_grabds_yun#3.png"
+    },
+    {
+      "rel": "spine/op/char_4122_grabds_yun_3/front/char_4122_grabds_yun_3.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4122_grabds/char_4122_grabds_yun_3/Front/char_4122_grabds_yun_3.skel"
+    },
+    {
+      "rel": "spine/op/char_4122_grabds_yun_3/front/char_4122_grabds_yun_3.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4122_grabds/char_4122_grabds_yun_3/Front/char_4122_grabds_yun_3.atlas"
+    },
+    {
+      "rel": "spine/op/char_4122_grabds_yun_3/front/char_4122_grabds_yun_3.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4122_grabds/char_4122_grabds_yun_3/Front/char_4122_grabds_yun_3.png"
+    },
+    {
+      "rel": "spine/op/char_4122_grabds_yun_3/back/char_4122_grabds_yun_3.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4122_grabds/char_4122_grabds_yun_3/Back/char_4122_grabds_yun_3.skel"
+    },
+    {
+      "rel": "spine/op/char_4122_grabds_yun_3/back/char_4122_grabds_yun_3.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4122_grabds/char_4122_grabds_yun_3/Back/char_4122_grabds_yun_3.atlas"
+    },
+    {
+      "rel": "spine/op/char_4122_grabds_yun_3/back/char_4122_grabds_yun_3.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4122_grabds/char_4122_grabds_yun_3/Back/char_4122_grabds_yun_3.png"
+    },
+    {
+      "rel": "char/avatar/char_4080_lin_nian_10.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4080_lin_nian#10.png"
+    },
+    {
+      "rel": "char/portrait/char_4080_lin_nian_10.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4080_lin_nian#10.png"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_nian_10/front/char_4080_lin_nian_10.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_nian_10/Front/char_4080_lin_nian_10.skel"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_nian_10/front/char_4080_lin_nian_10.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_nian_10/Front/char_4080_lin_nian_10.atlas"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_nian_10/front/char_4080_lin_nian_10.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_nian_10/Front/char_4080_lin_nian_10.png"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_nian_10/back/char_4080_lin_nian_10.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_nian_10/Back/char_4080_lin_nian_10.skel"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_nian_10/back/char_4080_lin_nian_10.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_nian_10/Back/char_4080_lin_nian_10.atlas"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_nian_10/back/char_4080_lin_nian_10.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_nian_10/Back/char_4080_lin_nian_10.png"
+    },
+    {
+      "rel": "char/avatar/char_4080_lin_littlePony_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_4080_lin_littlePony#1.png"
+    },
+    {
+      "rel": "char/portrait/char_4080_lin_littlePony_1.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4080_lin_littlePony#1.png"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_littlePony_1/front/char_4080_lin_littlePony_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_littlePony_1/Front/char_4080_lin_littlePony_1.skel"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_littlePony_1/front/char_4080_lin_littlePony_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_littlePony_1/Front/char_4080_lin_littlePony_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_littlePony_1/front/char_4080_lin_littlePony_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_littlePony_1/Front/char_4080_lin_littlePony_1.png"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_littlePony_1/back/char_4080_lin_littlePony_1.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_littlePony_1/Back/char_4080_lin_littlePony_1.skel"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_littlePony_1/back/char_4080_lin_littlePony_1.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_littlePony_1/Back/char_4080_lin_littlePony_1.atlas"
+    },
+    {
+      "rel": "spine/op/char_4080_lin_littlePony_1/back/char_4080_lin_littlePony_1.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_4080_lin/char_4080_lin_littlePony_1/Back/char_4080_lin_littlePony_1.png"
+    },
+    {
+      "rel": "char/avatar/char_2013_cerber_whirlwind_2.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar/char_2013_cerber_whirlwind#2.png"
+    },
+    {
+      "rel": "char/portrait/char_2013_cerber_whirlwind_2.png",
+      "url": "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_2013_cerber_whirlwind#2.png"
+    },
+    {
+      "rel": "spine/op/char_2013_cerber_whirlwind_2/front/char_2013_cerber_whirlwind_2.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2013_cerber/char_2013_cerber_whirlwind_2/Front/char_2013_cerber_whirlwind_2.skel"
+    },
+    {
+      "rel": "spine/op/char_2013_cerber_whirlwind_2/front/char_2013_cerber_whirlwind_2.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2013_cerber/char_2013_cerber_whirlwind_2/Front/char_2013_cerber_whirlwind_2.atlas"
+    },
+    {
+      "rel": "spine/op/char_2013_cerber_whirlwind_2/front/char_2013_cerber_whirlwind_2.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2013_cerber/char_2013_cerber_whirlwind_2/Front/char_2013_cerber_whirlwind_2.png"
+    },
+    {
+      "rel": "spine/op/char_2013_cerber_whirlwind_2/back/char_2013_cerber_whirlwind_2.skel",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2013_cerber/char_2013_cerber_whirlwind_2/Back/char_2013_cerber_whirlwind_2.skel"
+    },
+    {
+      "rel": "spine/op/char_2013_cerber_whirlwind_2/back/char_2013_cerber_whirlwind_2.atlas",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2013_cerber/char_2013_cerber_whirlwind_2/Back/char_2013_cerber_whirlwind_2.atlas"
+    },
+    {
+      "rel": "spine/op/char_2013_cerber_whirlwind_2/back/char_2013_cerber_whirlwind_2.png",
+      "url": "https://raw.githubusercontent.com/fexli/ArknightsResource/main/spine/char_2013_cerber/char_2013_cerber_whirlwind_2/Back/char_2013_cerber_whirlwind_2.png"
+    }
+  ]
+}

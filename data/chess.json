@@ -47579,7 +47579,7 @@
             "deputShip"
         ],
         "garrisonIds": [
-            "garrison_50_a"
+            "garrison_49_a"
         ],
         "price": 3,
         "sellPrice": 1,
@@ -48036,7 +48036,7 @@
             "deputShip"
         ],
         "garrisonIds": [
-            "garrison_50_b"
+            "garrison_49_b"
         ],
         "price": 3,
         "sellPrice": 1,
@@ -72275,6 +72275,31 @@
                     "rangeGrid": null,
                     "moduleDesc": "受到的治疗效果提升20%",
                     "moduleDescRaw": "受到的治疗效果提升<@ba.kw>20%</>"
+                },
+                "talentChanges": []
+            },
+            {
+                "uniEquipId": "uniequip_003_ulpia",
+                "name": "“前路”",
+                "typeName": "CRU-Y",
+                "typeIcon": "cru-y",
+                "icon": "uniequip_003_ulpia",
+                "isDefault": false,
+                "level": 1,
+                "attr": {
+                    "maxHp": 360,
+                    "atk": 100
+                },
+                "traitOverride": {
+                    "desc": "同时攻击阻挡的所有敌人",
+                    "descRaw": "同时攻击阻挡的<@ba.kw>所有敌人</>",
+                    "bb": {
+                        "damage_scale": 1.1
+                    },
+                    "bbStr": {},
+                    "rangeGrid": null,
+                    "moduleDesc": "对被阻挡的敌人伤害提升至110%",
+                    "moduleDescRaw": "对被阻挡的敌人伤害提升至<@ba.kw>110%</>"
                 },
                 "talentChanges": []
             }

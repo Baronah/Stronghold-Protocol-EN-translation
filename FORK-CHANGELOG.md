@@ -5,6 +5,21 @@ on top of the upstream game ([sganggs/Stronghold-Protocol](https://github.com/sg
 own changes aren't repeated here; each upstream merge links the upstream commit it brought in, and
 [CHANGELOG.en.md](CHANGELOG.en.md) covers what that release contains. Newest first.
 
+## 2026-10-14
+
+### Fixes
+
+- The last 15 cut-off models are fixed: the clip measurement also poses every animation key (and the instant before
+  it), so a pose shown for a single frame between two samples is in the box (Hellagur's katana, Veen's shadow, Dusk,
+  Ulpianus, the strawberry of Eyjafjalla the Hvít Aska's Epoque outfit, Fartooth's whirlwind outfit…). All 483
+  Operator and outfit models now keep every pose they play inside their box. A model's box takes about twice as many
+  frames to measure (median 22 frames instead of 10, 2.5 ms each).
+- Ines's attack no longer shows a stray slash beside her: her slash effects wait about 1600 units to her right while
+  hidden, and the short crossfade into her attack slid them in from there. While two clips crossfade, a slot drawn far
+  outside both clips is hidden if the outgoing clip doesn't show it, and the crossfade is cut if it does (her 'boc'
+  outfit's body rose from 900 units below her on its way back to idle). A crossfade that leaves the impostor box is
+  drawn directly for those frames.
+
 ## 2026-10-13
 
 ### Upstream merge

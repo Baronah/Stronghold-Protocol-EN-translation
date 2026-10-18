@@ -28,6 +28,12 @@ own changes aren't repeated here; each upstream merge links the upstream commit 
   current file with `no-cache`. A generation's page names the hashes in a `<meta name="sp-data-hashes">` tag
   (`shared/dataHash.js`, `public/js/dataUrls.js`); without it the plain URLs are used as before. A CDN needs a cache
   rule for paths containing `/data/h/`.
+- Site policy: `SP_CF_ANALYTICS=1` lets the Cloudflare Web Analytics beacon through the page's Content-Security-Policy
+  (`https://static.cloudflareinsights.com` in `script-src`, `https://cloudflareinsights.com` in `connect-src`). Off by
+  default; the policy is otherwise unchanged.
+- Site policy: `SP_CSP_NONCE=1` adds a fresh random nonce to `script-src` in every response's policy header, so
+  Cloudflare's JavaScript Detections (Bot Fight Mode) can run: Cloudflare copies the header's nonce onto the script it
+  injects. The game's pages still have no inline script of their own. Off by default.
 - The service worker no longer fetches the preload manifest for a player who never preloaded (no preload cache).
 
 ### Fixes
